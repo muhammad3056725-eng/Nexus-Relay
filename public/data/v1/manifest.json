@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0-phase1",
+  "generated_at": "2026-11-26T00:00:00Z",
+  "entity_count": 110,
+  "edge_count": 441,
+  "min_outgoing_edges": 4,
+  "telemetry_sha256": "8f7b8f4ba8d4f326a2f84af55ead31f18d7cb406f558570ae126c7ae751451af",
+  "telemetry_record_bytes": 24,
+  "shards_count": 117,
+  "packs_count": 1,
+  "corpus": "starter",
+  "note": "Phase 1 starter corpus (110 hand-authored entities). Production target per blueprint: 250,000 entities / 1.5M edges via the Stage 1-6 Wikidata pipeline."
+}
