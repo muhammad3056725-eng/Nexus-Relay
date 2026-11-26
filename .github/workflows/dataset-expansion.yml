@@ -1,0 +1,63 @@
+name: Dataset expansion
+
+on:
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: "Expansion stage (cumulative corpus target)"
+        type: choice
+        options: [A, B, C, D]
+        default: A
+  schedule:
+    - cron: "17 3 1 * *"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: dataset-expansion
+  cancel-in-progress: false
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install test runner
+        run: pip install pytest
+      - name: Restore pipeline fetch cache (resumability)
+        uses: actions/cache@v4
+        with:
+          path: pipeline/corpus
+          key: dataset-corpus-${{ inputs.stage || 'A' }}-${{ github.run_id }}
+          restore-keys: |
+            dataset-corpus-${{ inputs.stage || 'A' }}-
+      - name: Run expansion pipeline (Stages 1-6)
+        env:
+          DEFAULT_STAGE: A
+        run: python3 pipeline/src/build_dataset.py --stage "${{ inputs.stage || env.DEFAULT_STAGE }}"
+      - name: Validate dataset + run pipeline tests
+        run: |
+          python3 pipeline/src/validate_dataset.py
+          python3 -m pytest pipeline/tests -q
+      - name: Commit regenerated dataset
+        run: |
+          git config user.name "nexus-relay-dataset-bot"
+          git config user.email "actions@github.com"
+          git add public/data
+          if git diff --cached --quiet; then
+            echo "Dataset unchanged; nothing to commit."
+          else
+            git commit -m "Dataset expansion: stage ${{ inputs.stage || 'A' }} (pipeline run ${{ github.run_id }})"
+            git push
+          fi
+      - name: Trigger Pages deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml
+        
