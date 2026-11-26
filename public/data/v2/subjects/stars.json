@@ -1,0 +1,1178 @@
+{
+  "category": "stars",
+  "subjects": [
+    {
+      "id": "leonardo-dicaprio",
+      "name": "Leonardo DiCaprio",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1974,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Los Angeles in 1974, he started out in TV commercials and a family sitcom.",
+        "He earned an early Oscar nomination for playing Johnny Depp's younger brother in a 1993 drama.",
+        "A long-time environmental campaigner, he set up his own foundation in 1998.",
+        "He played a dream thief in Inception and a teenage con man in Catch Me If You Can.",
+        "He played Jack Dawson, the young artist who wins a ticket aboard the doomed liner in Titanic."
+      ],
+      "links": [
+        { "name": "Titanic", "rel": "starred in" },
+        { "name": "Inception", "rel": "starred in" },
+        { "name": "Martin Scorsese", "rel": "made many films with" }
+      ],
+      "fact": "He won his first Oscar in 2016 for The Revenant, on his fifth acting nomination."
+    },
+    {
+      "id": "tom-hanks",
+      "name": "Tom Hanks",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1956,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in California in 1956, he first found fame in light comedies of the 1980s.",
+        "He played a boy magically turned into a grown-up in the 1988 comedy Big.",
+        "He won back-to-back Best Actor Oscars, in 1994 and 1995.",
+        "He voiced the cowboy Woody and was stranded with a volleyball in Cast Away.",
+        "He played a kind-hearted Alabama man who compares life to a box of chocolates."
+      ],
+      "links": [
+        { "name": "Forrest Gump", "rel": "starred in" },
+        { "name": "Toy Story", "rel": "voiced Woody in" },
+        { "name": "Steven Spielberg", "rel": "made Saving Private Ryan with" }
+      ],
+      "fact": "Only he and Spencer Tracy have won the Best Actor Oscar in two consecutive years."
+    },
+    {
+      "id": "marlon-brando",
+      "name": "Marlon Brando",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1924,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in Nebraska in 1924, he trained in New York and helped popularise 'method' acting.",
+        "He played Stanley Kowalski in A Streetcar Named Desire, both on stage and on film.",
+        "He won Best Actor for On the Waterfront, with its famous line about being a contender.",
+        "He played Superman's father, Jor-El, in the 1978 film.",
+        "He played the mob boss Vito Corleone in The Godfather, winning an Oscar he turned down."
+      ],
+      "links": [
+        { "name": "The Godfather", "rel": "starred in" },
+        { "name": "Al Pacino", "rel": "co-starred with" }
+      ],
+      "fact": "He sent actress Sacheen Littlefeather to the 1973 Oscars to decline his award in protest."
+    },
+    {
+      "id": "tom-cruise",
+      "name": "Tom Cruise",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1962,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in New York State in 1962, he became a star in the 1983 comedy Risky Business.",
+        "He played a racing driver in Days of Thunder and a sports agent in Jerry Maguire.",
+        "He is famous for doing his own stunts, including climbing the Burj Khalifa in Dubai.",
+        "He has played the secret agent Ethan Hunt in a spy series since 1996.",
+        "He played the hotshot navy pilot Maverick in Top Gun and its 2022 sequel."
+      ],
+      "links": [
+        { "name": "Top Gun", "rel": "starred in" },
+        { "name": "Mission: Impossible", "rel": "starred in" },
+        { "name": "Nicole Kidman", "rel": "co-starred with" }
+      ],
+      "fact": "For Mission: Impossible - Fallout he learned to fly a helicopter for its chase scenes."
+    },
+    {
+      "id": "shah-rukh-khan",
+      "name": "Shah Rukh Khan",
+      "aliases": ["SRK"],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1965,
+      "region": "South Asia",
+      "difficulty": 1,
+      "clues": [
+        "Born in New Delhi in 1965, he started out in television serials in the late 1980s.",
+        "He is famous for an open-armed pose in countless romantic film songs.",
+        "In 2023 he led two huge action hits, Pathaan and Jawan.",
+        "He played the lovestruck Raj in Dilwale Dulhania Le Jayenge, a record-breaking romance.",
+        "Nicknamed the 'King of Bollywood', he lives in a Mumbai seafront home called Mannat."
+      ],
+      "links": [
+        { "name": "Dilwale Dulhania Le Jayenge", "rel": "starred in" },
+        { "name": "Mumbai", "rel": "lives in" },
+        { "name": "New Delhi", "rel": "was born in" }
+      ],
+      "fact": "He studied economics at Hansraj College in Delhi before moving to Mumbai."
+    },
+    {
+      "id": "amitabh-bachchan",
+      "name": "Amitabh Bachchan",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1942,
+      "region": "South Asia",
+      "difficulty": 2,
+      "clues": [
+        "Born in Allahabad in 1942, he is the son of a celebrated Hindi poet.",
+        "His tall frame and deep baritone voice became his trademarks.",
+        "He became known as the 'angry young man' of 1970s Hindi cinema.",
+        "He first hosted Kaun Banega Crorepati, India's Who Wants to Be a Millionaire?, in 2000.",
+        "He played Jai alongside Dharmendra's Veeru in the 1975 classic Sholay."
+      ],
+      "links": [
+        { "name": "Sholay", "rel": "starred in" },
+        { "name": "Aishwarya Rai", "rel": "is the father-in-law of" },
+        { "name": "India", "rel": "is a film legend of" }
+      ],
+      "fact": "A 1999 BBC online poll named him the greatest star of stage or screen of the millennium."
+    },
+    {
+      "id": "jackie-chan",
+      "name": "Jackie Chan",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1954,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "Born in Hong Kong in 1954, he trained for years at a Peking Opera school as a child.",
+        "He worked as a stunt extra in Bruce Lee films early in his career.",
+        "His action comedies mix kung fu with slapstick, and he performs his own dangerous stunts.",
+        "His films often end with blooper reels showing stunts that went wrong.",
+        "He teamed up with Chris Tucker in Rush Hour and voiced Monkey in Kung Fu Panda."
+      ],
+      "links": [
+        { "name": "Hong Kong", "rel": "was born in" },
+        { "name": "Bruce Lee", "rel": "did stunts for" },
+        { "name": "Kung Fu Panda", "rel": "voiced a role in" }
+      ],
+      "fact": "He received an honorary Oscar in 2016 for his lifetime of work."
+    },
+    {
+      "id": "bruce-lee",
+      "name": "Bruce Lee",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1940,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "Born in San Francisco in 1940, he grew up in Hong Kong as a child actor.",
+        "He played Kato, a masked chauffeur, in the 1960s TV series The Green Hornet.",
+        "He created his own martial art, called Jeet Kune Do.",
+        "His one-inch punch and lightning-fast nunchucks became legendary.",
+        "He starred in Enter the Dragon, released in 1973 just after his sudden death at 32."
+      ],
+      "links": [
+        { "name": "Hong Kong", "rel": "grew up in" },
+        { "name": "San Francisco", "rel": "was born in" },
+        { "name": "Jackie Chan", "rel": "worked with" }
+      ],
+      "fact": "He gave martial arts lessons to Hollywood stars such as Steve McQueen."
+    },
+    {
+      "id": "arnold-schwarzenegger",
+      "name": "Arnold Schwarzenegger",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1947,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in a small Austrian village in 1947, he moved to the United States aged 21.",
+        "He won the Mr. Olympia bodybuilding title seven times.",
+        "He played a barbarian warrior in Conan and a cop working undercover in Kindergarten Cop.",
+        "He served as Governor of California from 2003 to 2011.",
+        "He played a robot assassin from the future in The Terminator, promising 'I'll be back'."
+      ],
+      "links": [
+        { "name": "The Terminator", "rel": "starred in" },
+        { "name": "Austria", "rel": "was born in" },
+        { "name": "California", "rel": "was governor of" }
+      ],
+      "fact": "He became a US citizen in 1983, fifteen years after arriving in America."
+    },
+    {
+      "id": "morgan-freeman",
+      "name": "Morgan Freeman",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1937,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Memphis, Tennessee, in 1937, he served in the US Air Force before acting.",
+        "He was a familiar face on the 1970s children's TV show The Electric Company.",
+        "He won an Oscar for Million Dollar Baby and played Nelson Mandela in Invictus.",
+        "He played God in Bruce Almighty and is famed for his calm narrating voice.",
+        "He played Red, the prisoner who narrates The Shawshank Redemption."
+      ],
+      "links": [
+        { "name": "The Shawshank Redemption", "rel": "starred in" },
+        { "name": "Nelson Mandela", "rel": "played" },
+        { "name": "Memphis", "rel": "was born in" }
+      ],
+      "fact": "He narrated the 2005 Oscar-winning documentary March of the Penguins in English."
+    },
+    {
+      "id": "robert-de-niro",
+      "name": "Robert De Niro",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1943,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in New York City in 1943, he grew up around Greenwich Village and Little Italy.",
+        "He played a scary father-in-law opposite Ben Stiller in Meet the Parents.",
+        "He gained about 60 pounds to play boxer Jake LaMotta in Raging Bull, winning Best Actor.",
+        "He played the young Vito Corleone in The Godfather Part II, winning an Oscar.",
+        "He asked 'You talkin' to me?' into a mirror as a New York cab driver in Taxi Driver."
+      ],
+      "links": [
+        { "name": "Martin Scorsese", "rel": "made many films with" },
+        { "name": "The Godfather", "rel": "appeared in the sequel to" },
+        { "name": "New York City", "rel": "was born in" }
+      ],
+      "fact": "He co-founded the Tribeca Film Festival in New York in 2002."
+    },
+    {
+      "id": "keanu-reeves",
+      "name": "Keanu Reeves",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1964,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Beirut in 1964, he grew up mostly in Toronto, Canada.",
+        "He played a time-travelling slacker in Bill & Ted's Excellent Adventure.",
+        "He played a police officer trapped on a bus that must not slow down in Speed.",
+        "He voiced the stuntman toy Duke Caboom in a 2019 Pixar sequel.",
+        "He played Neo, the hacker who takes the red pill, in The Matrix."
+      ],
+      "links": [
+        { "name": "The Matrix", "rel": "starred in" },
+        { "name": "Toronto", "rel": "grew up in" },
+        { "name": "Toy Story", "rel": "voiced a role in a sequel to" }
+      ],
+      "fact": "His first name is Hawaiian and is often said to mean 'cool breeze over the mountains'."
+    },
+    {
+      "id": "toshiro-mifune",
+      "name": "Toshiro Mifune",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1920,
+      "region": "East Asia",
+      "difficulty": 3,
+      "clues": [
+        "Born in 1920 in Qingdao, China, to Japanese parents, he served in the military in the war.",
+        "He got into films almost by accident after a friend sent his photo to a studio talent search.",
+        "He starred in 16 films for the same great Japanese director.",
+        "He played the bandit in Rashomon and a wandering swordsman for hire in Yojimbo.",
+        "He played the wild, would-be warrior Kikuchiyo in Seven Samurai."
+      ],
+      "links": [
+        { "name": "Akira Kurosawa", "rel": "starred in films by" },
+        { "name": "Seven Samurai", "rel": "starred in" },
+        { "name": "Japan", "rel": "was a film star of" }
+      ],
+      "fact": "He won the Best Actor prize at the Venice Film Festival twice."
+    },
+    {
+      "id": "harrison-ford",
+      "name": "Harrison Ford",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1942,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Chicago in 1942, he worked as a carpenter while struggling as an actor.",
+        "He played the US president fighting hijackers aboard his plane in Air Force One.",
+        "He played the replicant hunter Rick Deckard in Blade Runner.",
+        "He played the smuggler Han Solo, pilot of the Millennium Falcon.",
+        "He played the whip-cracking archaeologist Indiana Jones in Raiders of the Lost Ark."
+      ],
+      "links": [
+        { "name": "Star Wars", "rel": "starred in" },
+        { "name": "Raiders of the Lost Ark", "rel": "starred in" },
+        { "name": "Chicago", "rel": "was born in" }
+      ],
+      "fact": "He returned as Han Solo in The Force Awakens in 2015, 38 years after the first Star Wars film."
+    },
+    {
+      "id": "daniel-day-lewis",
+      "name": "Daniel Day-Lewis",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1957,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in London in 1957, he is the son of a British Poet Laureate.",
+        "He is famous for staying in character for months while making a film.",
+        "He played the painter and writer Christy Brown in My Left Foot.",
+        "He played a ruthless oil man in There Will Be Blood and the 16th US president in Lincoln.",
+        "He was the first man to win three Best Actor Oscars."
+      ],
+      "links": [
+        { "name": "Abraham Lincoln", "rel": "played" },
+        { "name": "Steven Spielberg", "rel": "starred in Lincoln by" },
+        { "name": "London", "rel": "was born in" }
+      ],
+      "fact": "During a break from acting in the late 1990s, he learned shoemaking in Italy."
+    },
+    {
+      "id": "rajinikanth",
+      "name": "Rajinikanth",
+      "aliases": ["Rajnikanth"],
+      "category": "stars",
+      "sub": "Actor",
+      "year": 1950,
+      "region": "South Asia",
+      "difficulty": 2,
+      "clues": [
+        "Born in Bangalore in 1950, he worked as a bus conductor before acting.",
+        "He made his film debut in 1975 in a Tamil drama by K. Balachander.",
+        "His trademark style tricks, like flipping sunglasses onto his face, delight fans.",
+        "He played a scientist and the robot he builds in the 2010 sci-fi hit Enthiran.",
+        "Called 'Superstar' and 'Thalaivar' by fans, he is a giant of Tamil cinema."
+      ],
+      "links": [
+        { "name": "India", "rel": "is a film legend of" },
+        { "name": "Chennai", "rel": "is a star of the film industry of" },
+        { "name": "Aishwarya Rai", "rel": "co-starred in Enthiran with" }
+      ],
+      "fact": "His real name is Shivaji Rao Gaikwad."
+    },
+    {
+      "id": "marilyn-monroe",
+      "name": "Marilyn Monroe",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1926,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Los Angeles in 1926, she spent much of her childhood in foster homes.",
+        "She was born Norma Jeane Mortenson and worked in an aircraft factory during World War II.",
+        "She won a Golden Globe for the 1959 comedy Some Like It Hot.",
+        "She sang 'Diamonds Are a Girl's Best Friend' in Gentlemen Prefer Blondes.",
+        "Her white dress billowing over a subway grate in The Seven Year Itch is iconic."
+      ],
+      "links": [
+        { "name": "Los Angeles", "rel": "was born in" },
+        { "name": "Andy Warhol", "rel": "was painted by" }
+      ],
+      "fact": "She sang a famous breathy 'Happy Birthday' to President John F. Kennedy in 1962."
+    },
+    {
+      "id": "audrey-hepburn",
+      "name": "Audrey Hepburn",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1929,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in Brussels in 1929, she lived through the Nazi occupation of the Netherlands as a girl.",
+        "She trained as a ballet dancer before turning to acting.",
+        "She won Best Actress for her first starring role, a runaway princess in Roman Holiday.",
+        "Later in life she travelled the world as a UNICEF Goodwill Ambassador.",
+        "She wore a little black dress and pearls as Holly Golightly in Breakfast at Tiffany's."
+      ],
+      "links": [
+        { "name": "Belgium", "rel": "was born in" },
+        { "name": "Rome", "rel": "starred in a film set in" }
+      ],
+      "fact": "She is one of the few people to have won an Emmy, a Grammy, an Oscar and a Tony."
+    },
+    {
+      "id": "meryl-streep",
+      "name": "Meryl Streep",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1949,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in New Jersey in 1949, she studied acting at the Yale School of Drama.",
+        "She won her first Oscar for the 1979 divorce drama Kramer vs. Kramer.",
+        "She won Best Actress playing British Prime Minister Margaret Thatcher in The Iron Lady.",
+        "She played a fearsome fashion magazine editor in The Devil Wears Prada.",
+        "By 2024 she had 21 Oscar nominations, more than any other actor."
+      ],
+      "links": [
+        { "name": "Margaret Thatcher", "rel": "played" },
+        { "name": "Mamma Mia!", "rel": "starred in" },
+        { "name": "United States", "rel": "was born in" }
+      ],
+      "fact": "She is famous for mastering accents, from Polish to Danish to Australian."
+    },
+    {
+      "id": "julia-roberts",
+      "name": "Julia Roberts",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1967,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in Georgia, USA, in 1967, her older brother Eric was also an actor.",
+        "She broke through in the 1988 film Mystic Pizza and then in Steel Magnolias.",
+        "She won Best Actress playing a legal clerk who took on a power company in Erin Brockovich.",
+        "Her wide smile and laugh became trademarks in Notting Hill and Runaway Bride.",
+        "She played Vivian opposite Richard Gere in the 1990 hit Pretty Woman."
+      ],
+      "links": [
+        { "name": "Pretty Woman", "rel": "starred in" },
+        { "name": "Notting Hill", "rel": "starred in" }
+      ],
+      "fact": "Her niece Emma Roberts is also an actress."
+    },
+    {
+      "id": "aishwarya-rai",
+      "name": "Aishwarya Rai",
+      "aliases": ["Aishwarya Rai Bachchan"],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1973,
+      "region": "South Asia",
+      "difficulty": 2,
+      "clues": [
+        "Born in Mangalore in 1973, she briefly studied architecture before modelling.",
+        "She made her film debut in Mani Ratnam's Tamil film Iruvar in 1997.",
+        "She played Paro in the lavish Devdas, shown at the Cannes Film Festival in 2002.",
+        "In 2007 she married actor Abhishek, son of the legendary star of Sholay.",
+        "She was crowned Miss World in 1994, launching her film career."
+      ],
+      "links": [
+        { "name": "Amitabh Bachchan", "rel": "is the daughter-in-law of" },
+        { "name": "India", "rel": "is a film star of" }
+      ],
+      "fact": "In 2003 she became the first Indian actress to serve on the jury of the Cannes Film Festival."
+    },
+    {
+      "id": "priyanka-chopra",
+      "name": "Priyanka Chopra",
+      "aliases": ["Priyanka Chopra Jonas"],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1982,
+      "region": "South Asia",
+      "difficulty": 2,
+      "clues": [
+        "Born in Jamshedpur in 1982, she spent part of her teens at school in the United States.",
+        "She won the Miss World title in 2000.",
+        "She played the boxer Mary Kom in a 2014 biopic.",
+        "She became the first South Asian actor to lead an American network drama, Quantico.",
+        "A Miss World turned Bollywood star, she married an American pop singer in 2018."
+      ],
+      "links": [
+        { "name": "India", "rel": "was born in" },
+        { "name": "Mary Kom", "rel": "played" }
+      ],
+      "fact": "She is also a singer and released her first English-language single in 2012."
+    },
+    {
+      "id": "nicole-kidman",
+      "name": "Nicole Kidman",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1967,
+      "region": "Oceania",
+      "difficulty": 2,
+      "clues": [
+        "Born in Hawaii in 1967 to Australian parents, she grew up in Sydney.",
+        "She became known as a teenager in the Australian film BMX Bandits.",
+        "She played a nightclub star in the musical Moulin Rouge!",
+        "She won Best Actress wearing a false nose to play Virginia Woolf in The Hours.",
+        "She was married to Tom Cruise, her co-star in Days of Thunder."
+      ],
+      "links": [
+        { "name": "Australia", "rel": "grew up in" },
+        { "name": "Sydney", "rel": "grew up in" },
+        { "name": "Tom Cruise", "rel": "co-starred with" }
+      ],
+      "fact": "She was the first Australian to win the Best Actress Oscar."
+    },
+    {
+      "id": "sophia-loren",
+      "name": "Sophia Loren",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1934,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in Rome in 1934, she grew up in poverty near Naples during the war.",
+        "She entered beauty contests as a teenager, which led to her first film roles.",
+        "She married the film producer Carlo Ponti.",
+        "She won Best Actress for Two Women, the first acting Oscar for a foreign-language role.",
+        "This Italian screen icon starred with Marcello Mastroianni in Marriage Italian Style."
+      ],
+      "links": [
+        { "name": "Italy", "rel": "is a film icon of" },
+        { "name": "Naples", "rel": "grew up near" },
+        { "name": "Rome", "rel": "was born in" }
+      ],
+      "fact": "She received an honorary Oscar in 1991 for her career."
+    },
+    {
+      "id": "angelina-jolie",
+      "name": "Angelina Jolie",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1975,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Los Angeles in 1975, she is the daughter of actor Jon Voight.",
+        "She won a supporting actress Oscar for Girl, Interrupted in 2000.",
+        "She played the tomb-raiding adventurer Lara Croft in two films.",
+        "She served as a Special Envoy for the UN refugee agency from 2012 to 2022.",
+        "She played the horned fairy Maleficent in the 2014 Disney film."
+      ],
+      "links": [
+        { "name": "Lara Croft", "rel": "played" },
+        { "name": "Los Angeles", "rel": "was born in" }
+      ],
+      "fact": "She has also directed films, including Unbroken in 2014."
+    },
+    {
+      "id": "emma-watson",
+      "name": "Emma Watson",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1990,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in Paris in 1990, she moved to England as a young child.",
+        "She was cast in her first film role at the age of nine.",
+        "She played Belle in the 2017 live-action Beauty and the Beast.",
+        "She became a UN Women Goodwill Ambassador in 2014, launching the HeForShe campaign.",
+        "She played the clever young witch Hermione Granger in the Harry Potter films."
+      ],
+      "links": [
+        { "name": "Harry Potter", "rel": "starred in the films of" },
+        { "name": "Paris", "rel": "was born in" }
+      ],
+      "fact": "She studied English literature at Brown University in the United States."
+    },
+    {
+      "id": "michelle-yeoh",
+      "name": "Michelle Yeoh",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1962,
+      "region": "Southeast Asia",
+      "difficulty": 2,
+      "clues": [
+        "Born in Ipoh, Malaysia, in 1962, she trained in ballet in London.",
+        "She was crowned Miss Malaysia in 1983.",
+        "She did her own stunts in Hong Kong action films, including one with Jackie Chan.",
+        "She played a spy in Tomorrow Never Dies and a warrior in Crouching Tiger, Hidden Dragon.",
+        "She became the first Asian woman to win Best Actress, for Everything Everywhere All at Once."
+      ],
+      "links": [
+        { "name": "Malaysia", "rel": "was born in" },
+        { "name": "Jackie Chan", "rel": "co-starred with" },
+        { "name": "Hong Kong", "rel": "made action films in" }
+      ],
+      "fact": "She won her Oscar in 2023, aged 60."
+    },
+    {
+      "id": "judi-dench",
+      "name": "Judi Dench",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1934,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in York in 1934, she made her name on stage at the Old Vic and with the RSC.",
+        "She starred in the long-running British sitcom As Time Goes By.",
+        "She was made a Dame in 1988.",
+        "She won an Oscar for about eight minutes on screen as Elizabeth I in Shakespeare in Love.",
+        "She played M, head of British intelligence, in the James Bond films from GoldenEye on."
+      ],
+      "links": [
+        { "name": "James Bond", "rel": "played M in films about" },
+        { "name": "York", "rel": "was born in" },
+        { "name": "United Kingdom", "rel": "is a stage and screen star of" }
+      ],
+      "fact": "She was the first woman to play M in the James Bond film series."
+    },
+    {
+      "id": "elizabeth-taylor",
+      "name": "Elizabeth Taylor",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1932,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in London in 1932 to American parents, she moved to Los Angeles as a child.",
+        "She became a child star in National Velvet, riding a horse in a big race.",
+        "She was married eight times, twice to the actor Richard Burton.",
+        "She won Best Actress for BUtterfield 8 and Who's Afraid of Virginia Woolf?",
+        "She played the Egyptian queen in the lavish 1963 epic Cleopatra."
+      ],
+      "links": [
+        { "name": "Cleopatra", "rel": "played" },
+        { "name": "London", "rel": "was born in" }
+      ],
+      "fact": "She was famous for her striking eyes, often described as violet."
+    },
+    {
+      "id": "gong-li",
+      "name": "Gong Li",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Actress",
+      "year": 1965,
+      "region": "East Asia",
+      "difficulty": 3,
+      "clues": [
+        "Born in Shenyang, China, in 1965, she trained at Beijing's Central Academy of Drama.",
+        "She made her debut in Red Sorghum, which won the Golden Bear in Berlin in 1988.",
+        "She worked closely with director Zhang Yimou on films like Raise the Red Lantern.",
+        "She starred in Farewell My Concubine, which shared the Palme d'Or in 1993.",
+        "She played the rival geisha Hatsumomo in the Hollywood film Memoirs of a Geisha."
+      ],
+      "links": [
+        { "name": "China", "rel": "was born in" },
+        { "name": "Beijing", "rel": "studied acting in" }
+      ],
+      "fact": "She won the Best Actress prize at the Venice Film Festival in 1992 for The Story of Qiu Ju."
+    },
+    {
+      "id": "alfred-hitchcock",
+      "name": "Alfred Hitchcock",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Director",
+      "year": 1899,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in London in 1899, he began in silent films designing title cards.",
+        "He moved to Hollywood in 1939, and his first film there, Rebecca, won Best Picture.",
+        "He made brief cameo appearances in most of his own films.",
+        "He hosted a TV mystery series, opening each episode with a dry 'Good evening'.",
+        "Called the 'Master of Suspense', he made Psycho, Vertigo and The Birds."
+      ],
+      "links": [
+        { "name": "London", "rel": "was born in" },
+        { "name": "Psycho", "rel": "directed" }
+      ],
+      "fact": "Despite five Best Director nominations, he never won that Oscar."
+    },
+    {
+      "id": "steven-spielberg",
+      "name": "Steven Spielberg",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Director",
+      "year": 1946,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Cincinnati, Ohio, in 1946, he made home movies as a boy.",
+        "He co-founded the film studio DreamWorks in 1994.",
+        "He won Best Director for Schindler's List and Saving Private Ryan.",
+        "His 1975 shark thriller is often called the first summer blockbuster.",
+        "He directed E.T. the Extra-Terrestrial and Jurassic Park."
+      ],
+      "links": [
+        { "name": "Jaws", "rel": "directed" },
+        { "name": "E.T. the Extra-Terrestrial", "rel": "directed" },
+        { "name": "Jurassic Park", "rel": "directed" }
+      ],
+      "fact": "He shot Jaws with a mechanical shark that broke down so often it is rarely seen."
+    },
+    {
+      "id": "stanley-kubrick",
+      "name": "Stanley Kubrick",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Director",
+      "year": 1928,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in New York City in 1928, he started out as a photographer for Look magazine.",
+        "He moved to England in the 1960s and made his later films there.",
+        "He was famous for demanding dozens of takes of a single shot.",
+        "His Cold War comedy Dr. Strangelove ends with a man riding a falling bomb.",
+        "He directed 2001: A Space Odyssey, with its calm but deadly computer HAL 9000."
+      ],
+      "links": [
+        { "name": "2001: A Space Odyssey", "rel": "directed" },
+        { "name": "New York City", "rel": "was born in" },
+        { "name": "United Kingdom", "rel": "made his later films in" }
+      ],
+      "fact": "His only Oscar win came for the special effects of 2001: A Space Odyssey."
+    },
+    {
+      "id": "akira-kurosawa",
+      "name": "Akira Kurosawa",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Director",
+      "year": 1910,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "Born in Tokyo in 1910, he first trained as a painter.",
+        "His film Rashomon won the Golden Lion in Venice in 1951.",
+        "He received an honorary Oscar in 1990 for his lifetime of work.",
+        "His films inspired the westerns The Magnificent Seven and A Fistful of Dollars.",
+        "He directed Seven Samurai, starring his favourite actor Toshiro Mifune."
+      ],
+      "links": [
+        { "name": "Seven Samurai", "rel": "directed" },
+        { "name": "Toshiro Mifune", "rel": "often worked with" },
+        { "name": "Tokyo", "rel": "was born in" }
+      ],
+      "fact": "George Lucas has said his film The Hidden Fortress helped inspire Star Wars."
+    },
+    {
+      "id": "hayao-miyazaki",
+      "name": "Hayao Miyazaki",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Director",
+      "year": 1941,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "Born in Tokyo in 1941, his family's company made aircraft parts during the war.",
+        "He co-founded an animation studio in 1985 named after a hot desert wind.",
+        "His hand-drawn films often feature flying machines, brave young heroines and nature.",
+        "His films won the Oscar for Best Animated Feature in 2003 and again in 2024.",
+        "He directed My Neighbor Totoro and Spirited Away at Studio Ghibli."
+      ],
+      "links": [
+        { "name": "Spirited Away", "rel": "directed" },
+        { "name": "My Neighbor Totoro", "rel": "directed" },
+        { "name": "Tokyo", "rel": "was born in" }
+      ],
+      "fact": "His second Oscar came for The Boy and the Heron, released in 2023."
+    },
+    {
+      "id": "james-cameron",
+      "name": "James Cameron",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Director",
+      "year": 1954,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in Ontario, Canada, in 1954, he drove a truck before making films.",
+        "In 2012 he dived alone to the Challenger Deep, the deepest known point of the ocean.",
+        "He directed The Terminator and its sequel, Judgment Day.",
+        "He made many deep-sea dives to the real wreck of a famous ocean liner.",
+        "He directed both Titanic and Avatar, each the highest-grossing film of its time."
+      ],
+      "links": [
+        { "name": "Titanic", "rel": "directed" },
+        { "name": "Avatar", "rel": "directed" },
+        { "name": "Canada", "rel": "was born in" }
+      ],
+      "fact": "Titanic won him three Oscars in one night: Best Picture, Best Director and Best Editing."
+    },
+    {
+      "id": "christopher-nolan",
+      "name": "Christopher Nolan",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Director",
+      "year": 1970,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in London in 1970, he made short films with his father's Super 8 camera as a boy.",
+        "His breakthrough film Memento tells its story backwards.",
+        "He prefers real effects, once crashing a real jumbo jet into a building for Tenet.",
+        "He directed The Dark Knight trilogy about Batman.",
+        "He directed Inception and won Best Director for Oppenheimer."
+      ],
+      "links": [
+        { "name": "Inception", "rel": "directed" },
+        { "name": "London", "rel": "was born in" },
+        { "name": "Leonardo DiCaprio", "rel": "directed" }
+      ],
+      "fact": "He often shoots on IMAX film cameras for huge, sharp images."
+    },
+    {
+      "id": "satyajit-ray",
+      "name": "Satyajit Ray",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Director",
+      "year": 1921,
+      "region": "South Asia",
+      "difficulty": 3,
+      "clues": [
+        "Born in Calcutta in 1921, he worked as a graphic designer at an advertising agency.",
+        "He also wrote popular children's books, including the Feluda detective stories.",
+        "He made his first film on a tiny budget, inspired by the Italian film Bicycle Thieves.",
+        "He received an honorary Oscar in 1992, shortly before his death.",
+        "He directed the Bengali Apu Trilogy, starting with Pather Panchali in 1955."
+      ],
+      "links": [
+        { "name": "Kolkata", "rel": "was born in" },
+        { "name": "India", "rel": "is a film legend of" }
+      ],
+      "fact": "He often wrote the music and designed the posters for his own films."
+    },
+    {
+      "id": "martin-scorsese",
+      "name": "Martin Scorsese",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Director",
+      "year": 1942,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in New York in 1942, he grew up in Little Italy and once planned to be a priest.",
+        "Childhood asthma kept him indoors, where he watched films constantly.",
+        "He has made many films with Robert De Niro and later with Leonardo DiCaprio.",
+        "He finally won Best Director for The Departed in 2007.",
+        "He directed Taxi Driver, Raging Bull and Goodfellas."
+      ],
+      "links": [
+        { "name": "Robert De Niro", "rel": "made many films with" },
+        { "name": "Leonardo DiCaprio", "rel": "made many films with" },
+        { "name": "New York City", "rel": "was born in" }
+      ],
+      "fact": "He founded The Film Foundation in 1990 to help restore old films."
+    },
+    {
+      "id": "george-lucas",
+      "name": "George Lucas",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Director",
+      "year": 1944,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in Modesto, California, in 1944, he dreamed of racing cars until a bad crash.",
+        "His 1973 film American Graffiti looked back at teenage life in the early 1960s.",
+        "He founded the visual effects company Industrial Light & Magic.",
+        "He created the adventurer Indiana Jones with his friend Steven Spielberg.",
+        "He created Star Wars and its villain Darth Vader."
+      ],
+      "links": [
+        { "name": "Star Wars", "rel": "created" },
+        { "name": "Raiders of the Lost Ark", "rel": "co-created" },
+        { "name": "Steven Spielberg", "rel": "is a friend of" }
+      ],
+      "fact": "He sold his company Lucasfilm to Disney in 2012."
+    },
+    {
+      "id": "peter-jackson",
+      "name": "Peter Jackson",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Director",
+      "year": 1961,
+      "region": "Oceania",
+      "difficulty": 2,
+      "clues": [
+        "Born in New Zealand in 1961, he made films as a boy with a Super 8 camera.",
+        "His first feature was a low-budget comedy shot with friends on weekends.",
+        "He remade the giant ape adventure King Kong in 2005.",
+        "He brought old First World War footage to life in colour in They Shall Not Grow Old.",
+        "He directed The Lord of the Rings trilogy, filmed in his home country."
+      ],
+      "links": [
+        { "name": "The Lord of the Rings", "rel": "directed films of" },
+        { "name": "New Zealand", "rel": "was born in" }
+      ],
+      "fact": "The Return of the King won all 11 Oscars it was nominated for."
+    },
+    {
+      "id": "bong-joon-ho",
+      "name": "Bong Joon-ho",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Director",
+      "year": 1969,
+      "region": "East Asia",
+      "difficulty": 3,
+      "clues": [
+        "Born in Daegu, South Korea, in 1969, he studied sociology at university.",
+        "His monster film The Host features a creature from the Han River in Seoul.",
+        "He made Snowpiercer, set on a train circling a frozen world.",
+        "His film Okja is about a girl and her giant pet pig.",
+        "His Parasite was the first non-English language film to win Best Picture."
+      ],
+      "links": [
+        { "name": "Parasite", "rel": "directed" },
+        { "name": "South Korea", "rel": "was born in" },
+        { "name": "Seoul", "rel": "set films in" }
+      ],
+      "fact": "Parasite won four Oscars in 2020, including Best Director and Best Picture."
+    },
+    {
+      "id": "charlie-chaplin",
+      "name": "Charlie Chaplin",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Comedian",
+      "year": 1889,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in London in 1889, he spent part of his poor childhood in a workhouse.",
+        "He toured America with Fred Karno's comedy troupe before joining films.",
+        "He co-founded the United Artists film studio in 1919.",
+        "He wrote the music for his own films, including the tune of the song 'Smile'.",
+        "His Little Tramp wore a bowler hat, baggy trousers and a small moustache."
+      ],
+      "links": [
+        { "name": "London", "rel": "was born in" },
+        { "name": "Buster Keaton", "rel": "acted alongside" }
+      ],
+      "fact": "He received an honorary Oscar in 1972 and a 12-minute standing ovation."
+    },
+    {
+      "id": "rowan-atkinson",
+      "name": "Rowan Atkinson",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Comedian",
+      "year": 1955,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in northern England in 1955, he studied electrical engineering at Oxford.",
+        "He played the scheming Edmund in the historical comedy Blackadder.",
+        "He played a fussy jewellery salesman in Love Actually.",
+        "He played a bumbling spy in the Johnny English films.",
+        "He created and played the clumsy, almost silent man with a teddy bear and a green Mini."
+      ],
+      "links": [
+        { "name": "Mr. Bean", "rel": "created and played" },
+        { "name": "United Kingdom", "rel": "was born in" }
+      ],
+      "fact": "He performed as his silent clown character at the London 2012 Olympics opening ceremony."
+    },
+    {
+      "id": "robin-williams",
+      "name": "Robin Williams",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Comedian",
+      "year": 1951,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Chicago in 1951, he trained at the Juilliard School in New York.",
+        "He became famous as an alien from the planet Ork in Mork & Mindy.",
+        "He won an Oscar for playing a therapist in Good Will Hunting.",
+        "He dressed as an elderly Scottish nanny in Mrs. Doubtfire.",
+        "He voiced the wisecracking Genie in Disney's 1992 film Aladdin."
+      ],
+      "links": [
+        { "name": "Aladdin", "rel": "voiced the Genie in" },
+        { "name": "Chicago", "rel": "was born in" }
+      ],
+      "fact": "He improvised so much as the Genie that hours of extra recordings were made."
+    },
+    {
+      "id": "jim-carrey",
+      "name": "Jim Carrey",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Comedian",
+      "year": 1962,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Ontario, Canada, in 1962, he did stand-up comedy as a teenager in Toronto.",
+        "He became known on the sketch comedy show In Living Color.",
+        "He played a man whose whole life is secretly a TV show in The Truman Show.",
+        "He played the green Christmas-hating Grinch in a 2000 film.",
+        "His rubbery face made Ace Ventura: Pet Detective and The Mask big hits."
+      ],
+      "links": [
+        { "name": "Canada", "rel": "was born in" },
+        { "name": "The Truman Show", "rel": "starred in" }
+      ],
+      "fact": "He won Golden Globes for The Truman Show and Man on the Moon."
+    },
+    {
+      "id": "buster-keaton",
+      "name": "Buster Keaton",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Comedian",
+      "year": 1895,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "Born in Kansas in 1895, he performed in his parents' vaudeville act as a toddler.",
+        "He was called 'The Great Stone Face' because he almost never smiled on screen.",
+        "He did his own stunts, once letting the front of a house fall around him.",
+        "His 1926 Civil War comedy The General is about a stolen train.",
+        "With Charlie Chaplin, he was a great silent comedy star, known for his flat pork-pie hat."
+      ],
+      "links": [
+        { "name": "Charlie Chaplin", "rel": "acted alongside" },
+        { "name": "United States", "rel": "was born in" }
+      ],
+      "fact": "He received an honorary Oscar in 1960."
+    },
+    {
+      "id": "eddie-murphy",
+      "name": "Eddie Murphy",
+      "aliases": [],
+      "category": "stars",
+      "sub": "Comedian",
+      "year": 1961,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in Brooklyn in 1961, he joined Saturday Night Live at just 19.",
+        "He played a fast-talking Detroit police officer in Beverly Hills Cop.",
+        "He played nearly a whole family under heavy makeup in The Nutty Professor.",
+        "He played an African prince looking for a bride in New York in Coming to America.",
+        "He voiced the chatty talking Donkey in Shrek."
+      ],
+      "links": [
+        { "name": "Shrek", "rel": "voiced Donkey in" },
+        { "name": "New York City", "rel": "was born in" }
+      ],
+      "fact": "He voiced the little dragon Mushu in Disney's 1998 film Mulan."
+    },
+    {
+      "id": "oprah-winfrey",
+      "name": "Oprah Winfrey",
+      "aliases": [],
+      "category": "stars",
+      "sub": "TV Host",
+      "year": 1954,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in rural Mississippi in 1954, she became a TV news anchor in Nashville at 19.",
+        "She was nominated for an Oscar for her role in The Color Purple.",
+        "She named her production company Harpo, her first name spelled backwards.",
+        "Her book club turned many novels into instant bestsellers.",
+        "Her daytime talk show ran nationally from 1986 to 2011, making her the 'Queen of Talk'."
+      ],
+      "links": [
+        { "name": "The Color Purple", "rel": "acted in" },
+        { "name": "Chicago", "rel": "made her talk show in" }
+      ],
+      "fact": "She opened a leadership academy for girls in South Africa in 2007."
+    },
+    {
+      "id": "david-attenborough",
+      "name": "David Attenborough",
+      "aliases": [],
+      "category": "stars",
+      "sub": "TV Host",
+      "year": 1926,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in 1926, he joined the BBC in 1952 and later ran its second channel.",
+        "His brother Richard was an Oscar-winning film director.",
+        "He wrote and presented the landmark series Life on Earth in 1979.",
+        "A British polar research ship was named after him.",
+        "This much-loved naturalist narrated Planet Earth and Blue Planet."
+      ],
+      "links": [
+        { "name": "Planet Earth", "rel": "narrated" },
+        { "name": "London", "rel": "was born in" }
+      ],
+      "fact": "He has made programmes for the BBC in every decade since the 1950s."
+    },
+    {
+      "id": "ellen-degeneres",
+      "name": "Ellen DeGeneres",
+      "aliases": [],
+      "category": "stars",
+      "sub": "TV Host",
+      "year": 1958,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in Louisiana in 1958, she began as a stand-up comedian in New Orleans clubs.",
+        "She starred in her own self-titled sitcom in the 1990s.",
+        "She hosted the Oscars in 2007 and 2014, taking a famous group selfie.",
+        "She voiced the forgetful blue fish Dory in Finding Nemo.",
+        "Her daytime talk show, famous for dancing and giveaways, ran from 2003 to 2022."
+      ],
+      "links": [
+        { "name": "Finding Nemo", "rel": "voiced Dory in" },
+        { "name": "United States", "rel": "was born in" }
+      ],
+      "fact": "She received the Presidential Medal of Freedom in 2016."
+    },
+    {
+      "id": "johnny-carson",
+      "name": "Johnny Carson",
+      "aliases": [],
+      "category": "stars",
+      "sub": "TV Host",
+      "year": 1925,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "Born in Iowa in 1925, he performed as a teenage magician before serving in the US Navy.",
+        "He began his famous late-night hosting run in October 1962.",
+        "His comic characters included the turbaned mind reader Carnac the Magnificent.",
+        "His farewell in May 1992 ended thirty years at the same desk.",
+        "Known as the 'King of Late Night', he hosted The Tonight Show for three decades."
+      ],
+      "links": [
+        { "name": "The Tonight Show", "rel": "hosted" },
+        { "name": "United States", "rel": "was born in" }
+      ],
+      "fact": "His opening golf-swing gesture became one of television's most famous habits."
+    }
+  ]
+}

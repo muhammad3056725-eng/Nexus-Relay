@@ -2,224 +2,34 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEXUS RELAY — Signal Triangulation</title>
-<meta name="description" content="A sleek mystery-deduction guessing game. You always know WHAT the mystery guest is — a footballer, a city, a film. You get 10 guesses, free clues and warmer/colder feedback to work out WHO.">
-<meta property="og:title" content="NEXUS RELAY">
-<meta property="og:description" content="You know what it is. Can you guess who it is? Ten guesses. Free hints. One mystery guest.">
-<meta property="og:image" content="assets/switchboard-diorama.svg">
-<link rel="icon" type="image/svg+xml" href="assets/nexus-emblem.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="src/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#050816">
+<meta name="color-scheme" content="dark">
+<title>NEXUS RELAY — Catch the clues. Name the mystery.</title>
+<meta name="description" content="A friendly mystery-clue game. Five clues, from vague to obvious, and four answers to pick from. Name the famous person, place, film, animal or invention as early as you can. Free, no sign-up, plays in your browser.">
+<link rel="canonical" href="https://muhammad3056725-eng.github.io/Nexus-Relay/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NEXUS RELAY">
+<meta property="og:title" content="NEXUS RELAY — Catch the clues. Name the mystery.">
+<meta property="og:description" content="Five clues, four answers, one mystery. A new Daily Broadcast every day — can you name it on the first clue?">
+<meta property="og:url" content="https://muhammad3056725-eng.github.io/Nexus-Relay/">
+<meta property="og:image" content="https://muhammad3056725-eng.github.io/Nexus-Relay/public/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NEXUS RELAY — a glowing signal network and the robot host VEX-09">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NEXUS RELAY">
+<meta name="twitter:description" content="Five clues, four answers, one mystery. A new Daily Broadcast every day.">
+<meta name="twitter:image" content="https://muhammad3056725-eng.github.io/Nexus-Relay/public/og-image.png">
+<link rel="icon" type="image/svg+xml" href="./assets/nexus-emblem.svg">
 </head>
 <body>
-<div class="bg-diorama" aria-hidden="true"></div>
-
-<header class="topbar">
-  <img class="emblem" src="assets/nexus-emblem.svg" alt="Nexus Relay emblem" onerror="this.style.display='none'">
-  <div class="title-block">
-    <h1>NEXUS&nbsp;RELAY</h1>
-    <p class="tagline">SIGNAL ARCHIVIST CONSOLE · DEEP-BAND DIVISION</p>
-  </div>
-  <div class="top-actions">
-    <button id="pause-btn" class="px-btn" type="button" hidden>⏸ PAUSE</button>
-    <button id="settings-btn" class="px-btn" type="button" hidden>⚙ SETTINGS</button>
-    <button id="menu-btn" class="px-btn" type="button" hidden>☰ MENU</button>
-  </div>
-</header>
-
-<!-- ================= MAIN MENU ================= -->
-<section id="screen-menu" class="screen">
-  <div class="panel menu-panel">
-    <div class="panel-head">MAIN MENU · SIGNAL ARCHIVIST CONSOLE</div>
-    <div class="mascot-row menu-mascot">
-      <img class="mascot-art" src="assets/vex09-keyart.svg" alt="VEX-09, your relay operator" onerror="this.style.display='none'">
-      <div class="mascot-speech">
-        <div class="panel-head small">VEX-09 · OPERATOR</div>
-        <p id="menu-line">Console warm, Archivist. One mystery guest per round — you always know what KIND of guest, never who. Ten guesses, free clues. Pick your band.</p>
-      </div>
-    </div>
-    <nav class="menu-list" aria-label="Main menu">
-      <button id="menu-start" class="px-btn menu-item" type="button">▶ START <span class="menu-sub">free signal · friendly band</span></button>
-      <button id="mode-daily" class="px-btn menu-item" type="button">📡 DAILY BROADCAST <span class="menu-sub">today's shared signal</span></button>
-      <button id="mode-endless" class="px-btn menu-item" type="button">🌀 ENDLESS EXPEDITION <span class="menu-sub">staged bands · 3 strikes</span></button>
-      <button id="tutorial-btn" class="px-btn menu-item" type="button">? FIELD TRAINING <span class="menu-sub">guided practice round</span></button>
-      <button id="menu-settings" class="px-btn menu-item" type="button">⚙ SETTINGS <span class="menu-sub">sound · display glow · accessibility</span></button>
-    </nav>
-    <label class="hardcore-toggle menu-hardcore"><input type="checkbox" id="hardcore"> ZERO-CLUE HARDCORE — relays sealed (Daily / Endless)</label>
-    <div id="menu-vault-line" class="hint menu-vault">Best score: — · Relics stored: 0</div>
-  </div>
-</section>
-
-<!-- ================= GAME CONSOLE ================= -->
-<main id="screen-game" class="console-grid" hidden>
-  <!-- LEFT: SIGNAL CORE + MASCOT + OSCILLOSCOPE -->
-  <section class="panel core-panel">
-    <div class="panel-head">SIGNAL CONTAINMENT CORE</div>
-    <canvas id="scene" width="480" height="270"></canvas>
-    <div class="core-status">
-      <span id="core-label">SIGNAL INTERCEPTED — ENTITY SEALED</span>
-      <span id="round-label"></span>
-    </div>
-    <div class="scope-wrap">
-      <div class="panel-head small">OSCILLOSCOPE · CARRIER WAVE</div>
-      <canvas id="scope" width="456" height="64"></canvas>
-    </div>
-    <div class="mascot-row">
-      <img class="mascot-art" src="assets/vex09-keyart.svg" alt="VEX-09, your relay operator" onerror="this.style.display='none'">
-      <div class="mascot-speech">
-        <div class="panel-head small">VEX-09 · OPERATOR</div>
-        <p id="mascot-line">A mystery guest is hiding in the core, Archivist. You know what KIND of guest — now guess WHO. Ten guesses, free clues.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CENTER: THE CASUAL GAME — type banner, free clues, guess box, feed -->
-  <section class="panel deck-panel">
-    <div class="panel-head">WHO'S THE MYSTERY GUEST?</div>
-
-    <div id="mystery-banner" class="mystery-banner">
-      <span class="mystery-lead">🕵️ THE MYSTERY GUEST IS</span>
-      <span id="type-label" class="type-label">…</span>
-      <span class="mystery-sub">You always know WHAT they are. Your job: guess WHO.</span>
-    </div>
-
-    <div id="clue-box" class="clue-box">
-      <div class="panel-head small">🎁 YOUR CLUES — FREE, ALWAYS</div>
-      <p id="start-clue" class="clue-line">A free starting clue lands here when the round begins.</p>
-      <div id="hint-list"></div>
-      <button id="hint-btn" class="px-btn" type="button">💡 HINT — FREE</button>
-      <p class="hint">Hints cost nothing — no guesses, no score. Stuck is what hints are for.</p>
-    </div>
-
-    <div class="probes-row">
-      <span class="probes-label">GUESSES LEFT</span>
-      <span id="guess-pips" class="probe-pips"></span>
-      <button id="begin-btn" class="px-btn big" type="button">▶ START GUESSING</button>
-    </div>
-
-    <div class="hypothesis-box">
-      <div class="panel-head small">NAME YOUR GUESS</div>
-      <div class="input-row">
-        <input id="hypothesis-input" type="text" autocomplete="off" spellcheck="false"
-               placeholder="Type any real-world name…" aria-label="Your guess">
-        <button id="ping-btn" class="px-btn" type="button">GUESS 🎯</button>
-      </div>
-      <div id="autocomplete" class="autocomplete" hidden></div>
-      <p class="hint">Every guess answers back: 🔥 warmer / ❄️ colder · ⬆️ newer / ⬇️ older · ✅ same field / ❌ different field.</p>
-    </div>
-
-    <div id="guess-feed" class="guess-feed">
-      <p class="hint">No guesses yet — type a name above and take your first shot. Every guess teaches you something.</p>
-    </div>
-
-    <div id="overclock-box" class="overclock-box" hidden>
-      <div class="panel-head small overclock-head">⚡ OVERCLOCK SURGE · <span id="overclock-timer">15.0</span>s ⚡</div>
-      <p class="hint">The solved node ignites outgoing beams. Name connected entities before the capacitor drains — each valid link adds ×0.5.</p>
-      <div id="beam-list" class="beam-list"></div>
-      <div class="input-row">
-        <input id="bridge-input" type="text" autocomplete="off" spellcheck="false"
-               placeholder="Name a connected entity…" aria-label="Connected entity name">
-        <button id="bridge-btn" class="px-btn" type="button">LINK ⚡</button>
-      </div>
-      <div id="bridge-autocomplete" class="autocomplete" hidden></div>
-      <div id="bridge-log" class="bridge-log"></div>
-    </div>
-
-    <div id="results-box" class="results-box" hidden>
-      <div class="panel-head small">SIGNAL INTEGRITY REPORT</div>
-      <div id="results-body"></div>
-      <canvas id="relic-canvas" width="64" height="64"></canvas>
-      <pre id="share-card" class="share-card"></pre>
-      <div class="input-row">
-        <button id="copy-share" class="px-btn" type="button">COPY SIGNAL TRACE</button>
-        <button id="again-btn" class="px-btn" type="button">NEW SIGNAL</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- RIGHT: DETAILS DRAWER — deep telemetry, relays, vault, manual.
-       Hidden by default (casual rebuild, Nov 26): the casual game
-       lives in the centre panel; everything deep waits behind this tap. -->
-  <section class="panel telemetry-panel" id="details-panel">
-    <button id="details-btn" class="px-btn details-toggle" type="button" aria-expanded="false">🔍 DETAILS — DEEP TELEMETRY ▸</button>
-    <div id="details-body" hidden>
-      <div class="tab-row" role="tablist" aria-label="Details drawers">
-        <button id="tab-telemetry" class="px-btn tab-btn active" type="button" role="tab">TELEMETRY</button>
-        <button id="tab-relays" class="px-btn tab-btn" type="button" role="tab">RELAYS</button>
-        <button id="tab-vault" class="px-btn tab-btn" type="button" role="tab">RELIC VAULT</button>
-        <button id="tab-manual" class="px-btn tab-btn" type="button" role="tab">FIELD MANUAL</button>
-      </div>
-      <div id="tabpage-telemetry">
-        <div id="telemetry-log" class="telemetry-log">
-          <p class="hint">No guesses yet. Every guess also lands here as a full five-axis readout: ERA · SPACE · DOMAIN · GRAPH HOPS · NOTABILITY.</p>
-        </div>
-      </div>
-      <div id="tabpage-relays" hidden>
-        <div class="panel-head small">FREQUENCY RELAYS · <span id="multiplier-readout">MULTIPLIER ×1.00</span></div>
-        <div id="relay-deck"></div>
-        <div class="probes-row">
-          <span class="probes-label">SIGNAL PROBES</span>
-          <span id="probe-pips" class="probe-pips"></span>
-        </div>
-        <p class="hint">The old-school path: TUNING a relay decrypts its clue the hard way — it spends 1 guess and trims your score multiplier by 9%. The casual HINT button shows the same clues for free; the deck is here for Archivists who like the ritual.</p>
-      </div>
-      <div id="tabpage-vault" hidden>
-        <div class="panel-head small">RELIC VAULT</div>
-        <div id="vault-line" class="hint">Best score: — · Relics stored: 0</div>
-        <p class="hint">Every locked target mints a holographic relic card in the vault, framed by the rank you earned. Practice rounds never mint.</p>
-      </div>
-      <div id="tabpage-manual" hidden>
-        <div class="panel-head small">FIELD MANUAL</div>
-        <p class="hint">The casual game: you always know the guest's <b>TYPE</b>. You have <b>10 guesses</b>. Each guess answers 🔥 warmer / ❄️ colder, ⬆️ newer / ⬇️ older, ✅ same field / ❌ different field. You start with a <b>free clue</b>, and the <b>💡 HINT</b> button reveals more — hints never cost guesses or score. Name the guest exactly to trigger the <b>15-second Overclock</b>: name things connected to them to multiply your score up to ×2.5.</p>
-        <p class="hint">Scoring: BASE = 1,000 × (guesses left ÷ 10), plus a closeness bonus up to 250 for warm misses, all × your Overclock multiplier. The deep stuff — five-axis telemetry and the relay deck — lives in the other DETAILS tabs, for when you want the instruments.</p>
-        <p class="hint">Reading a telemetry row: <b>((O))</b> exact · <b>▲</b> warm — the trail is closing · <b>■</b> cold — pivot on your strongest axis. The SIGNAL HEAT meter is your best axis talking: follow whichever of ERA, SPACE or GRAPH burns hottest.</p>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- ================= SETTINGS ================= -->
-<section id="screen-settings" class="screen" hidden>
-  <div class="panel settings-panel">
-    <div class="panel-head">CONSOLE SETTINGS</div>
-    <div class="a11y-box settings-list">
-      <label>Display glow
-        <select id="crt-select">
-          <option value="off">OFF — clean render</option>
-          <option value="subtle" selected>SUBTLE — soft signal glow</option>
-          <option value="full">FULL — radiant bloom</option>
-        </select>
-      </label>
-      <label><input type="checkbox" id="reduced-motion"> Reduced motion</label>
-      <label><input type="checkbox" id="high-contrast"> High contrast</label>
-      <label><input type="checkbox" id="font-toggle"> Hi-legibility font (Inter, larger spacing)</label>
-      <label><input type="checkbox" id="sound-toggle" checked> Sound (Web Audio synth)</label>
-    </div>
-    <button id="settings-back" class="px-btn big" type="button">◀ BACK</button>
-  </div>
-</section>
-
-<!-- ================= PAUSE OVERLAY ================= -->
-<div id="pause-overlay" class="pause-overlay" hidden>
-  <div class="panel pause-panel" role="dialog" aria-label="Paused">
-    <div class="panel-head">⏸ PAUSED</div>
-    <div class="menu-list">
-      <button id="resume-btn" class="px-btn menu-item" type="button">▶ RESUME</button>
-      <button id="pause-settings-btn" class="px-btn menu-item" type="button">⚙ SETTINGS</button>
-      <button id="quit-btn" class="px-btn menu-item" type="button">☰ QUIT TO MENU</button>
-    </div>
-    <p class="hint">Quitting abandons the current signal. The Overclock surge runs in real time and cannot be paused.</p>
-  </div>
-</div>
-
-<footer class="footer">
-  <span id="dataset-line">Loading dataset…</span>
-  <span class="footer-note">NEXUS RELAY · Phase 1 starter corpus · Full 250k-node corpus ships with the data pipeline (see README)</span>
-</footer>
-
-<script type="module" src="/src/main.ts"></script>
+<canvas id="space" aria-hidden="true"></canvas>
+<main id="app" class="app"></main>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<div id="sr-live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<noscript><p style="color:#fff;padding:24px;font-family:system-ui">NEXUS RELAY needs JavaScript to play.</p></noscript>
+<script type="module" src="./src/main.ts"></script>
 </body>
 </html>

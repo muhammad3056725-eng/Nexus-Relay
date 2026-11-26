@@ -1,16 +1,15 @@
 {
-  "dependencies": {
-    "@nexus-relay/shared-types": "*",
-    "@nexus-relay/telemetry-engine": "*"
-  },
   "name": "@nexus-relay/web",
+  "version": "2.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "vite build",
     "dev": "vite",
-    "preview": "vite preview",
+    "build": "vite build",
     "test": "vitest run"
   },
-  "type": "module",
-  "version": "0.1.0"
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.1.0",
+    "@fontsource-variable/space-grotesk": "^5.1.0"
+  }
 }

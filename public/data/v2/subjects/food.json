@@ -1,0 +1,1166 @@
+{
+  "category": "food",
+  "subjects": [
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "The traditional art of making its Neapolitan version is on UNESCO's heritage list.",
+        "Classic versions bake in a wood-fired oven at about 450 °C in around 90 seconds.",
+        "A version topped with tomato, mozzarella and basil is said to honour a queen of 1889.",
+        "In New York City it is often sold by the slice.",
+        "The round flatbread with tomato sauce and melted cheese, born in Naples."
+      ],
+      "links": [
+        { "name": "Naples", "rel": "was born in" },
+        { "name": "Italy", "rel": "comes from" }
+      ],
+      "fact": "The Margherita's red, white and green toppings match the colours of the Italian flag."
+    },
+    {
+      "id": "sushi",
+      "name": "Sushi",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "It began long ago as a way of preserving fish packed in fermenting rice.",
+        "Its rice is seasoned with vinegar, sugar and salt.",
+        "Nigiri and maki rolls are two of its most popular forms.",
+        "It is usually served with pickled ginger, soy sauce and wasabi.",
+        "The Japanese dish of vinegared rice with raw fish, often rolled in seaweed."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "comes from" },
+        { "name": "Tokyo", "rel": "took its modern form in" },
+        { "name": "Wasabi", "rel": "is served with" }
+      ],
+      "fact": "Modern hand-pressed nigiri began as fast food at street stalls in Edo, now Tokyo."
+    },
+    {
+      "id": "paella",
+      "name": "Paella",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It takes its name from the wide, shallow pan it is cooked in.",
+        "Its original version used rabbit, chicken and green beans rather than seafood.",
+        "The crispy layer of rice stuck to the bottom of the pan is called socarrat.",
+        "Saffron gives its rice a golden yellow colour.",
+        "The famous rice dish of Valencia in Spain."
+      ],
+      "links": [
+        { "name": "Valencia", "rel": "comes from" },
+        { "name": "Spain", "rel": "is a national favourite of" },
+        { "name": "Saffron", "rel": "is coloured with" }
+      ],
+      "fact": "Traditionally it is cooked outdoors over a wood fire."
+    },
+    {
+      "id": "taco",
+      "name": "Taco",
+      "aliases": ["Tacos"],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "One popular filling, al pastor, was inspired by Lebanese immigrants' spit-roasted meat.",
+        "In its homeland it is usually made with small, soft corn tortillas.",
+        "It is often topped with onion, coriander, salsa and a squeeze of lime.",
+        "Crunchy hard-shell versions became popular in the United States.",
+        "The folded tortilla filled with meat, a classic street food of Mexico."
+      ],
+      "links": [
+        { "name": "Mexico", "rel": "comes from" },
+        { "name": "Mexico City", "rel": "is a street-food star of" }
+      ],
+      "fact": "Corn tortillas have been made in Mexico for thousands of years."
+    },
+    {
+      "id": "hamburger",
+      "name": "Hamburger",
+      "aliases": ["Burger"],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Its name points to a big port city in northern Germany.",
+        "Several American towns claim to have served the very first one, around 1900.",
+        "A 'slider' is a small version of it.",
+        "It is usually served with ketchup, lettuce, cheese and pickles.",
+        "The minced-beef patty in a bun, best known from McDonald's."
+      ],
+      "links": [
+        { "name": "United States", "rel": "became a symbol of" },
+        { "name": "McDonald's", "rel": "is the best-known item at" },
+        { "name": "Germany", "rel": "is named after a city in" }
+      ],
+      "fact": "The cheeseburger was popularised in the United States in the 1920s and 1930s."
+    },
+    {
+      "id": "ramen",
+      "name": "Ramen",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "It came to Japan from China and boomed in popularity in the 20th century.",
+        "Tonkotsu, shoyu and miso are popular styles of its broth.",
+        "Momofuku Ando invented an instant version of it in 1958.",
+        "In Japan, slurping it noisily is perfectly polite.",
+        "The Japanese noodle soup often topped with a soft egg and sliced pork."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "is a favourite of" },
+        { "name": "China", "rel": "came from" }
+      ],
+      "fact": "Yokohama has a museum dedicated to it, and Osaka has one for instant noodles."
+    },
+    {
+      "id": "pad-thai",
+      "name": "Pad Thai",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "Southeast Asia",
+      "difficulty": 2,
+      "clues": [
+        "It was promoted as a national dish by the government in the 1930s and 1940s.",
+        "It is made with flat rice noodles stir-fried in a wok.",
+        "Tamarind gives its sauce a sweet and sour taste.",
+        "It is usually served with crushed peanuts, bean sprouts and a wedge of lime.",
+        "The most famous stir-fried noodle dish of Bangkok's street stalls."
+      ],
+      "links": [
+        { "name": "Thailand", "rel": "is a national dish of" },
+        { "name": "Bangkok", "rel": "is sold all over" }
+      ],
+      "fact": "Its full name means 'stir-fried in the Thai style'."
+    },
+    {
+      "id": "fish-and-chips",
+      "name": "Fish and Chips",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "The first shops selling it are thought to have opened in the 1860s.",
+        "It was one of the few foods never rationed in Britain during World War II.",
+        "It is traditionally made with cod or haddock in crispy batter.",
+        "It is often served with mushy peas and a splash of malt vinegar.",
+        "Britain's classic takeaway of battered fish with thick fried potatoes."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "is a classic of" },
+        { "name": "London", "rel": "was first sold in" }
+      ],
+      "fact": "It was traditionally wrapped in old newspaper to keep it warm."
+    },
+    {
+      "id": "biryani",
+      "name": "Biryani",
+      "aliases": ["Biriyani"],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "South Asia",
+      "difficulty": 2,
+      "clues": [
+        "Its name is thought to come from a Persian word meaning 'fried' or 'roasted'.",
+        "The cities of Hyderabad and Lucknow are both famous for their own styles.",
+        "Spiced meat and partly cooked rice are layered in a pot, then slow-cooked.",
+        "Long-grain basmati rice and saffron are key ingredients.",
+        "The fragrant layered rice dish loved across India, Pakistan and Bangladesh."
+      ],
+      "links": [
+        { "name": "India", "rel": "is a favourite of" },
+        { "name": "Hyderabad", "rel": "has a famous style from" },
+        { "name": "Saffron", "rel": "is flavoured with" }
+      ],
+      "fact": "The slow-cooking method, with the pot sealed by dough, is called 'dum'."
+    },
+    {
+      "id": "kimchi",
+      "name": "Kimchi",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "Families traditionally make huge batches of it together each autumn.",
+        "It is made by salting and fermenting vegetables with garlic, ginger and chilli.",
+        "Napa cabbage is its most common main ingredient.",
+        "People in South Korea may say its name instead of 'cheese' when posing for photos.",
+        "The spicy fermented cabbage served with almost every Korean meal."
+      ],
+      "links": [
+        { "name": "South Korea", "rel": "is a national dish of" },
+        { "name": "Seoul", "rel": "has a museum about it in" }
+      ],
+      "fact": "The autumn tradition of making it together, kimjang, is on UNESCO's heritage list."
+    },
+    {
+      "id": "peking-duck",
+      "name": "Peking Duck",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "It has been prepared in the Chinese capital since imperial times.",
+        "Air is pumped under the skin to separate it from the fat before roasting.",
+        "The bird is glazed and roasted until its skin is crisp and shiny.",
+        "Thin slices are rolled in pancakes with spring onion and a sweet sauce.",
+        "China's famous crispy roast waterfowl, carved at the table in Beijing."
+      ],
+      "links": [
+        { "name": "Beijing", "rel": "comes from" },
+        { "name": "China", "rel": "is a national dish of" }
+      ],
+      "fact": "Skilled chefs may carve one into more than 100 thin slices."
+    },
+    {
+      "id": "falafel",
+      "name": "Falafel",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "Middle East",
+      "difficulty": 2,
+      "clues": [
+        "Many food historians think it began in Egypt, made with fava beans.",
+        "In much of the Levant it is made with chickpeas instead.",
+        "The spiced mixture is shaped into balls or patties and deep-fried.",
+        "It is often stuffed into pita bread with salad and tahini sauce.",
+        "The crispy fried chickpea balls loved across the Middle East."
+      ],
+      "links": [
+        { "name": "Egypt", "rel": "is thought to come from" },
+        { "name": "Lebanon", "rel": "is a street food of" }
+      ],
+      "fact": "In Egypt it is known as ta'ameya."
+    },
+    {
+      "id": "pho",
+      "name": "Pho",
+      "aliases": ["Phở"],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "Southeast Asia",
+      "difficulty": 3,
+      "clues": [
+        "It is thought to have appeared in northern Vietnam in the early 20th century.",
+        "Its broth simmers for hours with beef bones, star anise and cinnamon.",
+        "It is served with flat rice noodles and thin slices of beef or chicken.",
+        "Diners add fresh herbs, lime and chilli at the table.",
+        "Vietnam's famous noodle soup, a breakfast favourite in Hanoi."
+      ],
+      "links": [
+        { "name": "Vietnam", "rel": "is a national dish of" },
+        { "name": "Hanoi", "rel": "comes from" }
+      ],
+      "fact": "Raw beef slices are often added at the end and cook in the hot broth."
+    },
+    {
+      "id": "poutine",
+      "name": "Poutine",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dish",
+      "year": null,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "It first appeared in rural Quebec in the 1950s.",
+        "Its name is often said to be local slang for 'a mess'.",
+        "Its cheese curds should squeak when you bite them.",
+        "Hot gravy is poured over it just before serving.",
+        "Canada's famous dish of chips topped with cheese curds and gravy."
+      ],
+      "links": [
+        { "name": "Canada", "rel": "is a national dish of" },
+        { "name": "Montreal", "rel": "is a late-night favourite in" }
+      ],
+      "fact": "Several towns in Quebec claim to have invented it."
+    },
+    {
+      "id": "tiramisu",
+      "name": "Tiramisu",
+      "aliases": ["Tiramisù"],
+      "category": "food",
+      "sub": "Dessert",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It is thought to have been created in northeast Italy in the 1960s or 1970s.",
+        "Its name means 'pick me up' or 'cheer me up'.",
+        "Ladyfinger biscuits are dipped in strong coffee.",
+        "It is layered with a whipped mixture of mascarpone, eggs and sugar.",
+        "The no-bake Italian dessert finished with a dusting of cocoa powder."
+      ],
+      "links": [
+        { "name": "Italy", "rel": "comes from" },
+        { "name": "Coffee", "rel": "is soaked in" }
+      ],
+      "fact": "The town of Treviso, near Venice, is its most famous claimed birthplace."
+    },
+    {
+      "id": "baklava",
+      "name": "Baklava",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dessert",
+      "year": null,
+      "region": "Middle East",
+      "difficulty": 2,
+      "clues": [
+        "Its modern form was perfected in the palace kitchens of Ottoman Istanbul.",
+        "It is made from many paper-thin layers of filo pastry.",
+        "Chopped pistachios or walnuts fill the layers.",
+        "After baking it is soaked in sweet syrup or honey.",
+        "The sticky, nutty pastry diamonds famous in Turkey and Greece."
+      ],
+      "links": [
+        { "name": "Turkey", "rel": "is a famous sweet of" },
+        { "name": "Istanbul", "rel": "was perfected in" },
+        { "name": "Greece", "rel": "is also loved in" }
+      ],
+      "fact": "Gaziantep in Turkey is famous for its pistachio version."
+    },
+    {
+      "id": "creme-brulee",
+      "name": "Crème Brûlée",
+      "aliases": ["Creme Brulee"],
+      "category": "food",
+      "sub": "Dessert",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "A recipe for it appears in a French cookbook from 1691.",
+        "Trinity College in Cambridge has its own claim to a version of it.",
+        "It is a rich custard baked gently in a water bath.",
+        "Its top is sprinkled with sugar and caramelised with a blowtorch or grill.",
+        "The French dessert whose name means 'burnt cream', cracked with a spoon."
+      ],
+      "links": [
+        { "name": "France", "rel": "comes from" },
+        { "name": "Vanilla", "rel": "is flavoured with" }
+      ],
+      "fact": "In the 2001 film Amélie, the heroine loves cracking its crust with a spoon."
+    },
+    {
+      "id": "ice-cream",
+      "name": "Ice Cream",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dessert",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "Ancient Persians and Chinese enjoyed early frozen treats made with snow.",
+        "A hand-cranked freezer for making it was patented by Nancy Johnson in 1843.",
+        "The waffle cone was popularised at the 1904 World's Fair in St. Louis.",
+        "Neapolitan versions combine chocolate, vanilla and strawberry.",
+        "The frozen dairy dessert served in scoops in a cone or a bowl."
+      ],
+      "links": [
+        { "name": "Vanilla", "rel": "is most often flavoured with" },
+        { "name": "Chocolate", "rel": "is often flavoured with" }
+      ],
+      "fact": "Vanilla is the most popular flavour in many countries."
+    },
+    {
+      "id": "cheesecake",
+      "name": "Cheesecake",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dessert",
+      "year": null,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Ancient Greeks are said to have served an early version to athletes.",
+        "Its New York style is made dense and rich with cream cheese.",
+        "Its base is usually crushed biscuits or graham crackers mixed with butter.",
+        "It is often topped with strawberries or a fruit sauce.",
+        "The chilled dessert with a smooth cream-cheese filling on a crumbly base."
+      ],
+      "links": [
+        { "name": "New York City", "rel": "has a famous style from" },
+        { "name": "Strawberry", "rel": "is often topped with" }
+      ],
+      "fact": "Cream cheese, its key ingredient, was developed in New York State in the 1870s."
+    },
+    {
+      "id": "churros",
+      "name": "Churros",
+      "aliases": ["Churro"],
+      "category": "food",
+      "sub": "Dessert",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "They are made from a simple dough of flour, water and salt.",
+        "The dough is piped through a star-shaped nozzle, giving them ridges.",
+        "They are deep-fried, then rolled in sugar and sometimes cinnamon.",
+        "In Spain they are often eaten for breakfast, dipped in thick hot chocolate.",
+        "Long, ridged sticks of fried dough loved in Spain and Mexico."
+      ],
+      "links": [
+        { "name": "Spain", "rel": "come from" },
+        { "name": "Mexico", "rel": "are hugely popular in" },
+        { "name": "Hot Chocolate", "rel": "are dipped in" }
+      ],
+      "fact": "In Madrid, a thicker version is called a 'porra'."
+    },
+    {
+      "id": "pavlova",
+      "name": "Pavlova",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dessert",
+      "year": null,
+      "region": "Oceania",
+      "difficulty": 3,
+      "clues": [
+        "It is named after a Russian ballerina who toured the world in the 1920s.",
+        "Australia and New Zealand both claim to have invented it.",
+        "It has a crisp meringue shell with a soft, marshmallow-like centre.",
+        "It is topped with whipped cream and fresh fruit such as kiwifruit and berries.",
+        "The fruit-topped meringue cake that is a Christmas favourite down under."
+      ],
+      "links": [
+        { "name": "Australia", "rel": "is claimed by" },
+        { "name": "New Zealand", "rel": "is claimed by" }
+      ],
+      "fact": "It is said to be as light and airy as the dancer it was named after."
+    },
+    {
+      "id": "mochi",
+      "name": "Mochi",
+      "aliases": [],
+      "category": "food",
+      "sub": "Dessert",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 3,
+      "clues": [
+        "In Japanese folklore, a rabbit on the Moon is said to pound it.",
+        "It is made by pounding steamed sticky rice into a smooth, stretchy paste.",
+        "Families traditionally make and eat it to welcome the New Year.",
+        "Daifuku is a version stuffed with sweet red bean paste.",
+        "Japan's chewy rice cake, also wrapped around balls of ice cream."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "comes from" },
+        { "name": "Ice Cream", "rel": "is wrapped around" }
+      ],
+      "fact": "Its sticky rice is pounded with large wooden mallets in a mortar."
+    },
+    {
+      "id": "coffee",
+      "name": "Coffee",
+      "aliases": [],
+      "category": "food",
+      "sub": "Drink",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "Legend says an Ethiopian goatherd noticed his goats dancing after eating its berries.",
+        "By the 15th century it was being grown and drunk in Yemen.",
+        "Its beans are really the seeds of a cherry-like fruit.",
+        "Brazil is the world's largest producer of it.",
+        "The caffeine-rich brew of roasted beans, served as espresso, latte or cappuccino."
+      ],
+      "links": [
+        { "name": "Ethiopia", "rel": "originated in" },
+        { "name": "Brazil", "rel": "is grown most in" },
+        { "name": "Starbucks", "rel": "is sold by" }
+      ],
+      "fact": "Sufi monks in Yemen drank it to stay awake through night-time prayers."
+    },
+    {
+      "id": "tea",
+      "name": "Tea",
+      "aliases": [],
+      "category": "food",
+      "sub": "Drink",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "Chinese legend says Emperor Shennong discovered it when leaves blew into his boiling water.",
+        "In 1773 American colonists dumped chests of it into Boston Harbor in protest.",
+        "Its black, green, white and oolong types all come from the same plant.",
+        "In Britain it is traditionally drunk with milk, often in the afternoon.",
+        "The hot drink brewed from dried leaves in a pot, with a cup of it called a 'cuppa'."
+      ],
+      "links": [
+        { "name": "China", "rel": "originated in" },
+        { "name": "India", "rel": "is grown widely in" },
+        { "name": "United Kingdom", "rel": "is a national habit of" }
+      ],
+      "fact": "After water, it is the most widely drunk drink in the world."
+    },
+    {
+      "id": "bubble-tea",
+      "name": "Bubble Tea",
+      "aliases": ["Boba"],
+      "category": "food",
+      "sub": "Drink",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "It was invented in Taiwan in the 1980s.",
+        "It is usually based on sweetened black or green tea, often with milk.",
+        "Its chewy 'pearls' are made from tapioca starch.",
+        "It comes with an extra-wide straw so the chewy balls can be sucked up.",
+        "The Taiwanese drink with tapioca balls sitting at the bottom of the cup."
+      ],
+      "links": [
+        { "name": "Taiwan", "rel": "was invented in" },
+        { "name": "Tea", "rel": "is made with" }
+      ],
+      "fact": "Taichung and Tainan are both claimed as its birthplace."
+    },
+    {
+      "id": "lemonade",
+      "name": "Lemonade",
+      "aliases": [],
+      "category": "food",
+      "sub": "Drink",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "In 17th-century Paris, street vendors sold it from tanks carried on their backs.",
+        "In the US, children famously sell it from stands outside their homes.",
+        "Its pink version may be coloured with berries or grenadine.",
+        "It is made from water, sugar and squeezed citrus juice.",
+        "The sweet-and-sour drink made from lemons."
+      ],
+      "links": [
+        { "name": "Paris", "rel": "was sold on the streets of" },
+        { "name": "United States", "rel": "is sold at children's stands in" }
+      ],
+      "fact": "In Britain and Australia the word usually means a clear, fizzy lemon drink."
+    },
+    {
+      "id": "hot-chocolate",
+      "name": "Hot Chocolate",
+      "aliases": [],
+      "category": "food",
+      "sub": "Drink",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "The Maya drank a frothy, bitter version flavoured with chilli.",
+        "The Aztec ruler Moctezuma is said to have drunk it from golden cups.",
+        "After sugar was added in Spain, it became fashionable across Europe.",
+        "It is often topped with marshmallows or whipped cream.",
+        "The warm, sweet drink of melted cocoa and milk, perfect on a winter's day."
+      ],
+      "links": [
+        { "name": "Mexico", "rel": "comes from" },
+        { "name": "Chocolate", "rel": "is made from" },
+        { "name": "Churros", "rel": "is served with" }
+      ],
+      "fact": "In 17th-century London, 'chocolate houses' were fashionable meeting places."
+    },
+    {
+      "id": "matcha",
+      "name": "Matcha",
+      "aliases": [],
+      "category": "food",
+      "sub": "Drink",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "The Zen monk Eisai brought a powdered form of it from China to Japan in 1191.",
+        "Its tea bushes are shaded for weeks before harvest to boost colour and flavour.",
+        "It is a fine powder made by stone-grinding tea leaves.",
+        "It is whisked with a bamboo whisk in the traditional Japanese tea ceremony.",
+        "The bright green powdered tea, now also used in lattes and ice cream."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "is a tradition of" },
+        { "name": "Kyoto", "rel": "is famously grown near" },
+        { "name": "Tea", "rel": "is a powdered form of" }
+      ],
+      "fact": "Because the whole leaf is drunk, it has more caffeine than ordinary green tea."
+    },
+    {
+      "id": "lassi",
+      "name": "Lassi",
+      "aliases": [],
+      "category": "food",
+      "sub": "Drink",
+      "year": null,
+      "region": "South Asia",
+      "difficulty": 3,
+      "clues": [
+        "It is a traditional drink of the Punjab region.",
+        "It is made by blending yogurt with water, sometimes with ice.",
+        "It can be salty, sweet or flavoured with spices such as cumin.",
+        "A hugely popular version is blended with ripe mango.",
+        "India's cooling yogurt drink, often served with spicy food."
+      ],
+      "links": [
+        { "name": "India", "rel": "comes from" },
+        { "name": "Mango", "rel": "is often blended with" }
+      ],
+      "fact": "In Punjab it is often served in tall steel glasses or clay cups."
+    },
+    {
+      "id": "espresso",
+      "name": "Espresso",
+      "aliases": [],
+      "category": "food",
+      "sub": "Drink",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "An early machine for making it was patented in Turin in 1884.",
+        "It is made by forcing hot water through finely ground beans under pressure.",
+        "The golden-brown foam on top of it is called crema.",
+        "It is the base of cappuccinos, lattes and americanos.",
+        "The small, strong Italian shot of coffee."
+      ],
+      "links": [
+        { "name": "Italy", "rel": "comes from" },
+        { "name": "Coffee", "rel": "is a strong form of" }
+      ],
+      "fact": "A standard single shot is only about 30 millilitres."
+    },
+    {
+      "id": "banana",
+      "name": "Banana",
+      "aliases": [],
+      "category": "food",
+      "sub": "Fruit",
+      "year": null,
+      "region": "Southeast Asia",
+      "difficulty": 1,
+      "clues": [
+        "It was first domesticated in Southeast Asia and New Guinea thousands of years ago.",
+        "The plant that bears it is technically a giant herb, not a tree.",
+        "Most of those sold worldwide belong to one variety, the Cavendish.",
+        "It grows in large hanging bunches, with smaller clusters called hands.",
+        "The long, curved yellow fruit that cartoon monkeys love."
+      ],
+      "links": [
+        { "name": "India", "rel": "is grown most in" },
+        { "name": "Ecuador", "rel": "is a top export of" }
+      ],
+      "fact": "It is slightly radioactive, because it is rich in potassium."
+    },
+    {
+      "id": "mango",
+      "name": "Mango",
+      "aliases": [],
+      "category": "food",
+      "sub": "Fruit",
+      "year": null,
+      "region": "South Asia",
+      "difficulty": 1,
+      "clues": [
+        "It has been grown in South Asia for thousands of years.",
+        "It is the national fruit of India, Pakistan and the Philippines.",
+        "Its large, flat stone has juicy flesh clinging to it.",
+        "Alphonso is a famous and costly variety from western India.",
+        "The sweet tropical fruit with juicy orange flesh, often blended into lassi."
+      ],
+      "links": [
+        { "name": "India", "rel": "is the national fruit of" },
+        { "name": "Pakistan", "rel": "is the national fruit of" },
+        { "name": "Lassi", "rel": "is blended into" }
+      ],
+      "fact": "It belongs to the same plant family as cashews and pistachios."
+    },
+    {
+      "id": "pineapple",
+      "name": "Pineapple",
+      "aliases": [],
+      "category": "food",
+      "sub": "Fruit",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "It originated in South America, around present-day Paraguay and Brazil.",
+        "In 18th-century Britain it was so prized that people rented one to show off.",
+        "Hawaii became famous for growing it, thanks largely to James Dole.",
+        "It contains an enzyme, bromelain, that can make your tongue tingle.",
+        "The spiky tropical fruit with a crown of stiff leaves on top."
+      ],
+      "links": [
+        { "name": "Hawaii", "rel": "is famously grown in" },
+        { "name": "Brazil", "rel": "originated near" }
+      ],
+      "fact": "One plant usually produces just one fruit at a time, taking up to two years."
+    },
+    {
+      "id": "strawberry",
+      "name": "Strawberry",
+      "aliases": [],
+      "category": "food",
+      "sub": "Fruit",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "The modern garden variety arose in 18th-century France from two American species.",
+        "Unusually, its seeds are on the outside of the fruit.",
+        "Botanically it is not a true berry, though a banana is.",
+        "At Wimbledon it is traditionally eaten with cream.",
+        "The red, heart-shaped fruit dotted with tiny seeds."
+      ],
+      "links": [
+        { "name": "Wimbledon", "rel": "is eaten with cream at" },
+        { "name": "France", "rel": "was bred in" }
+      ],
+      "fact": "Each one carries around 200 seeds on its skin."
+    },
+    {
+      "id": "avocado",
+      "name": "Avocado",
+      "aliases": [],
+      "category": "food",
+      "sub": "Fruit",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "Its name comes from the Aztec word 'ahuacatl'.",
+        "Mexico is by far the world's largest producer.",
+        "Hass, the most popular variety, comes from a single tree in California.",
+        "It is rich in healthy fats and has one large stone in the middle.",
+        "The creamy green fruit that is mashed to make guacamole."
+      ],
+      "links": [
+        { "name": "Mexico", "rel": "is grown most in" }
+      ],
+      "fact": "It ripens only after it has been picked from the tree."
+    },
+    {
+      "id": "durian",
+      "name": "Durian",
+      "aliases": [],
+      "category": "food",
+      "sub": "Fruit",
+      "year": null,
+      "region": "Southeast Asia",
+      "difficulty": 3,
+      "clues": [
+        "Its fans call it the 'king of fruits'.",
+        "It is covered in a thick husk of sharp spikes.",
+        "Its creamy flesh is often said to taste of custard and almonds.",
+        "It is banned on Singapore's trains and in many hotels.",
+        "The spiky Southeast Asian fruit famous for its very strong smell."
+      ],
+      "links": [
+        { "name": "Singapore", "rel": "is banned on trains in" },
+        { "name": "Malaysia", "rel": "is a favourite in" },
+        { "name": "Thailand", "rel": "is grown in" }
+      ],
+      "fact": "Its name comes from the Malay word for 'thorn'."
+    },
+    {
+      "id": "coconut",
+      "name": "Coconut",
+      "aliases": [],
+      "category": "food",
+      "sub": "Fruit",
+      "year": null,
+      "region": "Southeast Asia",
+      "difficulty": 1,
+      "clues": [
+        "It can float across oceans and still sprout on a distant beach.",
+        "Botanically it is a drupe, not a true nut.",
+        "Its dried flesh, called copra, is pressed to make oil.",
+        "Young ones contain a clear liquid that people drink straight from the shell.",
+        "The hairy brown fruit of a tropical palm, with white flesh inside."
+      ],
+      "links": [
+        { "name": "Indonesia", "rel": "is grown most in" },
+        { "name": "Philippines", "rel": "is a major crop of" }
+      ],
+      "fact": "Its name comes from a Portuguese word for a grinning face, after the three marks on its shell."
+    },
+    {
+      "id": "chocolate",
+      "name": "Chocolate",
+      "aliases": [],
+      "category": "food",
+      "sub": "Ingredient",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "Its beans were once used as money by the Aztecs.",
+        "It is made from the fermented and roasted seeds of the cacao tree.",
+        "The milk version was first made in Switzerland in 1875.",
+        "Ivory Coast grows more of its raw beans than any other country.",
+        "The sweet treat made from cocoa, sold in bars and as Easter eggs."
+      ],
+      "links": [
+        { "name": "Ivory Coast", "rel": "is grown most in" },
+        { "name": "Switzerland", "rel": "has a milk version from" },
+        { "name": "Mexico", "rel": "originated in" }
+      ],
+      "fact": "For most of its history it was a bitter, spiced drink rather than a sweet bar."
+    },
+    {
+      "id": "vanilla",
+      "name": "Vanilla",
+      "aliases": [],
+      "category": "food",
+      "sub": "Ingredient",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 2,
+      "clues": [
+        "It comes from the pods of a climbing orchid.",
+        "Outside Mexico, its flowers usually have to be pollinated by hand.",
+        "A 12-year-old boy on the island of Réunion found the hand-pollination method in 1841.",
+        "Madagascar produces most of the world's supply.",
+        "The fragrant flavouring of custard and classic white ice cream."
+      ],
+      "links": [
+        { "name": "Madagascar", "rel": "is grown most in" },
+        { "name": "Mexico", "rel": "originated in" },
+        { "name": "Ice Cream", "rel": "is the classic flavour of" }
+      ],
+      "fact": "It is the second most expensive spice in the world, after saffron."
+    },
+    {
+      "id": "saffron",
+      "name": "Saffron",
+      "aliases": [],
+      "category": "food",
+      "sub": "Ingredient",
+      "year": null,
+      "region": "Middle East",
+      "difficulty": 2,
+      "clues": [
+        "It is collected from the red threads of a purple crocus flower.",
+        "Each flower gives only three threads, all picked by hand.",
+        "Iran grows most of the world's supply.",
+        "By weight it is the most expensive spice in the world.",
+        "The golden spice that colours paella and biryani."
+      ],
+      "links": [
+        { "name": "Iran", "rel": "is grown most in" },
+        { "name": "Paella", "rel": "colours" },
+        { "name": "Biryani", "rel": "flavours" }
+      ],
+      "fact": "It takes around 150,000 flowers to make one kilogram."
+    },
+    {
+      "id": "wasabi",
+      "name": "Wasabi",
+      "aliases": [],
+      "category": "food",
+      "sub": "Ingredient",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "The plant grows naturally beside cool mountain streams in Japan.",
+        "The part used is its thick stem, traditionally grated on sharkskin.",
+        "Its heat rushes up the nose rather than burning the tongue.",
+        "Much of what is sold abroad is actually horseradish coloured green.",
+        "The fiery green paste served with sushi."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "comes from" },
+        { "name": "Sushi", "rel": "is served with" }
+      ],
+      "fact": "Freshly grated, it loses most of its heat within about 15 minutes."
+    },
+    {
+      "id": "olive-oil",
+      "name": "Olive Oil",
+      "aliases": [],
+      "category": "food",
+      "sub": "Ingredient",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Winners at ancient Athens' Panathenaic Games received large jars of it.",
+        "Its finest grade is called 'extra virgin'.",
+        "Spain produces more of it than any other country.",
+        "It is pressed from the fruit of a tree sacred to the goddess Athena.",
+        "The golden-green cooking fat at the heart of Mediterranean food."
+      ],
+      "links": [
+        { "name": "Spain", "rel": "is produced most in" },
+        { "name": "Greece", "rel": "is a staple of" },
+        { "name": "Italy", "rel": "is a staple of" }
+      ],
+      "fact": "Some of the trees it comes from are over 1,000 years old and still bear fruit."
+    },
+    {
+      "id": "honey",
+      "name": "Honey",
+      "aliases": [],
+      "category": "food",
+      "sub": "Ingredient",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "Pots of it thousands of years old have reportedly been found in Egyptian tombs.",
+        "A single worker insect makes only about a twelfth of a teaspoon of it in its life.",
+        "Manuka is a prized variety from New Zealand.",
+        "It is made from flower nectar and stored in wax cells.",
+        "The sweet, sticky golden syrup made by bees."
+      ],
+      "links": [
+        { "name": "New Zealand", "rel": "has a prized variety from" },
+        { "name": "Baklava", "rel": "sweetens" }
+      ],
+      "fact": "Because it is so low in water and acidic, it almost never spoils."
+    },
+    {
+      "id": "maple-syrup",
+      "name": "Maple Syrup",
+      "aliases": [],
+      "category": "food",
+      "sub": "Ingredient",
+      "year": null,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It takes about 40 litres of sap to make one litre of it.",
+        "Indigenous peoples of North America made it long before Europeans arrived.",
+        "The province of Quebec produces most of the world's supply.",
+        "The sap is collected in early spring, when nights freeze and days thaw.",
+        "Canada's sweet tree-sap topping for pancakes; that tree's leaf is on the flag."
+      ],
+      "links": [
+        { "name": "Canada", "rel": "is a national symbol of" },
+        { "name": "Quebec", "rel": "is produced most in" }
+      ],
+      "fact": "Quebec keeps a strategic reserve of it, stored in barrels in warehouses."
+    },
+    {
+      "id": "coca-cola",
+      "name": "Coca-Cola",
+      "aliases": ["Coke"],
+      "category": "food",
+      "sub": "Food Brand",
+      "year": 1886,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was invented by pharmacist John Pemberton in Atlanta in 1886.",
+        "Its name came from two of its original ingredients, a leaf and a nut.",
+        "Its secret recipe is said to be kept in a vault in Atlanta.",
+        "Its curvy 'contour' glass bottle was introduced in 1915.",
+        "The world's best-known soft drink, sold in red cans with flowing white script."
+      ],
+      "links": [
+        { "name": "Atlanta", "rel": "was invented in" },
+        { "name": "Pepsi", "rel": "is the great rival of" },
+        { "name": "United States", "rel": "comes from" }
+      ],
+      "fact": "Its first year of sales averaged only about nine drinks a day."
+    },
+    {
+      "id": "mcdonalds",
+      "name": "McDonald's",
+      "aliases": [],
+      "category": "food",
+      "sub": "Food Brand",
+      "year": 1940,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Two brothers, Richard and Maurice, opened its first restaurant in San Bernardino in 1940.",
+        "Ray Kroc turned it into a worldwide franchise from 1955.",
+        "The Big Mac was added to its menu nationwide in 1968.",
+        "Its Happy Meal comes with a toy for children.",
+        "The fast-food giant with golden arches and a clown mascot called Ronald."
+      ],
+      "links": [
+        { "name": "United States", "rel": "comes from" },
+        { "name": "Hamburger", "rel": "is famous for its" }
+      ],
+      "fact": "The 2016 film The Founder tells the story of how Ray Kroc took it over."
+    },
+    {
+      "id": "pepsi",
+      "name": "Pepsi",
+      "aliases": [],
+      "category": "food",
+      "sub": "Food Brand",
+      "year": 1893,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was created in 1893 by pharmacist Caleb Bradham in North Carolina.",
+        "It was first sold as 'Brad's Drink'.",
+        "Its name is often linked to dyspepsia, a word for indigestion.",
+        "In the 1970s it ran famous blind taste tests against its main rival.",
+        "Coca-Cola's great rival, sold in blue cans."
+      ],
+      "links": [
+        { "name": "Coca-Cola", "rel": "is the great rival of" },
+        { "name": "United States", "rel": "comes from" }
+      ],
+      "fact": "Its parent company also owns Lay's crisps and Quaker Oats."
+    },
+    {
+      "id": "kfc",
+      "name": "KFC",
+      "aliases": ["Kentucky Fried Chicken"],
+      "category": "food",
+      "sub": "Food Brand",
+      "year": 1952,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Its founder first served his recipe at a roadside service station in Corbin.",
+        "Its first franchise opened in Salt Lake City, Utah, in 1952.",
+        "Its secret recipe uses 11 herbs and spices.",
+        "In Japan, many families eat it for Christmas dinner.",
+        "The chicken chain whose logo shows white-haired Colonel Sanders."
+      ],
+      "links": [
+        { "name": "United States", "rel": "comes from" },
+        { "name": "Japan", "rel": "is a Christmas tradition in" }
+      ],
+      "fact": "Colonel Sanders was in his sixties when he began franchising the recipe."
+    },
+    {
+      "id": "nutella",
+      "name": "Nutella",
+      "aliases": [],
+      "category": "food",
+      "sub": "Food Brand",
+      "year": 1964,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It grew out of a paste created in post-war Italy when cocoa was scarce.",
+        "It is made by the Ferrero company, which launched it in 1964.",
+        "Its main ingredients are sugar, palm oil, hazelnuts and cocoa.",
+        "Fans celebrate a special day in its honour every 5 February.",
+        "The famous chocolate-hazelnut spread sold in a glass jar."
+      ],
+      "links": [
+        { "name": "Italy", "rel": "comes from" },
+        { "name": "Chocolate", "rel": "is flavoured with" }
+      ],
+      "fact": "Ferrero buys a large share of the world's hazelnuts, mostly from Turkey."
+    },
+    {
+      "id": "starbucks",
+      "name": "Starbucks",
+      "aliases": [],
+      "category": "food",
+      "sub": "Food Brand",
+      "year": 1971,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It opened its first shop near Seattle's Pike Place Market in 1971, selling beans.",
+        "Its name comes from a character in the novel Moby-Dick.",
+        "Howard Schultz turned it into a global coffeehouse chain.",
+        "Its baristas often write customers' names on their cups.",
+        "The coffee chain whose logo is a green, two-tailed siren."
+      ],
+      "links": [
+        { "name": "Seattle", "rel": "was founded in" },
+        { "name": "Coffee", "rel": "sells" },
+        { "name": "Moby-Dick", "rel": "is named after a character in" }
+      ],
+      "fact": "Its first store sold coffee beans and equipment, not drinks to go."
+    },
+    {
+      "id": "heinz",
+      "name": "Heinz",
+      "aliases": [],
+      "category": "food",
+      "sub": "Food Brand",
+      "year": 1869,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Its founder started out in 1869 selling bottled horseradish.",
+        "The company grew up in and around Pittsburgh, Pennsylvania.",
+        "Its famous slogan advertised '57 varieties'.",
+        "Its baked beans are a British breakfast favourite.",
+        "The brand of tomato ketchup in the classic glass bottle with a keystone label."
+      ],
+      "links": [
+        { "name": "Pittsburgh", "rel": "is based in" },
+        { "name": "United States", "rel": "comes from" }
+      ],
+      "fact": "The company already made more than 57 products when the slogan was created."
+    },
+    {
+      "id": "haribo",
+      "name": "Haribo",
+      "aliases": [],
+      "category": "food",
+      "sub": "Food Brand",
+      "year": 1920,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "The company was founded in Bonn, Germany, in 1920.",
+        "Its name joins the first letters of its founder's names and his hometown.",
+        "Its famous bears were first sold in 1922 as 'Dancing Bears'.",
+        "Its slogan says kids and grown-ups love it so.",
+        "The German maker of fruit gummies, best known for golden gummy bears."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "comes from" },
+        { "name": "Bonn", "rel": "was founded in" }
+      ],
+      "fact": "Its founder was Hans Riegel, from Bonn: HA-RI-BO."
+    }
+  ]
+}

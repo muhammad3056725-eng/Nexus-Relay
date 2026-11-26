@@ -1,39 +1,45 @@
 import { defineConfig, type Plugin } from "vite";
 import { fileURLToPath } from "node:url";
 import { createReadStream, existsSync, statSync } from "node:fs";
-import { extname, join } from "node:path";
+import { extname, join, resolve, sep } from "node:path";
 
 /**
- * NEXUS RELAY web app (Blueprint §6/§7).
- * Production: the built app is deployed statically with the dataset
- * (public/data/v1) copied beside it — see .github/workflows/pages.yml —
- * matching the blueprint's static Edge architecture (Cloudflare Pages
- * + R2 in production; GitHub Pages for the current deployment).
- * Development: the plugin below mounts the repo's public/ directory at
- * /__data so `vite dev` reads the same dataset files in place.
+ * NEXUS RELAY web app.
+ *
+ * Production: the built app (dist/) is deployed with the repo's
+ * public/ folder copied beside it as dist/public/ — see
+ * .github/workflows/pages.yml — so the dataset lives at
+ * <app>/public/data/v2/. Development: the plugin below serves the
+ * repo's public/ folder at the same relative path (/public/…), so dev
+ * and production resolve the dataset identically.
  */
 const repoRoot = fileURLToPath(new URL("../../", import.meta.url));
+const publicRoot = resolve(repoRoot, "public");
 
 const MIME: Record<string, string> = {
-  ".json": "application/json",
-  ".bin": "application/octet-stream",
+  ".json": "application/json; charset=utf-8",
+  ".png": "image/png",
+  ".svg": "image/svg+xml",
 };
 
 function dataMount(): Plugin {
   return {
-    name: "nexus-data-mount",
+    name: "nexus-public-mount",
     configureServer(server) {
-      server.middlewares.use("/__data", (req, res, next) => {
+      server.middlewares.use("/public", (req, res, next) => {
         const urlPath = decodeURIComponent((req.url ?? "/").split("?")[0]);
-        const path = join(repoRoot, "public", urlPath);
+        const path = resolve(join(publicRoot, urlPath));
+        // Path-traversal guard: never serve outside public/.
+        if (!path.startsWith(publicRoot + sep)) {
+          res.statusCode = 403;
+          res.end();
+          return;
+        }
         if (!existsSync(path) || !statSync(path).isFile()) {
           next();
           return;
         }
-        res.setHeader(
-          "Content-Type",
-          MIME[extname(path)] ?? "application/octet-stream"
-        );
+        res.setHeader("Content-Type", MIME[extname(path)] ?? "application/octet-stream");
         createReadStream(path).pipe(res);
       });
     },
@@ -41,15 +47,13 @@ function dataMount(): Plugin {
 }
 
 export default defineConfig({
-  // Base-path strategy (shared-domain deployment): the default "./"
-  // makes every built asset URL relative, so the same dist/ works at a
-  // domain root, on a GitHub Pages project URL, and under a subpath of
-  // an existing site (e.g. deepwell.games/nexus-relay/). A deploy that
-  // prefers absolute URLs can override at build time, e.g.
-  //   VITE_BASE=/nexus-relay/ npm run build
+  // Relative asset URLs: the same dist/ works at a domain root, on the
+  // GitHub Pages project URL (/Nexus-Relay/) or under any subpath.
   base: process.env.VITE_BASE ?? "./",
   publicDir: false,
-  build: { outDir: "dist", emptyOutDir: true },
+  // Keep paths as given (mapped / subst drives on Windows).
+  resolve: { preserveSymlinks: true },
+  build: { outDir: "dist", emptyOutDir: true, target: "es2020" },
   server: { port: 5173, fs: { allow: [repoRoot] } },
   plugins: [dataMount()],
 });

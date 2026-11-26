@@ -1,0 +1,1157 @@
+{
+  "category": "minds",
+  "subjects": [
+    {
+      "id": "albert-einstein",
+      "name": "Albert Einstein",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Physicist",
+      "year": 1879,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "As a young man he worked as a clerk in a Swiss patent office, checking inventions.",
+        "In his 'miracle year' of 1905 he published four groundbreaking scientific papers.",
+        "He won the 1921 Nobel Prize in Physics for explaining the photoelectric effect.",
+        "He left Germany in 1933 and spent his later years in Princeton, New Jersey.",
+        "The wild-haired scientist behind the theory of relativity and the equation E = mc²."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "was born in" },
+        { "name": "United States", "rel": "became a citizen of" },
+        { "name": "Marie Curie", "rel": "was a friend of" }
+      ],
+      "fact": "In 1952 he was offered the presidency of Israel, and politely turned it down."
+    },
+    {
+      "id": "isaac-newton",
+      "name": "Isaac Newton",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Physicist",
+      "year": 1642,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Late in life he ran England's Royal Mint and chased down coin forgers.",
+        "He built the first practical reflecting telescope, using a mirror instead of lenses.",
+        "He developed calculus, which led to a bitter quarrel with Gottfried Leibniz.",
+        "His 1687 book, the Principia, set out three famous laws of motion.",
+        "A falling apple is said to have inspired his law of universal gravitation."
+      ],
+      "links": [
+        { "name": "Galileo Galilei", "rel": "built on the work of" },
+        { "name": "Albert Einstein", "rel": "had his ideas on gravity extended by" },
+        { "name": "United Kingdom", "rel": "was born in" }
+      ],
+      "fact": "He was knighted by Queen Anne in 1705."
+    },
+    {
+      "id": "galileo-galilei",
+      "name": "Galileo Galilei",
+      "aliases": ["Galileo"],
+      "category": "minds",
+      "sub": "Astronomer",
+      "year": 1564,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in Pisa in 1564, he started out studying medicine before switching to maths.",
+        "He studied swinging pendulums and how objects speed up as they fall.",
+        "In 1610 he discovered four large moons circling Jupiter.",
+        "In 1633 he was put on trial for teaching that the Earth moves around the Sun.",
+        "The Italian scientist, often called the father of modern science, who improved the telescope."
+      ],
+      "links": [
+        { "name": "Nicolaus Copernicus", "rel": "defended the ideas of" },
+        { "name": "Jupiter", "rel": "discovered four moons of" },
+        { "name": "Italy", "rel": "was born in" }
+      ],
+      "fact": "He was born in the same year as William Shakespeare."
+    },
+    {
+      "id": "stephen-hawking",
+      "name": "Stephen Hawking",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Physicist",
+      "year": 1942,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He was born on 8 January 1942, exactly 300 years after Galileo died.",
+        "He held the Lucasian chair of mathematics at Cambridge, once held by Isaac Newton.",
+        "He predicted that black holes should slowly leak a faint glow of radiation.",
+        "His 1988 book A Brief History of Time became a worldwide bestseller.",
+        "This British physicist used a wheelchair and spoke through a computer voice because of motor neurone disease."
+      ],
+      "links": [
+        { "name": "Isaac Newton", "rel": "held the same Cambridge chair as" },
+        { "name": "Galileo Galilei", "rel": "was born 300 years to the day after the death of" },
+        { "name": "United Kingdom", "rel": "was born in" }
+      ],
+      "fact": "He appeared as himself in The Simpsons and in Star Trek: The Next Generation."
+    },
+    {
+      "id": "niels-bohr",
+      "name": "Niels Bohr",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Physicist",
+      "year": 1885,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He played in goal at football; his brother Harald won an Olympic silver medal for Denmark.",
+        "He won the Nobel Prize in Physics in 1922.",
+        "In 1913 he described electrons circling the nucleus in fixed energy levels.",
+        "He had famous friendly debates with Albert Einstein about quantum theory.",
+        "This Danish physicist gave his name to a famous model of the atom."
+      ],
+      "links": [
+        { "name": "Denmark", "rel": "was born in" },
+        { "name": "Albert Einstein", "rel": "debated quantum theory with" }
+      ],
+      "fact": "Element 107, bohrium, is named after him."
+    },
+    {
+      "id": "richard-feynman",
+      "name": "Richard Feynman",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Physicist",
+      "year": 1918,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "As a boy in New York he repaired neighbours' radios for fun.",
+        "He shared the 1965 Nobel Prize in Physics for work on how light and matter interact.",
+        "He invented simple drawings that show how particles interact, now named after him.",
+        "At the Challenger disaster inquiry he dipped an O-ring in ice water to show how cold made it fail.",
+        "The bongo-playing American physicist whose memoir is called 'Surely You're Joking, Mr. ...!'"
+      ],
+      "links": [
+        { "name": "United States", "rel": "was born in" },
+        { "name": "Albert Einstein", "rel": "once gave a seminar attended by" }
+      ],
+      "fact": "He liked to crack safes and open locked filing cabinets as pranks on his colleagues."
+    },
+    {
+      "id": "michael-faraday",
+      "name": "Michael Faraday",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Physicist",
+      "year": 1791,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He had little schooling and taught himself science as a bookbinder's apprentice.",
+        "He began as an assistant to the chemist Humphry Davy at the Royal Institution in London.",
+        "In 1825 he started the Royal Institution's Christmas Lectures for young people.",
+        "In 1831 he discovered how a moving magnet can create an electric current.",
+        "A metal cage that blocks electric fields is named after this English scientist."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "was born in" },
+        { "name": "Albert Einstein", "rel": "was admired by" }
+      ],
+      "fact": "The farad, the unit of electrical capacitance, is named after him."
+    },
+    {
+      "id": "nicolaus-copernicus",
+      "name": "Nicolaus Copernicus",
+      "aliases": ["Mikołaj Kopernik"],
+      "category": "minds",
+      "sub": "Astronomer",
+      "year": 1473,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He was a church official who also practised medicine and wrote about money.",
+        "He was born in 1473 in the city of Toruń.",
+        "His great book on the heavens was published in 1543, the year he died.",
+        "His big idea pushed the Earth out of the centre of the universe.",
+        "The Polish astronomer who said that the Earth and planets orbit the Sun."
+      ],
+      "links": [
+        { "name": "Poland", "rel": "was born in" },
+        { "name": "Galileo Galilei", "rel": "had his ideas defended by" }
+      ],
+      "fact": "Legend says he was handed a printed copy of his book on the day he died."
+    },
+    {
+      "id": "johannes-kepler",
+      "name": "Johannes Kepler",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Astronomer",
+      "year": 1571,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He served as imperial mathematician to the Holy Roman Emperor in Prague.",
+        "He worked as assistant to the Danish astronomer Tycho Brahe.",
+        "He discovered that planets travel in ovals called ellipses, not perfect circles.",
+        "His three laws of planetary motion were later explained by Isaac Newton.",
+        "A NASA space telescope that hunted for planets around other stars was named after this German astronomer."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "was born in" },
+        { "name": "Galileo Galilei", "rel": "exchanged letters with" },
+        { "name": "Isaac Newton", "rel": "inspired" }
+      ],
+      "fact": "He also wrote Somnium, an early science-fiction story about a journey to the Moon."
+    },
+    {
+      "id": "edwin-hubble",
+      "name": "Edwin Hubble",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Astronomer",
+      "year": 1889,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Before turning to astronomy, he studied law at Oxford as a Rhodes Scholar.",
+        "He worked at Mount Wilson Observatory in California with its giant 100-inch telescope.",
+        "In the 1920s he showed that the Andromeda 'nebula' is a separate galaxy far beyond ours.",
+        "He found that distant galaxies are moving away from us, so the universe is expanding.",
+        "A famous space telescope launched in 1990 is named after this American astronomer."
+      ],
+      "links": [
+        { "name": "Hubble Space Telescope", "rel": "gave his name to" },
+        { "name": "Andromeda Galaxy", "rel": "proved the true nature of" },
+        { "name": "United States", "rel": "was born in" }
+      ],
+      "fact": "He was born in Missouri in 1889."
+    },
+    {
+      "id": "carl-sagan",
+      "name": "Carl Sagan",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Astronomer",
+      "year": 1934,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "He won a Pulitzer Prize in 1978 for his book The Dragons of Eden.",
+        "He helped put together the golden records carried by the two Voyager spacecraft.",
+        "He named a famous photo of Earth seen from far out in space the 'Pale Blue Dot'.",
+        "His novel Contact became a 1997 film starring Jodie Foster.",
+        "The American astronomer who presented the 1980 TV series Cosmos."
+      ],
+      "links": [
+        { "name": "Voyager 1", "rel": "helped send a golden record aboard" },
+        { "name": "United States", "rel": "was born in" }
+      ],
+      "fact": "An asteroid, 2709 Sagan, is named in his honour."
+    },
+    {
+      "id": "marie-curie",
+      "name": "Marie Curie",
+      "aliases": ["Maria Skłodowska-Curie", "Marie Skłodowska Curie"],
+      "category": "minds",
+      "sub": "Chemist",
+      "year": 1867,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in Warsaw, she studied at a secret 'Flying University' because women could not enrol.",
+        "She moved to Paris to study and married a fellow scientist, Pierre.",
+        "She discovered two new elements, naming one of them after her homeland.",
+        "She was the first woman to win a Nobel Prize, and the first person to win one in two sciences.",
+        "The Polish-French pioneer of radioactivity who discovered radium."
+      ],
+      "links": [
+        { "name": "Poland", "rel": "was born in" },
+        { "name": "France", "rel": "did her research in" },
+        { "name": "Albert Einstein", "rel": "was a friend of" }
+      ],
+      "fact": "Her notebooks are still radioactive and are kept in lead-lined boxes."
+    },
+    {
+      "id": "dmitri-mendeleev",
+      "name": "Dmitri Mendeleev",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Chemist",
+      "year": 1834,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He was born in Siberia, the youngest child of a very large family.",
+        "He taught chemistry at the university in Saint Petersburg.",
+        "In 1869 he arranged all the known elements by weight in rows and columns.",
+        "He left gaps for undiscovered elements and correctly predicted what they would be like.",
+        "The Russian chemist who created the periodic table."
+      ],
+      "links": [
+        { "name": "Russia", "rel": "was born in" }
+      ],
+      "fact": "Element 101, mendelevium, is named after him."
+    },
+    {
+      "id": "antoine-lavoisier",
+      "name": "Antoine Lavoisier",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Chemist",
+      "year": 1743,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "He also worked as a tax collector, a job that cost him his life in the French Revolution.",
+        "His wife, Marie-Anne, helped with his experiments and drew his equipment.",
+        "He gave oxygen and hydrogen their names.",
+        "He showed that in a chemical reaction, mass is neither created nor destroyed.",
+        "This Frenchman is known as the father of modern chemistry."
+      ],
+      "links": [
+        { "name": "France", "rel": "was born in" },
+        { "name": "French Revolution", "rel": "was executed during" }
+      ],
+      "fact": "He also served on the commission that helped create the metric system."
+    },
+    {
+      "id": "rosalind-franklin",
+      "name": "Rosalind Franklin",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Chemist",
+      "year": 1920,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "During her career she studied the structure of coal, viruses and DNA.",
+        "She was an expert in X-ray crystallography at King's College London.",
+        "An X-ray picture from her lab, known as Photo 51, revealed DNA's twisted shape.",
+        "Watson and Crick used her data to build their double helix model in 1953.",
+        "A European Mars rover was named after this British scientist, who died in 1958."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "was born in" },
+        { "name": "London", "rel": "worked in" }
+      ],
+      "fact": "She died at 37, four years before the Nobel Prize for the DNA structure was awarded."
+    },
+    {
+      "id": "alfred-nobel",
+      "name": "Alfred Nobel",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Chemist",
+      "year": 1833,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He spoke several languages and also wrote poetry and a play.",
+        "Late in life he owned Bofors, a Swedish steel and weapons maker.",
+        "In 1867 he patented an explosive that made blasting rock much safer.",
+        "A famous story says a newspaper printed his obituary by mistake, calling him a 'merchant of death'.",
+        "His will paid for famous yearly prizes in peace, literature and the sciences."
+      ],
+      "links": [
+        { "name": "Dynamite", "rel": "invented" },
+        { "name": "Sweden", "rel": "was born in" }
+      ],
+      "fact": "Element 102, nobelium, is named after him."
+    },
+    {
+      "id": "charles-darwin",
+      "name": "Charles Darwin",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Biologist",
+      "year": 1809,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He was born on the very same day as Abraham Lincoln: 12 February 1809.",
+        "He began training as a doctor in Edinburgh but could not bear watching surgery.",
+        "He spent five years sailing around the world aboard HMS Beagle.",
+        "Finches and giant tortoises of the Galápagos Islands helped shape his thinking.",
+        "His 1859 book On the Origin of Species explained evolution by natural selection."
+      ],
+      "links": [
+        { "name": "Galápagos Islands", "rel": "studied wildlife on" },
+        { "name": "Abraham Lincoln", "rel": "shares a birthday with" },
+        { "name": "United Kingdom", "rel": "was born in" }
+      ],
+      "fact": "His face appeared on the Bank of England £10 note from 2000 to 2018."
+    },
+    {
+      "id": "gregor-mendel",
+      "name": "Gregor Mendel",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Biologist",
+      "year": 1822,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He was a monk, and later the abbot, at a monastery in Brno.",
+        "He grew thousands of pea plants in the monastery garden.",
+        "He tracked traits like flower colour and seed shape across generations.",
+        "His work was ignored for decades until scientists rediscovered it around 1900.",
+        "This friar is known as the father of genetics."
+      ],
+      "links": [
+        { "name": "Czech Republic", "rel": "did his experiments in what is now" },
+        { "name": "Charles Darwin", "rel": "lived at the same time as" }
+      ],
+      "fact": "He also kept bees and recorded the weather."
+    },
+    {
+      "id": "louis-pasteur",
+      "name": "Louis Pasteur",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Biologist",
+      "year": 1822,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He was born in 1822 in Dole, France, the son of a tanner.",
+        "He helped save the French silk industry from a disease killing silkworms.",
+        "In 1885 he gave a rabies vaccine to a boy who had been bitten by a dog.",
+        "He proved that germs cause disease and that life does not appear from nothing.",
+        "Heating milk to kill harmful germs is named after this French scientist."
+      ],
+      "links": [
+        { "name": "France", "rel": "was born in" },
+        { "name": "Edward Jenner", "rel": "named vaccines in honour of" }
+      ],
+      "fact": "The research institute he founded in Paris opened in 1888."
+    },
+    {
+      "id": "jane-goodall",
+      "name": "Jane Goodall",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Biologist",
+      "year": 1934,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "As a small child in England she was given a toy chimpanzee called Jubilee.",
+        "In 1960 she went to Tanzania to study wild animals, without a university degree.",
+        "She saw apes stripping twigs to fish termites out of mounds: animals making tools.",
+        "She gave the apes she studied names, like David Greybeard, instead of numbers.",
+        "The British scientist famous for decades of studying wild chimpanzees at Gombe."
+      ],
+      "links": [
+        { "name": "Tanzania", "rel": "studied chimpanzees in" },
+        { "name": "Chimpanzee", "rel": "spent her life studying the" }
+      ],
+      "fact": "She founded her research and conservation institute in 1977."
+    },
+    {
+      "id": "carl-linnaeus",
+      "name": "Carl Linnaeus",
+      "aliases": ["Carl von Linné"],
+      "category": "minds",
+      "sub": "Biologist",
+      "year": 1707,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "He was a botanist and doctor who taught at Uppsala University.",
+        "He sent students on voyages around the world to collect plants.",
+        "He sorted living things into groups such as classes, orders, genera and species.",
+        "He gave humans the scientific name Homo sapiens.",
+        "This Swede created the two-part Latin naming system used for every species."
+      ],
+      "links": [
+        { "name": "Sweden", "rel": "was born in" }
+      ],
+      "fact": "He gave scientific names to thousands of plants and animals."
+    },
+    {
+      "id": "hippocrates",
+      "name": "Hippocrates",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Doctor",
+      "year": -460,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He was born around 460 BCE on the Greek island of Kos.",
+        "He taught that illnesses have natural causes, not punishments from the gods.",
+        "Writings linked to him say health depends on a balance of four body 'humours'.",
+        "New doctors often still recite a promise, the oath named after him.",
+        "The ancient Greek physician known as the father of medicine."
+      ],
+      "links": [
+        { "name": "Greece", "rel": "was born in" }
+      ],
+      "fact": "A plane tree on Kos is said to grow where he taught his students."
+    },
+    {
+      "id": "ibn-sina",
+      "name": "Ibn Sina",
+      "aliases": ["Avicenna"],
+      "category": "minds",
+      "sub": "Doctor",
+      "year": 980,
+      "region": "Middle East",
+      "difficulty": 2,
+      "clues": [
+        "Born near Bukhara around 980, he was treating patients while still a teenager.",
+        "He is said to have learned the whole Quran by heart by the age of ten.",
+        "He wrote on philosophy, astronomy and music as well as medicine.",
+        "His medical encyclopedia was a standard textbook in European universities for centuries.",
+        "The great Persian doctor of the Islamic Golden Age who wrote The Canon of Medicine."
+      ],
+      "links": [
+        { "name": "Aristotle", "rel": "wrote about the ideas of" },
+        { "name": "Iran", "rel": "is buried in" }
+      ],
+      "fact": "His tomb is in the city of Hamadan in Iran."
+    },
+    {
+      "id": "alexander-fleming",
+      "name": "Alexander Fleming",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Doctor",
+      "year": 1881,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born on a Scottish farm, he worked in army hospitals in France during World War I.",
+        "In the early 1920s he found lysozyme, a germ-fighter in tears.",
+        "In 1928 he noticed that mould had killed the bacteria on a dish left out during a holiday.",
+        "He shared the 1945 Nobel Prize with Howard Florey and Ernst Chain.",
+        "The Scottish doctor who discovered penicillin."
+      ],
+      "links": [
+        { "name": "Penicillin", "rel": "discovered" },
+        { "name": "United Kingdom", "rel": "was born in" }
+      ],
+      "fact": "His messy lab at St Mary's Hospital in London is now a small museum."
+    },
+    {
+      "id": "edward-jenner",
+      "name": "Edward Jenner",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Doctor",
+      "year": 1749,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He was a country doctor in Gloucestershire, England.",
+        "He showed that baby cuckoos push other eggs out of their nests.",
+        "He noticed that milkmaids who caught cowpox seemed safe from smallpox.",
+        "In 1796 he tested his idea on James Phipps, an eight-year-old boy.",
+        "He created the world's first vaccine, against smallpox."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "was born in" },
+        { "name": "Louis Pasteur", "rel": "was honoured in the word 'vaccine' by" }
+      ],
+      "fact": "The word vaccine comes from the Latin 'vacca', meaning cow."
+    },
+    {
+      "id": "sigmund-freud",
+      "name": "Sigmund Freud",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Doctor",
+      "year": 1856,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Trained as a nerve doctor, he worked in Vienna for most of his life.",
+        "In 1938 he moved to London, where his last home is now a museum.",
+        "He believed dreams reveal hidden wishes and wrote The Interpretation of Dreams.",
+        "He popularised the 'talking cure', with patients lying on a couch.",
+        "The Austrian founder of psychoanalysis."
+      ],
+      "links": [
+        { "name": "Austria", "rel": "worked in" },
+        { "name": "Vienna", "rel": "lived in" },
+        { "name": "London", "rel": "spent his last year in" }
+      ],
+      "fact": "His famous couch is on display at the Freud Museum in London."
+    },
+    {
+      "id": "thomas-edison",
+      "name": "Thomas Edison",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Inventor",
+      "year": 1847,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "He was mostly taught at home and became partly deaf at a young age.",
+        "As a young man he worked as a telegraph operator.",
+        "His lab at Menlo Park, New Jersey, was called an 'invention factory'.",
+        "In 1877 he invented the phonograph, which could record and play back sound.",
+        "The American inventor with over 1,000 patents who made a long-lasting electric light bulb."
+      ],
+      "links": [
+        { "name": "Light Bulb", "rel": "perfected the" },
+        { "name": "Phonograph", "rel": "invented the" },
+        { "name": "Nikola Tesla", "rel": "was a rival of" }
+      ],
+      "fact": "The company General Electric grew out of his businesses."
+    },
+    {
+      "id": "nikola-tesla",
+      "name": "Nikola Tesla",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Inventor",
+      "year": 1856,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He was born in 1856 to a Serbian family in what is now Croatia.",
+        "He moved to New York in 1884 and briefly worked for Thomas Edison.",
+        "He developed the alternating current (AC) system that powers homes today.",
+        "His famous coil can throw giant, crackling sparks of electricity.",
+        "An electric car company founded in 2003 is named after this inventor."
+      ],
+      "links": [
+        { "name": "Thomas Edison", "rel": "once worked for" },
+        { "name": "Tesla, Inc.", "rel": "gave his name to" },
+        { "name": "Croatia", "rel": "was born in" }
+      ],
+      "fact": "The unit of magnetic field strength is named after him."
+    },
+    {
+      "id": "alexander-graham-bell",
+      "name": "Alexander Graham Bell",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Inventor",
+      "year": 1847,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "His mother and his wife were both deaf, and he spent years teaching deaf students.",
+        "Born in Edinburgh, he moved to Canada and then to the United States.",
+        "He served as the second president of the National Geographic Society.",
+        "In 1876 he was granted a patent for a device that sends the human voice along a wire.",
+        "His first call was: 'Mr. Watson, come here, I want to see you.'"
+      ],
+      "links": [
+        { "name": "Telephone", "rel": "patented the" },
+        { "name": "United Kingdom", "rel": "was born in" },
+        { "name": "Canada", "rel": "lived in" }
+      ],
+      "fact": "He suggested people answer calls by saying 'Ahoy!'"
+    },
+    {
+      "id": "james-watt",
+      "name": "James Watt",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Inventor",
+      "year": 1736,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He worked as a scientific instrument maker at the University of Glasgow.",
+        "While repairing a model engine, he thought of adding a separate condenser.",
+        "He went into business with Matthew Boulton, building engines in Birmingham.",
+        "He came up with the word 'horsepower' to compare engines with horses.",
+        "A unit of power, printed on light bulbs, is named after this Scottish engineer."
+      ],
+      "links": [
+        { "name": "Steam Engine", "rel": "greatly improved the" },
+        { "name": "United Kingdom", "rel": "was born in" }
+      ],
+      "fact": "He appears with Matthew Boulton on the Bank of England £50 note issued in 2011."
+    },
+    {
+      "id": "johannes-gutenberg",
+      "name": "Johannes Gutenberg",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Inventor",
+      "year": 1400,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He was a goldsmith from the city of Mainz.",
+        "He invented a hand mould for casting metal letters quickly.",
+        "He also made an oil-based ink that would stick to metal type.",
+        "His famous Bible was printed around 1455.",
+        "The German who brought printing with movable type to Europe around 1440."
+      ],
+      "links": [
+        { "name": "Printing Press", "rel": "invented the" },
+        { "name": "Germany", "rel": "was born in" }
+      ],
+      "fact": "Fewer than 50 copies of his Bible are known to survive."
+    },
+    {
+      "id": "wright-brothers",
+      "name": "Wright Brothers",
+      "aliases": ["Orville and Wilbur Wright"],
+      "category": "minds",
+      "sub": "Inventor",
+      "year": 1867,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Before taking to the skies, this pair ran a bicycle shop in Dayton, Ohio.",
+        "They tested gliders at Kitty Hawk, North Carolina, for its steady winds.",
+        "They built their own wind tunnel to test the shapes of wings.",
+        "On 17 December 1903 their Flyer made the first powered, controlled flight.",
+        "The two American siblings who invented the first successful airplane."
+      ],
+      "links": [
+        { "name": "Airplane", "rel": "invented the" },
+        { "name": "Bicycle", "rel": "sold and repaired" },
+        { "name": "United States", "rel": "were born in" }
+      ],
+      "fact": "The first flight in 1903 lasted only 12 seconds and covered about 37 metres."
+    },
+    {
+      "id": "guglielmo-marconi",
+      "name": "Guglielmo Marconi",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Inventor",
+      "year": 1874,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in Bologna, he did his first experiments in the attic of his family's house.",
+        "He moved to England, where he patented his invention in 1896.",
+        "In 1901 he sent the letter S in Morse code across the Atlantic Ocean.",
+        "He shared the 1909 Nobel Prize in Physics.",
+        "The Italian inventor who pioneered long-distance radio."
+      ],
+      "links": [
+        { "name": "Radio", "rel": "pioneered the" },
+        { "name": "Italy", "rel": "was born in" }
+      ],
+      "fact": "When he died in 1937, many radio stations fell silent for two minutes in his honour."
+    },
+    {
+      "id": "charles-babbage",
+      "name": "Charles Babbage",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Inventor",
+      "year": 1791,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He waged a long campaign against noisy street musicians in London.",
+        "He held the Lucasian chair of mathematics at Cambridge.",
+        "He designed the Difference Engine to calculate number tables without mistakes.",
+        "His planned Analytical Engine had a memory store and a 'mill', like a modern computer.",
+        "The English mathematician called the 'father of the computer', who worked with Ada Lovelace."
+      ],
+      "links": [
+        { "name": "Ada Lovelace", "rel": "worked with" },
+        { "name": "United Kingdom", "rel": "was born in" }
+      ],
+      "fact": "In 1991 London's Science Museum built his Difference Engine No. 2, and it worked."
+    },
+    {
+      "id": "pythagoras",
+      "name": "Pythagoras",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Mathematician",
+      "year": -570,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born on the Greek island of Samos, he founded a community in southern Italy.",
+        "His followers lived by strict rules and reportedly refused to eat beans.",
+        "He linked music to numbers, finding that pleasing notes come from simple ratios.",
+        "He taught that, deep down, everything in the universe is made of numbers.",
+        "A famous rule about right-angled triangles, a² + b² = c², is named after him."
+      ],
+      "links": [
+        { "name": "Greece", "rel": "was born in" },
+        { "name": "Plato", "rel": "influenced" }
+      ],
+      "fact": "Hundreds of different proofs of his triangle theorem are known."
+    },
+    {
+      "id": "euclid",
+      "name": "Euclid",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Mathematician",
+      "year": -300,
+      "region": "Africa",
+      "difficulty": 2,
+      "clues": [
+        "Almost nothing is known about his life, except that he taught in Alexandria.",
+        "He is said to have told a king that there is 'no royal road' to geometry.",
+        "He proved that there are infinitely many prime numbers.",
+        "His book, the Elements, was used to teach geometry for over 2,000 years.",
+        "The ancient Greek mathematician known as the father of geometry."
+      ],
+      "links": [
+        { "name": "Alexandria", "rel": "taught in" },
+        { "name": "Pythagoras", "rel": "proved the famous theorem of" }
+      ],
+      "fact": "The Elements is one of the most widely printed books in history."
+    },
+    {
+      "id": "archimedes",
+      "name": "Archimedes",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Mathematician",
+      "year": -287,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He lived in the Greek city of Syracuse on the island of Sicily.",
+        "He worked out the value of pi more accurately than anyone before him.",
+        "He designed war machines, including a giant claw said to lift enemy ships.",
+        "Of levers he said: 'Give me a place to stand and I will move the Earth.'",
+        "He is said to have shouted 'Eureka!' in his bath after a big discovery."
+      ],
+      "links": [
+        { "name": "Italy", "rel": "lived in what is now" },
+        { "name": "Greece", "rel": "was a scholar of ancient" }
+      ],
+      "fact": "A water-lifting device, a screw turned inside a tube, is named after him."
+    },
+    {
+      "id": "carl-friedrich-gauss",
+      "name": "Carl Friedrich Gauss",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Mathematician",
+      "year": 1777,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "As a schoolboy he reportedly added up all the numbers from 1 to 100 in moments.",
+        "As a teenager he showed how to draw a regular 17-sided shape with ruler and compass.",
+        "In 1801 he worked out the orbit of the lost dwarf planet Ceres so it could be found again.",
+        "He ran the observatory at Göttingen for nearly 50 years.",
+        "Called the 'Prince of Mathematicians', this German gave his name to the bell curve."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "was born in" }
+      ],
+      "fact": "He asked for a 17-sided shape on his gravestone; the stonemason refused, saying it would look like a circle."
+    },
+    {
+      "id": "fibonacci",
+      "name": "Fibonacci",
+      "aliases": ["Leonardo of Pisa", "Leonardo Bonacci"],
+      "category": "minds",
+      "sub": "Mathematician",
+      "year": 1170,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "As a boy he travelled with his merchant father to North Africa.",
+        "There he learned the Hindu-Arabic numerals from local teachers.",
+        "His 1202 book Liber Abaci helped bring the digits 0 to 9 to Europe.",
+        "He posed a puzzle about how fast a pair of rabbits would multiply.",
+        "A number sequence named after him goes 1, 1, 2, 3, 5, 8, 13, 21..."
+      ],
+      "links": [
+        { "name": "Italy", "rel": "was born in" },
+        { "name": "Al-Khwarizmi", "rel": "helped spread the numerals described by" }
+      ],
+      "fact": "His sequence turns up in nature, in the spirals of sunflower seeds and pine cones."
+    },
+    {
+      "id": "al-khwarizmi",
+      "name": "Al-Khwarizmi",
+      "aliases": ["Muhammad ibn Musa al-Khwarizmi"],
+      "category": "minds",
+      "sub": "Mathematician",
+      "year": 780,
+      "region": "Middle East",
+      "difficulty": 3,
+      "clues": [
+        "He was a scholar at the House of Wisdom in Baghdad.",
+        "He drew up star tables and worked on a map of the known world.",
+        "His book on Hindu numerals helped spread the decimal system to the West.",
+        "The word 'algebra' comes from the title of his book on solving equations.",
+        "The word 'algorithm' comes from the Latin form of his name."
+      ],
+      "links": [
+        { "name": "Baghdad", "rel": "worked in" },
+        { "name": "Fibonacci", "rel": "had his numerals spread in Europe by" }
+      ]
+    },
+    {
+      "id": "srinivasa-ramanujan",
+      "name": "Srinivasa Ramanujan",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Mathematician",
+      "year": 1887,
+      "region": "South Asia",
+      "difficulty": 3,
+      "clues": [
+        "Mostly self-taught, he worked as a clerk at the Madras Port Trust.",
+        "In 1913 he wrote to G. H. Hardy at Cambridge, sending pages of new formulas.",
+        "In 1918 he became one of the youngest Fellows of the Royal Society.",
+        "The 'taxicab number' 1729 comes from a story about Hardy visiting him in hospital.",
+        "The Indian maths genius whose life is told in the film The Man Who Knew Infinity."
+      ],
+      "links": [
+        { "name": "India", "rel": "was born in" }
+      ],
+      "fact": "India celebrates National Mathematics Day on his birthday, 22 December."
+    },
+    {
+      "id": "aryabhata",
+      "name": "Aryabhata",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Mathematician",
+      "year": 476,
+      "region": "South Asia",
+      "difficulty": 3,
+      "clues": [
+        "He wrote his main work in verse in 499 CE, when he was just 23.",
+        "He is linked with Kusumapura, near the city now called Patna.",
+        "He gave the value of pi as about 3.1416.",
+        "He taught that the Earth spins on its axis, causing day and night.",
+        "India's first satellite, launched in 1975, was named after this ancient mathematician."
+      ],
+      "links": [
+        { "name": "India", "rel": "was born in" }
+      ],
+      "fact": "He correctly explained that eclipses are caused by shadows, not by demons."
+    },
+    {
+      "id": "ada-lovelace",
+      "name": "Ada Lovelace",
+      "aliases": ["Augusta Ada King"],
+      "category": "minds",
+      "sub": "Computer Scientist",
+      "year": 1815,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Her father was the famous poet Lord Byron, whom she never really knew.",
+        "Her mother pushed her to study mathematics and logic from an early age.",
+        "She described her way of thinking as 'poetical science'.",
+        "In 1843 she published notes on Charles Babbage's planned Analytical Engine.",
+        "Her method for that machine is often called the first computer program."
+      ],
+      "links": [
+        { "name": "Charles Babbage", "rel": "worked with" },
+        { "name": "Lord Byron", "rel": "was the daughter of" },
+        { "name": "United Kingdom", "rel": "was born in" }
+      ],
+      "fact": "A day celebrating women in science is named after her and held every October."
+    },
+    {
+      "id": "alan-turing",
+      "name": "Alan Turing",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Computer Scientist",
+      "year": 1912,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He was a gifted long-distance runner who ran a marathon in under 2 hours 47 minutes.",
+        "In 1936 he described an imaginary machine that could carry out any calculation.",
+        "At Bletchley Park he helped crack the German Enigma code in World War II.",
+        "He suggested a test of whether a machine can think like a human.",
+        "The British codebreaker who appears on the Bank of England £50 note."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "was born in" },
+        { "name": "The Imitation Game", "rel": "is portrayed in" }
+      ],
+      "fact": "The top prize in computer science, the Turing Award, is named after him."
+    },
+    {
+      "id": "tim-berners-lee",
+      "name": "Tim Berners-Lee",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Computer Scientist",
+      "year": 1955,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Both of his parents worked on one of the first commercial computers.",
+        "He studied physics at Oxford and built a computer from an old television.",
+        "In 1989 at CERN he proposed a system for sharing documents through links.",
+        "He made the first website and the first web browser.",
+        "The British scientist who invented the World Wide Web."
+      ],
+      "links": [
+        { "name": "World Wide Web", "rel": "invented the" },
+        { "name": "Switzerland", "rel": "made his invention in" },
+        { "name": "United Kingdom", "rel": "was born in" }
+      ],
+      "fact": "He chose not to patent his invention, so anyone could use it for free."
+    },
+    {
+      "id": "grace-hopper",
+      "name": "Grace Hopper",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Computer Scientist",
+      "year": 1906,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "As a girl she took apart alarm clocks to see how they worked.",
+        "She joined the US Navy Reserve in World War II and rose to rear admiral.",
+        "She was one of the first programmers of the Harvard Mark I computer.",
+        "Her team taped a moth found inside a computer into their logbook as the first real 'bug'.",
+        "This pioneer built an early compiler and helped create the COBOL programming language."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was born in" }
+      ],
+      "fact": "A US Navy destroyer, USS Hopper, is named after her."
+    },
+    {
+      "id": "socrates",
+      "name": "Socrates",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Philosopher",
+      "year": -470,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He served as a soldier and was known for walking about barefoot.",
+        "He never wrote anything down; we know him from his students' writings.",
+        "He taught by asking question after question, a method now named after him.",
+        "In 399 BCE an Athens jury sentenced him to death by drinking hemlock.",
+        "The Greek thinker who said he knew only that he knew nothing; teacher of Plato."
+      ],
+      "links": [
+        { "name": "Plato", "rel": "taught" },
+        { "name": "Athens", "rel": "lived in" }
+      ],
+      "fact": "He was famous for saying that the unexamined life is not worth living."
+    },
+    {
+      "id": "plato",
+      "name": "Plato",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Philosopher",
+      "year": -428,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He wrote in dialogues, often with his teacher as the main speaker.",
+        "He told a story of prisoners in a cave who see only shadows on a wall.",
+        "He wrote about Atlantis, a mighty island said to have sunk into the sea.",
+        "He founded the Academy in Athens, an early school of higher learning.",
+        "Author of The Republic, he was the student of Socrates and the teacher of Aristotle."
+      ],
+      "links": [
+        { "name": "Socrates", "rel": "was a student of" },
+        { "name": "Aristotle", "rel": "taught" },
+        { "name": "Athens", "rel": "was born in" }
+      ],
+      "fact": "The word 'academy' comes from his school, named after the grove where it met."
+    },
+    {
+      "id": "aristotle",
+      "name": "Aristotle",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Philosopher",
+      "year": -384,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in Stagira in northern Greece, he was the son of a royal doctor.",
+        "He dissected and described hundreds of kinds of animals.",
+        "He founded a school called the Lyceum in Athens.",
+        "He spent about 20 years studying at Plato's Academy.",
+        "This Greek philosopher was the tutor of the young Alexander the Great."
+      ],
+      "links": [
+        { "name": "Plato", "rel": "studied under" },
+        { "name": "Alexander the Great", "rel": "tutored" },
+        { "name": "Greece", "rel": "was born in" }
+      ],
+      "fact": "His school's members were nicknamed 'walkers' because they discussed ideas while strolling."
+    },
+    {
+      "id": "confucius",
+      "name": "Confucius",
+      "aliases": ["Kongzi", "Kong Fuzi"],
+      "category": "minds",
+      "sub": "Philosopher",
+      "year": -551,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "He was born in 551 BCE in the small state of Lu.",
+        "He spent years travelling between kingdoms, hoping a ruler would follow his advice.",
+        "He taught respect for parents and elders, good manners and honest government.",
+        "His students collected his sayings in a book called the Analects.",
+        "The Chinese teacher who said: 'Do not do to others what you would not want done to you.'"
+      ],
+      "links": [
+        { "name": "China", "rel": "was born in" }
+      ],
+      "fact": "His birthday is celebrated as Teachers' Day in Taiwan."
+    },
+    {
+      "id": "rene-descartes",
+      "name": "René Descartes",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Philosopher",
+      "year": 1596,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He liked to stay in bed late in the morning to think.",
+        "He spent about twenty years of his working life in the Dutch Republic.",
+        "He invented the x and y coordinate system used to draw graphs.",
+        "He died in Stockholm after going to teach Queen Christina of Sweden.",
+        "The French philosopher who wrote 'I think, therefore I am'."
+      ],
+      "links": [
+        { "name": "France", "rel": "was born in" },
+        { "name": "Sweden", "rel": "died in" }
+      ],
+      "fact": "A town in France where he was born is now named after him."
+    },
+    {
+      "id": "immanuel-kant",
+      "name": "Immanuel Kant",
+      "aliases": [],
+      "category": "minds",
+      "sub": "Philosopher",
+      "year": 1724,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He spent almost his whole life in Königsberg, now Kaliningrad.",
+        "Neighbours supposedly set their clocks by his regular afternoon walk.",
+        "He suggested that the Sun and planets formed from a spinning cloud of gas.",
+        "His 1781 book Critique of Pure Reason is a landmark of philosophy.",
+        "The German philosopher known for the 'categorical imperative'."
+      ],
+      "links": [
+        { "name": "Russia", "rel": "was born in a city now part of" },
+        { "name": "Germany", "rel": "is a great philosopher of" }
+      ],
+      "fact": "Besides philosophy, he lectured on geography for decades."
+    }
+  ]
+}

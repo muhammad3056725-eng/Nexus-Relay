@@ -1,0 +1,1146 @@
+{
+  "category": "landmarks",
+  "subjects": [
+    {
+      "id": "eiffel-tower",
+      "name": "Eiffel Tower",
+      "aliases": ["Tour Eiffel"],
+      "category": "landmarks",
+      "sub": "Tower",
+      "year": 1889,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "This iron lattice structure was meant to stand for only twenty years.",
+        "It was built as the entrance arch to the 1889 World's Fair.",
+        "Its engineer's company also built the inner frame of the Statue of Liberty.",
+        "It is repainted about every seven years, using some 60 tonnes of paint.",
+        "The tallest landmark on the Champ de Mars in the French capital."
+      ],
+      "links": [
+        { "name": "Paris", "rel": "stands in" },
+        { "name": "Statue of Liberty", "rel": "shares an engineer with" }
+      ],
+      "fact": "It grows about 15 cm taller in summer heat."
+    },
+    {
+      "id": "leaning-tower-of-pisa",
+      "name": "Leaning Tower of Pisa",
+      "aliases": ["Tower of Pisa"],
+      "category": "landmarks",
+      "sub": "Tower",
+      "year": 1372,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Building it took almost 200 years, with long pauses during wars.",
+        "Soft ground on one side made it start to tilt while it was still being built.",
+        "Engineers straightened it by about 45 cm in work finished in 2001.",
+        "It is the bell tower of a cathedral in a Tuscan city.",
+        "Tourists pose as if holding up this famously tilted Italian bell tower."
+      ],
+      "links": [
+        { "name": "Italy", "rel": "stands in" },
+        { "name": "Galileo Galilei", "rel": "is linked by legend to" }
+      ],
+      "fact": "Legend says Galileo dropped balls from it to test falling speeds, though he may never have done so."
+    },
+    {
+      "id": "cn-tower",
+      "name": "CN Tower",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Tower",
+      "year": 1976,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "It was built to send TV and radio signals over a growing city.",
+        "For over 30 years it was the tallest free-standing structure in the world.",
+        "It stands 553 metres tall, including its antenna.",
+        "Its glass floor and outdoor EdgeWalk let visitors look straight down from over 340 m.",
+        "This needle-like tower rises over Toronto on the shore of Lake Ontario."
+      ],
+      "links": [
+        { "name": "Toronto", "rel": "stands in" },
+        { "name": "Canada", "rel": "is a symbol of" }
+      ],
+      "fact": "It is struck by lightning dozens of times a year."
+    },
+    {
+      "id": "big-ben",
+      "name": "Big Ben",
+      "aliases": ["Elizabeth Tower"],
+      "category": "landmarks",
+      "sub": "Tower",
+      "year": 1859,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Strictly speaking, its famous name belongs to the great bell inside, not the tower.",
+        "Its tower was renamed in 2012 to honour a queen's Diamond Jubilee.",
+        "Its great bell weighs more than 13 tonnes.",
+        "It stands at the north end of the Palace of Westminster, beside the Thames.",
+        "London's most famous clock tower, whose chimes ring in the New Year on British TV."
+      ],
+      "links": [
+        { "name": "London", "rel": "stands in" },
+        { "name": "United Kingdom", "rel": "is a symbol of" }
+      ],
+      "fact": "Old pennies placed on its pendulum are used to fine-tune the clock's timekeeping."
+    },
+    {
+      "id": "burj-khalifa",
+      "name": "Burj Khalifa",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Tower",
+      "year": 2010,
+      "region": "Middle East",
+      "difficulty": 1,
+      "clues": [
+        "Its Y-shaped floor plan was inspired by a desert flower, the spider lily.",
+        "It is named after the leader of the UAE who helped fund its completion.",
+        "Tom Cruise climbed its outside in the film Mission: Impossible – Ghost Protocol.",
+        "It has held the title of the world's tallest building since it opened in 2010.",
+        "This 828-metre skyscraper towers over Dubai."
+      ],
+      "links": [
+        { "name": "Dubai", "rel": "stands in" }
+      ],
+      "fact": "Its tip can be seen from about 95 km away."
+    },
+    {
+      "id": "golden-gate-bridge",
+      "name": "Golden Gate Bridge",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Bridge",
+      "year": 1937,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "When it opened in 1937 it had the longest main span of any suspension bridge.",
+        "Its colour is officially called 'International Orange'.",
+        "It spans the strait linking a famous bay to the Pacific Ocean.",
+        "Its towers often seem to float above thick sea fog.",
+        "This orange-red suspension bridge is the symbol of San Francisco."
+      ],
+      "links": [
+        { "name": "San Francisco", "rel": "stands in" },
+        { "name": "United States", "rel": "is a symbol of" }
+      ],
+      "fact": "Its towers rise about 227 metres above the water."
+    },
+    {
+      "id": "tower-bridge",
+      "name": "Tower Bridge",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Bridge",
+      "year": 1894,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It opened in 1894 after eight years of construction.",
+        "Its road deck splits in two and lifts to let tall ships pass.",
+        "Its high-level walkways now have glass floors for visitors.",
+        "It is often mistaken for London Bridge, its plainer neighbour upstream.",
+        "This twin-towered drawbridge crosses the Thames beside the Tower of London."
+      ],
+      "links": [
+        { "name": "London", "rel": "stands in" },
+        { "name": "Big Ben", "rel": "shares a river with" }
+      ],
+      "fact": "In 1952 a bus had to jump the gap when the bridge began to open beneath it."
+    },
+    {
+      "id": "brooklyn-bridge",
+      "name": "Brooklyn Bridge",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Bridge",
+      "year": 1883,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "When it opened in 1883 it was the longest suspension bridge in the world.",
+        "After its chief engineer fell ill, his wife Emily Roebling oversaw much of the work.",
+        "In 1884 P. T. Barnum led 21 elephants across it to prove it was safe.",
+        "Its Gothic stone towers hold up steel cables over the East River.",
+        "This bridge links Manhattan with a neighbouring borough of New York City."
+      ],
+      "links": [
+        { "name": "New York City", "rel": "stands in" }
+      ],
+      "fact": "It was the first suspension bridge to use steel-wire cables."
+    },
+    {
+      "id": "sydney-harbour-bridge",
+      "name": "Sydney Harbour Bridge",
+      "aliases": ["Sydney Harbor Bridge"],
+      "category": "landmarks",
+      "sub": "Bridge",
+      "year": 1932,
+      "region": "Oceania",
+      "difficulty": 2,
+      "clues": [
+        "Opened in 1932, its steel arch earned it the nickname 'the Coathanger'.",
+        "It is one of the widest long-span bridges in the world, carrying trains, cars and walkers.",
+        "Visitors can climb over the top of its arch on guided tours.",
+        "Fireworks pour off it every New Year's Eve.",
+        "This steel arch bridge stands near the Opera House in Australia's oldest city."
+      ],
+      "links": [
+        { "name": "Sydney", "rel": "stands in" },
+        { "name": "Sydney Opera House", "rel": "stands near" },
+        { "name": "Australia", "rel": "is a symbol of" }
+      ],
+      "fact": "Its arch rises or falls by up to about 18 cm as the steel heats and cools."
+    },
+    {
+      "id": "buckingham-palace",
+      "name": "Buckingham Palace",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Palace",
+      "year": 1703,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It began as a large townhouse built for a duke in 1703.",
+        "Queen Victoria was the first monarch to live there, from 1837.",
+        "It has 775 rooms, including 19 state rooms.",
+        "Crowds gather outside it to watch the Changing of the Guard.",
+        "The London home of the British monarch, with a famous balcony."
+      ],
+      "links": [
+        { "name": "London", "rel": "stands in" },
+        { "name": "United Kingdom", "rel": "is the royal home of the" }
+      ],
+      "fact": "When the monarch is in residence, the Royal Standard flies above it."
+    },
+    {
+      "id": "palace-of-versailles",
+      "name": "Palace of Versailles",
+      "aliases": ["Versailles", "Château de Versailles"],
+      "category": "landmarks",
+      "sub": "Palace",
+      "year": 1682,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It grew from a royal hunting lodge into one of the largest palaces in the world.",
+        "Its vast formal gardens were designed by André Le Nôtre.",
+        "The treaty ending the First World War was signed in its Hall of Mirrors in 1919.",
+        "King Louis XIV moved the royal court there in 1682.",
+        "This grand palace near Paris was the home of Marie Antoinette."
+      ],
+      "links": [
+        { "name": "France", "rel": "stands in" },
+        { "name": "Marie Antoinette", "rel": "was the home of" }
+      ],
+      "fact": "Its Hall of Mirrors has 357 mirrors."
+    },
+    {
+      "id": "forbidden-city",
+      "name": "Forbidden City",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Palace",
+      "year": 1420,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "It was completed in 1420 under the Ming dynasty.",
+        "It was home to 24 emperors over nearly 500 years.",
+        "Ordinary people were not allowed to enter it without the emperor's permission.",
+        "Today it is a museum holding more than a million treasures.",
+        "This vast walled palace complex lies at the heart of Beijing."
+      ],
+      "links": [
+        { "name": "Beijing", "rel": "stands in" },
+        { "name": "China", "rel": "is a symbol of" }
+      ],
+      "fact": "Legend says it has 9,999 and a half rooms; the true count is lower."
+    },
+    {
+      "id": "alhambra",
+      "name": "Alhambra",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Palace",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "Its name comes from an Arabic phrase meaning 'the red one'.",
+        "It was built mainly by the Nasrid dynasty in the 13th and 14th centuries.",
+        "Its Court of the Lions has a fountain held up by twelve stone lions.",
+        "It was the seat of the last Muslim kingdom in Spain, which surrendered in 1492.",
+        "This hilltop palace and fortress overlooks the city of Granada in Spain."
+      ],
+      "links": [
+        { "name": "Spain", "rel": "stands in" }
+      ],
+      "fact": "Its intricate tile patterns inspired the artist M. C. Escher."
+    },
+    {
+      "id": "st-peters-basilica",
+      "name": "St. Peter's Basilica",
+      "aliases": ["Saint Peter's Basilica"],
+      "category": "landmarks",
+      "sub": "Place of Worship",
+      "year": 1626,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It was consecrated in 1626 after more than a century of building.",
+        "Michelangelo designed its great dome.",
+        "Bernini's bronze canopy stands over its main altar.",
+        "It is traditionally believed to stand over the tomb of Jesus's chief apostle.",
+        "This vast church in Vatican City faces a square where crowds gather to see the Pope."
+      ],
+      "links": [
+        { "name": "Vatican City", "rel": "stands in" },
+        { "name": "Rome", "rel": "is surrounded by" },
+        { "name": "Michelangelo", "rel": "was designed in part by" }
+      ],
+      "fact": "It is one of the largest churches in the world."
+    },
+    {
+      "id": "notre-dame-de-paris",
+      "name": "Notre-Dame de Paris",
+      "aliases": ["Notre-Dame", "Notre-Dame Cathedral"],
+      "category": "landmarks",
+      "sub": "Place of Worship",
+      "year": 1345,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Building began in 1163 and took nearly two centuries.",
+        "Victor Hugo's 1831 novel about its bell-ringer made it world-famous.",
+        "A fire in April 2019 destroyed its roof and wooden spire.",
+        "It reopened in December 2024 after five years of restoration.",
+        "This Gothic cathedral stands on the Île de la Cité in the French capital."
+      ],
+      "links": [
+        { "name": "Paris", "rel": "stands in" },
+        { "name": "Victor Hugo", "rel": "was made famous by" }
+      ],
+      "fact": "Road distances in France are measured from a bronze star, 'point zéro', on the square in front of it."
+    },
+    {
+      "id": "st-basils-cathedral",
+      "name": "St. Basil's Cathedral",
+      "aliases": ["Saint Basil's Cathedral"],
+      "category": "landmarks",
+      "sub": "Place of Worship",
+      "year": 1561,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "It was built in the 1550s on the orders of Ivan the Terrible.",
+        "It celebrated the capture of the city of Kazan in 1552.",
+        "Legend claims its architect was blinded so he could never build anything as beautiful.",
+        "Its swirling, brightly coloured onion domes look like flames of candy.",
+        "This cathedral with colourful onion domes stands on Red Square in Moscow."
+      ],
+      "links": [
+        { "name": "Moscow", "rel": "stands in" },
+        { "name": "Russia", "rel": "is a symbol of" }
+      ],
+      "fact": "It has served mainly as a museum since the 1920s."
+    },
+    {
+      "id": "sagrada-familia",
+      "name": "Sagrada Família",
+      "aliases": ["Sagrada Familia"],
+      "category": "landmarks",
+      "sub": "Place of Worship",
+      "year": 1882,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Construction began in 1882 and was still going on more than 140 years later.",
+        "Its architect worked on it for over 40 years and is buried in its crypt.",
+        "It has been paid for by private donations and visitors' tickets.",
+        "Its tallest tower, dedicated to Jesus Christ, was designed to reach 172.5 metres.",
+        "Antoni Gaudí's unfinished basilica is the most famous sight in Barcelona."
+      ],
+      "links": [
+        { "name": "Barcelona", "rel": "stands in" },
+        { "name": "Spain", "rel": "is a symbol of" }
+      ],
+      "fact": "Gaudí is said to have joked about the slow progress: 'My client is not in a hurry.'"
+    },
+    {
+      "id": "sydney-opera-house",
+      "name": "Sydney Opera House",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Building",
+      "year": 1973,
+      "region": "Oceania",
+      "difficulty": 1,
+      "clues": [
+        "Its Danish architect, Jørn Utzon, left the project in 1966 and never saw it finished.",
+        "It was formally opened by Queen Elizabeth II in 1973.",
+        "Its roof shells are covered with more than a million white and cream tiles.",
+        "It became a UNESCO World Heritage Site in 2007.",
+        "This sail-roofed performing arts centre stands on Bennelong Point near the Harbour Bridge."
+      ],
+      "links": [
+        { "name": "Sydney", "rel": "stands in" },
+        { "name": "Sydney Harbour Bridge", "rel": "stands near" },
+        { "name": "Australia", "rel": "is a symbol of" }
+      ],
+      "fact": "It cost about 14 times its original budget."
+    },
+    {
+      "id": "white-house",
+      "name": "White House",
+      "aliases": ["The White House"],
+      "category": "landmarks",
+      "sub": "Building",
+      "year": 1800,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Every president since John Adams has lived there.",
+        "British troops set it on fire in 1814.",
+        "Its Oval Office is where the president usually works.",
+        "Its address is 1600 Pennsylvania Avenue.",
+        "The official home of the President of the United States in Washington, D.C."
+      ],
+      "links": [
+        { "name": "United States", "rel": "is the presidential home of the" }
+      ],
+      "fact": "It has 132 rooms and 35 bathrooms."
+    },
+    {
+      "id": "louvre",
+      "name": "Louvre",
+      "aliases": ["Louvre Museum"],
+      "category": "landmarks",
+      "sub": "Building",
+      "year": 1793,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It began as a fortress built around 1200 by King Philip II.",
+        "It opened as a public museum in 1793, during the French Revolution.",
+        "A glass pyramid designed by I. M. Pei became its main entrance in 1989.",
+        "It is the most visited art museum in the world.",
+        "This former royal palace in Paris displays the Mona Lisa."
+      ],
+      "links": [
+        { "name": "Paris", "rel": "stands in" },
+        { "name": "Mona Lisa", "rel": "displays the" }
+      ],
+      "fact": "In 1911 the Mona Lisa was stolen from it and was missing for over two years."
+    },
+    {
+      "id": "empire-state-building",
+      "name": "Empire State Building",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Building",
+      "year": 1931,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It went up in just over a year and opened in 1931.",
+        "It was the tallest skyscraper in the world for nearly 40 years.",
+        "Its top is lit in different colours to mark holidays and events.",
+        "The giant ape King Kong climbed it in the 1933 film.",
+        "This Art Deco skyscraper on Fifth Avenue is New York City's most famous."
+      ],
+      "links": [
+        { "name": "New York City", "rel": "stands in" },
+        { "name": "King Kong", "rel": "was climbed by" }
+      ],
+      "fact": "It has its own ZIP code, 10118."
+    },
+    {
+      "id": "taj-mahal",
+      "name": "Taj Mahal",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Monument",
+      "year": 1653,
+      "region": "South Asia",
+      "difficulty": 1,
+      "clues": [
+        "Around 20,000 workers built it over some 20 years.",
+        "Its white marble seems to change from pink at dawn to gold at sunset.",
+        "Emperor Shah Jahan built it in memory of his beloved wife, who died in 1631.",
+        "It stands on the bank of the Yamuna River in Agra.",
+        "This white marble tomb is the most famous building in India."
+      ],
+      "links": [
+        { "name": "India", "rel": "stands in" },
+        { "name": "Shah Jahan", "rel": "was built by" }
+      ],
+      "fact": "It was named one of the New 7 Wonders of the World in 2007."
+    },
+    {
+      "id": "arc-de-triomphe",
+      "name": "Arc de Triomphe",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Monument",
+      "year": 1836,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Napoleon ordered it in 1806 after his victory at Austerlitz.",
+        "It was finally completed in 1836, long after the death of the man who ordered it.",
+        "The Tomb of the Unknown Soldier from the First World War lies beneath it.",
+        "Twelve avenues radiate from the star-shaped square around it.",
+        "This giant arch stands at the top of the Champs-Élysées in Paris."
+      ],
+      "links": [
+        { "name": "Paris", "rel": "stands in" },
+        { "name": "Napoleon", "rel": "was ordered by" }
+      ],
+      "fact": "In 1919 a pilot flew a biplane straight through it."
+    },
+    {
+      "id": "mount-rushmore",
+      "name": "Mount Rushmore",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Monument",
+      "year": 1941,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Carving began in 1927 and stopped in 1941.",
+        "About 400 workers used dynamite to blast away most of the rock.",
+        "Each of its faces is about 18 metres tall.",
+        "Its sculptor, Gutzon Borglum, died months before the work ended.",
+        "Four presidents' faces are carved into this mountain in South Dakota."
+      ],
+      "links": [
+        { "name": "United States", "rel": "stands in" },
+        { "name": "Abraham Lincoln", "rel": "shows the face of" }
+      ],
+      "fact": "A hidden 'Hall of Records' chamber lies behind the carved faces."
+    },
+    {
+      "id": "great-wall-of-china",
+      "name": "Great Wall of China",
+      "aliases": ["Great Wall"],
+      "category": "landmarks",
+      "sub": "Monument",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "Its many sections, built over some 2,000 years, add up to more than 20,000 km.",
+        "Most of its best-preserved parts were built during the Ming dynasty.",
+        "Contrary to popular belief, it cannot be seen with the naked eye from the Moon.",
+        "It was built to protect against raids by nomadic peoples from the north.",
+        "This ancient defensive barrier snakes over the mountains north of Beijing."
+      ],
+      "links": [
+        { "name": "China", "rel": "stands in" },
+        { "name": "Beijing", "rel": "passes near" }
+      ],
+      "fact": "Sticky rice was mixed into the mortar of some of its later sections."
+    },
+    {
+      "id": "statue-of-liberty",
+      "name": "Statue of Liberty",
+      "aliases": ["Lady Liberty"],
+      "category": "landmarks",
+      "sub": "Statue",
+      "year": 1886,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was a gift from the people of France, dedicated in 1886.",
+        "Its copper skin has slowly turned green over time.",
+        "The tablet in its left hand is inscribed with the date July 4, 1776.",
+        "It was sculpted by Bartholdi, and Gustave Eiffel designed its inner frame.",
+        "This torch-bearing statue greets ships in New York Harbor."
+      ],
+      "links": [
+        { "name": "New York City", "rel": "stands in" },
+        { "name": "France", "rel": "was a gift from" },
+        { "name": "Eiffel Tower", "rel": "shares an engineer with" }
+      ],
+      "fact": "The seven rays of its crown are said to stand for the seven seas and continents."
+    },
+    {
+      "id": "christ-the-redeemer",
+      "name": "Christ the Redeemer",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Statue",
+      "year": 1931,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "It was completed in 1931 after nine years of work.",
+        "Its outer layer is a mosaic of thousands of small soapstone tiles.",
+        "It is about 30 metres tall, with arms stretching 28 metres wide.",
+        "It stands on top of Corcovado mountain, about 700 metres above the city.",
+        "This giant statue of Jesus with outstretched arms overlooks Rio de Janeiro."
+      ],
+      "links": [
+        { "name": "Rio de Janeiro", "rel": "stands in" },
+        { "name": "Brazil", "rel": "is a symbol of" }
+      ],
+      "fact": "It is struck by lightning several times a year."
+    },
+    {
+      "id": "great-sphinx-of-giza",
+      "name": "Great Sphinx of Giza",
+      "aliases": ["Great Sphinx", "Sphinx"],
+      "category": "landmarks",
+      "sub": "Statue",
+      "year": -2500,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "It was carved straight out of the limestone bedrock.",
+        "It is about 73 metres long and 20 metres high.",
+        "Its missing nose has inspired many legends.",
+        "It has the body of a lion and the head of a man, thought to be a pharaoh.",
+        "This lion-bodied statue guards the pyramids on the edge of Cairo."
+      ],
+      "links": [
+        { "name": "Egypt", "rel": "stands in" },
+        { "name": "Great Pyramid of Giza", "rel": "stands near" },
+        { "name": "Cairo", "rel": "lies near" }
+      ],
+      "fact": "It is thought to be the oldest known monumental sculpture in Egypt."
+    },
+    {
+      "id": "moai",
+      "name": "Moai",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Statue",
+      "year": null,
+      "region": "Oceania",
+      "difficulty": 2,
+      "clues": [
+        "Nearly 1,000 of them were carved by the Rapa Nui people.",
+        "Most were carved from volcanic stone at the Rano Raraku quarry.",
+        "Some wear huge red stone hats called pukao.",
+        "Many stand with their backs to the sea, facing inland.",
+        "These giant stone heads and torsos stand on Easter Island, part of Chile."
+      ],
+      "links": [
+        { "name": "Chile", "rel": "stand in" }
+      ],
+      "fact": "Some that look like just heads have bodies buried underground."
+    },
+    {
+      "id": "colosseum",
+      "name": "Colosseum",
+      "aliases": ["Coliseum"],
+      "category": "landmarks",
+      "sub": "Ancient Site",
+      "year": 80,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It opened in AD 80 with games said to have lasted 100 days.",
+        "It could hold an estimated 50,000 to 80,000 spectators.",
+        "Its name may come from a colossal statue of Emperor Nero that stood nearby.",
+        "Gladiators fought wild animals and each other in its oval arena.",
+        "This huge ruined amphitheatre stands in the heart of Rome."
+      ],
+      "links": [
+        { "name": "Rome", "rel": "stands in" },
+        { "name": "Italy", "rel": "is a symbol of" }
+      ],
+      "fact": "It was named one of the New 7 Wonders of the World in 2007."
+    },
+    {
+      "id": "machu-picchu",
+      "name": "Machu Picchu",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Ancient Site",
+      "year": 1450,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "It was built around 1450 for an Inca emperor.",
+        "It was abandoned about a century later, around the time of the Spanish conquest.",
+        "Hiram Bingham brought it to world attention in 1911.",
+        "Many visitors reach it by hiking the Inca Trail.",
+        "This Inca citadel sits high on a mountain ridge in Peru's Andes."
+      ],
+      "links": [
+        { "name": "Peru", "rel": "stands in" }
+      ],
+      "fact": "Its stone walls were built without mortar, the blocks fitted tightly together."
+    },
+    {
+      "id": "great-pyramid-of-giza",
+      "name": "Great Pyramid of Giza",
+      "aliases": ["Great Pyramid"],
+      "category": "landmarks",
+      "sub": "Ancient Site",
+      "year": -2560,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "It is the oldest of the Seven Wonders of the Ancient World, and the only one still standing.",
+        "For nearly 4,000 years it was the tallest human-made structure on Earth.",
+        "It is made of an estimated 2.3 million stone blocks.",
+        "It was built as a tomb for the pharaoh Khufu around 2560 BC.",
+        "The largest of three famous royal tombs on a plateau near Cairo."
+      ],
+      "links": [
+        { "name": "Egypt", "rel": "stands in" },
+        { "name": "Cairo", "rel": "lies near" },
+        { "name": "Great Sphinx of Giza", "rel": "stands near" }
+      ],
+      "fact": "Its four sides are lined up almost exactly with north, south, east and west."
+    },
+    {
+      "id": "stonehenge",
+      "name": "Stonehenge",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Ancient Site",
+      "year": -2500,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Some of its stones were hauled over 200 km from the hills of Wales.",
+        "Its biggest stones were raised around 2500 BC.",
+        "At the summer solstice the sun rises in line with its entrance.",
+        "Its huge sarsen stones are topped by horizontal lintels.",
+        "This prehistoric ring of standing stones lies on Salisbury Plain in England."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "stands in" }
+      ],
+      "fact": "In 2024 scientists found that its Altar Stone came from north-east Scotland."
+    },
+    {
+      "id": "parthenon",
+      "name": "Parthenon",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Ancient Site",
+      "year": -432,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Its columns bulge slightly in the middle so they look perfectly straight from afar.",
+        "A gunpowder explosion in 1687 blew off its roof.",
+        "Built in the 400s BC, it was dedicated to the goddess Athena.",
+        "Many of its marble sculptures are displayed in the British Museum.",
+        "This columned temple crowns the Acropolis of Athens."
+      ],
+      "links": [
+        { "name": "Athens", "rel": "stands in" },
+        { "name": "Greece", "rel": "is a symbol of" }
+      ],
+      "fact": "Over its life it has been a temple, a church, a mosque and a gunpowder store."
+    },
+    {
+      "id": "chichen-itza",
+      "name": "Chichen Itza",
+      "aliases": ["Chichén Itzá"],
+      "category": "landmarks",
+      "sub": "Ancient Site",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 2,
+      "clues": [
+        "It was one of the largest Maya cities, at its height about a thousand years ago.",
+        "Its main pyramid, El Castillo, has 365 steps, one for each day of the year.",
+        "At the spring and autumn equinoxes a shadow serpent seems to slither down its pyramid.",
+        "It was named one of the New 7 Wonders of the World in 2007.",
+        "This ancient Maya city lies on the Yucatán Peninsula in Mexico."
+      ],
+      "links": [
+        { "name": "Mexico", "rel": "stands in" }
+      ],
+      "fact": "Clapping in front of its main pyramid makes an echo said to sound like a bird's chirp."
+    },
+    {
+      "id": "angkor-wat",
+      "name": "Angkor Wat",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Ancient Site",
+      "year": 1150,
+      "region": "Southeast Asia",
+      "difficulty": 2,
+      "clues": [
+        "It is often called the largest religious monument in the world.",
+        "It was built in the early 1100s as a Hindu temple and later became Buddhist.",
+        "It was the great temple of the Khmer Empire.",
+        "Its towers appear on its country's national flag.",
+        "This vast temple complex near Siem Reap is Cambodia's best-known sight."
+      ],
+      "links": [
+        { "name": "Cambodia", "rel": "stands in" }
+      ],
+      "fact": "Unusually for temples of its kind, it faces west."
+    },
+    {
+      "id": "mount-everest",
+      "name": "Mount Everest",
+      "aliases": ["Everest", "Sagarmatha", "Chomolungma"],
+      "category": "landmarks",
+      "sub": "Mountain",
+      "year": null,
+      "region": "South Asia",
+      "difficulty": 1,
+      "clues": [
+        "Its height was remeasured in 2020 at 8,848.86 metres.",
+        "Its summit is made of limestone that once lay on an ancient seabed.",
+        "Edmund Hillary and Tenzing Norgay first reached its top in 1953.",
+        "It sits on the border between Nepal and China, in the Himalayas.",
+        "This is the highest mountain on Earth above sea level."
+      ],
+      "links": [
+        { "name": "Nepal", "rel": "stands in" },
+        { "name": "China", "rel": "stands on the border of" },
+        { "name": "Edmund Hillary", "rel": "was first climbed by" }
+      ],
+      "fact": "Climbers call the thin-aired zone above 8,000 metres 'the death zone'."
+    },
+    {
+      "id": "mount-kilimanjaro",
+      "name": "Mount Kilimanjaro",
+      "aliases": ["Kilimanjaro"],
+      "category": "landmarks",
+      "sub": "Mountain",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 2,
+      "clues": [
+        "It is made of three volcanic cones: Kibo, Mawenzi and Shira.",
+        "Its highest point, Uhuru Peak, is about 5,895 metres above sea level.",
+        "It is often called the tallest free-standing mountain in the world.",
+        "Its shrinking glaciers sit just south of the equator.",
+        "This snow-capped volcano in Tanzania is the highest mountain in Africa."
+      ],
+      "links": [
+        { "name": "Tanzania", "rel": "stands in" },
+        { "name": "Kenya", "rel": "stands near the border of" }
+      ],
+      "fact": "Climbers pass through several climate zones, from farmland to an arctic summit."
+    },
+    {
+      "id": "mount-fuji",
+      "name": "Mount Fuji",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Mountain",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "This volcano last erupted in 1707.",
+        "It stands 3,776 metres tall.",
+        "Its near-perfect cone appears in Hokusai's famous woodblock prints.",
+        "Its climbing season usually runs in July and August.",
+        "Japan's highest mountain, a snow-capped volcano visible from Tokyo."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "stands in" },
+        { "name": "Tokyo", "rel": "can be seen from" }
+      ],
+      "fact": "The upper part of the mountain is owned by a Shinto shrine."
+    },
+    {
+      "id": "matterhorn",
+      "name": "Matterhorn",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Mountain",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "It was first climbed in 1865, and four of the seven climbers died on the way down.",
+        "It rises to 4,478 metres in the Alps.",
+        "Its four steep faces point roughly north, south, east and west.",
+        "Its outline appeared on Toblerone chocolate packaging for decades.",
+        "This pyramid-shaped peak on the Swiss-Italian border towers over Zermatt."
+      ],
+      "links": [
+        { "name": "Switzerland", "rel": "stands in" },
+        { "name": "Italy", "rel": "stands on the border of" }
+      ],
+      "fact": "Disneyland has had a smaller copy of it since 1959."
+    },
+    {
+      "id": "amazon-river",
+      "name": "Amazon River",
+      "aliases": ["Amazon"],
+      "category": "landmarks",
+      "sub": "River",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "It carries more water than any other river on Earth.",
+        "No bridge crosses its main stream.",
+        "Its waters are home to pink river dolphins and piranhas.",
+        "It flows from the Andes of Peru east to the Atlantic Ocean.",
+        "This mighty South American river runs through the world's largest rainforest."
+      ],
+      "links": [
+        { "name": "Brazil", "rel": "flows through" },
+        { "name": "Peru", "rel": "rises in" }
+      ],
+      "fact": "About a fifth of all the river water reaching the world's oceans comes from it."
+    },
+    {
+      "id": "nile",
+      "name": "Nile",
+      "aliases": ["River Nile", "Nile River"],
+      "category": "landmarks",
+      "sub": "River",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "It is one of the two longest rivers in the world.",
+        "Its two main branches are called the White and the Blue.",
+        "Those two branches meet at Khartoum in Sudan.",
+        "Its yearly floods made farming possible for the ancient Egyptians.",
+        "This river flows north through Egypt and Cairo to the Mediterranean."
+      ],
+      "links": [
+        { "name": "Egypt", "rel": "flows through" },
+        { "name": "Cairo", "rel": "flows through" }
+      ],
+      "fact": "Its basin covers parts of 11 countries."
+    },
+    {
+      "id": "mississippi-river",
+      "name": "Mississippi River",
+      "aliases": ["Mississippi"],
+      "category": "landmarks",
+      "sub": "River",
+      "year": null,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It starts as a small stream flowing out of Lake Itasca in Minnesota.",
+        "Mark Twain worked as a steamboat pilot on it.",
+        "It flows south past St. Louis, Memphis and New Orleans.",
+        "It ends in a bird's-foot-shaped delta south of New Orleans.",
+        "Huckleberry Finn rafts down this great river of the central United States."
+      ],
+      "links": [
+        { "name": "United States", "rel": "flows through" },
+        { "name": "Mark Twain", "rel": "was piloted by" }
+      ],
+      "fact": "Its name comes from an Ojibwe word meaning 'great river'."
+    },
+    {
+      "id": "danube",
+      "name": "Danube",
+      "aliases": ["Danube River", "River Danube"],
+      "category": "landmarks",
+      "sub": "River",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "It flows through or along ten countries, more than any other river.",
+        "It begins in Germany's Black Forest.",
+        "Vienna, Bratislava, Budapest and Belgrade all stand on its banks.",
+        "It empties into the Black Sea through a wide delta, mostly in Romania.",
+        "Europe's second-longest river, it is honoured in a famous Strauss waltz."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "rises in" },
+        { "name": "Johann Strauss II", "rel": "inspired a waltz by" }
+      ],
+      "fact": "Four national capitals lie on it, more than on any other river."
+    },
+    {
+      "id": "niagara-falls",
+      "name": "Niagara Falls",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Waterfall",
+      "year": null,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It is made up of three waterfalls on the border of two countries.",
+        "Its largest part is called the Horseshoe Falls.",
+        "In 1901 Annie Edson Taylor went over it in a barrel and survived.",
+        "Boats carry visitors right up to its thundering spray.",
+        "These famous falls lie on the border between Canada and the United States."
+      ],
+      "links": [
+        { "name": "Canada", "rel": "lies in" },
+        { "name": "United States", "rel": "lies in" },
+        { "name": "Toronto", "rel": "is a day trip from" }
+      ],
+      "fact": "At night much of its water is diverted to make electricity."
+    },
+    {
+      "id": "victoria-falls",
+      "name": "Victoria Falls",
+      "aliases": ["Mosi-oa-Tunya"],
+      "category": "landmarks",
+      "sub": "Waterfall",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 2,
+      "clues": [
+        "It is often called the largest sheet of falling water in the world.",
+        "Its spray can be seen from many kilometres away.",
+        "Its local name means 'the Smoke that Thunders'.",
+        "The explorer David Livingstone named it after a British queen in 1855.",
+        "This wide waterfall on the Zambezi River lies between Zambia and Zimbabwe."
+      ],
+      "links": [
+        { "name": "Zambia", "rel": "lies in" },
+        { "name": "Zimbabwe", "rel": "lies in" },
+        { "name": "David Livingstone", "rel": "was named by" }
+      ],
+      "fact": "In the dry season, swimmers can sit in the 'Devil's Pool' right at its edge."
+    },
+    {
+      "id": "angel-falls",
+      "name": "Angel Falls",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Waterfall",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 3,
+      "clues": [
+        "It plunges from the top of a flat-topped jungle mountain called a tepui.",
+        "It is named after an American pilot who flew over it in the 1930s.",
+        "It inspired Paradise Falls in the Pixar film Up.",
+        "It drops 979 metres, the highest unbroken fall of water on Earth.",
+        "This record-breaking waterfall is in Venezuela's Canaima National Park."
+      ],
+      "links": [
+        { "name": "Venezuela", "rel": "lies in" },
+        { "name": "Up", "rel": "inspired a waterfall in" }
+      ],
+      "fact": "Much of its water turns to mist before it reaches the bottom."
+    },
+    {
+      "id": "iguazu-falls",
+      "name": "Iguazu Falls",
+      "aliases": ["Iguaçu Falls"],
+      "category": "landmarks",
+      "sub": "Waterfall",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 3,
+      "clues": [
+        "It is made up of around 275 separate drops along nearly 3 km.",
+        "Its name comes from Guaraní words meaning 'big water'.",
+        "Its most famous section is the U-shaped 'Devil's Throat'.",
+        "On seeing it, Eleanor Roosevelt reportedly exclaimed 'Poor Niagara!'",
+        "This vast system of waterfalls lies on the border of Argentina and Brazil."
+      ],
+      "links": [
+        { "name": "Argentina", "rel": "lies in" },
+        { "name": "Brazil", "rel": "lies in" }
+      ],
+      "fact": "Both sides of the falls are protected as national parks and UNESCO World Heritage Sites."
+    },
+    {
+      "id": "grand-canyon",
+      "name": "Grand Canyon",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Natural Wonder",
+      "year": null,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was carved by the Colorado River over millions of years.",
+        "Its rock layers reveal nearly two billion years of Earth's history.",
+        "It is about 446 km long and more than 1.8 km deep in places.",
+        "A glass Skywalk juts out over its edge on Hualapai land.",
+        "This huge red-rock gorge is the most famous national park in Arizona."
+      ],
+      "links": [
+        { "name": "United States", "rel": "lies in" }
+      ],
+      "fact": "It became a national park in 1919."
+    },
+    {
+      "id": "sahara",
+      "name": "Sahara",
+      "aliases": ["Sahara Desert"],
+      "category": "landmarks",
+      "sub": "Natural Wonder",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 2,
+      "clues": [
+        "Its name comes from the Arabic word for 'desert'.",
+        "Only about a quarter of it is covered by sand dunes.",
+        "Several thousand years ago much of it was green grassland with lakes.",
+        "It covers most of North Africa, from the Atlantic to the Red Sea.",
+        "This is the largest hot desert in the world."
+      ],
+      "links": [
+        { "name": "Egypt", "rel": "covers much of" },
+        { "name": "Morocco", "rel": "borders" }
+      ],
+      "fact": "Some of its sand dunes are taller than 180 metres."
+    },
+    {
+      "id": "great-barrier-reef",
+      "name": "Great Barrier Reef",
+      "aliases": [],
+      "category": "landmarks",
+      "sub": "Natural Wonder",
+      "year": null,
+      "region": "Oceania",
+      "difficulty": 2,
+      "clues": [
+        "It is made up of nearly 3,000 separate coral systems and hundreds of islands.",
+        "It stretches for over 2,300 km through the Coral Sea.",
+        "It is the largest structure built by living things on Earth.",
+        "Warming seas have caused mass coral bleaching there.",
+        "This vast coral wonder lies off the coast of Queensland, Australia."
+      ],
+      "links": [
+        { "name": "Australia", "rel": "lies off" }
+      ],
+      "fact": "It became a UNESCO World Heritage Site in 1981."
+    },
+    {
+      "id": "uluru",
+      "name": "Uluru",
+      "aliases": ["Ayers Rock"],
+      "category": "landmarks",
+      "sub": "Natural Wonder",
+      "year": null,
+      "region": "Oceania",
+      "difficulty": 2,
+      "clues": [
+        "It rises about 348 metres above the flat plain around it.",
+        "Much of its bulk is believed to lie hidden underground.",
+        "It glows red and orange at sunrise and sunset.",
+        "Climbing it was banned in 2019 out of respect for its Anangu owners.",
+        "This huge sandstone monolith stands in the red centre of Australia."
+      ],
+      "links": [
+        { "name": "Australia", "rel": "lies in" }
+      ],
+      "fact": "Its English name honoured Henry Ayers, a 19th-century premier of South Australia."
+    }
+  ]
+}

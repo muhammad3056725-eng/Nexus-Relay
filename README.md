@@ -1,136 +1,96 @@
 # NEXUS RELAY
 
-**A sleek, modern signal-triangulation trivia deduction game with a deep-space glass presentation.**
+**Catch the clues. Name the mystery.** A friendly mystery-clue game that plays in any browser, on phone or PC.
 
-You are a **Signal Archivist** aboard a deep-space telemetry relay. A
-mystery entity is sealed inside the Signal Containment Core. You never answer a quiz question — you **triangulate**:
-every hypothesis you ping returns real multi-axis vector telemetry
-(era, space, domain, graph distance, notability) against the hidden
-target, until the signal locks. Then the **Overclock Surge** gives you
-15 seconds to chain-bridge the solved node's graph neighbours and
-multiply your score.
+Play it here: https://muhammad3056725-eng.github.io/Nexus-Relay/
 
-> Full design authority: `NEXUS_RELAY___Complete_Game_Design__Pixel_Art__Big_Dataset___GitHub_Architecture_Blueprint.docx`
-> (game design, dataset architecture, repo architecture). Presentation was
-> fully modernised on Nov 26, 2026 — gameplay, scoring and datasets unchanged.
-> This repository implements that blueprint; section references below
-> (§1–§8) point at it.
+A famous mystery subject is "transmitting": a person, place, film, animal, invention, dish, brand, artwork, planet and so on. Five clues arrive one at a time, from vague to obvious. Four answer cards are on screen from the first clue, and you can lock one in whenever you are ready. Your host is **VEX-09**, a friendly robot.
 
-## The Game Loop (§2)
+> Version 2 (Nov 2026) is a complete redesign. Version 1, a hard free-text "signal triangulation" game built on an obscure auto-generated Wikidata set, was retired because players found it far too difficult. Its code and data are kept for reference in `legacy/` and are not part of the build.
 
-| Phase | What happens |
+## How it plays
+
+| | |
 |---|---|
-| **1 · Signal Interception** | Target entity sealed in the Signal Core. Five orthogonal Frequency Relays locked: **ALPHA** Era · **BETA** Space · **GAMMA** Domain · **DELTA** Relational · **EPSILON** Trait. |
-| **2 · Triangulation** | **6 Signal Probes.** Each turn: **Tune a Relay** (spend 1 probe, decrypt one clue, score multiplier −9%) *or* **Ping a Hypothesis** (spend 1 probe, get 5-axis telemetry: Era Delta, Haversine Spatial Vector + 8-wind bearing, Domain Resonance, Graph Hop Distance, Notability Match). |
-| **3 · Overclock Surge** | On lock, the solved node ignites 3 outgoing relationship beams. Name valid connected entities within **15 seconds** to multiply the final score (×1.0 – ×2.5). |
+| **Clues** | 5 per mystery, vague → obvious. "Next clue" is always free. |
+| **Answers** | 4 cards: the answer plus 3 look-alikes from the same category, chosen in code from the same subcategory and a similar era. Tap a card, or press **1–4**. |
+| **Points** | Correct on clue 1 = 500, clue 2 = 400, clue 3 = 300, clue 4 = 200, clue 5 = 100. |
+| **Wrong pick** | That card is greyed out and the next clue arrives. A round can only be missed by a wrong pick on clue 5. |
+| **Combo** | Consecutive solved mysteries multiply points: ×1.5 from 2 in a row, ×2 from 4, ×3 from 6. A missed round resets the combo. |
+| **Speed bonus** | Small: up to +50 when you answer within 4 s of a clue (fades to 0 by 14 s). There is no timer unless you switch on **Turbo**: 20 s per clue, double speed bonus. |
+| **Jammer** | A 50/50 once per run: removes two wrong cards (**J**). |
+| **Bonus link** | After a correct answer: "Which of these is connected to …?" Pick 1 of 3 for +100. It never costs points. The links are hand-written real relations (Eiffel Tower *stands in* Paris). |
 
-**Scoring (deterministic, §2):**
-`Total = round((1000 × (P_remaining/6) × (1 − 0.09·clues) + Proximity Bonus) × (1 + 0.5·bridges))`
-Ranks run **Static Listener → Frequency Scout → Relay Technician →
-Signal Cryptographer → Deep-Band Oracle → Quantum Archivist**, and every
-run produces a spoiler-free **Unicode Signal Trace** share card.
+**Modes**
+- **Daily Broadcast**: 10 mysteries from 10 categories, the same for everyone on a given UTC date. One scored attempt per day, with an emoji share grid.
+- **Quick Play**: 10 random mysteries.
+- **Channels**: 10 mysteries from one of 13 categories.
+- **Endless**: 3 lives. You lose one only when a round ends on clue 5 without the right card.
 
-**Modes (§2):** Daily Global Broadcast (seeded 00:00 UTC, same target
-worldwide) · Endless Sector Expeditions (themed frequency bands,
-3-strike capacitor survival) · Zero-Clue Blind Triangulation (hardcore:
-all relays sealed, domain static only).
+There is also a 30-second interactive tutorial that runs on first visit (skippable, and replayable from "How to play"). The **Signal Archive** keeps stats and a collection of every solved subject, with completion per category. Progress and settings are saved in the browser (localStorage, failing safely in private windows).
 
-## Play It
+## The dataset (`public/data/v2/`)
+
+**682 hand-curated, well-known subjects** in 13 categories:
+
+| Category | Count | Category | Count |
+|---|---|---|---|
+| Film & TV Stars | 52 | Landmarks & Wonders | 52 |
+| Music Legends | 52 | Movies, TV & Games | 52 |
+| Sports | 52 | Animals & Nature | 60 |
+| Great Minds | 52 | Food & Drink | 52 |
+| History & Leaders | 52 | Tech & Brands | 52 |
+| Countries & Cities | 52 | Art, Books & Myths | 52 |
+| Space | 50 | | |
+
+Each subject has these fields: `id`, `name`, `aliases`, `category`, `sub` (subcategory), `year` (era anchor), `region`, `difficulty` (1–3), 5 ordered `clues`, 1–3 real `links`, and an optional `fact`. The full rules are in [`scripts/data/AUTHORING.md`](scripts/data/AUTHORING.md).
+
+- `subjects/<category>.json`: the source of truth, one file per category. The game loads each file lazily, only when a round needs that category.
+- `index.json`: a generated lightweight index (ids, names, categories, years; no clues), about 73 KB. This is the only file needed on first load.
+- `node scripts/data/build-v2.mjs` validates everything and regenerates the index. `--check` also fails if the index is stale.
+- The validator rejects any clue that contains the answer's name, an alias, or an obvious root ("Italian" for Italy, "Beatle" for The Beatles). It also rejects duplicate ids or names, bad schema, and unbalanced categories. The tests in `apps/web/test/dataset.test.ts` run the same checks.
+
+## Graphics, sound, accessibility
+
+- **Signal space**: a full-screen WebGL2 background.
+  - A shader pass draws the nebula, a holographic radar and a shock-wave pulse on every clue.
+  - A glowing particle network uses additive soft sprites, which gives a bloom look without a post-processing pass.
+  - There is a Canvas2D fallback when WebGL2 is unavailable.
+  - Performance: devicePixelRatio is capped at 2. The idle frame rate is about 30 fps, and it runs at 60 fps only during pulses. The loop pauses while the tab is hidden, and quality drops automatically on slow devices.
+- **UI**: glass cards and spring animations. Confetti bursts run on an overlay that only animates while particles exist. VEX-09 is inline SVG with mood reactions. Fonts are self-hosted through `@fontsource-variable` (no Google Fonts CDN).
+- **Layout**: mobile-first, so on a phone the clue and the four big cards fit one screen. Landscape and desktop get two columns.
+- **Accessibility**: keys 1–4 / N / J / Enter / Esc, an `aria-live` clue region, visible focus, colour plus icon plus text for every state, a high-contrast option, and reduced motion (follows the OS setting, with an override).
+- **Sound**: short procedural Web Audio effects. Music is **off** by default.
+
+## Develop
 
 ```bash
 npm install
-npm run build            # builds apps/web -> apps/web/dist
-# serve the dist folder together with the dataset:
-cp -r public apps/web/dist/public
-npx serve apps/web/dist  # or any static server
+npm run dev          # Vite dev server (serves the repo's public/ at /public)
+npm run typecheck
+npm test             # dataset check + vitest (rules, dataset, jsdom app + tutorial) + legacy pytest (skips if no Python)
+npm run build        # -> apps/web/dist
+npm run serve        # serves dist + public like GitHub Pages: http://localhost:4173/Nexus-Relay/
+npm run data:build   # after editing public/data/v2/subjects/*.json
 ```
 
-Development: `npm run dev --workspace=@nexus-relay/web` (Vite dev server
-mounts the dataset in place). Tests: `npm test` (Vitest engine suite +
-web end-to-end smoke test + Python pipeline tests).
+## Deploy
 
-## Architecture (§6)
+`.github/workflows/pages.yml` runs on every push to `main`. It does `npm ci`, then typecheck, then test, then build, copies `public/` to `apps/web/dist/public/`, and deploys to GitHub Pages. Vite uses `base: "./"`, and the data loader resolves `public/data/v2` against the page URL. It only accepts a candidate that returns real JSON, so an HTML 404 can never be mistaken for data. As a result the same build works at a domain root or under `/Nexus-Relay/`.
+
+`.github/workflows/dataset-validate.yml` validates the dataset on changes and once a month.
+
+`hub/` is a link-only page that lets visitors choose between this game and Deepwell. It is not deployed by this repo.
+
+## Layout
 
 ```
-nexus-relay/
-├── .github/workflows/     ci · daily-seed-publisher · dataset-release · pages
-├── apps/web/              Vite + WebGL2 frontend (480×270 logical, clean glow post pass)
-│   └── src/               graphics/ (Renderer, Shaders, PaletteManager, MascotVex09)
-│                          audio/ (Web Audio chiptune synth) · components/ · storage/
-├── packages/
-│   ├── telemetry-engine/  Core game logic — zero UI dependencies
-│   └── shared-types/      24-byte schema, domains, tiers, channels, ranks
-├── art-source/            Master palette (.gpl), generated key art, atlas script
-├── pipeline/              Python ETL: stages 1–6 (Wikidata → telemetry.bin)
-└── public/data/v1/        Static dataset distribution (bin + shards + packs)
+apps/web/            the game (Vite + TypeScript, no framework)
+  src/game/          pure rules: logic.ts, session.ts, rng.ts, types.ts
+  src/fx/            space.ts (WebGL2), confetti.ts, vex.ts
+  src/app.ts         screens, input, rendering
+  test/              vitest suites
+public/data/v2/      the dataset (+ og-image.png)
+scripts/data/        v2 schema, validator, index builder, authoring guide
+legacy/              retired v1 game, pipeline and data (not built or deployed)
 ```
-
-**Zero-backend static edge architecture (§4/§7):** the entire knowledge
-graph ships as static files — a packed 24-byte-per-entity binary store
-(`telemetry.bin`, 6.0 MB at production scale), 2-character prefix
-autocomplete shards (`trie_shards/*.json`), and hex-encoded clue/edge
-packs (`chunks/pack_*.json`) — so autocomplete and telemetry compute
-client-side with no server.
-
-## Dataset Status — Read This Honestly
-
-The blueprint's production corpus is **250,000 entities / 1.5M+ edges**
-(§4), produced by the Stage 1–6 Wikidata pipeline (§5, Week 2 of the
-roadmap). **Phase 1 ships a hand-authored starter corpus of 110 real
-entities (441 graph edges, ≥4 outgoing per node, fully connected)**
-across all 12 domains, with the complete field set: year anchors,
-lat/lon or CONCEPTUAL flags, domain/sub-domain, notability scores,
-clusters, five leakage-audited clues each, and curated + guaranteed
-graph edges. The packing format, schemas and guarantees are the
-production ones — only the corpus size is at starter scale.
-
-## Graphics & Audio (§3)
-
-- Native **480×270** logical resolution, fluid smooth upscaling, WebGL2
-  post-processing with a clean glow/bloom pass (no distortion) driven
-  by the display-glow setting (off/subtle/full).
-- Modern vector art direction (Nov 26, 2026): deep-space navy/indigo,
-  cyan/teal signal glow, glass panels, Space Grotesk + Inter type, and
-  hand-built SVG assets (emblem, VEX-09 key art, signal-field hero).
-- Six sector LUTs with smooth alpha cross-fades; 4-layer parallax
-  diorama (starfield 0.05 px/frame, architecture 0.15 px/frame) plus a
-  pointer-parallax hero background.
-- **VEX-09**, a smooth vector robot operator with all 14 reactive states.
-- Collectible **64×64 holographic Relic Cards** (domain glyph +
-  rarity frame + WebGL foil shader, θ = atan2(y, x) pointer response).
-- Animation layer: staggered menu entrances, pulsing mystery banner,
-  animated warmer/colder chips, score count-up with a light-burst
-  celebration on solve, and an energised Overclock surge glow — all
-  transform/opacity, all honouring reduced motion.
-- Zero-file procedural audio: 12 ms switch clicks (HP 3.5 kHz), tape
-  whirs, proximity sonar pings (`f = 220 + 880·(1 − min(1, d/10000))`),
-  and dynamic synth stems that layer up as you close in.
-- Accessibility suite: display glow (off/subtle/full), reduced
-  motion, high-contrast palette, colorblind symbolic telemetry
-  (((O)) / ▲ / ■), hi-legibility font toggle.
-
-## Deployment (§7)
-
-GitHub Pages via `.github/workflows/pages.yml` (build + dataset copy +
-deploy). Production target per blueprint: Cloudflare Pages + R2 under
-`/data/*`, custom domain `nexusrelay.io` (not yet registered — the
-share-card trace URLs use it as the canonical base per §2/§7 format).
-
-**Two-repo layout (owner-confirmed Nov 26, 2026):** the games are
-NOT merged into one site tree. Deepwell keeps its own repository and
-its live URL (https://deepwell.games/); this repo serves NEXUS RELAY
-from its own GitHub Pages URL
-(https://muhammad3056725-eng.github.io/Nexus-Relay/, or the
-`nexus.deepwell.games` subdomain if the owner sets it up). A clean,
-link-only hub page (source: `hub/` in this repo) presents both games
-as selectable cards and links to each game's own served URL — the
-link targets are configurable in one `GAME_URLS` block in
-`hub/index.html`.
-
-The build is mount-agnostic, which is what makes both a root URL and
-a project-pages subpath work from the same artifact: Vite emits
-relative asset URLs (`base: "./"`, overridable with `VITE_BASE`) and
-the dataset base is resolved against `document.baseURI` at runtime,
-so the identical `dist/` runs at a domain root, under the
-`/Nexus-Relay/` project-pages path, or under any other subpath with
-no rebuild.

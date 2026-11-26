@@ -1,0 +1,1164 @@
+{
+  "category": "history",
+  "subjects": [
+    {
+      "id": "julius-caesar",
+      "name": "Julius Caesar",
+      "aliases": ["Gaius Julius Caesar"],
+      "category": "history",
+      "sub": "Ruler",
+      "year": -100,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "As a young man he was captured by pirates and later had them hunted down.",
+        "He conquered Gaul in a long campaign and wrote his own account of the wars.",
+        "In 49 BCE he led his army across the Rubicon, starting a civil war.",
+        "He formed a close alliance with Cleopatra, the queen of Egypt.",
+        "Roman leader killed by a group of senators on the Ides of March, 44 BCE."
+      ],
+      "links": [
+        { "name": "Rome", "rel": "rose to power in" },
+        { "name": "Cleopatra", "rel": "was allied with" }
+      ],
+      "fact": "The month of July is named in his honour."
+    },
+    {
+      "id": "cleopatra",
+      "name": "Cleopatra",
+      "aliases": ["Cleopatra VII"],
+      "category": "history",
+      "sub": "Ruler",
+      "year": -69,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "She was the last active ruler of a dynasty founded by one of Alexander the Great's generals.",
+        "Unlike earlier rulers of her family, she learned to speak the Egyptian language.",
+        "She ruled from the great port city of Alexandria and allied herself with powerful Romans.",
+        "She had children with Julius Caesar and later with Mark Antony.",
+        "The last queen of ancient Egypt, said to have died from the bite of an asp in 30 BCE."
+      ],
+      "links": [
+        { "name": "Egypt", "rel": "ruled" },
+        { "name": "Julius Caesar", "rel": "was allied with" }
+      ],
+      "fact": "She lived closer in time to the Moon landing than to the building of the Great Pyramid."
+    },
+    {
+      "id": "alexander-the-great",
+      "name": "Alexander the Great",
+      "aliases": [],
+      "category": "history",
+      "sub": "Ruler",
+      "year": -356,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "As a boy he was taught by the philosopher Aristotle.",
+        "He tamed a famous horse called Bucephalus and rode it into many battles.",
+        "He became king at 20 after his father, Philip II, was assassinated.",
+        "His empire stretched from Greece to Egypt and on to the edge of India.",
+        "Never defeated in battle, he founded many cities named after himself and died at 32."
+      ],
+      "links": [
+        { "name": "Greece", "rel": "came from" },
+        { "name": "Aristotle", "rel": "was tutored by" },
+        { "name": "Egypt", "rel": "conquered" }
+      ],
+      "fact": "Alexandria, one of the cities he founded, is still Egypt's second-largest city."
+    },
+    {
+      "id": "genghis-khan",
+      "name": "Genghis Khan",
+      "aliases": ["Chinggis Khan"],
+      "category": "history",
+      "sub": "Ruler",
+      "year": 1162,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "Born with the name Temujin, he grew up in hardship on the open steppe.",
+        "In 1206 a great gathering of tribes proclaimed him their supreme ruler.",
+        "He set up a relay of horse riders to carry messages quickly across his lands.",
+        "He founded what became the largest connected land empire in history.",
+        "Founder of the Mongol Empire, he united the nomadic tribes of Mongolia."
+      ],
+      "links": [
+        { "name": "Mongolia", "rel": "united the tribes of" },
+        { "name": "China", "rel": "invaded" }
+      ],
+      "fact": "Mongolia's main international airport is named after him."
+    },
+    {
+      "id": "napoleon",
+      "name": "Napoleon",
+      "aliases": ["Napoleon Bonaparte", "Napoleon I"],
+      "category": "history",
+      "sub": "Ruler",
+      "year": 1769,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He was born on Corsica in 1769, just a year after the island passed to French control.",
+        "He rose from artillery officer to general during a time of revolution.",
+        "He crowned himself emperor in Notre-Dame Cathedral in 1804.",
+        "His legal code still forms the basis of civil law in many countries.",
+        "This French emperor met his final defeat at Waterloo in 1815."
+      ],
+      "links": [
+        { "name": "France", "rel": "ruled" },
+        { "name": "Battle of Waterloo", "rel": "was defeated at" },
+        { "name": "French Revolution", "rel": "rose to power after" }
+      ],
+      "fact": "He was about average height for his time; the 'short' myth comes partly from French and English inches differing."
+    },
+    {
+      "id": "charlemagne",
+      "name": "Charlemagne",
+      "aliases": ["Charles the Great"],
+      "category": "history",
+      "sub": "Ruler",
+      "year": 748,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "This king of the Franks spent much of his long reign at war, expanding his realm.",
+        "He made Aachen his favourite home and built a grand chapel there.",
+        "His court encouraged learning, and scribes developed a clear new style of handwriting.",
+        "He united much of Western Europe, including lands that are now France and Germany.",
+        "Medieval ruler called the 'Father of Europe', crowned emperor by the Pope on Christmas Day 800."
+      ],
+      "links": [
+        { "name": "France", "rel": "ruled lands now in" },
+        { "name": "Germany", "rel": "ruled lands now in" },
+        { "name": "Rome", "rel": "was crowned emperor in" }
+      ],
+      "fact": "The king of hearts in a traditional French deck of cards is named after him."
+    },
+    {
+      "id": "qin-shi-huang",
+      "name": "Qin Shi Huang",
+      "aliases": [],
+      "category": "history",
+      "sub": "Ruler",
+      "year": -259,
+      "region": "East Asia",
+      "difficulty": 3,
+      "clues": [
+        "He became king of his state at about 13 and later conquered all its rivals.",
+        "He standardised writing, coins, weights and even the width of cart axles.",
+        "He linked earlier border walls into an early version of a famous great wall.",
+        "An army of thousands of life-size clay soldiers was buried near his tomb.",
+        "In 221 BCE he became the first emperor of a unified China."
+      ],
+      "links": [
+        { "name": "China", "rel": "unified" },
+        { "name": "Terracotta Army", "rel": "is guarded in death by the" },
+        { "name": "Great Wall of China", "rel": "began linking the" }
+      ],
+      "fact": "His clay army was found by farmers digging a well in 1974."
+    },
+    {
+      "id": "tutankhamun",
+      "name": "Tutankhamun",
+      "aliases": ["King Tut"],
+      "category": "history",
+      "sub": "Ruler",
+      "year": -1341,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "He became a pharaoh at about nine years old and died before he turned twenty.",
+        "During his reign Egypt returned to its traditional gods after his father's religious changes.",
+        "His tomb in the Valley of the Kings lay almost untouched for over 3,000 years.",
+        "Howard Carter uncovered his treasure-packed tomb in 1922.",
+        "The boy pharaoh famous for his solid gold burial mask."
+      ],
+      "links": [
+        { "name": "Egypt", "rel": "ruled" },
+        { "name": "Valley of the Kings", "rel": "is buried in" }
+      ],
+      "fact": "His gold mask weighs about 10 kilograms."
+    },
+    {
+      "id": "queen-victoria",
+      "name": "Queen Victoria",
+      "aliases": [],
+      "category": "history",
+      "sub": "Royal",
+      "year": 1819,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "She came to the throne at just 18 after the death of her uncle, King William IV.",
+        "She married her cousin Prince Albert, and they had nine children.",
+        "Her children married into so many royal families that she was called the grandmother of Europe.",
+        "She was the first British monarch to live in Buckingham Palace.",
+        "British queen who reigned for 63 years and gave her name to a whole era."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "reigned over the" },
+        { "name": "Buckingham Palace", "rel": "lived in" },
+        { "name": "Elizabeth II", "rel": "was the great-great-grandmother of" }
+      ],
+      "fact": "She wore white at her 1840 wedding, helping make white wedding dresses popular."
+    },
+    {
+      "id": "elizabeth-i",
+      "name": "Elizabeth I",
+      "aliases": ["Queen Elizabeth I"],
+      "category": "history",
+      "sub": "Royal",
+      "year": 1533,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Her father was a king who married six times.",
+        "She never married, and the American colony of Virginia was named in her honour.",
+        "During her reign William Shakespeare began writing his plays.",
+        "Her navy defeated the Spanish Armada in 1588.",
+        "The last Tudor monarch of England, daughter of Henry VIII and Anne Boleyn."
+      ],
+      "links": [
+        { "name": "Henry VIII", "rel": "was the daughter of" },
+        { "name": "William Shakespeare", "rel": "reigned in the time of" },
+        { "name": "England", "rel": "ruled" }
+      ],
+      "fact": "She reigned for 44 years, from 1558 to 1603."
+    },
+    {
+      "id": "elizabeth-ii",
+      "name": "Elizabeth II",
+      "aliases": ["Queen Elizabeth II"],
+      "category": "history",
+      "sub": "Royal",
+      "year": 1926,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "During the Second World War she trained as a driver and mechanic.",
+        "She became queen in 1952 while on a royal visit to Kenya.",
+        "Her 1953 coronation was watched live on television by millions.",
+        "She was famously fond of corgis, owning more than 30 during her life.",
+        "The longest-reigning British monarch, on the throne for 70 years until 2022."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "reigned over the" },
+        { "name": "Queen Victoria", "rel": "was the great-great-granddaughter of" },
+        { "name": "Buckingham Palace", "rel": "lived in" }
+      ],
+      "fact": "She sent her first email in 1976, from an army research base."
+    },
+    {
+      "id": "henry-viii",
+      "name": "Henry VIII",
+      "aliases": [],
+      "category": "history",
+      "sub": "Royal",
+      "year": 1491,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He was not born to be king; he became heir only after his older brother Arthur died.",
+        "A keen athlete in his youth, he loved jousting, hunting and real tennis.",
+        "He broke with the Pope in Rome and made himself head of the Church of England.",
+        "He built up the navy, and his warship the Mary Rose can be seen in a museum today.",
+        "Tudor king of England famous for having six wives."
+      ],
+      "links": [
+        { "name": "England", "rel": "ruled" },
+        { "name": "Elizabeth I", "rel": "was the father of" }
+      ],
+      "fact": "A rhyme recalls the fates of his wives: divorced, beheaded, died, divorced, beheaded, survived."
+    },
+    {
+      "id": "marie-antoinette",
+      "name": "Marie Antoinette",
+      "aliases": [],
+      "category": "history",
+      "sub": "Royal",
+      "year": 1755,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in Vienna, she was a daughter of a powerful Habsburg empress.",
+        "At 14 she was wed to the heir to the French throne.",
+        "She had a pretend farm village built in the grounds of Versailles.",
+        "She is wrongly credited with saying 'Let them eat cake'.",
+        "Queen of France and wife of Louis XVI, she lost her life during the French Revolution."
+      ],
+      "links": [
+        { "name": "France", "rel": "was queen of" },
+        { "name": "Palace of Versailles", "rel": "lived at the" },
+        { "name": "French Revolution", "rel": "was overthrown in the" }
+      ],
+      "fact": "The 'Let them eat cake' story appears in a book by Rousseau written when she was still a child."
+    },
+    {
+      "id": "louis-xiv",
+      "name": "Louis XIV",
+      "aliases": [],
+      "category": "history",
+      "sub": "Royal",
+      "year": 1638,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He became king at the age of four.",
+        "He loved ballet and danced on stage himself as a young man.",
+        "He turned his father's hunting lodge into a vast palace with a Hall of Mirrors.",
+        "His reign of 72 years is the longest of any monarch in European history.",
+        "French king known as the Sun King, who ruled from Versailles."
+      ],
+      "links": [
+        { "name": "France", "rel": "ruled" },
+        { "name": "Palace of Versailles", "rel": "built up the" }
+      ],
+      "fact": "He is said to have declared 'I am the state', though historians doubt he ever said it."
+    },
+    {
+      "id": "george-washington",
+      "name": "George Washington",
+      "aliases": [],
+      "category": "history",
+      "sub": "Leader",
+      "year": 1732,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "As a young man he worked as a land surveyor in Virginia.",
+        "He led the Continental Army through the American Revolutionary War.",
+        "He presided over the convention that wrote the US Constitution in 1787.",
+        "He chose to step down after two terms, setting a long-lasting example.",
+        "The first President of the United States, whose face is on the one-dollar bill."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was the first president of the" },
+        { "name": "Mount Rushmore", "rel": "is carved on" }
+      ],
+      "fact": "He never lived in the White House; it was finished after his presidency."
+    },
+    {
+      "id": "abraham-lincoln",
+      "name": "Abraham Lincoln",
+      "aliases": [],
+      "category": "history",
+      "sub": "Leader",
+      "year": 1809,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Largely self-taught, he was born in a log cabin in Kentucky.",
+        "He worked as a lawyer in Illinois before entering national politics.",
+        "At 6 feet 4 inches, he was the tallest US president.",
+        "His short Gettysburg Address in 1863 is one of the most famous speeches ever.",
+        "16th US president, who led the Union through the Civil War and issued the Emancipation Proclamation."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was president of the" },
+        { "name": "American Civil War", "rel": "led the Union in the" },
+        { "name": "Battle of Gettysburg", "rel": "gave a famous address at the site of the" }
+      ],
+      "fact": "He is the only US president to have held a patent, for a device to lift boats over shallow water."
+    },
+    {
+      "id": "winston-churchill",
+      "name": "Winston Churchill",
+      "aliases": [],
+      "category": "history",
+      "sub": "Leader",
+      "year": 1874,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "As a young war reporter he escaped from a prisoner-of-war camp in South Africa.",
+        "He was a keen painter and produced over 500 canvases.",
+        "He won the Nobel Prize in Literature in 1953.",
+        "He offered 'blood, toil, tears and sweat' in his first speech as wartime leader.",
+        "British prime minister who led the country through most of the Second World War."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "was prime minister of the" },
+        { "name": "World War II", "rel": "led Britain in" }
+      ],
+      "fact": "His mother, Jennie Jerome, was born in the United States."
+    },
+    {
+      "id": "nelson-mandela",
+      "name": "Nelson Mandela",
+      "aliases": [],
+      "category": "history",
+      "sub": "Leader",
+      "year": 1918,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "He trained as a lawyer and opened a law firm in Johannesburg with a friend.",
+        "He spent 27 years in prison, many of them on Robben Island.",
+        "After his release in 1990 he worked to end apartheid peacefully.",
+        "He shared the 1993 Nobel Peace Prize with F. W. de Klerk.",
+        "South Africa's first Black president, elected in 1994."
+      ],
+      "links": [
+        { "name": "South Africa", "rel": "was president of" }
+      ],
+      "fact": "His birthday, 18 July, is marked by the United Nations as an international day of service."
+    },
+    {
+      "id": "john-f-kennedy",
+      "name": "John F. Kennedy",
+      "aliases": ["JFK"],
+      "category": "history",
+      "sub": "Leader",
+      "year": 1917,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "During the Second World War he commanded a small patrol boat in the Pacific.",
+        "His book Profiles in Courage won a Pulitzer Prize.",
+        "In 1961 he set the goal of landing a man on the Moon before the decade was out.",
+        "At 43, he was the youngest person ever elected US president.",
+        "35th US president, assassinated in Dallas in November 1963."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was president of the" },
+        { "name": "Apollo 11", "rel": "set the goal reached by" },
+        { "name": "NASA", "rel": "set a Moon goal for" }
+      ],
+      "fact": "He was the first US president born in the 20th century."
+    },
+    {
+      "id": "simon-bolivar",
+      "name": "Simón Bolívar",
+      "aliases": ["Simon Bolivar"],
+      "category": "history",
+      "sub": "Leader",
+      "year": 1783,
+      "region": "Latin America",
+      "difficulty": 2,
+      "clues": [
+        "Born in Caracas, he was orphaned as a child and partly educated in Europe.",
+        "As a young man he vowed in Rome to free his homeland from Spanish rule.",
+        "He led his armies across the high Andes in a daring campaign in 1819.",
+        "He helped win independence for what are now Venezuela, Colombia, Ecuador, Peru and Panama.",
+        "Known as 'The Liberator', he has a South American country named after him."
+      ],
+      "links": [
+        { "name": "Venezuela", "rel": "was born in" },
+        { "name": "Colombia", "rel": "helped free" },
+        { "name": "Bolivia", "rel": "gave his name to" }
+      ],
+      "fact": "Venezuela's currency, the bolívar, is also named after him."
+    },
+    {
+      "id": "joan-of-arc",
+      "name": "Joan of Arc",
+      "aliases": ["Jeanne d'Arc"],
+      "category": "history",
+      "sub": "Leader",
+      "year": 1412,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "A peasant girl, she said she heard voices urging her to save her country.",
+        "At about 17 she helped lift the siege of Orléans in 1429.",
+        "She saw the French king Charles VII crowned at Reims.",
+        "She was captured by her enemies and put to death in 1431, aged about 19.",
+        "French heroine of the Hundred Years' War, later declared a saint."
+      ],
+      "links": [
+        { "name": "France", "rel": "fought for" },
+        { "name": "Hundred Years' War", "rel": "fought in the" }
+      ],
+      "fact": "She is one of the patron saints of France."
+    },
+    {
+      "id": "mahatma-gandhi",
+      "name": "Mahatma Gandhi",
+      "aliases": ["Mohandas Gandhi", "Mohandas Karamchand Gandhi"],
+      "category": "history",
+      "sub": "Activist",
+      "year": 1869,
+      "region": "South Asia",
+      "difficulty": 1,
+      "clues": [
+        "He studied law in London and then worked for about 21 years in South Africa.",
+        "He spun his own cloth on a spinning wheel to promote homemade goods.",
+        "In 1930 he led a 24-day march to the sea to protest a tax on salt.",
+        "His non-violent resistance inspired Martin Luther King Jr.",
+        "Leader of India's independence movement, honoured as the Father of the Nation."
+      ],
+      "links": [
+        { "name": "India", "rel": "led the independence movement of" },
+        { "name": "Martin Luther King Jr.", "rel": "inspired" },
+        { "name": "South Africa", "rel": "worked as a lawyer in" }
+      ],
+      "fact": "His birthday, 2 October, is marked worldwide as the International Day of Non-Violence."
+    },
+    {
+      "id": "martin-luther-king-jr",
+      "name": "Martin Luther King Jr.",
+      "aliases": ["MLK"],
+      "category": "history",
+      "sub": "Activist",
+      "year": 1929,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "The son of a pastor, he became a Baptist minister in Montgomery, Alabama.",
+        "He led the Montgomery bus boycott after Rosa Parks' arrest in 1955.",
+        "At 35 he became the youngest man then to win the Nobel Peace Prize.",
+        "He gave his 'I Have a Dream' speech at the Lincoln Memorial in 1963.",
+        "American civil rights leader honoured with a US national holiday each January."
+      ],
+      "links": [
+        { "name": "United States", "rel": "led the civil rights movement in the" },
+        { "name": "Rosa Parks", "rel": "led a boycott sparked by" },
+        { "name": "Mahatma Gandhi", "rel": "was inspired by" }
+      ],
+      "fact": "He was first named Michael; his father later changed both their names to honour Martin Luther."
+    },
+    {
+      "id": "rosa-parks",
+      "name": "Rosa Parks",
+      "aliases": [],
+      "category": "history",
+      "sub": "Activist",
+      "year": 1913,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Tuskegee, Alabama, she later worked as a seamstress.",
+        "She served as secretary of her local branch of the NAACP.",
+        "In December 1955 she refused to give up her bus seat in Montgomery.",
+        "Her arrest sparked a bus boycott that lasted more than a year.",
+        "Civil rights pioneer called 'the mother of the freedom movement'."
+      ],
+      "links": [
+        { "name": "Martin Luther King Jr.", "rel": "inspired a boycott led by" },
+        { "name": "United States", "rel": "campaigned for civil rights in the" }
+      ],
+      "fact": "The bus she rode is now displayed at the Henry Ford Museum in Michigan."
+    },
+    {
+      "id": "harriet-tubman",
+      "name": "Harriet Tubman",
+      "aliases": [],
+      "category": "history",
+      "sub": "Activist",
+      "year": 1822,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born into slavery in Maryland, she escaped to freedom in 1849.",
+        "She went back south about 13 times to guide others to freedom.",
+        "She was a 'conductor' on the Underground Railroad, a secret network of safe houses.",
+        "During the Civil War she served as a scout and spy for the Union army.",
+        "Abolitionist nicknamed 'Moses' who said she never lost a passenger."
+      ],
+      "links": [
+        { "name": "United States", "rel": "fought slavery in the" },
+        { "name": "American Civil War", "rel": "served the Union in the" }
+      ],
+      "fact": "She guided a raid at Combahee Ferry in 1863 that freed more than 700 people."
+    },
+    {
+      "id": "emmeline-pankhurst",
+      "name": "Emmeline Pankhurst",
+      "aliases": [],
+      "category": "history",
+      "sub": "Activist",
+      "year": 1858,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "Born in Manchester, she founded a women's political group there in 1903.",
+        "Her group's motto was 'Deeds, not words'.",
+        "She was imprisoned many times and went on hunger strikes.",
+        "Her daughters Christabel and Sylvia also campaigned alongside her.",
+        "British suffragette leader who fought for women's right to vote."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "campaigned for votes for women in the" }
+      ],
+      "fact": "British women won equal voting rights with men in 1928, just weeks after her death."
+    },
+    {
+      "id": "christopher-columbus",
+      "name": "Christopher Columbus",
+      "aliases": [],
+      "category": "history",
+      "sub": "Explorer",
+      "year": 1451,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in the port city of Genoa, he became a skilled sailor.",
+        "He spent years asking European courts to pay for a voyage west to reach Asia.",
+        "Queen Isabella and King Ferdinand of Spain finally backed his expedition.",
+        "His three ships were the Niña, the Pinta and the Santa María.",
+        "Explorer who crossed the Atlantic and reached the Americas in 1492."
+      ],
+      "links": [
+        { "name": "Spain", "rel": "sailed for" },
+        { "name": "Italy", "rel": "was born in what is now" }
+      ],
+      "fact": "He made four voyages across the Atlantic but believed to the end that he had reached Asia."
+    },
+    {
+      "id": "marco-polo",
+      "name": "Marco Polo",
+      "aliases": [],
+      "category": "history",
+      "sub": "Explorer",
+      "year": 1254,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He set out from Venice as a teenager with his father and uncle.",
+        "He spent about 17 years in the service of the ruler Kublai Khan.",
+        "He returned home after about 24 years away.",
+        "While held prisoner in Genoa, he told his stories to a writer of romances.",
+        "Venetian merchant famous for his book of travels to China."
+      ],
+      "links": [
+        { "name": "Venice", "rel": "came from" },
+        { "name": "China", "rel": "travelled to" },
+        { "name": "Genghis Khan", "rel": "served the grandson of" }
+      ],
+      "fact": "A popular swimming-pool game of tag is named after him."
+    },
+    {
+      "id": "ferdinand-magellan",
+      "name": "Ferdinand Magellan",
+      "aliases": [],
+      "category": "history",
+      "sub": "Explorer",
+      "year": 1480,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "This Portuguese-born sailor led an expedition for the Spanish crown.",
+        "In 1519 he set out with five ships to find a western route to the Spice Islands.",
+        "He found a passage at the tip of South America that now bears his name.",
+        "He named the Pacific Ocean for its calm waters.",
+        "His expedition made the first voyage around the world, though he died on the way."
+      ],
+      "links": [
+        { "name": "Portugal", "rel": "was born in" },
+        { "name": "Spain", "rel": "sailed for" },
+        { "name": "Philippines", "rel": "died in the" }
+      ],
+      "fact": "Only one of his five ships, the Victoria, completed the voyage, with 18 survivors."
+    },
+    {
+      "id": "vasco-da-gama",
+      "name": "Vasco da Gama",
+      "aliases": [],
+      "category": "history",
+      "sub": "Explorer",
+      "year": 1460,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "He sailed from Lisbon in 1497 with four ships.",
+        "He rounded the Cape of Good Hope at the southern tip of Africa.",
+        "He reached Calicut on the coast of India in 1498.",
+        "His voyage opened a sea route for the spice trade between Europe and Asia.",
+        "Portuguese explorer who was the first European to reach India by sea."
+      ],
+      "links": [
+        { "name": "Portugal", "rel": "sailed for" },
+        { "name": "India", "rel": "reached" }
+      ],
+      "fact": "He returned to India later in life and died there in 1524."
+    },
+    {
+      "id": "roald-amundsen",
+      "name": "Roald Amundsen",
+      "aliases": [],
+      "category": "history",
+      "sub": "Explorer",
+      "year": 1872,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He was the first to sail the whole Northwest Passage, a trip that took three years.",
+        "He learned cold-weather survival skills from the Inuit.",
+        "His team relied on dog sleds and skis on their most famous expedition.",
+        "In 1911 he beat Robert Falcon Scott in a race to the South Pole.",
+        "Norwegian explorer who led the first expedition to reach the South Pole."
+      ],
+      "links": [
+        { "name": "Norway", "rel": "came from" },
+        { "name": "Antarctica", "rel": "crossed" }
+      ],
+      "fact": "He also flew over the North Pole in an airship in 1926."
+    },
+    {
+      "id": "james-cook",
+      "name": "James Cook",
+      "aliases": ["Captain Cook"],
+      "category": "history",
+      "sub": "Explorer",
+      "year": 1728,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He began his working life on coal-carrying ships out of Whitby.",
+        "His accurate charts of Newfoundland impressed the Royal Navy.",
+        "He led three great voyages across the Pacific Ocean in the 1700s.",
+        "In 1770 his ship Endeavour reached the east coast of Australia.",
+        "British navigator who mapped New Zealand and Australia's east coast."
+      ],
+      "links": [
+        { "name": "Australia", "rel": "mapped the east coast of" },
+        { "name": "New Zealand", "rel": "mapped" }
+      ],
+      "fact": "He helped prevent scurvy on his voyages by feeding his crew sauerkraut."
+    },
+    {
+      "id": "edmund-hillary",
+      "name": "Edmund Hillary",
+      "aliases": ["Sir Edmund Hillary"],
+      "category": "history",
+      "sub": "Explorer",
+      "year": 1919,
+      "region": "Oceania",
+      "difficulty": 2,
+      "clues": [
+        "He worked as a beekeeper in New Zealand before becoming famous.",
+        "He served as a navigator in the air force during the Second World War.",
+        "In 1958 he drove farm tractors all the way to the South Pole.",
+        "He later built schools and hospitals for Sherpa communities in Nepal.",
+        "With Tenzing Norgay, he made the first confirmed climb to the top of Mount Everest."
+      ],
+      "links": [
+        { "name": "Mount Everest", "rel": "was first to climb" },
+        { "name": "New Zealand", "rel": "came from" },
+        { "name": "Nepal", "rel": "built schools in" }
+      ],
+      "fact": "His face appears on New Zealand's five-dollar note."
+    },
+    {
+      "id": "french-revolution",
+      "name": "French Revolution",
+      "aliases": [],
+      "category": "history",
+      "sub": "Event",
+      "year": 1789,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It began in 1789 after the king called a meeting of the Estates-General.",
+        "A crowd stormed a Paris fortress-prison on 14 July.",
+        "Its rallying cry was 'Liberty, Equality, Fraternity'.",
+        "It brought in the metric system and swept away the monarchy.",
+        "The upheaval in France that led to the downfall of Louis XVI and Marie Antoinette."
+      ],
+      "links": [
+        { "name": "France", "rel": "transformed" },
+        { "name": "Marie Antoinette", "rel": "overthrew" },
+        { "name": "Napoleon", "rel": "paved the way for" }
+      ],
+      "fact": "France's national day, 14 July, marks the storming of the Bastille."
+    },
+    {
+      "id": "fall-of-the-berlin-wall",
+      "name": "Fall of the Berlin Wall",
+      "aliases": [],
+      "category": "history",
+      "sub": "Event",
+      "year": 1989,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It happened after a government spokesman mistakenly announced new travel rules.",
+        "Crowds gathered at the checkpoints until the guards finally opened the gates.",
+        "People chipped at the concrete with hammers and kept pieces as souvenirs.",
+        "The barrier had divided a German city for 28 years.",
+        "The night of 9 November 1989, when East Germans crossed freely to the West."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "led to the reunification of" }
+      ],
+      "fact": "Germany was formally reunified less than a year later, on 3 October 1990."
+    },
+    {
+      "id": "rms-titanic",
+      "name": "RMS Titanic",
+      "aliases": [],
+      "category": "history",
+      "sub": "Event",
+      "year": 1912,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It was built in Belfast at the Harland and Wolff shipyard.",
+        "It set sail from Southampton in April 1912, bound for New York.",
+        "It did not carry enough lifeboats for everyone on board.",
+        "It struck an iceberg in the North Atlantic on its first voyage.",
+        "The 'unsinkable' ocean liner that sank in 1912."
+      ],
+      "links": [
+        { "name": "Titanic", "rel": "inspired the film" },
+        { "name": "New York City", "rel": "was bound for" }
+      ],
+      "fact": "Its wreck was found in 1985, about 3,800 metres below the surface."
+    },
+    {
+      "id": "magna-carta",
+      "name": "Magna Carta",
+      "aliases": [],
+      "category": "history",
+      "sub": "Event",
+      "year": 1215,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It was sealed in June 1215 in a meadow beside the River Thames.",
+        "Rebel barons forced an unpopular king to agree to it.",
+        "King John accepted it, but the Pope cancelled it within months.",
+        "It set out the idea that even the king had to obey the law.",
+        "England's 'Great Charter', a founding text of rights and liberty."
+      ],
+      "links": [
+        { "name": "England", "rel": "limited royal power in" }
+      ],
+      "fact": "Four original copies from 1215 still survive."
+    },
+    {
+      "id": "boston-tea-party",
+      "name": "Boston Tea Party",
+      "aliases": [],
+      "category": "history",
+      "sub": "Event",
+      "year": 1773,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It took place on a cold December night in 1773.",
+        "Protesters, some disguised as Mohawk people, boarded three ships.",
+        "They dumped 342 chests of tea into the harbour.",
+        "It was a protest against taxes set by the British government without colonists' votes.",
+        "Famous protest in a Massachusetts harbour that helped spark the American Revolution."
+      ],
+      "links": [
+        { "name": "United States", "rel": "helped lead to the founding of the" },
+        { "name": "Declaration of Independence", "rel": "came three years before the" }
+      ],
+      "fact": "The tea belonged to the British East India Company."
+    },
+    {
+      "id": "great-fire-of-london",
+      "name": "Great Fire of London",
+      "aliases": [],
+      "category": "history",
+      "sub": "Event",
+      "year": 1666,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It started in a bakery on Pudding Lane in September 1666.",
+        "It burned for about four days and destroyed over 13,000 houses.",
+        "The diarist Samuel Pepys buried his parmesan cheese to save it.",
+        "Old St Paul's Cathedral was destroyed and later rebuilt by Christopher Wren.",
+        "The blaze of 1666 that destroyed much of England's capital."
+      ],
+      "links": [
+        { "name": "London", "rel": "destroyed much of" },
+        { "name": "St Paul's Cathedral", "rel": "led to the rebuilding of" }
+      ],
+      "fact": "A 61-metre column called the Monument stands near where it began."
+    },
+    {
+      "id": "industrial-revolution",
+      "name": "Industrial Revolution",
+      "aliases": [],
+      "category": "history",
+      "sub": "Event",
+      "year": 1760,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It began in Britain in the second half of the 18th century.",
+        "Steam engines improved by James Watt powered mills and mines.",
+        "Cotton spinning moved out of homes and into large factories.",
+        "Railways and canals spread to carry coal and goods.",
+        "The era when machines and factories transformed how goods were made."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "began in the" },
+        { "name": "James Watt", "rel": "was powered by the engines of" }
+      ],
+      "fact": "The world's first public steam railway, the Stockton and Darlington, opened in 1825."
+    },
+    {
+      "id": "fall-of-constantinople",
+      "name": "Fall of Constantinople",
+      "aliases": [],
+      "category": "history",
+      "sub": "Event",
+      "year": 1453,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "It ended in May 1453 after a siege of about 53 days.",
+        "The attackers used giant cannons to pound the city's ancient walls.",
+        "Ships were dragged overland to get around a chain across the Golden Horn.",
+        "Sultan Mehmed II was just 21 years old when he led the attack.",
+        "The capture of the Byzantine capital by the Ottoman Turks."
+      ],
+      "links": [
+        { "name": "Istanbul", "rel": "took place in what is now" },
+        { "name": "Turkey", "rel": "is a key moment in the history of" }
+      ],
+      "fact": "The city later became known as Istanbul."
+    },
+    {
+      "id": "california-gold-rush",
+      "name": "California Gold Rush",
+      "aliases": [],
+      "category": "history",
+      "sub": "Event",
+      "year": 1848,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It began when a carpenter spotted shiny flakes at Sutter's Mill in January 1848.",
+        "About 300,000 people arrived hoping to strike it rich.",
+        "Fortune seekers who arrived in 1849 were nicknamed 'forty-niners'.",
+        "San Francisco grew from a small settlement into a boom town.",
+        "The great hunt for gold in the American West that began in 1848."
+      ],
+      "links": [
+        { "name": "United States", "rel": "took place in the" },
+        { "name": "San Francisco", "rel": "transformed" }
+      ],
+      "fact": "San Francisco's American football team, the 49ers, is named after the gold seekers."
+    },
+    {
+      "id": "declaration-of-independence",
+      "name": "Declaration of Independence",
+      "aliases": ["United States Declaration of Independence"],
+      "category": "history",
+      "sub": "Event",
+      "year": 1776,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It was mostly drafted by Thomas Jefferson in a few weeks.",
+        "The Continental Congress adopted it in Philadelphia.",
+        "John Hancock's large signature on it became famous.",
+        "It says all men are created equal, with rights to life, liberty and the pursuit of happiness.",
+        "The document of 4 July 1776 announcing the 13 colonies' break from Britain."
+      ],
+      "links": [
+        { "name": "United States", "rel": "founded the" },
+        { "name": "Philadelphia", "rel": "was adopted in" }
+      ],
+      "fact": "Thomas Jefferson and John Adams both died on its 50th anniversary, 4 July 1826."
+    },
+    {
+      "id": "world-war-i",
+      "name": "World War I",
+      "aliases": ["First World War", "Great War", "WWI"],
+      "category": "history",
+      "sub": "War",
+      "year": 1914,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "It began in 1914 after the assassination of an archduke in Sarajevo.",
+        "Much of it was fought from long lines of muddy trenches.",
+        "Tanks were used in battle for the first time during it.",
+        "An unofficial Christmas truce in 1914 saw soldiers meet and play football.",
+        "The global conflict of 1914 to 1918 that ended with an armistice on 11 November."
+      ],
+      "links": [
+        { "name": "France", "rel": "was largely fought in" },
+        { "name": "Germany", "rel": "was lost by" },
+        { "name": "World War II", "rel": "was followed by" }
+      ],
+      "fact": "Many countries still mark 11 November, the day the fighting stopped."
+    },
+    {
+      "id": "world-war-ii",
+      "name": "World War II",
+      "aliases": ["Second World War", "WWII"],
+      "category": "history",
+      "sub": "War",
+      "year": 1939,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "It began in Europe in September 1939 with the invasion of Poland.",
+        "Codebreakers at Bletchley Park cracked secret Enigma messages.",
+        "Britain's Winston Churchill was a key Allied leader.",
+        "The D-Day landings in 1944 opened a new front in Western Europe.",
+        "The global conflict of 1939 to 1945, the largest war in history."
+      ],
+      "links": [
+        { "name": "Winston Churchill", "rel": "was fought by Britain under" },
+        { "name": "D-Day", "rel": "included" },
+        { "name": "World War I", "rel": "followed" }
+      ],
+      "fact": "It ended in Europe on 8 May 1945, celebrated as VE Day."
+    },
+    {
+      "id": "american-civil-war",
+      "name": "American Civil War",
+      "aliases": [],
+      "category": "history",
+      "sub": "War",
+      "year": 1861,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It began in 1861 when Confederate guns fired on Fort Sumter.",
+        "Eleven southern states tried to break away and form their own nation.",
+        "Generals Ulysses S. Grant and Robert E. Lee led opposing armies.",
+        "It ended in 1865 with Lee's surrender at Appomattox.",
+        "The war between the Union and the Confederacy in the United States."
+      ],
+      "links": [
+        { "name": "Abraham Lincoln", "rel": "was led on the Union side by" },
+        { "name": "Battle of Gettysburg", "rel": "included the" },
+        { "name": "United States", "rel": "was fought in the" }
+      ],
+      "fact": "It led to the end of slavery in the US through the 13th Amendment in 1865."
+    },
+    {
+      "id": "hundred-years-war",
+      "name": "Hundred Years' War",
+      "aliases": [],
+      "category": "history",
+      "sub": "War",
+      "year": 1337,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "It began when an English king claimed the right to rule a neighbouring kingdom.",
+        "It ran from 1337 to 1453, with long spells of peace in between.",
+        "English longbowmen won famous victories at Crécy and Agincourt.",
+        "Joan of Arc helped turn the tide for France.",
+        "The long medieval struggle between England and France over the French crown."
+      ],
+      "links": [
+        { "name": "England", "rel": "was fought by" },
+        { "name": "France", "rel": "was fought by" },
+        { "name": "Joan of Arc", "rel": "made a heroine of" }
+      ],
+      "fact": "Despite its name, it lasted 116 years."
+    },
+    {
+      "id": "battle-of-hastings",
+      "name": "Battle of Hastings",
+      "aliases": [],
+      "category": "history",
+      "sub": "Battle",
+      "year": 1066,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It was fought on 14 October 1066 on a ridge in Sussex.",
+        "The defenders had marched south just after beating a Viking army in the north.",
+        "The Bayeux Tapestry tells its story in embroidered pictures.",
+        "King Harold II was killed, traditionally by an arrow in the eye.",
+        "The victory that made William the Conqueror king of England."
+      ],
+      "links": [
+        { "name": "England", "rel": "changed the rulers of" }
+      ],
+      "fact": "The nearby town is simply called Battle, after the fight."
+    },
+    {
+      "id": "battle-of-waterloo",
+      "name": "Battle of Waterloo",
+      "aliases": [],
+      "category": "history",
+      "sub": "Battle",
+      "year": 1815,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It was fought on 18 June 1815 near a village south of Brussels.",
+        "The Duke of Wellington led an allied army against the French.",
+        "Prussian troops under Blücher arrived in time to help win the day.",
+        "It ended the Hundred Days, an emperor's brief return to power.",
+        "Napoleon's final defeat, in what is now Belgium."
+      ],
+      "links": [
+        { "name": "Napoleon", "rel": "ended the rule of" },
+        { "name": "Belgium", "rel": "was fought in what is now" }
+      ],
+      "fact": "To 'meet your Waterloo' has come to mean facing a final defeat."
+    },
+    {
+      "id": "battle-of-gettysburg",
+      "name": "Battle of Gettysburg",
+      "aliases": [],
+      "category": "history",
+      "sub": "Battle",
+      "year": 1863,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It was fought over three days in early July 1863.",
+        "It took place around a small town in Pennsylvania.",
+        "Pickett's Charge on the last day failed against Union lines.",
+        "It is often called the turning point of the war.",
+        "Civil War battle whose site Lincoln honoured with a famous short address."
+      ],
+      "links": [
+        { "name": "American Civil War", "rel": "was a turning point of the" },
+        { "name": "Abraham Lincoln", "rel": "was honoured in a speech by" }
+      ],
+      "fact": "Lincoln's address there was about 270 words long and took around two minutes."
+    },
+    {
+      "id": "d-day",
+      "name": "D-Day",
+      "aliases": ["Normandy landings"],
+      "category": "history",
+      "sub": "Battle",
+      "year": 1944,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It was postponed by a day because of stormy weather.",
+        "Allied planners used fake armies and dummy paratroopers to fool the enemy.",
+        "Its beaches were code-named Utah, Omaha, Gold, Juno and Sword.",
+        "About 156,000 troops crossed the English Channel on the first day.",
+        "The Allied invasion of northern France on 6 June 1944."
+      ],
+      "links": [
+        { "name": "World War II", "rel": "was a turning point in" },
+        { "name": "France", "rel": "took place in" }
+      ],
+      "fact": "It remains the largest seaborne invasion in history."
+    },
+    {
+      "id": "battle-of-thermopylae",
+      "name": "Battle of Thermopylae",
+      "aliases": [],
+      "category": "history",
+      "sub": "Battle",
+      "year": -480,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "It was fought in 480 BCE at a narrow coastal pass.",
+        "A small Greek force held off a huge Persian army for three days.",
+        "The Persian king Xerxes led the invading force.",
+        "King Leonidas and his 300 Spartans made a famous last stand.",
+        "The ancient battle at the 'Hot Gates' that inspired the story of the 300."
+      ],
+      "links": [
+        { "name": "Greece", "rel": "was fought in" }
+      ],
+      "fact": "A local man showed the Persians a mountain path around the Greek position."
+    }
+  ]
+}

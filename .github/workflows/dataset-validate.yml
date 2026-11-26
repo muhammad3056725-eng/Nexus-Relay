@@ -1,0 +1,29 @@
+# Validates the hand-curated dataset (public/data/v2) on every change
+# to it, and once a month as a health check. Fails if any subject
+# breaks the schema, a clue leaks its answer, ids/names collide, or
+# index.json is out of date (run `npm run data:build` to regenerate).
+name: Dataset validate
+on:
+  push:
+    paths:
+      - "public/data/v2/**"
+      - "scripts/data/**"
+  pull_request:
+    paths:
+      - "public/data/v2/**"
+      - "scripts/data/**"
+  schedule:
+    - cron: "17 3 1 * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate dataset v2 (schema, leakage, index freshness)
+        run: node scripts/data/build-v2.mjs --check

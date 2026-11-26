@@ -1,0 +1,1182 @@
+{
+  "category": "sport",
+  "subjects": [
+    {
+      "id": "lionel-messi",
+      "name": "Lionel Messi",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Footballer",
+      "year": 1987,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "As a boy he needed hormone treatment because he was growing too slowly.",
+        "At 13 he left Rosario for Spain to join a famous club's youth academy.",
+        "By 2023 he had won a record eight Ballon d'Or awards.",
+        "In 2023 he moved to the United States to play for Inter Miami.",
+        "He captained Argentina to victory at the 2022 World Cup in Qatar."
+      ],
+      "links": [
+        { "name": "Argentina", "rel": "plays for" },
+        { "name": "FC Barcelona", "rel": "starred for" },
+        { "name": "FIFA World Cup", "rel": "won the 2022" }
+      ],
+      "fact": "Barcelona's first offer to him was famously written on a paper napkin in 2000."
+    },
+    {
+      "id": "cristiano-ronaldo",
+      "name": "Cristiano Ronaldo",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Footballer",
+      "year": 1985,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born on the island of Madeira in 1985, he was named partly after a US president.",
+        "He left Sporting Lisbon for Manchester United as a teenager in 2003.",
+        "He became Real Madrid's all-time top goalscorer.",
+        "He led Portugal to its first major trophy at Euro 2016.",
+        "This Portuguese superstar celebrates goals with a leap and a loud 'Siu!'"
+      ],
+      "links": [
+        { "name": "Portugal", "rel": "captained" },
+        { "name": "Real Madrid", "rel": "starred for" },
+        { "name": "Manchester United", "rel": "played for" }
+      ],
+      "fact": "In 2022 he became the first man to score at five different World Cups."
+    },
+    {
+      "id": "pele",
+      "name": "Pelé",
+      "aliases": ["Edson Arantes do Nascimento"],
+      "category": "sport",
+      "sub": "Footballer",
+      "year": 1940,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "He picked up his famous nickname as a schoolboy and at first disliked it.",
+        "He spent most of his career at Santos before ending it with the New York Cosmos.",
+        "At just 17 he scored twice in a World Cup final in Sweden.",
+        "He is the only player to win the World Cup three times: 1958, 1962 and 1970.",
+        "Brazil's legendary number 10, often called simply 'The King' of football."
+      ],
+      "links": [
+        { "name": "Brazil", "rel": "played for" },
+        { "name": "FIFA World Cup", "rel": "won three times the" }
+      ],
+      "fact": "He claimed more than 1,000 career goals when friendly matches are counted."
+    },
+    {
+      "id": "diego-maradona",
+      "name": "Diego Maradona",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Footballer",
+      "year": 1960,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "He grew up in a poor neighbourhood on the edge of Buenos Aires.",
+        "He became a hero in southern Italy after leading Napoli to the 1987 league title.",
+        "In a 1986 match against England he scored the 'Goal of the Century'.",
+        "In that same game he also scored the famous 'Hand of God' goal.",
+        "He captained Argentina to World Cup glory in Mexico in 1986."
+      ],
+      "links": [
+        { "name": "Argentina", "rel": "captained" },
+        { "name": "Naples", "rel": "is a hero in" },
+        { "name": "FIFA World Cup", "rel": "won the 1986" }
+      ],
+      "fact": "In 2020 Napoli renamed its stadium after him."
+    },
+    {
+      "id": "zinedine-zidane",
+      "name": "Zinedine Zidane",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Footballer",
+      "year": 1972,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "The son of Algerian immigrants, he grew up in a tough district of Marseille.",
+        "He was famous for an elegant spinning move to glide past defenders.",
+        "He scored two headers in the 1998 World Cup final against Brazil.",
+        "As Real Madrid's coach he won three Champions League titles in a row (2016-2018).",
+        "The bald French playmaker known to fans as 'Zizou'."
+      ],
+      "links": [
+        { "name": "France", "rel": "won the World Cup with" },
+        { "name": "Real Madrid", "rel": "played for and coached" },
+        { "name": "Marseille", "rel": "grew up in" }
+      ],
+      "fact": "His left-foot volley won the 2002 Champions League final in Glasgow."
+    },
+    {
+      "id": "johan-cruyff",
+      "name": "Johan Cruyff",
+      "aliases": ["Johan Cruijff"],
+      "category": "sport",
+      "sub": "Footballer",
+      "year": 1947,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "He grew up in Amsterdam, close to the stadium of the club he made famous.",
+        "He won three European Cups in a row with Ajax from 1971 to 1973.",
+        "A trick where the ball is dragged behind the standing leg is named after him.",
+        "He led the Netherlands to the 1974 World Cup final playing 'Total Football'.",
+        "As Barcelona coach he built the 'Dream Team' that won the 1992 European Cup."
+      ],
+      "links": [
+        { "name": "Netherlands", "rel": "played for" },
+        { "name": "FC Barcelona", "rel": "played for and coached" },
+        { "name": "Amsterdam", "rel": "was born in" }
+      ],
+      "fact": "He won the Ballon d'Or three times, in 1971, 1973 and 1974."
+    },
+    {
+      "id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Footballer",
+      "year": 1998,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He grew up in Bondy, a suburb just outside Paris.",
+        "As a teenager he won the French league title with Monaco in 2017.",
+        "At 19 he scored in a World Cup final, the first teenager to do so since Pelé.",
+        "He scored a hat-trick in the 2022 World Cup final but ended up on the losing side.",
+        "This speedy French forward joined Real Madrid in 2024 from Paris Saint-Germain."
+      ],
+      "links": [
+        { "name": "France", "rel": "plays for" },
+        { "name": "Real Madrid", "rel": "joined in 2024" },
+        { "name": "Paris", "rel": "grew up near" }
+      ],
+      "fact": "He won the World Cup with France in 2018."
+    },
+    {
+      "id": "david-beckham",
+      "name": "David Beckham",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Footballer",
+      "year": 1975,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in east London in 1975, he grew up a fan of the club he later starred for.",
+        "In 1996 he famously scored from inside his own half.",
+        "He was part of Manchester United's treble-winning team of 1999.",
+        "In 2007 he moved to LA Galaxy, and he later co-founded Inter Miami.",
+        "England's former captain, famed for curling free kicks and married to a Spice Girl."
+      ],
+      "links": [
+        { "name": "England", "rel": "captained" },
+        { "name": "Manchester United", "rel": "starred for" },
+        { "name": "Real Madrid", "rel": "played for" }
+      ],
+      "fact": "The 2002 film Bend It Like Beckham was named after his curling free kicks."
+    },
+    {
+      "id": "michael-jordan",
+      "name": "Michael Jordan",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Basketball Player",
+      "year": 1963,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "As a high school sophomore he missed out on a place in his school's top team.",
+        "His late shot won North Carolina the 1982 college championship.",
+        "In 1994 he briefly swapped his sport for minor-league baseball.",
+        "He won six NBA titles with the Chicago Bulls in the 1990s.",
+        "Wearing number 23, he inspired Nike's famous 'Air' line of sneakers."
+      ],
+      "links": [
+        { "name": "Chicago", "rel": "won six titles in" },
+        { "name": "Nike", "rel": "has a famous shoe line with" },
+        { "name": "Space Jam", "rel": "starred in" }
+      ],
+      "fact": "He won two Olympic gold medals, in 1984 and with the 1992 'Dream Team'."
+    },
+    {
+      "id": "lebron-james",
+      "name": "LeBron James",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Basketball Player",
+      "year": 1984,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Akron, Ohio, he was on a magazine cover while still in high school.",
+        "He was the first pick of the 2003 NBA draft, chosen by his home-state team.",
+        "He won NBA titles with Miami, Cleveland and Los Angeles.",
+        "In 2023 he passed Kareem Abdul-Jabbar to become the NBA's all-time top scorer.",
+        "The basketball superstar nicknamed 'King' who played alongside his son Bronny."
+      ],
+      "links": [
+        { "name": "Los Angeles Lakers", "rel": "won a title with" },
+        { "name": "United States", "rel": "won Olympic gold for" },
+        { "name": "Space Jam: A New Legacy", "rel": "starred in" }
+      ],
+      "fact": "In 2016 he led Cleveland back from 3-1 down in the NBA Finals."
+    },
+    {
+      "id": "kobe-bryant",
+      "name": "Kobe Bryant",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Basketball Player",
+      "year": 1978,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "He spent part of his childhood in Italy, where his father played basketball.",
+        "He went straight from high school to the NBA in 1996.",
+        "He played all 20 of his seasons for one team, winning five titles.",
+        "In 2006 he scored 81 points in a single game, the second-most ever.",
+        "The Lakers legend nicknamed 'Black Mamba', who wore numbers 8 and 24."
+      ],
+      "links": [
+        { "name": "Los Angeles Lakers", "rel": "spent his whole career with" },
+        { "name": "Italy", "rel": "spent childhood years in" }
+      ],
+      "fact": "He won an Academy Award for the animated short film Dear Basketball."
+    },
+    {
+      "id": "stephen-curry",
+      "name": "Stephen Curry",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Basketball Player",
+      "year": 1988,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "His father Dell was also an NBA player, known for sharp shooting.",
+        "Few big colleges wanted him, so he starred at little Davidson College.",
+        "In 2016 he became the first unanimous choice for NBA Most Valuable Player.",
+        "He won four NBA titles with the Golden State Warriors between 2015 and 2022.",
+        "The point guard who transformed basketball with long-range three-point shooting."
+      ],
+      "links": [
+        { "name": "San Francisco", "rel": "plays home games in" },
+        { "name": "LeBron James", "rel": "met in four straight NBA Finals" },
+        { "name": "United States", "rel": "won Olympic gold for" }
+      ],
+      "fact": "He and LeBron James were both born in the same hospital in Akron, Ohio."
+    },
+    {
+      "id": "roger-federer",
+      "name": "Roger Federer",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Tennis Player",
+      "year": 1981,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "As a boy he worked as a ball boy at the tournament in his hometown of Basel.",
+        "His first Grand Slam title came on grass in London in 2003.",
+        "By his retirement in 2022 he had won a record eight Wimbledon singles titles.",
+        "His long rivalry with Rafael Nadal is one of the greatest in sport.",
+        "The elegant Swiss tennis star famous for his one-handed backhand."
+      ],
+      "links": [
+        { "name": "Switzerland", "rel": "represented" },
+        { "name": "Wimbledon", "rel": "won eight times" },
+        { "name": "Rafael Nadal", "rel": "had a famous rivalry with" }
+      ],
+      "fact": "He won 20 Grand Slam singles titles in his career."
+    },
+    {
+      "id": "serena-williams",
+      "name": "Serena Williams",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Tennis Player",
+      "year": 1981,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "She learned the game on public courts in Compton, California, coached by her father.",
+        "She won her first Grand Slam title at the 1999 US Open, aged 17.",
+        "She won the 2017 Australian Open while pregnant.",
+        "Her 23 Grand Slam singles titles are the Open Era record for women.",
+        "She often teamed up in doubles with her older sister Venus."
+      ],
+      "links": [
+        { "name": "United States", "rel": "represented" },
+        { "name": "Wimbledon", "rel": "won seven singles titles at" }
+      ],
+      "fact": "She and her sister Venus won 14 Grand Slam doubles titles together."
+    },
+    {
+      "id": "rafael-nadal",
+      "name": "Rafael Nadal",
+      "aliases": ["Rafa Nadal"],
+      "category": "sport",
+      "sub": "Tennis Player",
+      "year": 1986,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born on Mallorca in 1986, he was coached for years by his uncle Toni.",
+        "Though he writes with his right hand, he plays tennis left-handed.",
+        "He beat Roger Federer in the 2008 Wimbledon final, often called the greatest match.",
+        "He won the French Open a record 14 times.",
+        "The Spanish 'King of Clay' who liked to bite his trophies for the cameras."
+      ],
+      "links": [
+        { "name": "Spain", "rel": "represented" },
+        { "name": "Roger Federer", "rel": "had a famous rivalry with" },
+        { "name": "Novak Djokovic", "rel": "had a long rivalry with" }
+      ],
+      "fact": "He retired in 2024 with 22 Grand Slam singles titles."
+    },
+    {
+      "id": "novak-djokovic",
+      "name": "Novak Djokovic",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Tennis Player",
+      "year": 1987,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He grew up in Belgrade and first picked up a racket at the age of four.",
+        "He won his first Grand Slam title at the 2008 Australian Open.",
+        "By 2023 he had won the Australian Open a record ten times.",
+        "He won Olympic gold in men's singles at the Paris 2024 Games.",
+        "The Serbian star who reached 24 Grand Slam singles titles in 2023."
+      ],
+      "links": [
+        { "name": "Serbia", "rel": "represents" },
+        { "name": "Rafael Nadal", "rel": "had a long rivalry with" },
+        { "name": "Roger Federer", "rel": "had a long rivalry with" }
+      ],
+      "fact": "He has spent more weeks ranked world number one than any other player."
+    },
+    {
+      "id": "ayrton-senna",
+      "name": "Ayrton Senna",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Racing Driver",
+      "year": 1960,
+      "region": "Latin America",
+      "difficulty": 2,
+      "clues": [
+        "He began racing in São Paulo after his father built him a go-kart at age four.",
+        "He was famously brilliant in the rain, as he showed at Monaco in 1984.",
+        "His fierce rivalry with teammate Alain Prost defined McLaren in the late 1980s.",
+        "He won three Formula One world titles: 1988, 1990 and 1991.",
+        "The Brazilian legend who won the Monaco Grand Prix a record six times."
+      ],
+      "links": [
+        { "name": "Brazil", "rel": "is a national hero of" },
+        { "name": "Monaco", "rel": "won six times in" },
+        { "name": "São Paulo", "rel": "was born in" }
+      ],
+      "fact": "He won 41 Formula One Grand Prix races in his career."
+    },
+    {
+      "id": "michael-schumacher",
+      "name": "Michael Schumacher",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Racing Driver",
+      "year": 1969,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He grew up at a go-kart track in Kerpen, where his father worked.",
+        "He won his first two world titles with Benetton in 1994 and 1995.",
+        "He won five world titles in a row with Ferrari from 2000 to 2004.",
+        "His record of seven Formula One titles was later matched by Lewis Hamilton.",
+        "The German driver who brought Ferrari back to glory."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "raced for" },
+        { "name": "Ferrari", "rel": "won five titles with" },
+        { "name": "Lewis Hamilton", "rel": "shares the title record with" }
+      ],
+      "fact": "His son Mick also raced in Formula One."
+    },
+    {
+      "id": "lewis-hamilton",
+      "name": "Lewis Hamilton",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Racing Driver",
+      "year": 1985,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He grew up in Stevenage and first showed his talent racing remote-control cars.",
+        "At ten he told McLaren's boss that he wanted to race for him one day.",
+        "In 2008 he became the youngest world champion at the time, aged 23.",
+        "He won six of his seven world titles with Mercedes.",
+        "The British driver who joined Ferrari in 2025 after 12 seasons at Mercedes."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "races for" },
+        { "name": "Michael Schumacher", "rel": "equalled the title record of" },
+        { "name": "Ferrari", "rel": "joined in 2025" }
+      ],
+      "fact": "He was knighted in 2021 for services to motorsport."
+    },
+    {
+      "id": "max-verstappen",
+      "name": "Max Verstappen",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Racing Driver",
+      "year": 1997,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Both his parents raced: his father in Formula One, his mother in karting.",
+        "He made his Formula One debut at 17, before he had a road driving licence.",
+        "At 18 he became the youngest Grand Prix winner, in Spain in 2016.",
+        "He won his first world title in a dramatic final race in Abu Dhabi in 2021.",
+        "The Dutch Red Bull driver who won four straight titles from 2021 to 2024."
+      ],
+      "links": [
+        { "name": "Netherlands", "rel": "races for" },
+        { "name": "Lewis Hamilton", "rel": "beat to the 2021 title" }
+      ],
+      "fact": "He won 19 of the 22 races in the 2023 season."
+    },
+    {
+      "id": "muhammad-ali",
+      "name": "Muhammad Ali",
+      "aliases": ["Cassius Clay"],
+      "category": "sport",
+      "sub": "Boxer",
+      "year": 1942,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "He took up boxing at 12 after his bicycle was stolen in Louisville, Kentucky.",
+        "He won Olympic light-heavyweight gold in Rome in 1960.",
+        "He fought Joe Frazier in the 'Fight of the Century' and the 'Thrilla in Manila'.",
+        "He beat George Foreman in Zaire in the 1974 'Rumble in the Jungle'.",
+        "The heavyweight who could 'float like a butterfly, sting like a bee'."
+      ],
+      "links": [
+        { "name": "United States", "rel": "boxed for" },
+        { "name": "Olympic Games", "rel": "won gold at the 1960" },
+        { "name": "Louisville", "rel": "was born in" }
+      ],
+      "fact": "He lit the Olympic cauldron at the 1996 Atlanta Games."
+    },
+    {
+      "id": "mike-tyson",
+      "name": "Mike Tyson",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Boxer",
+      "year": 1966,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "He grew up in Brooklyn and was trained as a teenager by Cus D'Amato.",
+        "He was known for his 'peek-a-boo' style and fearsome early knockouts.",
+        "In 1986, aged 20, he became the youngest heavyweight champion ever.",
+        "He lost his title in a huge upset to Buster Douglas in Tokyo in 1990.",
+        "The heavyweight with a face tattoo who had a cameo in the comedy The Hangover."
+      ],
+      "links": [
+        { "name": "United States", "rel": "boxed for" },
+        { "name": "The Hangover", "rel": "appeared in" },
+        { "name": "New York City", "rel": "grew up in" }
+      ],
+      "fact": "He is a keen pigeon keeper, a hobby he started as a boy in Brooklyn."
+    },
+    {
+      "id": "manny-pacquiao",
+      "name": "Manny Pacquiao",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Boxer",
+      "year": 1978,
+      "region": "Southeast Asia",
+      "difficulty": 2,
+      "clues": [
+        "He grew up in poverty in the southern Philippines and left home as a teenager.",
+        "He is the only boxer to win world titles in eight weight divisions.",
+        "He fought Floyd Mayweather in 2015 in one of the richest bouts ever.",
+        "Away from the ring he served as a senator in his home country.",
+        "The Filipino southpaw nicknamed 'PacMan'."
+      ],
+      "links": [
+        { "name": "Philippines", "rel": "represents" },
+        { "name": "Floyd Mayweather", "rel": "fought in 2015" }
+      ],
+      "fact": "He has also played professional basketball and recorded songs."
+    },
+    {
+      "id": "floyd-mayweather",
+      "name": "Floyd Mayweather",
+      "aliases": ["Floyd Mayweather Jr."],
+      "category": "sport",
+      "sub": "Boxer",
+      "year": 1977,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in Grand Rapids, Michigan, he came from a family of boxers.",
+        "He won a bronze medal at the 1996 Atlanta Olympics.",
+        "He beat Manny Pacquiao in 2015 and UFC star Conor McGregor in 2017.",
+        "He retired with a perfect professional record of 50 wins and no defeats.",
+        "The defensive genius nicknamed 'Money', famous for showing off his wealth."
+      ],
+      "links": [
+        { "name": "United States", "rel": "boxed for" },
+        { "name": "Manny Pacquiao", "rel": "beat in 2015" }
+      ],
+      "fact": "His father and two uncles were also professional boxers."
+    },
+    {
+      "id": "sachin-tendulkar",
+      "name": "Sachin Tendulkar",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Cricketer",
+      "year": 1973,
+      "region": "South Asia",
+      "difficulty": 1,
+      "clues": [
+        "He made his Test debut at just 16, against Pakistan in 1989.",
+        "In 2010 he hit the first double century in a men's one-day international.",
+        "He was the first player to score 100 international centuries.",
+        "He won the World Cup at his home stadium in Mumbai in 2011.",
+        "India's 'Little Master', who played a record 200 Test matches."
+      ],
+      "links": [
+        { "name": "India", "rel": "played for" },
+        { "name": "Mumbai", "rel": "was born in" }
+      ],
+      "fact": "He became the first sportsperson to receive India's highest civilian award, the Bharat Ratna."
+    },
+    {
+      "id": "don-bradman",
+      "name": "Don Bradman",
+      "aliases": ["Donald Bradman"],
+      "category": "sport",
+      "sub": "Cricketer",
+      "year": 1908,
+      "region": "Oceania",
+      "difficulty": 3,
+      "clues": [
+        "As a boy he practised alone, hitting a golf ball against a water tank with a stump.",
+        "England's 'Bodyline' bowling of 1932-33 was designed mainly to stop him.",
+        "He needed just four runs in his final innings to average 100, but was out for nought.",
+        "His Test batting average of 99.94 is the highest in history.",
+        "Australia's greatest batsman, knighted in 1949."
+      ],
+      "links": [
+        { "name": "Australia", "rel": "played for" },
+        { "name": "England", "rel": "starred against" }
+      ],
+      "fact": "The address of the Australian Broadcasting Corporation's postal box was set at 9994 in his honour."
+    },
+    {
+      "id": "virat-kohli",
+      "name": "Virat Kohli",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Cricketer",
+      "year": 1988,
+      "region": "South Asia",
+      "difficulty": 3,
+      "clues": [
+        "He captained his country to victory at the Under-19 World Cup in 2008.",
+        "He was named player of the match in the final of the 2024 T20 World Cup.",
+        "By 2023 he had made a world-record 50 centuries in one-day internationals.",
+        "In 2025 he finally won the IPL with Royal Challengers Bengaluru.",
+        "The former India captain from Delhi, married to actress Anushka Sharma."
+      ],
+      "links": [
+        { "name": "India", "rel": "played for" },
+        { "name": "Delhi", "rel": "was born in" },
+        { "name": "Sachin Tendulkar", "rel": "broke a one-day century record of" }
+      ],
+      "fact": "He played his entire IPL career for one team, from the first season in 2008."
+    },
+    {
+      "id": "brian-lara",
+      "name": "Brian Lara",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Cricketer",
+      "year": 1969,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "He grew up in Trinidad, the tenth of eleven children.",
+        "In 1994 he scored 501 not out for Warwickshire, a first-class record.",
+        "Also in 1994 he made 375 against England, then the Test record.",
+        "He took back the Test record in 2004 with 400 not out against England.",
+        "The West Indies left-hander nicknamed 'The Prince of Port of Spain'."
+      ],
+      "links": [
+        { "name": "Trinidad and Tobago", "rel": "was born in" },
+        { "name": "England", "rel": "set records against" }
+      ],
+      "fact": "His 400 not out is still the highest individual score in Test cricket."
+    },
+    {
+      "id": "usain-bolt",
+      "name": "Usain Bolt",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Athlete",
+      "year": 1986,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "As a boy in rural Jamaica he loved cricket and football more than running.",
+        "At 15 he won the 200 m at the 2002 World Junior Championships in Kingston.",
+        "He won both the 100 m and 200 m at three straight Olympics, from 2008 to 2016.",
+        "He ran the 100 m in a world-record 9.58 seconds in Berlin in 2009.",
+        "The Jamaican sprinter famous for his sky-pointing archer pose."
+      ],
+      "links": [
+        { "name": "Jamaica", "rel": "ran for" },
+        { "name": "Olympic Games", "rel": "won eight golds at the" },
+        { "name": "Berlin", "rel": "set world records in" }
+      ],
+      "fact": "He also set the 200 m world record, 19.19 seconds, in Berlin in 2009."
+    },
+    {
+      "id": "jesse-owens",
+      "name": "Jesse Owens",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Athlete",
+      "year": 1913,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "The son of a sharecropper, he moved from Alabama to Cleveland as a boy.",
+        "In 1935 he set three world records and tied a fourth in under an hour.",
+        "His friendship with German long-jump rival Luz Long became legendary.",
+        "He won four gold medals at the 1936 Olympics in Berlin.",
+        "The American track star who won 100 m, 200 m, long jump and relay gold in 1936."
+      ],
+      "links": [
+        { "name": "United States", "rel": "competed for" },
+        { "name": "Olympic Games", "rel": "won four golds at the 1936" },
+        { "name": "Berlin", "rel": "won four golds in" }
+      ],
+      "fact": "A street beside Berlin's Olympic Stadium is named after him."
+    },
+    {
+      "id": "michael-phelps",
+      "name": "Michael Phelps",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Athlete",
+      "year": 1985,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "As a boy in Baltimore he took up swimming partly to burn off extra energy.",
+        "He made the US Olympic team at just 15, in 2000.",
+        "At the 2008 Beijing Games he won a record eight gold medals.",
+        "He won 23 Olympic gold medals in all, by far the most of any athlete.",
+        "The American swimmer nicknamed the 'Baltimore Bullet'."
+      ],
+      "links": [
+        { "name": "United States", "rel": "swam for" },
+        { "name": "Olympic Games", "rel": "won 23 golds at the" },
+        { "name": "Beijing", "rel": "won eight golds in" }
+      ],
+      "fact": "He won 28 Olympic medals in total, also a record."
+    },
+    {
+      "id": "simone-biles",
+      "name": "Simone Biles",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Athlete",
+      "year": 1997,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "She discovered her sport at age six on a daycare field trip.",
+        "She won four gold medals at the 2016 Olympics in Rio de Janeiro.",
+        "Several moves are named after her because she was first to do them in competition.",
+        "She returned to win three golds at the Paris 2024 Olympics.",
+        "The American gymnast who is the most decorated in the sport's history."
+      ],
+      "links": [
+        { "name": "United States", "rel": "competes for" },
+        { "name": "Olympic Games", "rel": "won seven golds at the" }
+      ],
+      "fact": "She stands just 1.42 metres tall."
+    },
+    {
+      "id": "nadia-comaneci",
+      "name": "Nadia Comăneci",
+      "aliases": ["Nadia Comaneci"],
+      "category": "sport",
+      "sub": "Athlete",
+      "year": 1961,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Coach Béla Károlyi spotted her doing cartwheels in a schoolyard.",
+        "She was only 14 when she competed at the 1976 Olympics in Montreal.",
+        "The scoreboard showed '1.00' for her famous routine because it could not display her score.",
+        "She scored the first perfect 10 in Olympic gymnastics.",
+        "The Romanian gymnast who later married American Olympic champion Bart Conner."
+      ],
+      "links": [
+        { "name": "Romania", "rel": "competed for" },
+        { "name": "Olympic Games", "rel": "scored a perfect 10 at the" },
+        { "name": "Montreal", "rel": "made history in" }
+      ],
+      "fact": "She won three gold medals at the 1976 Games and two more in 1980."
+    },
+    {
+      "id": "tiger-woods",
+      "name": "Tiger Woods",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Athlete",
+      "year": 1975,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "At age two he showed off his putting against comedian Bob Hope on a TV show.",
+        "In 1997, aged 21, he won the Masters by a record 12 shots.",
+        "He held all four major golf titles at the same time in 2000-2001.",
+        "In 2019 he won the Masters again after serious back surgery.",
+        "The golfer famous for wearing a red shirt on the final day of tournaments."
+      ],
+      "links": [
+        { "name": "United States", "rel": "plays for" },
+        { "name": "Golf", "rel": "is a legend of" }
+      ],
+      "fact": "His real first name is Eldrick."
+    },
+    {
+      "id": "wayne-gretzky",
+      "name": "Wayne Gretzky",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Athlete",
+      "year": 1961,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "He learned to skate on a backyard rink his father built in Ontario.",
+        "He won four Stanley Cups with the Edmonton Oilers in the 1980s.",
+        "His 1988 trade to Los Angeles shocked his home country.",
+        "When he retired in 1999, the NHL retired his number 99 for every team.",
+        "The Canadian ice hockey legend known as 'The Great One'."
+      ],
+      "links": [
+        { "name": "Canada", "rel": "played for" },
+        { "name": "Los Angeles", "rel": "was traded to" }
+      ],
+      "fact": "He scored 92 goals in a single season, 1981-82, still the NHL record."
+    },
+    {
+      "id": "eliud-kipchoge",
+      "name": "Eliud Kipchoge",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Athlete",
+      "year": 1984,
+      "region": "Africa",
+      "difficulty": 3,
+      "clues": [
+        "As a boy he ran several kilometres to school in Kenya's Nandi County.",
+        "At 18 he beat Hicham El Guerrouj to win the 5,000 m world title in 2003.",
+        "He won the Olympic marathon in 2016 and again in 2021.",
+        "In 2019 in Vienna he ran a marathon in under two hours, in a specially set-up race.",
+        "The Kenyan marathon great whose motto is 'No human is limited'."
+      ],
+      "links": [
+        { "name": "Kenya", "rel": "runs for" },
+        { "name": "Olympic Games", "rel": "won two marathon golds at the" },
+        { "name": "Vienna", "rel": "broke two hours in" }
+      ],
+      "fact": "His sub-two-hour run, 1:59:40, did not count as an official record because of pacers."
+    },
+    {
+      "id": "football",
+      "name": "Football",
+      "aliases": ["Soccer", "Association Football"],
+      "category": "sport",
+      "sub": "Sport",
+      "year": 1863,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "Its modern rules were agreed at a meeting in a London tavern in 1863.",
+        "Only one player per team may handle the ball, and only inside their own area.",
+        "Each side has eleven players and tries to put the ball into the opposing net.",
+        "Its biggest tournament, the World Cup, is held every four years.",
+        "The world's most popular sport, played by Pelé, Messi and Ronaldo."
+      ],
+      "links": [
+        { "name": "FIFA World Cup", "rel": "has as its biggest tournament the" },
+        { "name": "England", "rel": "had its rules written in" },
+        { "name": "Lionel Messi", "rel": "is played by" }
+      ],
+      "fact": "A match lasts 90 minutes, in two halves of 45."
+    },
+    {
+      "id": "basketball",
+      "name": "Basketball",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Sport",
+      "year": 1891,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was invented in 1891 by a Canadian PE teacher working in Massachusetts.",
+        "In the first games the ball had to be fetched out of peach baskets by hand.",
+        "Shots from far enough out are worth three points instead of two.",
+        "Its top professional league is the NBA, founded in 1946.",
+        "The sport of Michael Jordan and LeBron James, with hoops 10 feet high."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was invented in" },
+        { "name": "Michael Jordan", "rel": "was dominated by" },
+        { "name": "Los Angeles Lakers", "rel": "is played by the" }
+      ],
+      "fact": "Its inventor, James Naismith, wrote just 13 original rules."
+    },
+    {
+      "id": "tennis",
+      "name": "Tennis",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Sport",
+      "year": 1874,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Its modern lawn version was patented in England in 1874.",
+        "Its scoring goes love, 15, 30, 40, then game.",
+        "Its four biggest events each year are known as the Grand Slams.",
+        "Players use strung rackets to hit a ball back and forth over a net.",
+        "The sport played at Wimbledon by Federer, Nadal and Serena."
+      ],
+      "links": [
+        { "name": "Wimbledon", "rel": "has its oldest tournament at" },
+        { "name": "Roger Federer", "rel": "is played by" }
+      ],
+      "fact": "'Love' for zero may come from the idea of playing for love of the game."
+    },
+    {
+      "id": "cricket",
+      "name": "Cricket",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Sport",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Its longest form lasts up to five days and can still end in a draw.",
+        "A batter can be given out 'leg before wicket'.",
+        "Bowlers aim at three stumps topped by two small bails.",
+        "Teams of eleven play Tests, one-day games and short Twenty20 matches.",
+        "The bat-and-ball sport adored in India and England, played by Sachin Tendulkar."
+      ],
+      "links": [
+        { "name": "India", "rel": "is hugely popular in" },
+        { "name": "England", "rel": "was born in" },
+        { "name": "Sachin Tendulkar", "rel": "is played by" }
+      ],
+      "fact": "The Ashes series between England and Australia began in 1882."
+    },
+    {
+      "id": "chess",
+      "name": "Chess",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Board Game",
+      "year": null,
+      "region": "South Asia",
+      "difficulty": 1,
+      "clues": [
+        "Its ancestor, chaturanga, arose in India around the 6th century.",
+        "Its queen became the most powerful piece only in the late 1400s.",
+        "In 1997 IBM's computer Deep Blue beat the world champion at it.",
+        "A pawn that reaches the far side of the board can be promoted.",
+        "The game of kings, rooks and bishops, won by checkmate."
+      ],
+      "links": [
+        { "name": "India", "rel": "originated in" },
+        { "name": "Go", "rel": "is often compared with" }
+      ],
+      "fact": "The word 'checkmate' comes from Persian, meaning 'the king is helpless'."
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "aliases": ["Weiqi", "Baduk"],
+      "category": "sport",
+      "sub": "Board Game",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 3,
+      "clues": [
+        "Invented in China over 2,500 years ago, it is among the oldest board games still played.",
+        "Players take turns placing black and white stones on the points of a grid.",
+        "The standard board has 19 by 19 lines.",
+        "Stones are captured by surrounding them, and the aim is to control the most territory.",
+        "In 2016 Google DeepMind's AlphaGo program beat top player Lee Sedol at it."
+      ],
+      "links": [
+        { "name": "China", "rel": "originated in" },
+        { "name": "Chess", "rel": "is often compared with" }
+      ],
+      "fact": "It has more possible board positions than there are atoms in the observable universe."
+    },
+    {
+      "id": "monopoly",
+      "name": "Monopoly",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Board Game",
+      "year": 1935,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It grew out of 'The Landlord's Game', designed by Lizzie Magie in 1904.",
+        "Parker Brothers began selling it in 1935.",
+        "The streets on the classic US board come from Atlantic City, New Jersey.",
+        "Its playing pieces have included a top hat, a racing car and a Scottie dog.",
+        "The property-trading game where you collect money for passing Go."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was first sold in" },
+        { "name": "London", "rel": "has a famous edition set in" }
+      ],
+      "fact": "In World War II, special editions helped smuggle escape maps to prisoners of war."
+    },
+    {
+      "id": "scrabble",
+      "name": "Scrabble",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Board Game",
+      "year": 1938,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "An out-of-work architect, Alfred Butts, invented it during the Great Depression.",
+        "He set the letter values by counting letters on newspaper front pages.",
+        "Players draw seven letter tiles at a time from a bag.",
+        "In the English version, Q and Z are each worth ten points.",
+        "The crossword board game with bonus triple-word-score squares."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was invented in" }
+      ],
+      "fact": "The English set has 100 tiles, including two blanks."
+    },
+    {
+      "id": "olympic-games",
+      "name": "Olympic Games",
+      "aliases": ["Olympics"],
+      "category": "sport",
+      "sub": "Tournament",
+      "year": 1896,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "The ancient version was held in honour of Zeus for more than a thousand years.",
+        "Pierre de Coubertin revived it, and the first modern edition was held in Athens in 1896.",
+        "A flame lit in Greece is carried by torch relay to each host city.",
+        "Winners receive gold medals, while second and third get silver and bronze.",
+        "The world's biggest multi-sport event, whose flag shows five interlocking rings."
+      ],
+      "links": [
+        { "name": "Athens", "rel": "was revived in" },
+        { "name": "Paris", "rel": "was hosted in 2024 by" },
+        { "name": "Michael Phelps", "rel": "saw 23 golds won by" }
+      ],
+      "fact": "The five rings stand for the five inhabited continents united by sport."
+    },
+    {
+      "id": "fifa-world-cup",
+      "name": "FIFA World Cup",
+      "aliases": ["World Cup"],
+      "category": "sport",
+      "sub": "Tournament",
+      "year": 1930,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "The first edition was held in Uruguay in 1930, and the hosts won.",
+        "By 2022 Brazil had won it a record five times.",
+        "Its current trophy, introduced in 1974, shows two figures holding up a globe.",
+        "The 2026 edition, in the US, Canada and Mexico, was the first with 48 teams.",
+        "Football's biggest tournament, won by Argentina in Qatar in 2022."
+      ],
+      "links": [
+        { "name": "Uruguay", "rel": "was first hosted and won by" },
+        { "name": "Pelé", "rel": "was won three times by" },
+        { "name": "Lionel Messi", "rel": "was won in 2022 by" }
+      ],
+      "fact": "It is held every four years; the only gaps were in 1942 and 1946."
+    },
+    {
+      "id": "wimbledon",
+      "name": "Wimbledon",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Tournament",
+      "year": 1877,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "First held in 1877, it is the oldest tournament of its sport in the world.",
+        "Players must wear almost entirely white clothing.",
+        "Fans traditionally eat strawberries and cream there.",
+        "It is the only Grand Slam tennis event still played on grass.",
+        "The tennis championship held each summer at the All England Club in London."
+      ],
+      "links": [
+        { "name": "London", "rel": "is held in" },
+        { "name": "Roger Federer", "rel": "was won eight times by" },
+        { "name": "Tennis", "rel": "is the oldest tournament in" }
+      ],
+      "fact": "Around 200,000 portions of strawberries and cream are eaten there each year."
+    },
+    {
+      "id": "tour-de-france",
+      "name": "Tour de France",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Tournament",
+      "year": 1903,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "First held in 1903, it was created to boost sales of a sports newspaper.",
+        "Its overall leader wears a yellow jersey.",
+        "The best climber wears a white jersey with red polka dots.",
+        "It lasts about three weeks and crosses the Alps and the Pyrenees.",
+        "The world's most famous cycling race, which traditionally finishes in Paris."
+      ],
+      "links": [
+        { "name": "France", "rel": "is held in" },
+        { "name": "Paris", "rel": "traditionally finishes in" }
+      ],
+      "fact": "The yellow jersey matches the colour of the paper the original newspaper was printed on."
+    },
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Club",
+      "year": 1902,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Founded in 1902, the club was given a royal title by King Alfonso XIII in 1920.",
+        "It plays its home games at the Santiago Bernabéu stadium.",
+        "It won the first five European Cups, from 1956 to 1960.",
+        "By 2024 it had won the European Cup or Champions League a record 15 times.",
+        "The Spanish capital's all-white football giant, nicknamed 'Los Blancos'."
+      ],
+      "links": [
+        { "name": "Spain", "rel": "is based in" },
+        { "name": "Cristiano Ronaldo", "rel": "has a top scorer in" },
+        { "name": "FC Barcelona", "rel": "is the fierce rival of" }
+      ],
+      "fact": "Its matches against Barcelona are known as 'El Clásico'."
+    },
+    {
+      "id": "fc-barcelona",
+      "name": "FC Barcelona",
+      "aliases": ["Barça"],
+      "category": "sport",
+      "sub": "Club",
+      "year": 1899,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It was founded in 1899 by a group led by Swiss businessman Joan Gamper.",
+        "Its motto means 'More than a club' in Catalan.",
+        "Its home ground, Camp Nou, is one of the largest stadiums in Europe.",
+        "Lionel Messi spent over 20 years there, from youth player to superstar.",
+        "The blue-and-maroon giant of Catalonia, eternal rival of Real Madrid."
+      ],
+      "links": [
+        { "name": "Spain", "rel": "is based in" },
+        { "name": "Lionel Messi", "rel": "made a star of" },
+        { "name": "Real Madrid", "rel": "is the fierce rival of" }
+      ],
+      "fact": "It is owned by its members, who elect the club president."
+    },
+    {
+      "id": "manchester-united",
+      "name": "Manchester United",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Club",
+      "year": 1878,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It was founded in 1878 as Newton Heath, a team of railway workers.",
+        "Its stadium, Old Trafford, is nicknamed 'The Theatre of Dreams'.",
+        "Under Sir Alex Ferguson it won 13 English league titles.",
+        "In 1999 it won the treble, with two late goals in the Champions League final.",
+        "The English football giant nicknamed the 'Red Devils'."
+      ],
+      "links": [
+        { "name": "England", "rel": "is based in" },
+        { "name": "David Beckham", "rel": "made a star of" },
+        { "name": "Cristiano Ronaldo", "rel": "signed as a teenager" }
+      ],
+      "fact": "It won its first European Cup in 1968, ten years after the Munich air disaster."
+    },
+    {
+      "id": "los-angeles-lakers",
+      "name": "Los Angeles Lakers",
+      "aliases": [],
+      "category": "sport",
+      "sub": "Club",
+      "year": 1947,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "The team started out in Minneapolis, which explains its name.",
+        "Its players wear purple and gold.",
+        "Magic Johnson and Kareem Abdul-Jabbar led its 'Showtime' teams of the 1980s.",
+        "Kobe Bryant and Shaquille O'Neal won three straight titles there from 2000 to 2002.",
+        "The Hollywood-area basketball team that LeBron James joined in 2018."
+      ],
+      "links": [
+        { "name": "Kobe Bryant", "rel": "had a lifelong star in" },
+        { "name": "LeBron James", "rel": "won the 2020 title with" },
+        { "name": "Los Angeles", "rel": "is based in" }
+      ],
+      "fact": "It moved from Minneapolis, the 'Land of 10,000 Lakes', to California in 1960."
+    }
+  ]
+}

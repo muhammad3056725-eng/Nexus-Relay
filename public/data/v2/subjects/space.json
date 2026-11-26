@@ -1,0 +1,1111 @@
+{
+  "category": "space",
+  "subjects": [
+    {
+      "id": "mercury",
+      "name": "Mercury",
+      "aliases": [],
+      "category": "space",
+      "sub": "Planet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 1,
+      "clues": [
+        "A year on this world lasts just 88 Earth days.",
+        "It has almost no atmosphere, so its temperatures swing wildly between day and night.",
+        "Its cratered grey surface looks a lot like our own Moon.",
+        "It is the smallest planet in the solar system.",
+        "The planet closest to the Sun."
+      ],
+      "links": [
+        { "name": "Sun", "rel": "is the closest planet to the" },
+        { "name": "Venus", "rel": "is the neighbour of" }
+      ],
+      "fact": "Despite being closest to the Sun, it is not the hottest planet; Venus is."
+    },
+    {
+      "id": "venus",
+      "name": "Venus",
+      "aliases": [],
+      "category": "space",
+      "sub": "Planet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 1,
+      "clues": [
+        "It spins backwards compared with most planets, so the Sun rises in the west there.",
+        "A day on it is longer than its year.",
+        "Thick clouds of sulphuric acid hide its surface from view.",
+        "It is the hottest planet, even hotter than Mercury.",
+        "Second planet from the Sun, often seen as the bright morning or evening star."
+      ],
+      "links": [
+        { "name": "Sun", "rel": "is the second planet from the" },
+        { "name": "Earth", "rel": "is often called the twin of" }
+      ],
+      "fact": "It is named after the Roman goddess of love and beauty."
+    },
+    {
+      "id": "earth",
+      "name": "Earth",
+      "aliases": [],
+      "category": "space",
+      "sub": "Planet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 1,
+      "clues": [
+        "It is the densest planet in the solar system.",
+        "About 71 percent of its surface is covered by water.",
+        "It has just one large natural satellite.",
+        "It is the third planet from the Sun.",
+        "The only planet known to support life: our home world."
+      ],
+      "links": [
+        { "name": "Moon", "rel": "is orbited by the" },
+        { "name": "Sun", "rel": "orbits the" }
+      ],
+      "fact": "It is the only planet in the solar system not named after a god."
+    },
+    {
+      "id": "mars",
+      "name": "Mars",
+      "aliases": [],
+      "category": "space",
+      "sub": "Planet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 1,
+      "clues": [
+        "It has the tallest volcano in the solar system, Olympus Mons.",
+        "Its two small moons are named Phobos and Deimos.",
+        "Rovers such as Curiosity and Perseverance have explored its surface.",
+        "Its day lasts just over 24 hours, a little longer than ours.",
+        "The fourth planet from the Sun, known as the Red Planet."
+      ],
+      "links": [
+        { "name": "Curiosity", "rel": "is explored by" },
+        { "name": "Earth", "rel": "is the outer neighbour of" }
+      ],
+      "fact": "Its red colour comes from iron oxide, or rust, in its dust."
+    },
+    {
+      "id": "jupiter",
+      "name": "Jupiter",
+      "aliases": [],
+      "category": "space",
+      "sub": "Planet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 1,
+      "clues": [
+        "It has a giant storm, the Great Red Spot, that is wider than Earth.",
+        "Its four largest moons were discovered by Galileo in 1610.",
+        "It spins faster than any other planet, with a day of about 10 hours.",
+        "More than 1,300 Earths could fit inside it.",
+        "The largest planet in the solar system, fifth from the Sun."
+      ],
+      "links": [
+        { "name": "Io", "rel": "is orbited by" },
+        { "name": "Europa", "rel": "is orbited by" }
+      ],
+      "fact": "It is named after the king of the Roman gods."
+    },
+    {
+      "id": "saturn",
+      "name": "Saturn",
+      "aliases": [],
+      "category": "space",
+      "sub": "Planet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 1,
+      "clues": [
+        "It is so light for its size that it would float in a big enough bath of water.",
+        "Its largest moon is wrapped in a thick, hazy atmosphere.",
+        "The Cassini spacecraft orbited it for 13 years.",
+        "It is the sixth planet from the Sun and the second largest.",
+        "The gas giant famous for its bright, beautiful rings."
+      ],
+      "links": [
+        { "name": "Titan", "rel": "is orbited by" },
+        { "name": "Voyager 1", "rel": "was visited by" }
+      ],
+      "fact": "Its rings are mostly chunks of ice, some as small as grains and others as big as houses."
+    },
+    {
+      "id": "uranus",
+      "name": "Uranus",
+      "aliases": [],
+      "category": "space",
+      "sub": "Planet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 1,
+      "clues": [
+        "It was the first planet discovered with a telescope, in 1781.",
+        "Its discoverer William Herschel first wanted to name it after King George III.",
+        "It is tipped over on its side, so it rolls around the Sun.",
+        "It is a pale blue-green ice giant, seventh from the Sun.",
+        "The only planet named after a Greek god rather than a Roman one."
+      ],
+      "links": [
+        { "name": "Neptune", "rel": "is the neighbour of" },
+        { "name": "Sun", "rel": "is the seventh planet from the" }
+      ],
+      "fact": "Only one spacecraft has ever visited it: Voyager 2, in 1986."
+    },
+    {
+      "id": "neptune",
+      "name": "Neptune",
+      "aliases": [],
+      "category": "space",
+      "sub": "Planet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 2,
+      "clues": [
+        "It was found in 1846 after mathematics predicted where it should be.",
+        "It has the fastest winds in the solar system, over 2,000 km/h.",
+        "Its largest moon, Triton, orbits it backwards.",
+        "It takes about 165 years to circle the Sun once.",
+        "The deep blue ice giant that is the farthest planet from the Sun."
+      ],
+      "links": [
+        { "name": "Uranus", "rel": "is the neighbour of" },
+        { "name": "Sun", "rel": "is the farthest planet from the" }
+      ],
+      "fact": "In 2011 it completed its first full orbit since its discovery."
+    },
+    {
+      "id": "pluto",
+      "name": "Pluto",
+      "aliases": [],
+      "category": "space",
+      "sub": "Dwarf Planet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 1,
+      "clues": [
+        "It was discovered in 1930 by Clyde Tombaugh at an observatory in Arizona.",
+        "An 11-year-old girl in England suggested its name.",
+        "Its largest moon, Charon, is about half its width.",
+        "The New Horizons probe flew past it in 2015 and saw a heart-shaped plain.",
+        "Once called the ninth planet, it was reclassified as a dwarf planet in 2006."
+      ],
+      "links": [
+        { "name": "Eris", "rel": "lost its planet status partly because of" },
+        { "name": "Neptune", "rel": "orbits beyond" }
+      ],
+      "fact": "Some of Clyde Tombaugh's ashes travelled past it aboard New Horizons."
+    },
+    {
+      "id": "ceres",
+      "name": "Ceres",
+      "aliases": [],
+      "category": "space",
+      "sub": "Dwarf Planet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 2,
+      "clues": [
+        "It was found on 1 January 1801 by the Italian astronomer Giuseppe Piazzi.",
+        "For about half a century it was counted as a planet.",
+        "NASA's Dawn spacecraft orbited it and studied bright salty spots in a crater.",
+        "It is the largest object in the asteroid belt.",
+        "The only dwarf planet in the inner solar system, between Mars and Jupiter."
+      ],
+      "links": [
+        { "name": "Mars", "rel": "orbits beyond" },
+        { "name": "Jupiter", "rel": "orbits inside the path of" }
+      ],
+      "fact": "It is named after the Roman goddess of farming, whose name also gave us the word 'cereal'."
+    },
+    {
+      "id": "eris",
+      "name": "Eris",
+      "aliases": [],
+      "category": "space",
+      "sub": "Dwarf Planet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 3,
+      "clues": [
+        "It was discovered in 2005 by a team led by astronomer Mike Brown.",
+        "It is almost exactly as wide as Pluto, but heavier.",
+        "Its discovery pushed astronomers to define the word 'planet' in 2006.",
+        "It has one known moon, named Dysnomia.",
+        "Distant dwarf planet named after the Greek goddess of strife and discord."
+      ],
+      "links": [
+        { "name": "Pluto", "rel": "is almost the same size as" }
+      ],
+      "fact": "It takes more than 550 years to orbit the Sun."
+    },
+    {
+      "id": "haumea",
+      "name": "Haumea",
+      "aliases": [],
+      "category": "space",
+      "sub": "Dwarf Planet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 3,
+      "clues": [
+        "It was found in the icy region beyond Neptune in the mid-2000s.",
+        "It spins about once every four hours, which stretches it into an egg shape.",
+        "In 2017 astronomers discovered that it has a ring.",
+        "It has two small moons, named Hi'iaka and Namaka.",
+        "Dwarf planet named after the Hawaiian goddess of childbirth."
+      ],
+      "links": [
+        { "name": "Pluto", "rel": "is a fellow dwarf planet of" },
+        { "name": "Neptune", "rel": "orbits beyond" }
+      ],
+      "fact": "It is one of the fastest-spinning large objects known in the solar system."
+    },
+    {
+      "id": "moon",
+      "name": "Moon",
+      "aliases": [],
+      "category": "space",
+      "sub": "Moon",
+      "year": null,
+      "region": "Space",
+      "difficulty": 1,
+      "clues": [
+        "It always shows the same face to Earth.",
+        "It drifts about 3.8 centimetres farther away from Earth every year.",
+        "Its gravity is the main cause of the ocean tides.",
+        "Twelve astronauts walked on its surface between 1969 and 1972.",
+        "Earth's only natural satellite, which goes through phases from new to full."
+      ],
+      "links": [
+        { "name": "Earth", "rel": "orbits" },
+        { "name": "Apollo 11", "rel": "was first walked on during" },
+        { "name": "Neil Armstrong", "rel": "was first walked on by" }
+      ],
+      "fact": "With no wind to blow them away, astronauts' footprints there could last for millions of years."
+    },
+    {
+      "id": "titan",
+      "name": "Titan",
+      "aliases": [],
+      "category": "space",
+      "sub": "Moon",
+      "year": null,
+      "region": "Space",
+      "difficulty": 2,
+      "clues": [
+        "It is the only moon with a thick atmosphere.",
+        "It has lakes and seas of liquid methane and ethane.",
+        "The Huygens probe parachuted down to its surface in 2005.",
+        "It is bigger than the planet Mercury.",
+        "Saturn's largest moon."
+      ],
+      "links": [
+        { "name": "Saturn", "rel": "orbits" }
+      ],
+      "fact": "The Huygens landing is still the most distant landing ever made by a spacecraft."
+    },
+    {
+      "id": "europa",
+      "name": "Europa",
+      "aliases": [],
+      "category": "space",
+      "sub": "Moon",
+      "year": null,
+      "region": "Space",
+      "difficulty": 2,
+      "clues": [
+        "It was discovered by Galileo in January 1610.",
+        "Its icy surface is criss-crossed by long cracks and ridges.",
+        "Scientists think a salty ocean lies beneath its frozen crust.",
+        "NASA launched the Clipper mission in 2024 to study it.",
+        "Icy moon of Jupiter that may have the right conditions for life."
+      ],
+      "links": [
+        { "name": "Jupiter", "rel": "orbits" },
+        { "name": "NASA", "rel": "is being studied by" }
+      ],
+      "fact": "Its hidden ocean may hold more water than all of Earth's oceans combined."
+    },
+    {
+      "id": "io",
+      "name": "Io",
+      "aliases": [],
+      "category": "space",
+      "sub": "Moon",
+      "year": null,
+      "region": "Space",
+      "difficulty": 2,
+      "clues": [
+        "It was one of four moons discovered by Galileo in 1610.",
+        "It is the most volcanically active world in the solar system.",
+        "Tidal squeezing by its giant planet heats its interior.",
+        "Sulphur paints its surface in yellow, orange and red.",
+        "The innermost of Jupiter's four large moons, covered in volcanoes."
+      ],
+      "links": [
+        { "name": "Jupiter", "rel": "orbits" },
+        { "name": "Europa", "rel": "is the inner neighbour of" }
+      ],
+      "fact": "Its volcanic plumes can shoot material hundreds of kilometres above its surface."
+    },
+    {
+      "id": "sun",
+      "name": "Sun",
+      "aliases": [],
+      "category": "space",
+      "sub": "Star",
+      "year": null,
+      "region": "Space",
+      "difficulty": 1,
+      "clues": [
+        "It is a yellow dwarf star about 4.6 billion years old.",
+        "Its light takes about 8 minutes to reach Earth.",
+        "It holds more than 99.8 percent of all the mass in the solar system.",
+        "Sunspots, solar flares and the solar wind all come from it.",
+        "The star at the centre of our solar system."
+      ],
+      "links": [
+        { "name": "Earth", "rel": "is orbited by" },
+        { "name": "Milky Way", "rel": "orbits the centre of the" }
+      ],
+      "fact": "About 1.3 million Earths could fit inside it."
+    },
+    {
+      "id": "sirius",
+      "name": "Sirius",
+      "aliases": ["Dog Star"],
+      "category": "space",
+      "sub": "Star",
+      "year": null,
+      "region": "Space",
+      "difficulty": 2,
+      "clues": [
+        "It is a double star; its faint companion is a white dwarf.",
+        "It lies about 8.6 light-years away, one of our closest stellar neighbours.",
+        "Ancient Egyptians linked its rising to the yearly flooding of the Nile.",
+        "It is the main star of the constellation Canis Major, the Great Dog.",
+        "The brightest star in the night sky."
+      ],
+      "links": [
+        { "name": "Sun", "rel": "is about twice as massive as the" }
+      ],
+      "fact": "The phrase 'dog days of summer' comes from its seasonal rising."
+    },
+    {
+      "id": "polaris",
+      "name": "Polaris",
+      "aliases": ["North Star"],
+      "category": "space",
+      "sub": "Star",
+      "year": null,
+      "region": "Space",
+      "difficulty": 2,
+      "clues": [
+        "It is actually a system of several stars, not a single star.",
+        "It sits at the end of the handle of the Little Dipper.",
+        "Two stars of the Big Dipper point straight towards it.",
+        "It barely moves in the sky while the other stars circle around it.",
+        "The star almost directly above Earth's North Pole, used by travellers to find north."
+      ],
+      "links": [
+        { "name": "Earth", "rel": "sits almost above the North Pole of" }
+      ],
+      "fact": "Because Earth's axis slowly wobbles, other stars will take its place as pole star in the far future."
+    },
+    {
+      "id": "betelgeuse",
+      "name": "Betelgeuse",
+      "aliases": [],
+      "category": "space",
+      "sub": "Star",
+      "year": null,
+      "region": "Space",
+      "difficulty": 2,
+      "clues": [
+        "Its brightness rises and falls, as John Herschel noted in 1836.",
+        "It is a red supergiant, one of the largest stars visible to the naked eye.",
+        "If it replaced our Sun, it would stretch beyond the orbit of Mars.",
+        "It dimmed strangely in late 2019, stirring talk of a coming supernova.",
+        "The bright red star on Orion's shoulder."
+      ],
+      "links": [
+        { "name": "Sun", "rel": "dwarfs the" },
+        { "name": "Sirius", "rel": "shares the winter sky with" }
+      ],
+      "fact": "It is expected to explode as a supernova one day, though probably not for about 100,000 years."
+    },
+    {
+      "id": "milky-way",
+      "name": "Milky Way",
+      "aliases": [],
+      "category": "space",
+      "sub": "Galaxy",
+      "year": null,
+      "region": "Space",
+      "difficulty": 1,
+      "clues": [
+        "It is a barred spiral about 100,000 light-years across.",
+        "A supermassive black hole called Sagittarius A* lies at its centre.",
+        "It contains somewhere between 100 and 400 billion stars.",
+        "In about 4.5 billion years it is expected to merge with the Andromeda Galaxy.",
+        "Our home galaxy, seen as a pale band of light across dark skies."
+      ],
+      "links": [
+        { "name": "Andromeda Galaxy", "rel": "will one day merge with the" },
+        { "name": "Sun", "rel": "contains the" }
+      ],
+      "fact": "Its name comes from a Greek myth about milk spilled across the sky by the goddess Hera."
+    },
+    {
+      "id": "andromeda-galaxy",
+      "name": "Andromeda Galaxy",
+      "aliases": ["Andromeda", "M31"],
+      "category": "space",
+      "sub": "Galaxy",
+      "year": null,
+      "region": "Space",
+      "difficulty": 2,
+      "clues": [
+        "The Persian astronomer al-Sufi described it in 964 as a 'small cloud'.",
+        "It lies about 2.5 million light-years from us.",
+        "It holds roughly a trillion stars.",
+        "It is the most distant object most people can see with the naked eye.",
+        "The nearest large spiral neighbour of the Milky Way, on course to collide with it."
+      ],
+      "links": [
+        { "name": "Milky Way", "rel": "is heading towards the" }
+      ],
+      "fact": "It is moving towards us at about 110 kilometres per second."
+    },
+    {
+      "id": "large-magellanic-cloud",
+      "name": "Large Magellanic Cloud",
+      "aliases": ["LMC"],
+      "category": "space",
+      "sub": "Galaxy",
+      "year": null,
+      "region": "Space",
+      "difficulty": 3,
+      "clues": [
+        "In 1987 a supernova in it was the closest seen from Earth in almost four centuries.",
+        "It contains the Tarantula Nebula, a giant star-forming region.",
+        "It is a satellite of our own galaxy, about 160,000 light-years away.",
+        "It is easily seen with the naked eye, but only from the Southern Hemisphere.",
+        "Small companion galaxy named after the Portuguese explorer whose expedition circled the globe."
+      ],
+      "links": [
+        { "name": "Milky Way", "rel": "orbits the" },
+        { "name": "Ferdinand Magellan", "rel": "is named after" }
+      ],
+      "fact": "It has a smaller sibling, the Small Magellanic Cloud, also visible in southern skies."
+    },
+    {
+      "id": "whirlpool-galaxy",
+      "name": "Whirlpool Galaxy",
+      "aliases": ["M51"],
+      "category": "space",
+      "sub": "Galaxy",
+      "year": null,
+      "region": "Space",
+      "difficulty": 3,
+      "clues": [
+        "Charles Messier found it in 1773.",
+        "In 1845 Lord Rosse sketched its spiral arms, the first time such a shape was seen.",
+        "It is interacting with a smaller companion at the tip of one arm.",
+        "It lies close to the handle of the Big Dipper.",
+        "A grand spiral named for its swirling, water-like shape."
+      ],
+      "links": [
+        { "name": "Hubble Space Telescope", "rel": "was famously photographed by the" },
+        { "name": "Milky Way", "rel": "is a spiral like the" }
+      ],
+      "fact": "Though tens of millions of light-years away, it can be spotted with good binoculars."
+    },
+    {
+      "id": "halleys-comet",
+      "name": "Halley's Comet",
+      "aliases": ["Comet Halley"],
+      "category": "space",
+      "sub": "Comet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 1,
+      "clues": [
+        "Its return in 1758 was predicted decades ahead, proving it follows an orbit.",
+        "It appears on the Bayeux Tapestry, seen in the sky before the Battle of Hastings.",
+        "The writer Mark Twain was born and died in years when it appeared.",
+        "It can be seen from Earth about every 75 to 76 years.",
+        "The famous periodic visitor named after an English astronomer, last seen in 1986."
+      ],
+      "links": [
+        { "name": "Battle of Hastings", "rel": "was seen before the" },
+        { "name": "Sun", "rel": "orbits the" }
+      ],
+      "fact": "It is next expected to return in 2061."
+    },
+    {
+      "id": "comet-hale-bopp",
+      "name": "Comet Hale-Bopp",
+      "aliases": ["Hale-Bopp"],
+      "category": "space",
+      "sub": "Comet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 2,
+      "clues": [
+        "Two men in different US states spotted it on the same night in July 1995.",
+        "It was found unusually far from the Sun, beyond the orbit of Jupiter.",
+        "It showed both a white dust tail and a blue gas tail.",
+        "It stayed visible to the naked eye for about 18 months.",
+        "The great bright icy visitor that dazzled skywatchers around the world in 1997."
+      ],
+      "links": [
+        { "name": "Sun", "rel": "orbits the" },
+        { "name": "Jupiter", "rel": "was found beyond the orbit of" }
+      ],
+      "fact": "It will not return for more than 2,000 years."
+    },
+    {
+      "id": "comet-shoemaker-levy-9",
+      "name": "Comet Shoemaker-Levy 9",
+      "aliases": ["Shoemaker-Levy 9"],
+      "category": "space",
+      "sub": "Comet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 3,
+      "clues": [
+        "It was discovered in 1993 by a husband-and-wife team and a fellow skywatcher.",
+        "A close pass by a giant planet had torn it into more than 20 pieces.",
+        "Its fragments smashed into Jupiter over six days in July 1994.",
+        "The impacts left dark scars bigger than Earth in a planet's clouds.",
+        "The first collision between two solar system bodies ever directly observed."
+      ],
+      "links": [
+        { "name": "Jupiter", "rel": "crashed into" },
+        { "name": "Hubble Space Telescope", "rel": "was watched by the" }
+      ],
+      "fact": "Co-discoverer Eugene Shoemaker later became the only person whose ashes rest on the Moon."
+    },
+    {
+      "id": "comet-67p",
+      "name": "Comet 67P",
+      "aliases": ["67P/Churyumov-Gerasimenko"],
+      "category": "space",
+      "sub": "Comet",
+      "year": null,
+      "region": "Space",
+      "difficulty": 3,
+      "clues": [
+        "It was discovered in 1969 on photographs taken by Soviet astronomers.",
+        "Its odd two-lobed shape is often compared to a rubber duck.",
+        "It circles the Sun about every six and a half years.",
+        "The Rosetta spacecraft orbited it for about two years.",
+        "The icy body where the Philae lander touched down in 2014, the first landing of its kind."
+      ],
+      "links": [
+        { "name": "European Space Agency", "rel": "was visited by a probe of the" },
+        { "name": "Sun", "rel": "orbits the" }
+      ],
+      "fact": "Philae bounced twice before settling in a shady spot on its surface."
+    },
+    {
+      "id": "apollo-11",
+      "name": "Apollo 11",
+      "aliases": [],
+      "category": "space",
+      "sub": "Mission",
+      "year": 1969,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was launched on 16 July 1969 from Kennedy Space Center in Florida.",
+        "A Saturn V rocket carried its crew of three into space.",
+        "Its lunar module was named Eagle and its command module Columbia.",
+        "Michael Collins stayed in orbit while his two crewmates walked on the surface.",
+        "The 1969 mission in which Neil Armstrong became the first person to walk on the Moon."
+      ],
+      "links": [
+        { "name": "Neil Armstrong", "rel": "was commanded by" },
+        { "name": "Moon", "rel": "landed on the" },
+        { "name": "NASA", "rel": "was run by" }
+      ],
+      "fact": "The crew left a plaque reading 'We came in peace for all mankind'."
+    },
+    {
+      "id": "apollo-13",
+      "name": "Apollo 13",
+      "aliases": [],
+      "category": "space",
+      "sub": "Mission",
+      "year": 1970,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It was launched in April 1970 as the third planned crewed lunar landing.",
+        "An oxygen tank exploded about two days after launch.",
+        "The crew used the lunar module as a lifeboat to survive.",
+        "Its crew were Jim Lovell, Fred Haise and Jack Swigert.",
+        "The mission behind the famous words 'Houston, we've had a problem'."
+      ],
+      "links": [
+        { "name": "NASA", "rel": "was run by" },
+        { "name": "Moon", "rel": "looped around the" }
+      ],
+      "fact": "A 1995 film starring Tom Hanks told the story of the mission."
+    },
+    {
+      "id": "vostok-1",
+      "name": "Vostok 1",
+      "aliases": [],
+      "category": "space",
+      "sub": "Mission",
+      "year": 1961,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Launched on 12 April 1961, it made a single orbit of Earth.",
+        "The whole flight lasted about 108 minutes.",
+        "Its pilot ejected and came down by parachute, separately from the capsule.",
+        "Before liftoff its pilot famously said 'Poyekhali!', meaning 'Let's go!'",
+        "The Soviet mission that carried Yuri Gagarin, the first human in space."
+      ],
+      "links": [
+        { "name": "Yuri Gagarin", "rel": "carried" },
+        { "name": "Earth", "rel": "orbited" }
+      ],
+      "fact": "12 April is now marked by the UN as the International Day of Human Space Flight."
+    },
+    {
+      "id": "chandrayaan-3",
+      "name": "Chandrayaan-3",
+      "aliases": [],
+      "category": "space",
+      "sub": "Mission",
+      "year": 2023,
+      "region": "South Asia",
+      "difficulty": 3,
+      "clues": [
+        "It was launched in July 2023 from the island of Sriharikota.",
+        "Its lander was named Vikram and its rover Pragyan.",
+        "It touched down near the lunar south pole on 23 August 2023.",
+        "It made its country only the fourth to make a soft landing on the Moon.",
+        "India's successful Moon landing mission, which followed a failed attempt in 2019."
+      ],
+      "links": [
+        { "name": "ISRO", "rel": "was run by" },
+        { "name": "Moon", "rel": "landed on the" },
+        { "name": "India", "rel": "was launched by" }
+      ],
+      "fact": "Its landing site was named Shiv Shakti Point."
+    },
+    {
+      "id": "sputnik-1",
+      "name": "Sputnik 1",
+      "aliases": [],
+      "category": "space",
+      "sub": "Spacecraft",
+      "year": 1957,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It was a polished metal ball about 58 centimetres wide.",
+        "Four long antennas trailed behind it.",
+        "Radio listeners around the world could hear its simple beeping signal.",
+        "It was launched on 4 October 1957 by the Soviet Union.",
+        "The first artificial satellite to orbit Earth."
+      ],
+      "links": [
+        { "name": "NASA", "rel": "spurred the creation of" },
+        { "name": "Earth", "rel": "orbited" }
+      ],
+      "fact": "Its batteries ran out after about three weeks, and it burned up in early 1958."
+    },
+    {
+      "id": "voyager-1",
+      "name": "Voyager 1",
+      "aliases": [],
+      "category": "space",
+      "sub": "Spacecraft",
+      "year": 1977,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It was launched in September 1977, about two weeks after its twin.",
+        "It carries a golden record with sounds and pictures of life on Earth.",
+        "In 1990 it took the famous 'Pale Blue Dot' photo of Earth.",
+        "In 2012 it became the first spacecraft to enter interstellar space.",
+        "The NASA probe that is the most distant human-made object from Earth."
+      ],
+      "links": [
+        { "name": "NASA", "rel": "was launched by" },
+        { "name": "Jupiter", "rel": "flew past" },
+        { "name": "Saturn", "rel": "flew past" }
+      ],
+      "fact": "Radio signals from it now take nearly a full day to reach Earth."
+    },
+    {
+      "id": "international-space-station",
+      "name": "International Space Station",
+      "aliases": ["ISS"],
+      "category": "space",
+      "sub": "Spacecraft",
+      "year": 1998,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "Its first module was launched in November 1998.",
+        "It has had crews living aboard without a break since November 2000.",
+        "It circles Earth about every 90 minutes, around 16 times a day.",
+        "It was built in orbit by five partner agencies, including NASA and Roscosmos.",
+        "The largest crewed laboratory in orbit, about the size of a football field."
+      ],
+      "links": [
+        { "name": "NASA", "rel": "is run partly by" },
+        { "name": "Roscosmos", "rel": "is run partly by" },
+        { "name": "European Space Agency", "rel": "is run partly by the" }
+      ],
+      "fact": "It can often be seen from the ground as a fast-moving bright light."
+    },
+    {
+      "id": "space-shuttle",
+      "name": "Space Shuttle",
+      "aliases": [],
+      "category": "space",
+      "sub": "Spacecraft",
+      "year": 1981,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Its first flight, by the orbiter Columbia, lifted off in April 1981.",
+        "It took off like a rocket and landed on a runway like a glider.",
+        "It carried the Hubble observatory into orbit in 1990.",
+        "Five orbiters flew 135 missions over 30 years.",
+        "NASA's reusable winged orbiter, retired in 2011."
+      ],
+      "links": [
+        { "name": "NASA", "rel": "was flown by" },
+        { "name": "Hubble Space Telescope", "rel": "launched the" },
+        { "name": "International Space Station", "rel": "helped build the" }
+      ],
+      "fact": "Discovery flew the most missions of any orbiter, 39 in total."
+    },
+    {
+      "id": "curiosity",
+      "name": "Curiosity",
+      "aliases": [],
+      "category": "space",
+      "sub": "Spacecraft",
+      "year": 2011,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It landed in Gale Crater in August 2012.",
+        "A rocket-powered 'sky crane' lowered it to the ground on cables.",
+        "It is about the size of a small car and runs on nuclear power.",
+        "It found that its landing area once held lakes that could have supported tiny life.",
+        "NASA's car-sized rover exploring the surface of Mars."
+      ],
+      "links": [
+        { "name": "Mars", "rel": "explores" },
+        { "name": "NASA", "rel": "is run by" }
+      ],
+      "fact": "On the first anniversary of its landing, it played 'Happy Birthday' to itself."
+    },
+    {
+      "id": "hubble-space-telescope",
+      "name": "Hubble Space Telescope",
+      "aliases": ["Hubble", "HST"],
+      "category": "space",
+      "sub": "Telescope",
+      "year": 1990,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Soon after launch, a tiny flaw in its main mirror was found to blur its images.",
+        "Astronauts fixed its eyesight on a repair mission in 1993.",
+        "It was carried into orbit by the shuttle Discovery in 1990.",
+        "Its photo of the 'Pillars of Creation' became one of the most famous ever taken.",
+        "Famous orbiting observatory named after the astronomer who showed the universe is expanding."
+      ],
+      "links": [
+        { "name": "NASA", "rel": "is run by" },
+        { "name": "Space Shuttle", "rel": "was launched by the" },
+        { "name": "James Webb Space Telescope", "rel": "was succeeded by the" }
+      ],
+      "fact": "It travels around Earth at about 27,000 km/h."
+    },
+    {
+      "id": "james-webb-space-telescope",
+      "name": "James Webb Space Telescope",
+      "aliases": ["JWST"],
+      "category": "space",
+      "sub": "Telescope",
+      "year": 2021,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It was launched on Christmas Day 2021 on an Ariane 5 rocket.",
+        "Its golden mirror is made of 18 hexagonal segments.",
+        "A sunshield the size of a tennis court keeps it extremely cold.",
+        "It mainly sees infrared light, letting it peer through clouds of dust.",
+        "The huge infrared observatory seen as the successor to Hubble."
+      ],
+      "links": [
+        { "name": "NASA", "rel": "is led by" },
+        { "name": "European Space Agency", "rel": "was launched with help from the" },
+        { "name": "Hubble Space Telescope", "rel": "succeeds the" }
+      ],
+      "fact": "It orbits about 1.5 million km from Earth, near a point called L2."
+    },
+    {
+      "id": "kepler-space-telescope",
+      "name": "Kepler Space Telescope",
+      "aliases": [],
+      "category": "space",
+      "sub": "Telescope",
+      "year": 2009,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "It was launched in 2009 to search for planets around other stars.",
+        "It stared at one patch of sky in the constellations Cygnus and Lyra.",
+        "It spotted planets by watching for tiny dips in starlight.",
+        "It found more than 2,600 confirmed planets before retiring in 2018.",
+        "NASA's planet-hunting observatory named after a famous German astronomer."
+      ],
+      "links": [
+        { "name": "NASA", "rel": "was run by" }
+      ],
+      "fact": "Its results suggest there are more planets than stars in our galaxy."
+    },
+    {
+      "id": "arecibo-telescope",
+      "name": "Arecibo Telescope",
+      "aliases": [],
+      "category": "space",
+      "sub": "Telescope",
+      "year": 1963,
+      "region": "Latin America",
+      "difficulty": 3,
+      "clues": [
+        "Its huge dish was built into a natural sinkhole in the hills.",
+        "For over 50 years it had the largest single radio dish in the world.",
+        "In 1974 it beamed a famous radio message towards a distant star cluster.",
+        "It appeared in the James Bond film GoldenEye.",
+        "The giant radio dish in Puerto Rico that collapsed in 2020."
+      ],
+      "links": [
+        { "name": "Puerto Rico", "rel": "stood in" }
+      ],
+      "fact": "Its dish was 305 metres across."
+    },
+    {
+      "id": "neil-armstrong",
+      "name": "Neil Armstrong",
+      "aliases": [],
+      "category": "space",
+      "sub": "Astronaut",
+      "year": 1930,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "He studied aeronautical engineering at Purdue University.",
+        "As a test pilot he flew the X-15 rocket plane.",
+        "In 1966 he made the first docking of two spacecraft, on Gemini 8.",
+        "He commanded the Apollo 11 mission in July 1969.",
+        "The first person to walk on the Moon, who spoke of 'one small step'."
+      ],
+      "links": [
+        { "name": "Apollo 11", "rel": "commanded" },
+        { "name": "Moon", "rel": "was the first to walk on the" },
+        { "name": "Buzz Aldrin", "rel": "flew to the Moon with" }
+      ],
+      "fact": "He carried a piece of the Wright brothers' 1903 Flyer with him to the Moon."
+    },
+    {
+      "id": "buzz-aldrin",
+      "name": "Buzz Aldrin",
+      "aliases": ["Edwin Aldrin"],
+      "category": "space",
+      "sub": "Astronaut",
+      "year": 1930,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "He earned a doctorate from MIT on how spacecraft can meet up in orbit.",
+        "On Gemini 12 in 1966 he showed that astronauts could work well outside a spacecraft.",
+        "He was the lunar module pilot of Apollo 11.",
+        "In 1988 he legally changed his first name to his childhood nickname.",
+        "The second person to walk on the Moon, after Neil Armstrong."
+      ],
+      "links": [
+        { "name": "Apollo 11", "rel": "flew on" },
+        { "name": "Neil Armstrong", "rel": "walked on the Moon with" },
+        { "name": "Moon", "rel": "walked on the" }
+      ],
+      "fact": "Toy Story's Buzz Lightyear is widely said to be named after him."
+    },
+    {
+      "id": "yuri-gagarin",
+      "name": "Yuri Gagarin",
+      "aliases": [],
+      "category": "space",
+      "sub": "Astronaut",
+      "year": 1934,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He trained as a foundry worker before learning to fly.",
+        "He was a Soviet Air Force pilot chosen from a large group of candidates.",
+        "His capsule, Vostok 1, orbited Earth once in 1961.",
+        "After his flight he became a worldwide celebrity and toured many countries.",
+        "The Soviet cosmonaut who became the first human in space."
+      ],
+      "links": [
+        { "name": "Vostok 1", "rel": "flew aboard" },
+        { "name": "Earth", "rel": "was the first to orbit" }
+      ],
+      "fact": "He was just 27 years old when he made his historic flight."
+    },
+    {
+      "id": "valentina-tereshkova",
+      "name": "Valentina Tereshkova",
+      "aliases": [],
+      "category": "space",
+      "sub": "Astronaut",
+      "year": 1937,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Before becoming a cosmonaut she worked in a textile factory.",
+        "Her hobby of skydiving helped her get selected for training.",
+        "Her call sign during her flight was 'Chaika', meaning seagull.",
+        "In June 1963 she orbited Earth 48 times aboard Vostok 6.",
+        "The first woman to fly in space."
+      ],
+      "links": [
+        { "name": "Yuri Gagarin", "rel": "followed into space" },
+        { "name": "Earth", "rel": "orbited" }
+      ],
+      "fact": "She remains the only woman to have flown a solo space mission."
+    },
+    {
+      "id": "sally-ride",
+      "name": "Sally Ride",
+      "aliases": [],
+      "category": "space",
+      "sub": "Astronaut",
+      "year": 1951,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "She was a nationally ranked junior tennis player before choosing science.",
+        "She earned a PhD in physics from Stanford University.",
+        "She operated the shuttle's robotic arm in orbit.",
+        "In June 1983 she flew aboard the shuttle Challenger.",
+        "The first American woman in space."
+      ],
+      "links": [
+        { "name": "NASA", "rel": "flew for" },
+        { "name": "Space Shuttle", "rel": "flew on the" }
+      ],
+      "fact": "At 32, she was also the youngest American to have flown in space at that time."
+    },
+    {
+      "id": "nasa",
+      "name": "NASA",
+      "aliases": ["National Aeronautics and Space Administration"],
+      "category": "space",
+      "sub": "Space Agency",
+      "year": 1958,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was founded in 1958, months after the launch of Sputnik 1.",
+        "Its round blue logo is nicknamed 'the meatball'.",
+        "Its Mission Control center is in Houston, Texas.",
+        "It ran the Apollo program that put people on the Moon.",
+        "The US government agency behind its astronauts, rockets and planet probes."
+      ],
+      "links": [
+        { "name": "Apollo 11", "rel": "ran" },
+        { "name": "Hubble Space Telescope", "rel": "operates the" },
+        { "name": "United States", "rel": "is the agency of the" }
+      ],
+      "fact": "Its headquarters are in Washington, D.C."
+    },
+    {
+      "id": "european-space-agency",
+      "name": "European Space Agency",
+      "aliases": ["ESA"],
+      "category": "space",
+      "sub": "Space Agency",
+      "year": 1975,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It was set up in 1975 and has its headquarters in Paris.",
+        "It launches rockets from Kourou in French Guiana, in South America.",
+        "Its Rosetta mission landed a probe on a comet in 2014.",
+        "It provided the Ariane 5 rocket that launched the Webb observatory.",
+        "Organisation through which more than 20 countries of the continent explore the cosmos together."
+      ],
+      "links": [
+        { "name": "Paris", "rel": "is headquartered in" },
+        { "name": "Comet 67P", "rel": "landed a probe on" },
+        { "name": "James Webb Space Telescope", "rel": "helped launch the" }
+      ],
+      "fact": "Launching from near the equator gives its rockets an extra boost from Earth's spin."
+    },
+    {
+      "id": "roscosmos",
+      "name": "Roscosmos",
+      "aliases": [],
+      "category": "space",
+      "sub": "Space Agency",
+      "year": 1992,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It was set up in the early 1990s after the Soviet Union broke up.",
+        "It carries on the program that launched Sputnik 1 and Yuri Gagarin.",
+        "For years its Soyuz rockets were the only way to fly crews to the ISS.",
+        "Its main launch site is Baikonur, which it leases from Kazakhstan.",
+        "Russia's state space agency, based in Moscow."
+      ],
+      "links": [
+        { "name": "Russia", "rel": "is the agency of" },
+        { "name": "International Space Station", "rel": "helps run the" }
+      ],
+      "fact": "Its Soyuz spacecraft design has carried crews since 1967."
+    },
+    {
+      "id": "isro",
+      "name": "ISRO",
+      "aliases": ["Indian Space Research Organisation"],
+      "category": "space",
+      "sub": "Space Agency",
+      "year": 1969,
+      "region": "South Asia",
+      "difficulty": 2,
+      "clues": [
+        "It was founded in 1969, with the scientist Vikram Sarabhai as a key figure.",
+        "Its first satellite, Aryabhata, was launched in 1975 with Soviet help.",
+        "In 2014 its Mangalyaan probe reached Mars orbit on the first attempt.",
+        "In 2017 one of its rockets put a record 104 satellites into orbit at once.",
+        "The national agency behind the Chandrayaan missions, headquartered in Bengaluru."
+      ],
+      "links": [
+        { "name": "India", "rel": "is the agency of" },
+        { "name": "Chandrayaan-3", "rel": "ran" },
+        { "name": "Mars", "rel": "sent a probe to" }
+      ],
+      "fact": "Its Mars mission was widely reported to cost less than the Hollywood film Gravity."
+    }
+  ]
+}

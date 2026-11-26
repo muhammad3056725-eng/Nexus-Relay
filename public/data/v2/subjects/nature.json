@@ -1,0 +1,1321 @@
+{
+  "category": "nature",
+  "subjects": [
+    {
+      "id": "lion",
+      "name": "Lion",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "Most of its hunting is done by the females of its group, often at night.",
+        "Its roar can be heard up to about 8 kilometres away.",
+        "A small population of this cat survives in the Gir Forest of India.",
+        "It is the only big cat that lives in family groups called prides.",
+        "Males of this tawny African cat are famous for their shaggy manes."
+      ],
+      "links": [
+        { "name": "The Lion King", "rel": "is the hero species of" },
+        { "name": "Kenya", "rel": "roams the savanna of" },
+        { "name": "Zebra", "rel": "preys on" }
+      ],
+      "fact": "It can spend up to 20 hours a day sleeping or resting."
+    },
+    {
+      "id": "tiger",
+      "name": "Tiger",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "South Asia",
+      "difficulty": 1,
+      "clues": [
+        "Unlike most cats, it is a strong swimmer and often cools off in water.",
+        "No two share the same pattern, and its skin is marked as well as its fur.",
+        "Its Siberian, or Amur, form lives in snowy forests of the Russian Far East.",
+        "It is the largest of all wild cats and the national animal of India.",
+        "An orange big cat with bold black stripes, like Shere Khan in The Jungle Book."
+      ],
+      "links": [
+        { "name": "India", "rel": "is the national animal of" },
+        { "name": "Bangladesh", "rel": "is the national animal of" },
+        { "name": "The Jungle Book", "rel": "appears as Shere Khan in" }
+      ],
+      "fact": "Most of the world's wild ones live in India."
+    },
+    {
+      "id": "african-elephant",
+      "name": "African Elephant",
+      "aliases": ["African Bush Elephant"],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "Its huge ears work like radiators, helping it lose heat in hot weather.",
+        "Its pregnancy lasts about 22 months, longer than any other land mammal.",
+        "Both males and females can grow tusks, which are made of ivory.",
+        "It is the largest living land animal on Earth.",
+        "The trunked giant of the savanna from Kenya to Botswana, bigger-eared than its Asian cousin."
+      ],
+      "links": [
+        { "name": "Kenya", "rel": "roams the savanna of" },
+        { "name": "Botswana", "rel": "has its largest population in" }
+      ],
+      "fact": "An adult can eat around 150 kg of plants in a single day."
+    },
+    {
+      "id": "giant-panda",
+      "name": "Giant Panda",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "A newborn cub weighs only about 100 grams, roughly as much as an apple.",
+        "An enlarged wrist bone works like an extra thumb for gripping stalks.",
+        "Though classed as a meat-eater, it can spend up to 14 hours a day eating plants.",
+        "It lives in misty mountain forests of Sichuan and nearby provinces.",
+        "A black-and-white bear from China that feeds almost only on bamboo."
+      ],
+      "links": [
+        { "name": "China", "rel": "is native to" },
+        { "name": "Bamboo", "rel": "feeds on" }
+      ],
+      "fact": "In 2016 it was moved from 'endangered' to 'vulnerable' on the IUCN Red List."
+    },
+    {
+      "id": "giraffe",
+      "name": "Giraffe",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "Its dark blue-black tongue can be about half a metre long.",
+        "Despite its great length, its neck has just seven bones, like a human's.",
+        "Its patchy coat pattern is unique to each animal, like a fingerprint.",
+        "Its mother gives birth standing up, so a newborn drops about 1.5 metres to the ground.",
+        "The tallest animal on Earth, with a very long neck for reaching treetops."
+      ],
+      "links": [
+        { "name": "Tanzania", "rel": "is the national animal of" },
+        { "name": "Kenya", "rel": "lives wild in" }
+      ],
+      "fact": "A tall male can stand around 5.5 metres high."
+    },
+    {
+      "id": "polar-bear",
+      "name": "Polar Bear",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Under its thick fur, its skin is actually black.",
+        "Its fur hairs are not truly white but see-through, scattering light to look pale.",
+        "It is classed as a marine mammal because it spends much of its life on sea ice.",
+        "It hunts seals by waiting at holes in the ice where they come up to breathe.",
+        "The great white bear of the Arctic, found in Canada, Greenland and Svalbard."
+      ],
+      "links": [
+        { "name": "Canada", "rel": "mostly lives in" },
+        { "name": "Arctic Ocean", "rel": "hunts on the sea ice of the" }
+      ],
+      "fact": "It is usually described as the largest land carnivore alive today."
+    },
+    {
+      "id": "kangaroo",
+      "name": "Kangaroo",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "Oceania",
+      "difficulty": 1,
+      "clues": [
+        "When moving slowly, it uses its strong tail almost like a fifth leg.",
+        "Its baby is born tiny, about the size of a jellybean.",
+        "Large males sometimes 'box', kicking and pushing to settle disputes.",
+        "It can hop at over 50 km/h, using springy tendons to save energy.",
+        "Australia's famous hopping marsupial, which carries its joey in a pouch."
+      ],
+      "links": [
+        { "name": "Australia", "rel": "is a national symbol of" }
+      ],
+      "fact": "A group of them is called a mob."
+    },
+    {
+      "id": "koala",
+      "name": "Koala",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "Oceania",
+      "difficulty": 1,
+      "clues": [
+        "It sleeps or rests for up to about 20 hours a day.",
+        "Its diet is so low in energy that it spends most of its time resting.",
+        "Like humans, it has fingerprints that are very hard to tell from our own.",
+        "It feeds almost entirely on the leaves of eucalyptus trees.",
+        "A fluffy grey tree-dwelling marsupial from Australia, often wrongly called a bear."
+      ],
+      "links": [
+        { "name": "Australia", "rel": "is native to" }
+      ],
+      "fact": "Its baby, called a joey, stays in its mother's pouch for about six months."
+    },
+    {
+      "id": "gorilla",
+      "name": "Gorilla",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "It shares about 98% of its DNA with humans.",
+        "It builds a fresh nest of leaves to sleep in almost every night.",
+        "It usually walks on all fours, leaning on its knuckles.",
+        "Its mountain form lives in volcanic forests of Rwanda, Uganda and DR Congo.",
+        "The largest of all apes, whose leading adult male is called a silverback."
+      ],
+      "links": [
+        { "name": "Rwanda", "rel": "lives in the mountains of" },
+        { "name": "King Kong", "rel": "inspired the giant ape" }
+      ],
+      "fact": "A silverback gets its name from the patch of silvery hair that grows on an adult male's back."
+    },
+    {
+      "id": "cheetah",
+      "name": "Cheetah",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "Unlike other big cats, it cannot fully pull in its claws, which grip like running spikes.",
+        "Dark 'tear marks' run from the corners of its eyes to its mouth.",
+        "It chirps and purrs but cannot roar.",
+        "It can go from standing still to about 100 km/h in around three seconds.",
+        "The fastest land animal, a slim spotted cat of the savanna."
+      ],
+      "links": [
+        { "name": "Namibia", "rel": "has its largest wild population in" },
+        { "name": "Lion", "rel": "competes for prey with the" }
+      ],
+      "fact": "It can only keep up its top speed for short bursts of a few hundred metres."
+    },
+    {
+      "id": "zebra",
+      "name": "Zebra",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "Scientists think its coat pattern may help keep biting flies away.",
+        "Each one's pattern is unique, and foals learn to recognise their mother's.",
+        "It is a close relative of the horse and the donkey.",
+        "Huge herds migrate across the Serengeti alongside wildebeest.",
+        "A horse-like animal of the savanna with black-and-white stripes."
+      ],
+      "links": [
+        { "name": "Tanzania", "rel": "migrates across the plains of" },
+        { "name": "Lion", "rel": "is hunted by the" }
+      ],
+      "fact": "Under its striped coat, its skin is dark."
+    },
+    {
+      "id": "hippopotamus",
+      "name": "Hippopotamus",
+      "aliases": ["Hippo"],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "Its name comes from Ancient Greek words meaning 'river horse'.",
+        "Its closest living relatives are whales and dolphins.",
+        "Its skin gives off a reddish oily fluid that works like sunscreen.",
+        "It spends its days in rivers and lakes and comes out at night to graze.",
+        "A huge, barrel-shaped African mammal with an enormous mouth and big tusks."
+      ],
+      "links": [
+        { "name": "Nile River", "rel": "lives along rivers such as the" },
+        { "name": "Blue Whale", "rel": "is a distant relative of the" }
+      ],
+      "fact": "Despite weighing well over a tonne, it can run faster than most people on land."
+    },
+    {
+      "id": "platypus",
+      "name": "Platypus",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "Oceania",
+      "difficulty": 2,
+      "clues": [
+        "Males have a venomous spur on their back legs.",
+        "It finds food underwater by sensing tiny electric signals with its bill.",
+        "It closes its eyes, ears and nose every time it dives.",
+        "It is one of very few mammals that lay eggs.",
+        "An Australian animal with a duck-like bill, webbed feet and a beaver-like tail."
+      ],
+      "links": [
+        { "name": "Australia", "rel": "is native to" }
+      ],
+      "fact": "When the first specimen reached Britain around 1799, some scientists suspected a hoax."
+    },
+    {
+      "id": "grey-wolf",
+      "name": "Grey Wolf",
+      "aliases": ["Gray Wolf", "Wolf"],
+      "category": "nature",
+      "sub": "Mammal",
+      "year": null,
+      "region": "Global",
+      "difficulty": 2,
+      "clues": [
+        "It is the closest wild relative of the pet dog.",
+        "It lives and hunts in family groups called packs.",
+        "Its howl helps family members find each other and mark their territory.",
+        "It was brought back to Yellowstone National Park in 1995.",
+        "The largest wild member of the dog family, famous for its eerie howl."
+      ],
+      "links": [
+        { "name": "Yellowstone National Park", "rel": "was brought back to" },
+        { "name": "Canada", "rel": "roams the forests of" }
+      ],
+      "fact": "A pack is usually a breeding pair and their offspring."
+    },
+    {
+      "id": "bald-eagle",
+      "name": "Bald Eagle",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Bird",
+      "year": null,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Pairs reuse and add to the same huge nest for years; some weigh over a tonne.",
+        "It often steals fish from ospreys instead of catching its own.",
+        "Young birds are mostly brown and only get their white heads at about five years old.",
+        "Once harmed badly by the pesticide DDT, it has made a strong comeback.",
+        "A white-headed bird of prey and the national bird of the United States."
+      ],
+      "links": [
+        { "name": "United States", "rel": "is the national bird of" },
+        { "name": "Canada", "rel": "also lives in" }
+      ],
+      "fact": "It was removed from the US endangered species list in 2007."
+    },
+    {
+      "id": "emperor-penguin",
+      "name": "Emperor Penguin",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Bird",
+      "year": null,
+      "region": "Global",
+      "difficulty": 2,
+      "clues": [
+        "It can dive deeper than 500 metres and hold its breath for over 20 minutes.",
+        "It breeds in the middle of winter, when temperatures can drop below minus 40.",
+        "The male keeps the single egg warm on his feet for about two months without eating.",
+        "Thousands huddle together, taking turns in the warm middle to survive blizzards.",
+        "The largest of the tuxedo-wearing flightless birds, living only in Antarctica."
+      ],
+      "links": [
+        { "name": "Antarctica", "rel": "breeds only in" },
+        { "name": "March of the Penguins", "rel": "is the star of" }
+      ],
+      "fact": "It can stand over a metre tall and weigh more than 30 kg."
+    },
+    {
+      "id": "ostrich",
+      "name": "Ostrich",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Bird",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 2,
+      "clues": [
+        "Each of its eyes is bigger than its brain.",
+        "It has only two toes on each foot, fewer than any other bird.",
+        "Its powerful forward kick can seriously injure a predator.",
+        "It lays the largest eggs of any living bird.",
+        "The world's largest bird, a fast flightless runner of the savanna."
+      ],
+      "links": [
+        { "name": "South Africa", "rel": "is farmed in" },
+        { "name": "Emperor Penguin", "rel": "cannot fly, just like the" }
+      ],
+      "fact": "It can sprint at about 70 km/h, faster than any other bird on land."
+    },
+    {
+      "id": "flamingo",
+      "name": "Flamingo",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Bird",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "It often rests standing on just one leg.",
+        "It feeds with its head upside-down, filtering tiny food from the water.",
+        "Its chicks hatch grey or white and only gain their colour later.",
+        "Its rosy colour comes from pigments in the algae and shrimp it eats.",
+        "A tall pink wading bird with long thin legs, often seen in huge flocks."
+      ],
+      "links": [
+        { "name": "Kenya", "rel": "gathers in vast flocks on the lakes of" },
+        { "name": "Bahamas", "rel": "is the national bird of the" }
+      ],
+      "fact": "A group of them can be called a 'flamboyance'."
+    },
+    {
+      "id": "peacock",
+      "name": "Peacock",
+      "aliases": ["Peafowl"],
+      "category": "nature",
+      "sub": "Bird",
+      "year": null,
+      "region": "South Asia",
+      "difficulty": 2,
+      "clues": [
+        "Only the male has the famous display; the plainer female is called a peahen.",
+        "Its long train is not its tail; the feathers grow from its lower back.",
+        "Despite its size, it can fly and roosts high up in trees at night.",
+        "It is the national bird of India.",
+        "A bird that fans out a shimmering blue-green train covered in 'eyes'."
+      ],
+      "links": [
+        { "name": "India", "rel": "is the national bird of" },
+        { "name": "Sri Lanka", "rel": "lives wild in" }
+      ],
+      "fact": "A male's train can make up more than half of its total body length."
+    },
+    {
+      "id": "hummingbird",
+      "name": "Hummingbird",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Bird",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 2,
+      "clues": [
+        "Its heart can beat more than 1,000 times a minute.",
+        "It can hover in one spot and even fly backwards.",
+        "At night it can drop into a deep, energy-saving state called torpor.",
+        "One species that lives in Cuba is the smallest bird in the world.",
+        "A tiny nectar-drinking bird named after the sound of its fast-beating wings."
+      ],
+      "links": [
+        { "name": "Cuba", "rel": "has its smallest species in" },
+        { "name": "Nazca Lines", "rel": "is drawn in the desert as part of the" }
+      ],
+      "fact": "There are over 300 species, all found only in the Americas."
+    },
+    {
+      "id": "dodo",
+      "name": "Dodo",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Bird",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 2,
+      "clues": [
+        "Dutch sailors first described it around 1598.",
+        "It was a large flightless relative of pigeons and doves.",
+        "It had no fear of people, having evolved with no land predators.",
+        "It was last reliably seen in the 1660s, less than a century after its discovery.",
+        "The famous extinct flightless bird of the island of Mauritius."
+      ],
+      "links": [
+        { "name": "Mauritius", "rel": "lived only on" },
+        { "name": "Alice's Adventures in Wonderland", "rel": "appears as a character in" }
+      ],
+      "fact": "It is often used as the symbol of extinction, as in the phrase 'dead as a dodo'."
+    },
+    {
+      "id": "blue-whale",
+      "name": "Blue Whale",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Sea Creature",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "Its low calls are among the loudest sounds made by any animal.",
+        "It feeds by gulping huge mouthfuls of water and filtering out tiny krill.",
+        "A calf can gain about 90 kg a day drinking its mother's milk.",
+        "It can grow to around 30 metres long, longer than a basketball court.",
+        "The largest animal known to have ever lived, a giant of the oceans."
+      ],
+      "links": [
+        { "name": "Antarctica", "rel": "feeds in the cold waters around" },
+        { "name": "Tyrannosaurus rex", "rel": "is far bigger than any dinosaur, including" }
+      ],
+      "fact": "In feeding season it can eat around 4 tonnes of krill a day."
+    },
+    {
+      "id": "great-white-shark",
+      "name": "Great White Shark",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Sea Creature",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "It can sense the tiny electric fields given off by other animals.",
+        "When hunting seals it sometimes leaps fully out of the water.",
+        "It loses and replaces its teeth all its life, going through thousands.",
+        "It is the largest predatory fish alive, reaching about 6 metres long.",
+        "The ocean predator that terrified beachgoers in the 1975 film Jaws."
+      ],
+      "links": [
+        { "name": "Jaws", "rel": "is the villain of" },
+        { "name": "South Africa", "rel": "hunts seals off the coast of" },
+        { "name": "Australia", "rel": "swims off the coasts of" }
+      ],
+      "fact": "It can keep parts of its body warmer than the surrounding water."
+    },
+    {
+      "id": "bottlenose-dolphin",
+      "name": "Bottlenose Dolphin",
+      "aliases": ["Dolphin"],
+      "category": "nature",
+      "sub": "Sea Creature",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "Each one has its own signature whistle that works like a name.",
+        "It rests one half of its brain at a time so it can keep breathing.",
+        "It finds food by echolocation, listening for the echoes of its clicks.",
+        "It breathes air through a blowhole on top of its head.",
+        "A smart, playful sea mammal with a short beak, often seen leaping beside boats."
+      ],
+      "links": [
+        { "name": "Orca", "rel": "is a smaller cousin of the" }
+      ],
+      "fact": "It can recognise itself in a mirror, a sign of high intelligence."
+    },
+    {
+      "id": "octopus",
+      "name": "Octopus",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Sea Creature",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "It has three hearts and blue blood.",
+        "Most of its nerve cells are in its arms rather than its head.",
+        "It can change both the colour and the texture of its skin in a split second.",
+        "It can squeeze through any gap larger than its hard beak.",
+        "A soft-bodied sea animal with eight arms that squirts ink to escape."
+      ],
+      "links": [
+        { "name": "Pacific Ocean", "rel": "has a giant species in the" }
+      ],
+      "fact": "Some have been seen carrying coconut shells around to use as shelters."
+    },
+    {
+      "id": "orca",
+      "name": "Orca",
+      "aliases": ["Killer Whale"],
+      "category": "nature",
+      "sub": "Sea Creature",
+      "year": null,
+      "region": "Global",
+      "difficulty": 2,
+      "clues": [
+        "Different groups have their own calls, a bit like local dialects.",
+        "Some groups rush onto beaches on purpose to grab seals, then wriggle back.",
+        "Family groups are led by older females, some living past 80 years.",
+        "It is the largest member of the dolphin family.",
+        "A black-and-white ocean predator with a tall back fin, star of Free Willy."
+      ],
+      "links": [
+        { "name": "Free Willy", "rel": "starred in" },
+        { "name": "Bottlenose Dolphin", "rel": "is a larger cousin of the" }
+      ],
+      "fact": "An adult male's back fin can stand up to about 1.8 metres tall."
+    },
+    {
+      "id": "jellyfish",
+      "name": "Jellyfish",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Sea Creature",
+      "year": null,
+      "region": "Global",
+      "difficulty": 2,
+      "clues": [
+        "It has no brain, no heart and no bones.",
+        "Its kind has drifted through the oceans for more than 500 million years.",
+        "One tiny species can turn back into a young stage, earning it the nickname 'immortal'.",
+        "A group of them can be called a bloom or a smack.",
+        "A see-through, bell-shaped sea creature that stings with trailing tentacles."
+      ],
+      "links": [
+        { "name": "Great Barrier Reef", "rel": "has dangerous box relatives near the" }
+      ],
+      "fact": "Its body is around 95% water."
+    },
+    {
+      "id": "seahorse",
+      "name": "Seahorse",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Sea Creature",
+      "year": null,
+      "region": "Global",
+      "difficulty": 2,
+      "clues": [
+        "It swims upright, pushed along by a small fin on its back.",
+        "It anchors itself to seagrass or coral by curling its tail around it.",
+        "Its eyes can move separately, looking in two directions at once.",
+        "The male, not the female, carries the eggs in a pouch and gives birth.",
+        "A small fish whose head looks like that of a tiny horse."
+      ],
+      "links": [
+        { "name": "Chameleon", "rel": "moves its eyes independently like the" }
+      ],
+      "fact": "It is a poor swimmer, and one dwarf species is among the slowest fish in the sea."
+    },
+    {
+      "id": "clownfish",
+      "name": "Clownfish",
+      "aliases": ["Anemonefish"],
+      "category": "nature",
+      "sub": "Sea Creature",
+      "year": null,
+      "region": "Oceania",
+      "difficulty": 2,
+      "clues": [
+        "All are born male, and the largest in a group can become female.",
+        "A slimy coating on its skin protects it from stings.",
+        "It lives among the stinging tentacles of sea anemones.",
+        "It is found on warm reefs of the Indian and Pacific oceans.",
+        "An orange-and-white striped reef fish, like Nemo in a 2003 Pixar film."
+      ],
+      "links": [
+        { "name": "Finding Nemo", "rel": "is the hero species of" },
+        { "name": "Great Barrier Reef", "rel": "lives on reefs such as the" }
+      ],
+      "fact": "If the female of a group dies, the largest male changes sex to replace her."
+    },
+    {
+      "id": "komodo-dragon",
+      "name": "Komodo Dragon",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Reptile",
+      "year": null,
+      "region": "Southeast Asia",
+      "difficulty": 2,
+      "clues": [
+        "Females can sometimes produce young without a male.",
+        "Its bite delivers venom that stops the victim's blood from clotting.",
+        "It flicks its forked tongue to 'taste' the air for prey.",
+        "It lives in the wild on only a few islands of Indonesia.",
+        "The largest living lizard, growing up to about 3 metres long."
+      ],
+      "links": [
+        { "name": "Indonesia", "rel": "lives only in" }
+      ],
+      "fact": "It can eat up to 80% of its own body weight in a single meal."
+    },
+    {
+      "id": "galapagos-tortoise",
+      "name": "Galapagos Tortoise",
+      "aliases": ["Galapagos Giant Tortoise"],
+      "category": "nature",
+      "sub": "Reptile",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 3,
+      "clues": [
+        "It can survive months without food, so old sailors stored them aboard as fresh meat.",
+        "Its shell shape changes from island to island, from domed to saddle-backed.",
+        "These differences helped shape Charles Darwin's ideas after his 1835 visit.",
+        "Lonesome George, the last of his island's kind, died in 2012.",
+        "A huge, long-lived shelled reptile from the islands west of Ecuador."
+      ],
+      "links": [
+        { "name": "Ecuador", "rel": "lives on islands belonging to" },
+        { "name": "Charles Darwin", "rel": "was studied by" },
+        { "name": "Galapagos Islands", "rel": "is named after the" }
+      ],
+      "fact": "Some live well over 100 years."
+    },
+    {
+      "id": "chameleon",
+      "name": "Chameleon",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Reptile",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 2,
+      "clues": [
+        "Its sticky tongue can shoot out farther than its own body length.",
+        "Its eyes move separately, so it can look two ways at once.",
+        "Its toes are fused into two groups, like tongs for gripping branches.",
+        "About half of all known species live on the island of Madagascar.",
+        "A slow-moving lizard famous for changing the colour of its skin."
+      ],
+      "links": [
+        { "name": "Madagascar", "rel": "has most of its species in" }
+      ],
+      "fact": "It changes colour mainly to show its mood and control its temperature, not just to hide."
+    },
+    {
+      "id": "king-cobra",
+      "name": "King Cobra",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Reptile",
+      "year": null,
+      "region": "Southeast Asia",
+      "difficulty": 2,
+      "clues": [
+        "It mostly eats other snakes.",
+        "It is the only snake known to build a nest for its eggs.",
+        "When threatened, it can rear up a third of its body off the ground.",
+        "At up to about 5.5 metres, it is the world's longest venomous snake.",
+        "A huge hooded snake of the forests of South and Southeast Asia."
+      ],
+      "links": [
+        { "name": "India", "rel": "lives in the forests of" },
+        { "name": "Thailand", "rel": "lives in the forests of" }
+      ],
+      "fact": "Its scientific name, Ophiophagus hannah, means 'snake-eater'."
+    },
+    {
+      "id": "saltwater-crocodile",
+      "name": "Saltwater Crocodile",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Reptile",
+      "year": null,
+      "region": "Oceania",
+      "difficulty": 3,
+      "clues": [
+        "It has one of the strongest bites ever measured in a living animal.",
+        "It can swim far out to sea, travelling between islands.",
+        "It can stay underwater for an hour or more while resting.",
+        "Males can grow over 6 metres long, making it the largest living reptile.",
+        "Known as the 'saltie' in northern Australia, where it lurks in rivers and estuaries."
+      ],
+      "links": [
+        { "name": "Australia", "rel": "lurks in the rivers of northern" },
+        { "name": "Steve Irwin", "rel": "was famously handled by" }
+      ],
+      "fact": "The temperature of the nest decides whether the hatchlings are male or female."
+    },
+    {
+      "id": "monarch-butterfly",
+      "name": "Monarch Butterfly",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Insect",
+      "year": null,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Its bright colours warn birds that it tastes bad.",
+        "Its caterpillars feed only on milkweed, which makes them toxic.",
+        "No single one makes the whole round trip; it takes several generations.",
+        "Millions spend the winter clustered on fir trees in the mountains of central Mexico.",
+        "An orange-and-black winged insect famous for its long migration across North America."
+      ],
+      "links": [
+        { "name": "Mexico", "rel": "spends the winter in" },
+        { "name": "Canada", "rel": "flies south each autumn from" }
+      ],
+      "fact": "Some fly around 4,000 km from Canada to Mexico."
+    },
+    {
+      "id": "honey-bee",
+      "name": "Honey Bee",
+      "aliases": ["Honeybee"],
+      "category": "nature",
+      "sub": "Insect",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "It tells its nestmates where to find flowers by performing a 'waggle dance'.",
+        "A colony can hold tens of thousands of workers, nearly all of them female.",
+        "Each colony usually has just one egg-laying queen.",
+        "It builds six-sided wax cells to store food and raise its young.",
+        "A striped, buzzing insect that makes the sweet golden food we spread on toast."
+      ],
+      "links": [
+        { "name": "Sunflower", "rel": "pollinates flowers such as the" }
+      ],
+      "fact": "A single worker makes only about a twelfth of a teaspoon of honey in its whole life."
+    },
+    {
+      "id": "ladybug",
+      "name": "Ladybug",
+      "aliases": ["Ladybird"],
+      "category": "nature",
+      "sub": "Insect",
+      "year": null,
+      "region": "Global",
+      "difficulty": 2,
+      "clues": [
+        "Despite its common name, it is a beetle and not a true bug.",
+        "When disturbed, it can ooze a smelly yellow fluid from its leg joints.",
+        "Gardeners love it because one can eat thousands of aphids in its life.",
+        "Its bright colours warn birds that it tastes nasty.",
+        "A small round beetle, usually red with black spots."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "is called a ladybird in the" }
+      ],
+      "fact": "The number of spots shows which species it is, not how old it is."
+    },
+    {
+      "id": "praying-mantis",
+      "name": "Praying Mantis",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Insect",
+      "year": null,
+      "region": "Global",
+      "difficulty": 2,
+      "clues": [
+        "It can turn its head about 180 degrees to look over its shoulder.",
+        "It is an ambush hunter, keeping perfectly still until prey comes close.",
+        "Some species look just like flowers or dead leaves.",
+        "Females sometimes eat the male during or after mating.",
+        "A green insect that holds its spiky front legs folded as if in prayer."
+      ],
+      "links": [
+        { "name": "Kung Fu Panda", "rel": "inspired the character Mantis in" },
+        { "name": "China", "rel": "inspired a kung fu style from" }
+      ],
+      "fact": "In 2016 it became the first insect shown to see in 3D, tested with tiny 3D glasses."
+    },
+    {
+      "id": "dragonfly",
+      "name": "Dragonfly",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Insect",
+      "year": null,
+      "region": "Global",
+      "difficulty": 3,
+      "clues": [
+        "It spends most of its life as an underwater nymph before it can fly.",
+        "Its huge eyes cover most of its head, giving it almost all-round vision.",
+        "It catches prey in mid-air and succeeds in around 95% of its hunts.",
+        "Its ancient relatives had wings about 70 cm across, long before the dinosaurs.",
+        "A fast insect with two pairs of long, see-through wings, often darting over ponds."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "is a traditional symbol of" }
+      ],
+      "fact": "It can move each of its four wings independently."
+    },
+    {
+      "id": "tyrannosaurus-rex",
+      "name": "Tyrannosaurus rex",
+      "aliases": ["T. rex", "T-Rex"],
+      "category": "nature",
+      "sub": "Dinosaur",
+      "year": null,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It lived at the very end of the age of dinosaurs, about 68 to 66 million years ago.",
+        "Its bite was among the strongest of any land animal that ever lived.",
+        "Its arms were only about a metre long, with two fingers each.",
+        "Its name means 'tyrant lizard king'.",
+        "The most famous meat-eating dinosaur, the big star of Jurassic Park."
+      ],
+      "links": [
+        { "name": "Jurassic Park", "rel": "is the star of" },
+        { "name": "Triceratops", "rel": "hunted" },
+        { "name": "United States", "rel": "left its fossils in" }
+      ],
+      "fact": "The skeleton nicknamed 'Sue' at Chicago's Field Museum is one of the most complete ever found."
+    },
+    {
+      "id": "triceratops",
+      "name": "Triceratops",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Dinosaur",
+      "year": null,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It lived in western North America at the same time as one of the most famous predators.",
+        "It had a beak like a parrot's and hundreds of grinding teeth.",
+        "Its skull could be over 2 metres long, among the biggest of any land animal.",
+        "Its name means 'three-horned face'.",
+        "A plant-eating dinosaur with a bony neck frill and three horns on its head."
+      ],
+      "links": [
+        { "name": "Tyrannosaurus rex", "rel": "was hunted by" },
+        { "name": "United States", "rel": "left its fossils in" }
+      ],
+      "fact": "Some fossils show T. rex bite marks on its frill and horns."
+    },
+    {
+      "id": "velociraptor",
+      "name": "Velociraptor",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Dinosaur",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "It was only about the size of a turkey, much smaller than in the movies.",
+        "Bumps on its arm bones show it had feathers.",
+        "A famous fossil shows one locked in battle with a Protoceratops.",
+        "It had a large, curved sickle claw on each foot.",
+        "A small, clever hunter made famous by Jurassic Park, whose name means 'swift thief'."
+      ],
+      "links": [
+        { "name": "Mongolia", "rel": "was found in the Gobi Desert of" },
+        { "name": "Jurassic Park", "rel": "is a villain in" }
+      ],
+      "fact": "The film versions were based on a much larger relative, Deinonychus."
+    },
+    {
+      "id": "stegosaurus",
+      "name": "Stegosaurus",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Dinosaur",
+      "year": null,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "For its huge size, it had a very small brain, often compared to a walnut.",
+        "It lived in the Late Jurassic, about 150 million years ago.",
+        "Its spiked tail is nicknamed the 'thagomizer', after a newspaper cartoon.",
+        "It is the official state fossil of Colorado.",
+        "A plant-eating dinosaur with two rows of tall bony plates along its back."
+      ],
+      "links": [
+        { "name": "United States", "rel": "left its fossils in" },
+        { "name": "Tyrannosaurus rex", "rel": "lived millions of years before" }
+      ],
+      "fact": "More time separates it from T. rex than separates T. rex from us."
+    },
+    {
+      "id": "brachiosaurus",
+      "name": "Brachiosaurus",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Dinosaur",
+      "year": null,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "Its front legs were longer than its back legs, giving it a sloping back.",
+        "It lived in North America in the Late Jurassic, around 150 million years ago.",
+        "It could probably raise its head about 9 metres or more above the ground.",
+        "Its name means 'arm lizard'.",
+        "A huge long-necked plant-eater, the first dinosaur seen up close in Jurassic Park."
+      ],
+      "links": [
+        { "name": "Jurassic Park", "rel": "appears in" },
+        { "name": "Giraffe", "rel": "is often compared to the" }
+      ],
+      "fact": "Estimates of its weight range from around 30 to over 50 tonnes."
+    },
+    {
+      "id": "spinosaurus",
+      "name": "Spinosaurus",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Dinosaur",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 3,
+      "clues": [
+        "Its first fossils were found in Egypt and destroyed in a bombing raid in 1944.",
+        "It had long, crocodile-like jaws and ate a lot of fish.",
+        "Studies suggest it spent much of its time in water.",
+        "It was probably longer than T. rex, perhaps up to about 15 metres.",
+        "A huge meat-eater with a tall sail on its back, seen in Jurassic Park III."
+      ],
+      "links": [
+        { "name": "Egypt", "rel": "was first found in" },
+        { "name": "Jurassic Park III", "rel": "appears in" }
+      ],
+      "fact": "Its tall back sail was held up by very long bony spines."
+    },
+    {
+      "id": "venus-flytrap",
+      "name": "Venus Flytrap",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Plant",
+      "year": null,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Charles Darwin called it 'one of the most wonderful plants in the world'.",
+        "Tiny trigger hairs must be touched twice within about 20 seconds to spring it.",
+        "It grows wild only in boggy areas of North and South Carolina.",
+        "It catches insects to get nutrients missing from its poor soil.",
+        "A meat-eating plant whose leaves snap shut like jaws."
+      ],
+      "links": [
+        { "name": "Charles Darwin", "rel": "was admired by" },
+        { "name": "United States", "rel": "grows wild only in" }
+      ],
+      "fact": "Its trap can snap shut in about a tenth of a second."
+    },
+    {
+      "id": "giant-sequoia",
+      "name": "Giant Sequoia",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Plant",
+      "year": null,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "Its thick, spongy bark helps it survive forest fires.",
+        "Heat from fire helps its cones open and release their seeds.",
+        "Some living trees are over 3,000 years old.",
+        "It grows naturally only on the western slopes of California's Sierra Nevada.",
+        "The world's largest tree by volume, like the famous General Sherman."
+      ],
+      "links": [
+        { "name": "United States", "rel": "grows wild only in" },
+        { "name": "Sequoia National Park", "rel": "is protected in" }
+      ],
+      "fact": "General Sherman, the largest known single-trunk tree, is about 84 metres tall."
+    },
+    {
+      "id": "baobab",
+      "name": "Baobab",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Plant",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 3,
+      "clues": [
+        "Its huge trunk can store thousands of litres of water.",
+        "Its bare branches look like roots, earning it the nickname 'upside-down tree'.",
+        "Some living examples are well over 1,000 years old.",
+        "Six of its eight species grow wild only in Madagascar.",
+        "A fat-trunked tree of the savanna that threatens the tiny planet in The Little Prince."
+      ],
+      "links": [
+        { "name": "Madagascar", "rel": "has most of its species in" },
+        { "name": "The Little Prince", "rel": "threatens the planet in" }
+      ],
+      "fact": "Its fruit has a dry, powdery pulp that is rich in vitamin C."
+    },
+    {
+      "id": "sunflower",
+      "name": "Sunflower",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Plant",
+      "year": null,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Native Americans grew it for food thousands of years ago.",
+        "Its big head is actually made of hundreds of tiny flowers.",
+        "Its seeds are arranged in spirals whose counts match the Fibonacci sequence.",
+        "Young plants turn to follow the Sun across the sky during the day.",
+        "A tall plant with a large yellow head of petals, painted by Van Gogh."
+      ],
+      "links": [
+        { "name": "Vincent van Gogh", "rel": "was painted in a famous series by" },
+        { "name": "Ukraine", "rel": "is a well-known symbol of" }
+      ],
+      "fact": "Mature flower heads stop tracking the Sun and usually face east."
+    },
+    {
+      "id": "bamboo",
+      "name": "Bamboo",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Plant",
+      "year": null,
+      "region": "Global",
+      "difficulty": 2,
+      "clues": [
+        "Some kinds can grow nearly a metre in a single day.",
+        "It is actually a giant grass, not a tree.",
+        "Some species flower all at once only every few decades, then die.",
+        "Its hollow, jointed stems are used for scaffolding, furniture and flutes.",
+        "A fast-growing plant whose shoots and leaves are almost the only food of the panda."
+      ],
+      "links": [
+        { "name": "Giant Panda", "rel": "is the main food of the" },
+        { "name": "China", "rel": "grows in great forests in" }
+      ],
+      "fact": "It is one of the fastest-growing plants on Earth."
+    },
+    {
+      "id": "saguaro",
+      "name": "Saguaro",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Plant",
+      "year": null,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "It may be 50 to 100 years old before it grows its first arm.",
+        "After rain, its pleated stem swells to store large amounts of water.",
+        "Its white blossom is the state flower of Arizona.",
+        "It grows wild mainly in the Sonoran Desert of Arizona and northwest Mexico.",
+        "The tall desert cactus with upturned arms, a classic symbol of the Wild West."
+      ],
+      "links": [
+        { "name": "United States", "rel": "grows wild in" },
+        { "name": "Mexico", "rel": "grows wild in" }
+      ],
+      "fact": "It can grow over 12 metres tall and live for 150 years or more."
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "aliases": ["Northern Lights", "Aurora Borealis"],
+      "category": "nature",
+      "sub": "Weather & Sky",
+      "year": null,
+      "region": "Global",
+      "difficulty": 2,
+      "clues": [
+        "It happens when charged particles from the Sun hit gases high in the atmosphere.",
+        "Its green glow comes mostly from oxygen, while nitrogen can add blue and purple.",
+        "A strong solar storm can make it visible much farther from the poles than usual.",
+        "It has a southern twin, seen from places such as Tasmania and Antarctica.",
+        "Shimmering curtains of colour in the night sky over Norway, Iceland and Canada."
+      ],
+      "links": [
+        { "name": "Norway", "rel": "is often seen in" },
+        { "name": "Iceland", "rel": "is often seen in" },
+        { "name": "Finland", "rel": "is often seen in" }
+      ],
+      "fact": "It usually glows about 100 to 300 km above the ground."
+    },
+    {
+      "id": "rainbow",
+      "name": "Rainbow",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Weather & Sky",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "To see one, you need the Sun behind you.",
+        "It is really a full circle, but from the ground we usually see only an arc.",
+        "When a second one appears, its colours are in reverse order.",
+        "Isaac Newton named its seven colours, from red to violet.",
+        "A coloured arc in the sky that appears when sunlight shines through raindrops."
+      ],
+      "links": [
+        { "name": "Isaac Newton", "rel": "had its colours named by" }
+      ],
+      "fact": "No two people see exactly the same one, because each sees light from different drops."
+    },
+    {
+      "id": "tornado",
+      "name": "Tornado",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Weather & Sky",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "Its winds can be the fastest on Earth's surface, over 400 km/h.",
+        "Its strength is rated on the Enhanced Fujita scale, from EF0 to EF5.",
+        "Most strong ones form from huge rotating thunderstorms called supercells.",
+        "The United States gets more of them than any other country.",
+        "A violently spinning funnel of air reaching down from a storm cloud to the ground."
+      ],
+      "links": [
+        { "name": "The Wizard of Oz", "rel": "carries Dorothy away in" },
+        { "name": "United States", "rel": "strikes most often in" }
+      ],
+      "fact": "The United States records over 1,000 of them in a typical year."
+    },
+    {
+      "id": "lightning",
+      "name": "Lightning",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Weather & Sky",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "It heats the air to about five times hotter than the surface of the Sun.",
+        "It strikes somewhere on Earth around 40 to 50 times every second.",
+        "The sudden heating of the air it causes makes the boom we call thunder.",
+        "Benjamin Franklin studied it with a famous kite experiment in 1752.",
+        "A giant electric spark that flashes between storm clouds and the ground."
+      ],
+      "links": [
+        { "name": "Benjamin Franklin", "rel": "was studied by" },
+        { "name": "Venezuela", "rel": "flashes most often over Lake Maracaibo in" }
+      ],
+      "fact": "Lake Maracaibo in Venezuela sees it on about 260 nights a year."
+    },
+    {
+      "id": "hurricane",
+      "name": "Hurricane",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Weather & Sky",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "Its calm centre, called the eye, can have clear skies.",
+        "It forms over warm ocean water, usually at least 26 °C.",
+        "In the Atlantic, each one gets a name from a list that repeats every six years.",
+        "Its strength is rated from 1 to 5 on the Saffir-Simpson scale.",
+        "A huge spinning tropical storm of the Atlantic, called a typhoon in the western Pacific."
+      ],
+      "links": [
+        { "name": "Atlantic Ocean", "rel": "forms over the" },
+        { "name": "United States", "rel": "often strikes" }
+      ],
+      "fact": "North of the equator it spins anticlockwise; south of it, clockwise."
+    },
+    {
+      "id": "volcano",
+      "name": "Volcano",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Earth Phenomenon",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "Its name comes from the Roman god of fire.",
+        "Molten rock called magma becomes lava once it reaches the surface.",
+        "Mauna Loa in Hawaii is the largest active one on Earth.",
+        "An eruption of one buried the Roman town of Pompeii in 79 CE.",
+        "A mountain that can erupt, blasting out ash, gas and red-hot lava."
+      ],
+      "links": [
+        { "name": "Mount Vesuvius", "rel": "includes" },
+        { "name": "Pompeii", "rel": "buried" },
+        { "name": "Iceland", "rel": "shapes the land of" }
+      ],
+      "fact": "There are about 1,350 potentially active ones on land around the world."
+    },
+    {
+      "id": "earthquake",
+      "name": "Earthquake",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Earth Phenomenon",
+      "year": null,
+      "region": "Global",
+      "difficulty": 1,
+      "clues": [
+        "Most happen along the edges of the huge plates that make up Earth's crust.",
+        "The point on the surface directly above where it starts is called the epicentre.",
+        "Its strength is measured on the moment magnitude scale, which replaced the Richter scale.",
+        "The strongest ever recorded struck Chile in 1960, at magnitude 9.5.",
+        "A sudden shaking of the ground caused by rocks slipping deep below."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "often shakes" },
+        { "name": "Chile", "rel": "struck hardest ever in" },
+        { "name": "Tsunami", "rel": "can trigger a" }
+      ],
+      "fact": "Instruments detect around half a million of them worldwide each year, most too weak to feel."
+    },
+    {
+      "id": "tsunami",
+      "name": "Tsunami",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Earth Phenomenon",
+      "year": null,
+      "region": "Global",
+      "difficulty": 2,
+      "clues": [
+        "Its name comes from Japanese words meaning 'harbour wave'.",
+        "In the deep ocean it can travel as fast as a jet plane, around 800 km/h.",
+        "Out at sea it may be less than a metre high, but it grows near the shore.",
+        "The sea sometimes pulls far back from the beach just before it arrives.",
+        "A series of giant sea waves usually caused by an undersea earthquake."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "gets its name from" },
+        { "name": "Indian Ocean", "rel": "struck the coasts of the" },
+        { "name": "Earthquake", "rel": "is usually caused by an" }
+      ],
+      "fact": "The 2004 Indian Ocean one affected coasts in more than a dozen countries."
+    },
+    {
+      "id": "geyser",
+      "name": "Geyser",
+      "aliases": [],
+      "category": "nature",
+      "sub": "Earth Phenomenon",
+      "year": null,
+      "region": "Global",
+      "difficulty": 3,
+      "clues": [
+        "It forms where underground water is heated by hot rock until it boils over.",
+        "Fewer than 1,000 exist worldwide, and about half are in a single US park.",
+        "Its name comes from a famous spouting hot spring in Iceland.",
+        "Old Faithful in Yellowstone does this roughly every 60 to 110 minutes.",
+        "A hot spring that shoots a column of boiling water and steam into the air."
+      ],
+      "links": [
+        { "name": "Yellowstone National Park", "rel": "has about half of the world's in" },
+        { "name": "Iceland", "rel": "takes its name from a hot spring in" }
+      ],
+      "fact": "Strokkur in Iceland erupts about every 5 to 10 minutes."
+    }
+  ]
+}

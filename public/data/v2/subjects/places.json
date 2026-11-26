@@ -1,0 +1,1163 @@
+{
+  "category": "places",
+  "subjects": [
+    {
+      "id": "france",
+      "name": "France",
+      "aliases": ["French Republic"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Its mainland is often nicknamed 'the Hexagon' because of its rough six-sided shape.",
+        "Its overseas regions include Guadeloupe, Martinique and Réunion.",
+        "The world's most famous cycling race, held each July, is named after it.",
+        "Its revolution of 1789 gave the world the motto 'Liberty, Equality, Fraternity'.",
+        "Its capital, Paris, is home to the Eiffel Tower and the Louvre."
+      ],
+      "links": [
+        { "name": "Paris", "rel": "has its capital in" },
+        { "name": "Eiffel Tower", "rel": "is home to" }
+      ],
+      "fact": "Thanks to its overseas territories, it spans 12 time zones, more than any other country."
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "aliases": ["Italian Republic"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Two independent countries, San Marino and Vatican City, lie entirely within its borders.",
+        "Mount Etna, one of Europe's most active volcanoes, rises on its largest island, Sicily.",
+        "The Renaissance is widely said to have begun in its city of Florence.",
+        "Pizza and pasta are among its most famous gifts to the world's kitchens.",
+        "This boot-shaped country is home to Rome, Venice and the Leaning Tower of Pisa."
+      ],
+      "links": [
+        { "name": "Rome", "rel": "has its capital in" },
+        { "name": "Venice", "rel": "is home to" },
+        { "name": "Colosseum", "rel": "is home to" }
+      ],
+      "fact": "Its national football team has won the FIFA World Cup four times: 1934, 1938, 1982 and 2006."
+    },
+    {
+      "id": "germany",
+      "name": "Germany",
+      "aliases": ["Federal Republic of Germany"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It shares land borders with nine countries, including Denmark, Poland and Austria.",
+        "Some stretches of its autobahns famously have no general speed limit.",
+        "It has the largest population of any country in the European Union.",
+        "The Brandenburg Gate became a symbol of its reunification in 1990.",
+        "Its capital is Berlin, and Munich hosts its famous Oktoberfest."
+      ],
+      "links": [
+        { "name": "Berlin", "rel": "has its capital in" },
+        { "name": "Danube", "rel": "is the source of the" }
+      ],
+      "fact": "It was reunified on 3 October 1990, a date now celebrated as a national holiday."
+    },
+    {
+      "id": "spain",
+      "name": "Spain",
+      "aliases": ["Kingdom of Spain"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It covers most of the Iberian Peninsula.",
+        "The Canary Islands and the Balearic Islands are part of this country.",
+        "Its national football team won the FIFA World Cup in 2010.",
+        "Flamenco, paella and the Running of the Bulls in Pamplona all come from here.",
+        "Its capital is Madrid, and Barcelona is its second-largest city."
+      ],
+      "links": [
+        { "name": "Barcelona", "rel": "is home to" },
+        { "name": "Alhambra", "rel": "is home to" },
+        { "name": "Sagrada Família", "rel": "is home to" }
+      ],
+      "fact": "Its main language is the world's second most spoken mother tongue, after Mandarin Chinese."
+    },
+    {
+      "id": "united-kingdom",
+      "name": "United Kingdom",
+      "aliases": ["UK", "Great Britain", "Britain"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It is made up of four nations that each field their own national football team.",
+        "Its parliament at Westminster is often called 'the mother of parliaments'.",
+        "It drives on the left and uses the pound sterling as its currency.",
+        "Its flag, the Union Jack, combines the crosses of three patron saints.",
+        "England, Scotland, Wales and Northern Ireland together form this country."
+      ],
+      "links": [
+        { "name": "London", "rel": "has its capital in" },
+        { "name": "Buckingham Palace", "rel": "is home to" },
+        { "name": "Stonehenge", "rel": "is home to" }
+      ],
+      "fact": "No place in it is more than about 70 miles (113 km) from the sea."
+    },
+    {
+      "id": "greece",
+      "name": "Greece",
+      "aliases": ["Hellenic Republic"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Thousands of islands give it one of the longest coastlines in Europe.",
+        "Its flag has nine blue and white stripes, said to match the syllables of its motto.",
+        "The first modern Olympic Games were held in its capital in 1896.",
+        "Crete, Rhodes and Santorini are among its many islands.",
+        "This birthplace of democracy has its capital in Athens, beneath the Parthenon."
+      ],
+      "links": [
+        { "name": "Athens", "rel": "has its capital in" },
+        { "name": "Parthenon", "rel": "is home to" }
+      ],
+      "fact": "Mount Olympus, home of the gods in ancient myth, is its highest peak."
+    },
+    {
+      "id": "netherlands",
+      "name": "Netherlands",
+      "aliases": ["Holland", "The Netherlands"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "About a quarter of this country lies below sea level.",
+        "Its government sits in The Hague, even though its capital is elsewhere.",
+        "It is said to have more bicycles than people.",
+        "It is famous for windmills, tulips, clogs and cheeses such as Gouda and Edam.",
+        "Its capital, Amsterdam, is known for canals and the Anne Frank House."
+      ],
+      "links": [
+        { "name": "Amsterdam", "rel": "has its capital in" },
+        { "name": "Anne Frank", "rel": "was the home of" }
+      ],
+      "fact": "Rotterdam, its second city, has the largest seaport in Europe."
+    },
+    {
+      "id": "russia",
+      "name": "Russia",
+      "aliases": ["Russian Federation"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Its territory stretches across eleven time zones.",
+        "Lake Baikal, the deepest lake on Earth, lies within its borders.",
+        "The Trans-Siberian Railway, the longest railway line in the world, crosses it.",
+        "It is the largest country in the world by area, spanning Europe and Asia.",
+        "Its capital is Moscow, home of the Kremlin and Red Square."
+      ],
+      "links": [
+        { "name": "Moscow", "rel": "has its capital in" },
+        { "name": "St. Basil's Cathedral", "rel": "is home to" }
+      ],
+      "fact": "Its land area is larger than the entire surface of the dwarf planet Pluto."
+    },
+    {
+      "id": "united-states",
+      "name": "United States",
+      "aliases": ["USA", "United States of America"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Its flag has had 27 official versions, the latest adopted in 1960.",
+        "It bought Alaska from Russia in 1867 for about 7.2 million dollars.",
+        "Its Declaration of Independence was adopted on 4 July 1776.",
+        "Its 50 states include Texas, California and Hawaii.",
+        "Its capital is Washington, D.C., where the President lives in the White House."
+      ],
+      "links": [
+        { "name": "White House", "rel": "is home to" },
+        { "name": "New York City", "rel": "is home to" },
+        { "name": "Statue of Liberty", "rel": "is home to" }
+      ],
+      "fact": "The 13 stripes on its flag stand for the original 13 colonies."
+    },
+    {
+      "id": "canada",
+      "name": "Canada",
+      "aliases": [],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It has the longest coastline of any country in the world.",
+        "It has two official languages, English and French.",
+        "By law, its national sports are lacrosse in summer and ice hockey in winter.",
+        "A red maple leaf sits in the middle of its flag.",
+        "The world's second-largest country, its capital is Ottawa and its biggest city Toronto."
+      ],
+      "links": [
+        { "name": "Toronto", "rel": "is home to" },
+        { "name": "CN Tower", "rel": "is home to" },
+        { "name": "Niagara Falls", "rel": "shares" }
+      ],
+      "fact": "It has more lakes than any other country in the world."
+    },
+    {
+      "id": "mexico",
+      "name": "Mexico",
+      "aliases": ["United Mexican States"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "Maize was first domesticated here around 9,000 years ago.",
+        "Millions of monarch butterflies spend the winter in its mountain forests.",
+        "Its Day of the Dead festival features sugar skulls and orange marigolds.",
+        "Its ancient sites include the Maya city of Chichen Itza and Teotihuacan.",
+        "Tacos and mariachi bands come from this country just south of the United States."
+      ],
+      "links": [
+        { "name": "Mexico City", "rel": "has its capital in" },
+        { "name": "Chichen Itza", "rel": "is home to" },
+        { "name": "United States", "rel": "borders" }
+      ],
+      "fact": "It has the largest Spanish-speaking population in the world."
+    },
+    {
+      "id": "brazil",
+      "name": "Brazil",
+      "aliases": ["Federative Republic of Brazil"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "It borders every South American country except Chile and Ecuador.",
+        "It is the only country in South America whose official language is Portuguese.",
+        "It won the FIFA World Cup five times between 1958 and 2002.",
+        "Most of the Amazon rainforest lies within its borders.",
+        "Its capital is a planned city opened in 1960, but its best-known city is Rio de Janeiro."
+      ],
+      "links": [
+        { "name": "Rio de Janeiro", "rel": "is home to" },
+        { "name": "Amazon River", "rel": "is home to most of the" },
+        { "name": "Christ the Redeemer", "rel": "is home to" }
+      ],
+      "fact": "It is named after brazilwood, a tree once prized for its red dye."
+    },
+    {
+      "id": "argentina",
+      "name": "Argentina",
+      "aliases": ["Argentine Republic"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 2,
+      "clues": [
+        "Its name comes from the Latin word for silver.",
+        "Aconcagua, the highest mountain outside Asia, rises in its part of the Andes.",
+        "The tango was born in the late 1800s in its capital and nearby Montevideo.",
+        "Diego Maradona and Lionel Messi led it to World Cup wins in 1986 and 2022.",
+        "Its capital is Buenos Aires, and much of Patagonia lies in its south."
+      ],
+      "links": [
+        { "name": "Buenos Aires", "rel": "has its capital in" },
+        { "name": "Iguazu Falls", "rel": "shares" },
+        { "name": "Lionel Messi", "rel": "is the home country of" }
+      ],
+      "fact": "Its city of Ushuaia is often called the southernmost city in the world."
+    },
+    {
+      "id": "peru",
+      "name": "Peru",
+      "aliases": ["Republic of Peru"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 3,
+      "clues": [
+        "It shares Lake Titicaca with Bolivia.",
+        "The mysterious Nazca Lines are etched into its southern desert.",
+        "The most distant source of the Amazon River lies in its Andes.",
+        "It was the heart of the Inca Empire, ruled from the city of Cusco.",
+        "Machu Picchu, the Inca citadel in the Andes, is its most famous sight."
+      ],
+      "links": [
+        { "name": "Machu Picchu", "rel": "is home to" },
+        { "name": "Amazon River", "rel": "is the source of the" }
+      ],
+      "fact": "Potatoes were first domesticated in the Andes of southern Peru and north-western Bolivia."
+    },
+    {
+      "id": "egypt",
+      "name": "Egypt",
+      "aliases": ["Arab Republic of Egypt"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "About 95% of its people live close to a single river.",
+        "The Suez Canal, linking the Mediterranean and the Red Sea, runs through it.",
+        "Its ancient rulers were called pharaohs, and Tutankhamun's tomb was found here.",
+        "The Nile flows north through it into the Mediterranean Sea.",
+        "Its capital is Cairo, close to the Great Pyramid and the Sphinx."
+      ],
+      "links": [
+        { "name": "Cairo", "rel": "has its capital in" },
+        { "name": "Great Pyramid of Giza", "rel": "is home to" },
+        { "name": "Nile", "rel": "is watered by the" }
+      ],
+      "fact": "The Rosetta Stone, found here in 1799, was the key to reading hieroglyphs."
+    },
+    {
+      "id": "south-africa",
+      "name": "South Africa",
+      "aliases": ["Republic of South Africa"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 2,
+      "clues": [
+        "It has three capitals: one for the government, one for parliament and one for the courts.",
+        "Its official languages include Zulu, Xhosa and English.",
+        "In 2010 it hosted the first FIFA World Cup held on its continent.",
+        "Nelson Mandela became its president in 1994, after its first fully democratic election.",
+        "This nation at the southern tip of its continent includes Cape Town and Johannesburg."
+      ],
+      "links": [
+        { "name": "Cape Town", "rel": "is home to" },
+        { "name": "Nelson Mandela", "rel": "was led by" }
+      ],
+      "fact": "The small kingdom of Lesotho lies entirely inside its borders."
+    },
+    {
+      "id": "kenya",
+      "name": "Kenya",
+      "aliases": ["Republic of Kenya"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 3,
+      "clues": [
+        "The equator crosses this country, which also has a coast on the Indian Ocean.",
+        "Its long-distance runners, such as Eliud Kipchoge, have won many Olympic golds.",
+        "Every year great herds of wildebeest cross into its Maasai Mara reserve.",
+        "It shares its name with its highest peak, the second-highest on its continent.",
+        "Its capital, Nairobi, has a national park with lions and giraffes inside the city limits."
+      ],
+      "links": [
+        { "name": "Nairobi", "rel": "has its capital in" },
+        { "name": "Eliud Kipchoge", "rel": "is the home country of" }
+      ],
+      "fact": "In 2019 Eliud Kipchoge ran a marathon in under two hours, at a special unofficial event."
+    },
+    {
+      "id": "morocco",
+      "name": "Morocco",
+      "aliases": ["Kingdom of Morocco"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 3,
+      "clues": [
+        "At its closest it is only about 14 km from Europe, across the Strait of Gibraltar.",
+        "Its University of al-Qarawiyyin in Fez is often called the oldest university in the world.",
+        "In 2022 it became the first team from its continent to reach a World Cup semi-final.",
+        "Its cities include Fez, Casablanca and Marrakesh.",
+        "This kingdom in the north-west of its continent has its capital in Rabat."
+      ],
+      "links": [
+        { "name": "Sahara", "rel": "borders the" },
+        { "name": "Spain", "rel": "lies across a narrow strait from" }
+      ],
+      "fact": "Casablanca's Hassan II Mosque has one of the tallest minarets in the world."
+    },
+    {
+      "id": "japan",
+      "name": "Japan",
+      "aliases": ["Nippon"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "This island nation is made up of thousands of islands, with four main ones.",
+        "Its high-speed bullet trains began running in 1964.",
+        "Its imperial family is often called the oldest continuing hereditary monarchy.",
+        "Sushi, anime, karaoke and Pokémon all come from here.",
+        "Its capital is Tokyo, and its highest mountain is Mount Fuji."
+      ],
+      "links": [
+        { "name": "Tokyo", "rel": "has its capital in" },
+        { "name": "Mount Fuji", "rel": "is home to" }
+      ],
+      "fact": "Its name in its own language means 'origin of the sun', hence 'Land of the Rising Sun'."
+    },
+    {
+      "id": "china",
+      "name": "China",
+      "aliases": ["People's Republic of China"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "Despite its great width, it uses a single official time zone.",
+        "Paper, the compass, gunpowder and printing are known as its Four Great Inventions.",
+        "Giant pandas live in the wild only in its mountain forests.",
+        "The Yangtze, the longest river in Asia, flows across it.",
+        "Its capital is Beijing, and the Great Wall winds across its north."
+      ],
+      "links": [
+        { "name": "Beijing", "rel": "has its capital in" },
+        { "name": "Great Wall of China", "rel": "is home to" },
+        { "name": "Forbidden City", "rel": "is home to" }
+      ],
+      "fact": "It was the world's most populous country for centuries, until India overtook it around 2023."
+    },
+    {
+      "id": "india",
+      "name": "India",
+      "aliases": ["Republic of India", "Bharat"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "South Asia",
+      "difficulty": 1,
+      "clues": [
+        "The game of chess is thought to have originated here around the 6th century.",
+        "In 2023 it became the first country to land a spacecraft near the Moon's south pole.",
+        "Its huge film industry, nicknamed Bollywood, is based in Mumbai.",
+        "Around 2023 it became the most populous country in the world.",
+        "Its capital is New Delhi, and its most famous monument is the Taj Mahal."
+      ],
+      "links": [
+        { "name": "Taj Mahal", "rel": "is home to" },
+        { "name": "Mumbai", "rel": "is home to" },
+        { "name": "Mount Everest", "rel": "lies south of" }
+      ],
+      "fact": "The digits 0 to 9 used worldwide grew out of numerals first developed here."
+    },
+    {
+      "id": "thailand",
+      "name": "Thailand",
+      "aliases": ["Kingdom of Thailand"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Southeast Asia",
+      "difficulty": 2,
+      "clues": [
+        "It is the only country in Southeast Asia never colonised by a European power.",
+        "It was officially known as Siam until 1939.",
+        "Its national sport is a kickboxing style called 'the art of eight limbs'.",
+        "Tom yum soup and green curry come from its kitchens.",
+        "Its capital is Bangkok, and its resort islands include Phuket."
+      ],
+      "links": [
+        { "name": "Bangkok", "rel": "has its capital in" }
+      ],
+      "fact": "It is one of the world's biggest exporters of rice."
+    },
+    {
+      "id": "south-korea",
+      "name": "South Korea",
+      "aliases": ["Republic of Korea"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "Its alphabet, Hangul, was created in the 1440s under King Sejong.",
+        "It hosted the Summer Olympics in 1988 and the Winter Olympics in 2018.",
+        "Samsung and Hyundai are among its best-known companies.",
+        "K-pop stars such as BTS and BLACKPINK come from here.",
+        "Its capital is Seoul, and it shares a peninsula with its northern neighbour."
+      ],
+      "links": [
+        { "name": "BTS", "rel": "is the home of" },
+        { "name": "Samsung", "rel": "is the home of" }
+      ],
+      "fact": "Kimchi, spicy fermented cabbage, is served with almost every meal there."
+    },
+    {
+      "id": "turkey",
+      "name": "Turkey",
+      "aliases": ["Türkiye"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Middle East",
+      "difficulty": 2,
+      "clues": [
+        "Mount Ararat, where Noah's Ark is said to have come to rest, is its highest peak.",
+        "Hot-air balloons float over the 'fairy chimneys' of its Cappadocia region.",
+        "It spans two continents, divided by the Bosphorus strait.",
+        "Its largest city was once called Constantinople.",
+        "Its capital is Ankara, though Istanbul is its biggest city."
+      ],
+      "links": [
+        { "name": "Istanbul", "rel": "is home to" }
+      ],
+      "fact": "Saint Nicholas, who inspired Santa Claus, was a bishop at Myra, in what is now this country."
+    },
+    {
+      "id": "australia",
+      "name": "Australia",
+      "aliases": ["Commonwealth of Australia"],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Oceania",
+      "difficulty": 1,
+      "clues": [
+        "It is the only country that covers an entire continent's mainland.",
+        "Its capital, Canberra, was purpose-built as a compromise between two rival cities.",
+        "Koalas and platypuses live in the wild only here.",
+        "Its natural wonders include Uluru and the Great Barrier Reef.",
+        "This Southern Hemisphere country is home to Sydney and its famous Opera House."
+      ],
+      "links": [
+        { "name": "Sydney", "rel": "is home to" },
+        { "name": "Great Barrier Reef", "rel": "is home to" },
+        { "name": "Uluru", "rel": "is home to" }
+      ],
+      "fact": "Most of its people live within about 50 km of the coast."
+    },
+    {
+      "id": "new-zealand",
+      "name": "New Zealand",
+      "aliases": [],
+      "category": "places",
+      "sub": "Country",
+      "year": null,
+      "region": "Oceania",
+      "difficulty": 2,
+      "clues": [
+        "In 1893 it became the first self-governing country to give women the vote.",
+        "Its native Māori people call it Aotearoa.",
+        "Its flightless national bird, the kiwi, gives its people their nickname.",
+        "The Lord of the Rings films were shot among its landscapes.",
+        "Made up mainly of a North Island and a South Island, its capital is Wellington."
+      ],
+      "links": [
+        { "name": "Australia", "rel": "neighbours" },
+        { "name": "The Lord of the Rings", "rel": "was the filming location of" }
+      ],
+      "fact": "Sheep outnumber its people several times over."
+    },
+    {
+      "id": "paris",
+      "name": "Paris",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It is divided into 20 numbered districts that spiral out from the centre.",
+        "The River Seine flows through it, around the Île de la Cité.",
+        "It hosted the Summer Olympics in 1900, 1924 and 2024.",
+        "The Louvre, home of the Mona Lisa, is its most famous museum.",
+        "The capital of France, it is crowned by the Eiffel Tower."
+      ],
+      "links": [
+        { "name": "France", "rel": "is the capital of" },
+        { "name": "Eiffel Tower", "rel": "is home to" },
+        { "name": "Louvre", "rel": "is home to" }
+      ],
+      "fact": "Its nickname, 'the City of Light', is often linked to its early use of street lighting."
+    },
+    {
+      "id": "london",
+      "name": "London",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Its underground railway, opened in 1863, was the first in the world.",
+        "It began as a Roman settlement nearly 2,000 years ago.",
+        "It hosted the Summer Olympics in 1908, 1948 and 2012.",
+        "The River Thames flows through it, beneath Tower Bridge.",
+        "The capital of the United Kingdom, home of Big Ben and Buckingham Palace."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "is the capital of" },
+        { "name": "Big Ben", "rel": "is home to" },
+        { "name": "Tower Bridge", "rel": "is home to" }
+      ],
+      "fact": "Its black-cab drivers must pass 'The Knowledge', a famously hard test of its streets."
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "aliases": ["Roma"],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Legend says it was founded in 753 BC by twin brothers raised by a she-wolf.",
+        "It is known as the 'Eternal City' and was built on seven hills.",
+        "An entire independent country, Vatican City, lies inside it.",
+        "Visitors toss coins into its Trevi Fountain to make sure they return.",
+        "The capital of Italy, it is home to the Colosseum."
+      ],
+      "links": [
+        { "name": "Italy", "rel": "is the capital of" },
+        { "name": "Colosseum", "rel": "is home to" },
+        { "name": "St. Peter's Basilica", "rel": "surrounds" }
+      ],
+      "fact": "Coins thrown into the Trevi Fountain, a few thousand euros a day, are given to charity."
+    },
+    {
+      "id": "berlin",
+      "name": "Berlin",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Its TV tower, finished in 1969, is the tallest structure in its country.",
+        "It hosted the 1936 Summer Olympics, where Jesse Owens won four gold medals.",
+        "From 1961 to 1989 a wall divided it into east and west.",
+        "The Brandenburg Gate stands at its heart.",
+        "It is the capital of Germany."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "is the capital of" },
+        { "name": "Jesse Owens", "rel": "saw the triumph of" }
+      ],
+      "fact": "Its area is roughly eight times that of Paris."
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It hosted the 1992 Summer Olympics.",
+        "Its famous street, La Rambla, runs from the old town down to the sea.",
+        "It is the capital of Catalonia, where Catalan is spoken alongside Spanish.",
+        "Its football club plays at Camp Nou and was long the home of Lionel Messi.",
+        "This Spanish port on the Mediterranean is home to Gaudí's Sagrada Família."
+      ],
+      "links": [
+        { "name": "Spain", "rel": "is a city in" },
+        { "name": "Sagrada Família", "rel": "is home to" },
+        { "name": "Lionel Messi", "rel": "was the club home of" }
+      ],
+      "fact": "Antoni Gaudí designed many of its most famous buildings, including Park Güell and Casa Batlló."
+    },
+    {
+      "id": "amsterdam",
+      "name": "Amsterdam",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Much of it is built on wooden piles driven deep into soft ground.",
+        "Its ring of 17th-century canals is a UNESCO World Heritage Site.",
+        "The Rijksmuseum here holds Rembrandt's painting The Night Watch.",
+        "Anne Frank hid from the Nazis in a house here that is now a museum.",
+        "The capital of the Netherlands, famous for its canals and bicycles."
+      ],
+      "links": [
+        { "name": "Netherlands", "rel": "is the capital of" },
+        { "name": "Anne Frank", "rel": "was the hiding place of" }
+      ],
+      "fact": "Its name comes from a dam built on the River Amstel."
+    },
+    {
+      "id": "venice",
+      "name": "Venice",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It is built on more than 100 small islands in a lagoon.",
+        "The merchant explorer Marco Polo is traditionally said to have been born here.",
+        "It hosts the world's oldest film festival, first held in 1932.",
+        "Its Carnival is famous for elaborate masks.",
+        "This Italian city has canals for streets, travelled by gondola."
+      ],
+      "links": [
+        { "name": "Italy", "rel": "is a city in" },
+        { "name": "Marco Polo", "rel": "was the home of" }
+      ],
+      "fact": "Its Grand Canal is crossed by just four bridges, the oldest being the Rialto."
+    },
+    {
+      "id": "athens",
+      "name": "Athens",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It is one of the oldest continuously inhabited cities in the world.",
+        "Legend says its patron goddess won it by offering the gift of an olive tree.",
+        "It hosted the first modern Olympic Games in 1896, and again in 2004.",
+        "Socrates, Plato and Aristotle all taught here.",
+        "The capital of Greece, overlooked by the Parthenon on the Acropolis."
+      ],
+      "links": [
+        { "name": "Greece", "rel": "is the capital of" },
+        { "name": "Parthenon", "rel": "is home to" },
+        { "name": "Socrates", "rel": "was the home of" }
+      ],
+      "fact": "It is named after Athena, the goddess of wisdom."
+    },
+    {
+      "id": "moscow",
+      "name": "Moscow",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Its metro stations are famous for their chandeliers, mosaics and marble.",
+        "Its main roads form rings around an old fortified centre.",
+        "It hosted the 1980 Summer Olympics and the final of the 2018 FIFA World Cup.",
+        "The colourful domes of St Basil's Cathedral rise over its Red Square.",
+        "The capital of Russia, home of the Kremlin."
+      ],
+      "links": [
+        { "name": "Russia", "rel": "is the capital of" },
+        { "name": "St. Basil's Cathedral", "rel": "is home to" }
+      ],
+      "fact": "When Napoleon's army entered it in 1812, much of the city was burned."
+    },
+    {
+      "id": "istanbul",
+      "name": "Istanbul",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It served as an imperial capital for around 1,600 years.",
+        "Its Grand Bazaar is one of the largest and oldest covered markets in the world.",
+        "In the past it was known as Byzantium and later as Constantinople.",
+        "It straddles the Bosphorus strait, with parts in both Europe and Asia.",
+        "The largest city in Turkey, home of the Blue Mosque and Hagia Sophia."
+      ],
+      "links": [
+        { "name": "Turkey", "rel": "is the largest city of" }
+      ],
+      "fact": "Its Hagia Sophia, completed in 537, was the world's largest cathedral for nearly a thousand years."
+    },
+    {
+      "id": "new-york-city",
+      "name": "New York City",
+      "aliases": ["New York", "NYC"],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Until 1664 it was a Dutch settlement called New Amsterdam.",
+        "Its subway runs 24 hours a day, every day of the year.",
+        "Its five boroughs include Manhattan, Brooklyn and the Bronx.",
+        "Times Square and Central Park are among its best-known sights.",
+        "The largest city in the United States, home of the Statue of Liberty."
+      ],
+      "links": [
+        { "name": "United States", "rel": "is the largest city of" },
+        { "name": "Statue of Liberty", "rel": "is home to" },
+        { "name": "Empire State Building", "rel": "is home to" }
+      ],
+      "fact": "The United Nations has its headquarters here."
+    },
+    {
+      "id": "los-angeles",
+      "name": "Los Angeles",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It hosted the Summer Olympics in 1932 and 1984, and is due to again in 2028.",
+        "Its Walk of Fame has more than 2,700 stars set into the pavement.",
+        "Its basketball Lakers and baseball Dodgers are famous sports teams.",
+        "Hollywood, the heart of the American film industry, is one of its districts.",
+        "The largest city in California, overlooked by the Hollywood sign."
+      ],
+      "links": [
+        { "name": "United States", "rel": "is a city in" },
+        { "name": "San Francisco", "rel": "shares California with" }
+      ],
+      "fact": "It is the second most populous city in the United States, after New York City."
+    },
+    {
+      "id": "san-francisco",
+      "name": "San Francisco",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "An earthquake and fire in 1906 destroyed most of it.",
+        "Its cable cars are the last manually operated system of their kind in the world.",
+        "The former prison island of Alcatraz sits in its bay.",
+        "The tech hub of Silicon Valley lies just to its south.",
+        "This California city is famous for its steep hills and the Golden Gate Bridge."
+      ],
+      "links": [
+        { "name": "United States", "rel": "is a city in" },
+        { "name": "Golden Gate Bridge", "rel": "is home to" }
+      ],
+      "fact": "Its football team, the 49ers, is named after the gold rush prospectors of 1849."
+    },
+    {
+      "id": "toronto",
+      "name": "Toronto",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It is often called one of the most multicultural cities on Earth, with nearly half its people born abroad.",
+        "It sits on the north-west shore of Lake Ontario.",
+        "Its basketball team, the Raptors, won the NBA title in 2019.",
+        "It is the capital of the province of Ontario.",
+        "Canada's largest city, home of the CN Tower."
+      ],
+      "links": [
+        { "name": "Canada", "rel": "is the largest city of" },
+        { "name": "CN Tower", "rel": "is home to" }
+      ],
+      "fact": "Its PATH network is one of the largest underground shopping complexes in the world."
+    },
+    {
+      "id": "mexico-city",
+      "name": "Mexico City",
+      "aliases": ["Ciudad de México", "CDMX"],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "Because it stands on an old lake bed, parts of it sink many centimetres a year.",
+        "It sits about 2,240 metres above sea level.",
+        "Its Estadio Azteca hosted the World Cup finals of 1970 and 1986.",
+        "It was built on the ruins of Tenochtitlan, the Aztec capital.",
+        "This huge capital is home to the Zócalo square and the Frida Kahlo Museum."
+      ],
+      "links": [
+        { "name": "Mexico", "rel": "is the capital of" },
+        { "name": "Frida Kahlo", "rel": "was the home of" }
+      ],
+      "fact": "It is the largest Spanish-speaking city in the world."
+    },
+    {
+      "id": "rio-de-janeiro",
+      "name": "Rio de Janeiro",
+      "aliases": ["Rio"],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "Its name means 'River of January', though no great river flows there.",
+        "It was the capital of its country until 1960.",
+        "In 2016 it hosted the first Summer Olympics held in South America.",
+        "Copacabana and Ipanema are its world-famous beaches.",
+        "This Brazilian city's Carnival is legendary, and Christ the Redeemer watches over it."
+      ],
+      "links": [
+        { "name": "Brazil", "rel": "is a city in" },
+        { "name": "Christ the Redeemer", "rel": "is home to" }
+      ],
+      "fact": "Its Maracanã stadium held about 200,000 fans for the 1950 World Cup decider."
+    },
+    {
+      "id": "buenos-aires",
+      "name": "Buenos Aires",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Latin America",
+      "difficulty": 3,
+      "clues": [
+        "Its avenue 9 de Julio is one of the widest in the world.",
+        "The tango grew up in its port neighbourhoods in the late 1800s.",
+        "Its colourful La Boca district is home to the Boca Juniors football club.",
+        "Pope Francis was born here in 1936.",
+        "The capital of Argentina, on the shores of the Río de la Plata."
+      ],
+      "links": [
+        { "name": "Argentina", "rel": "is the capital of" },
+        { "name": "Pope Francis", "rel": "was the birthplace of" }
+      ],
+      "fact": "Its name means 'good airs' or 'fair winds'."
+    },
+    {
+      "id": "cairo",
+      "name": "Cairo",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 1,
+      "clues": [
+        "It is nicknamed 'the city of a thousand minarets'.",
+        "Its Al-Azhar University, founded in the 900s, is one of the oldest in the world.",
+        "It is the largest city in the Arab world.",
+        "It lies on the Nile, just upstream of where the river fans out into its delta.",
+        "The capital of Egypt, with the Pyramids of Giza on its edge."
+      ],
+      "links": [
+        { "name": "Egypt", "rel": "is the capital of" },
+        { "name": "Nile", "rel": "stands on the" },
+        { "name": "Great Pyramid of Giza", "rel": "lies near the" }
+      ],
+      "fact": "Its Arabic name, al-Qahira, means 'the Victorious'."
+    },
+    {
+      "id": "cape-town",
+      "name": "Cape Town",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 3,
+      "clues": [
+        "It is one of its country's three capitals, home to the national parliament.",
+        "Nelson Mandela was held for 18 years on Robben Island, out in its bay.",
+        "Its flat-topped mountain is often covered by a 'tablecloth' of cloud.",
+        "African penguins live on Boulders Beach, a short drive from the city centre.",
+        "This South African port sits beneath Table Mountain."
+      ],
+      "links": [
+        { "name": "South Africa", "rel": "is a capital of" },
+        { "name": "Nelson Mandela", "rel": "saw the imprisonment of" }
+      ],
+      "fact": "It was founded in 1652 as a supply station for Dutch ships sailing to Asia."
+    },
+    {
+      "id": "dubai",
+      "name": "Dubai",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Middle East",
+      "difficulty": 1,
+      "clues": [
+        "Before the oil boom it was a small town known for pearl diving and trade.",
+        "Its Palm Jumeirah is an artificial island shaped like a palm tree.",
+        "It is one of the seven emirates that make up the United Arab Emirates.",
+        "Its airport is one of the busiest in the world for international passengers.",
+        "This desert city is home to the Burj Khalifa, the tallest building on Earth since 2010."
+      ],
+      "links": [
+        { "name": "Burj Khalifa", "rel": "is home to" }
+      ],
+      "fact": "It has an indoor ski slope inside a shopping mall."
+    },
+    {
+      "id": "tokyo",
+      "name": "Tokyo",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "It was known as Edo until 1868.",
+        "Its Shibuya Crossing is one of the busiest pedestrian crossings in the world.",
+        "It hosted the Summer Olympics in 1964 and again in 2021.",
+        "Its metropolitan area is one of the most populous on Earth.",
+        "The capital of Japan, home of the Imperial Palace."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "is the capital of" },
+        { "name": "Mount Fuji", "rel": "can see" }
+      ],
+      "fact": "On clear days Mount Fuji, about 100 km away, can be seen from the city."
+    },
+    {
+      "id": "beijing",
+      "name": "Beijing",
+      "aliases": ["Peking"],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "It is the only city to have hosted both the Summer and Winter Olympics.",
+        "Its name means 'Northern Capital'.",
+        "The Temple of Heaven and the Summer Palace are among its sights.",
+        "Parts of the Great Wall lie within its city limits.",
+        "The capital of China, home of the Forbidden City."
+      ],
+      "links": [
+        { "name": "China", "rel": "is the capital of" },
+        { "name": "Forbidden City", "rel": "is home to" },
+        { "name": "Great Wall of China", "rel": "lies near the" }
+      ],
+      "fact": "It hosted the Summer Olympics in 2008 and the Winter Olympics in 2022."
+    },
+    {
+      "id": "mumbai",
+      "name": "Mumbai",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "South Asia",
+      "difficulty": 3,
+      "clues": [
+        "It was formed from seven islands joined together by land reclamation.",
+        "It was officially known as Bombay until 1995.",
+        "Its film industry, nicknamed Bollywood, makes hundreds of films a year.",
+        "Its Gateway of India arch was built to mark a royal visit in 1911.",
+        "India's financial capital, on the Arabian Sea coast."
+      ],
+      "links": [
+        { "name": "India", "rel": "is a city in" }
+      ],
+      "fact": "Its dabbawalas deliver around 200,000 home-cooked lunches a day with remarkable accuracy."
+    },
+    {
+      "id": "singapore",
+      "name": "Singapore",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Southeast Asia",
+      "difficulty": 2,
+      "clues": [
+        "Its name comes from Sanskrit words meaning 'Lion City'.",
+        "It has four official languages: English, Malay, Mandarin and Tamil.",
+        "It became an independent country in 1965 after leaving Malaysia.",
+        "Its Gardens by the Bay are famous for giant metal 'Supertrees'.",
+        "This island city-state at the tip of the Malay Peninsula is home to Marina Bay Sands."
+      ],
+      "links": [
+        { "name": "Malaysia", "rel": "separated in 1965 from" }
+      ],
+      "fact": "Selling chewing gum has been banned there since 1992, apart from some medical gum."
+    },
+    {
+      "id": "sydney",
+      "name": "Sydney",
+      "aliases": [],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Oceania",
+      "difficulty": 1,
+      "clues": [
+        "It grew from a British penal colony founded in 1788.",
+        "It hosted the Summer Olympics in 2000.",
+        "Bondi Beach is its most famous stretch of sand.",
+        "Each New Year's Eve, huge fireworks light up its harbour.",
+        "This Australian city is home to a famous Opera House and Harbour Bridge."
+      ],
+      "links": [
+        { "name": "Australia", "rel": "is a city in" },
+        { "name": "Sydney Opera House", "rel": "is home to" },
+        { "name": "Sydney Harbour Bridge", "rel": "is home to" }
+      ],
+      "fact": "Its Harbour Bridge is nicknamed 'the Coathanger'."
+    },
+    {
+      "id": "bangkok",
+      "name": "Bangkok",
+      "aliases": ["Krung Thep"],
+      "category": "places",
+      "sub": "City",
+      "year": null,
+      "region": "Southeast Asia",
+      "difficulty": 3,
+      "clues": [
+        "Its full ceremonial name is one of the longest place names in the world.",
+        "Locals call it by a name meaning 'City of Angels'.",
+        "Its Grand Palace and Temple of the Emerald Buddha draw millions of visitors.",
+        "Its many canals once earned it the nickname 'Venice of the East'.",
+        "The capital of Thailand, on the Chao Phraya River."
+      ],
+      "links": [
+        { "name": "Thailand", "rel": "is the capital of" }
+      ],
+      "fact": "It is regularly ranked among the most visited cities in the world."
+    }
+  ]
+}

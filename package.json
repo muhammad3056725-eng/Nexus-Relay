@@ -1,22 +1,25 @@
 {
-  "description": "NEXUS RELAY \u2014 sleek signal-triangulation trivia deduction with a modern glass presentation. Monorepo root.",
+  "name": "nexus-relay",
+  "version": "2.0.0",
+  "private": true,
+  "description": "NEXUS RELAY — a friendly mystery-clue guessing game in the browser. Monorepo root.",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@nexus-relay/web",
+    "build": "npm run build --workspace=@nexus-relay/web",
+    "data:build": "node scripts/data/build-v2.mjs",
+    "data:check": "node scripts/data/build-v2.mjs --check",
+    "test": "npm run data:check && npm run test --workspace=@nexus-relay/web && node scripts/run-legacy-pytests.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "serve": "node scripts/serve-dist.mjs"
+  },
   "devDependencies": {
     "@types/node": "^22.0.0",
-    "jsdom": "^31.0.1",
+    "jsdom": "^25.0.1",
     "typescript": "^5.6.0",
     "vite": "^5.4.0",
     "vitest": "^2.1.0"
-  },
-  "name": "nexus-relay",
-  "private": true,
-  "scripts": {
-    "build": "npm run build --workspace=@nexus-relay/web",
-    "test": "npm run test --workspace=@nexus-relay/telemetry-engine && npm run test --workspace=@nexus-relay/web && python3 -m pytest pipeline/tests -q",
-    "typecheck": "tsc --noEmit -p tsconfig.json"
-  },
-  "version": "0.1.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  }
 }

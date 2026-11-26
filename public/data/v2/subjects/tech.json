@@ -1,0 +1,1152 @@
+{
+  "category": "tech",
+  "subjects": [
+    {
+      "id": "telephone",
+      "name": "Telephone",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Invention",
+      "year": 1876,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Its inventor suggested that people should answer it by saying 'Ahoy!'",
+        "Elisha Gray filed a rival claim for a similar device on the very same day in 1876.",
+        "It turns the sound of your voice into electrical signals sent down a wire.",
+        "The first words spoken through it were 'Mr. Watson, come here, I want to see you.'",
+        "Alexander Graham Bell patented this device for talking over long distances."
+      ],
+      "links": [
+        { "name": "Alexander Graham Bell", "rel": "was patented by" },
+        { "name": "United States", "rel": "was invented in" }
+      ],
+      "fact": "The first telephone exchange opened in New Haven, Connecticut, in 1878."
+    },
+    {
+      "id": "light-bulb",
+      "name": "Light Bulb",
+      "aliases": ["Lightbulb", "Incandescent Light Bulb"],
+      "category": "tech",
+      "sub": "Invention",
+      "year": 1879,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Its glowing thread sits inside a glass globe with the air pumped out.",
+        "Joseph Swan in England developed one at about the same time as his American rival.",
+        "Thomas Edison's team tested thousands of materials for it, later using carbonised bamboo.",
+        "When electricity flows through its thin filament, it glows white-hot and brightens a room.",
+        "Cartoon characters get one above their heads when they have a bright idea."
+      ],
+      "links": [
+        { "name": "Thomas Edison", "rel": "was perfected by" },
+        { "name": "United States", "rel": "was developed in" }
+      ],
+      "fact": "A bulb in a California fire station has been glowing almost non-stop since 1901."
+    },
+    {
+      "id": "printing-press",
+      "name": "Printing Press",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Invention",
+      "year": 1440,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Its design was borrowed from screw machines used to squeeze grapes and olives.",
+        "Its metal letters could be rearranged again and again for each new page.",
+        "By 1500, millions of books had been made with it across Europe.",
+        "It helped Martin Luther's ideas spread quickly across Europe.",
+        "Johannes Gutenberg built this machine for making books in Mainz around 1440."
+      ],
+      "links": [
+        { "name": "Johannes Gutenberg", "rel": "was invented by" },
+        { "name": "Germany", "rel": "was invented in" }
+      ],
+      "fact": "The Gutenberg Bible, printed around 1455, was the first major book made with it in Europe."
+    },
+    {
+      "id": "steam-engine",
+      "name": "Steam Engine",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Invention",
+      "year": 1712,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Thomas Newcomen built a working one in 1712 to pump water out of mines.",
+        "James Watt made it far more efficient by adding a separate condenser.",
+        "It powered factories, ships and locomotives during the Industrial Revolution.",
+        "It works by boiling water so that the expanding vapour pushes a piston.",
+        "Puffing locomotives like Stephenson's Rocket ran on this kind of power."
+      ],
+      "links": [
+        { "name": "James Watt", "rel": "was improved by" },
+        { "name": "United Kingdom", "rel": "was developed in" }
+      ],
+      "fact": "Its power was measured in 'horsepower', a word coined by James Watt."
+    },
+    {
+      "id": "phonograph",
+      "name": "Phonograph",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Invention",
+      "year": 1877,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "It recorded sound as dents pressed into tinfoil wrapped around a cylinder.",
+        "The first words recorded on it came from 'Mary Had a Little Lamb'.",
+        "It amazed the public so much that its inventor was nicknamed 'The Wizard of Menlo Park'.",
+        "It was the first machine that could both record sound and play it back.",
+        "Thomas Edison invented this sound-recording machine in 1877."
+      ],
+      "links": [
+        { "name": "Thomas Edison", "rel": "was invented by" },
+        { "name": "United States", "rel": "was invented in" }
+      ],
+      "fact": "Its inventor later said it was his favourite invention."
+    },
+    {
+      "id": "radio",
+      "name": "Radio",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Invention",
+      "year": 1895,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "In the 1880s Heinrich Hertz proved that the invisible waves it uses really exist.",
+        "In 1901 a signal for it crossed the Atlantic, from Cornwall to Newfoundland.",
+        "Wireless calls for help using it brought rescue ships to the Titanic in 1912.",
+        "Guglielmo Marconi pioneered this way of sending signals without wires in the 1890s.",
+        "Stations broadcast music, news and talk shows to it on AM or FM."
+      ],
+      "links": [
+        { "name": "Guglielmo Marconi", "rel": "was pioneered by" },
+        { "name": "RMS Titanic", "rel": "sent distress calls from" }
+      ],
+      "fact": "The first regular public broadcasts began in the early 1920s."
+    },
+    {
+      "id": "television",
+      "name": "Television",
+      "aliases": ["TV"],
+      "category": "tech",
+      "sub": "Invention",
+      "year": 1926,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Scottish inventor John Logie Baird first showed moving pictures on one in London in 1926.",
+        "American Philo Farnsworth built a fully electronic version in 1927.",
+        "Early sets showed only black-and-white pictures on small, rounded screens.",
+        "Hundreds of millions of people watched the 1969 Moon landing live on one.",
+        "This box in the living room shows news, cartoons, sport and soap operas."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "was first demonstrated in" },
+        { "name": "Apollo 11", "rel": "broadcast the Moon landing of" }
+      ],
+      "fact": "Colour broadcasts became common in the United States in the 1960s."
+    },
+    {
+      "id": "dynamite",
+      "name": "Dynamite",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Invention",
+      "year": 1867,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It was patented in 1867 and made blasting rock far safer than before.",
+        "It is made by soaking unstable nitroglycerin into a powdery, absorbent earth.",
+        "It helped build tunnels, canals and railways around the world.",
+        "The fortune it earned its inventor later paid for famous yearly prizes.",
+        "Alfred Nobel invented this explosive, usually sold in paper-wrapped sticks."
+      ],
+      "links": [
+        { "name": "Alfred Nobel", "rel": "was invented by" },
+        { "name": "Sweden", "rel": "was invented by an engineer from" }
+      ],
+      "fact": "Its name comes from the Greek word 'dynamis', meaning power."
+    },
+    {
+      "id": "penicillin",
+      "name": "Penicillin",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Invention",
+      "year": 1928,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It was first mass-produced during World War II to treat wounded soldiers.",
+        "Howard Florey and Ernst Chain turned it into a usable drug in Oxford.",
+        "It is made by a blue-green mould and kills many kinds of bacteria.",
+        "It was the first widely used antibiotic medicine.",
+        "Alexander Fleming discovered it in 1928 on a dish of germs in his London lab."
+      ],
+      "links": [
+        { "name": "Alexander Fleming", "rel": "was discovered by" },
+        { "name": "London", "rel": "was discovered in" }
+      ],
+      "fact": "It has saved many millions of lives since the 1940s."
+    },
+    {
+      "id": "paper",
+      "name": "Paper",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Invention",
+      "year": 105,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "Before it, people wrote on clay tablets, silk, bamboo strips and papyrus.",
+        "A Han court official, Cai Lun, is credited with improving how it was made in 105 CE.",
+        "Early versions were made from tree bark, old rags, hemp and fishing nets.",
+        "Its making spread along the Silk Road to the Islamic world and later to Europe.",
+        "Books, newspapers and notebooks are printed on sheets of this material."
+      ],
+      "links": [
+        { "name": "China", "rel": "was invented in" },
+        { "name": "Printing Press", "rel": "was made into books by the" }
+      ],
+      "fact": "It is one of the 'Four Great Inventions' of ancient China."
+    },
+    {
+      "id": "wheel",
+      "name": "Wheel",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Invention",
+      "year": -3500,
+      "region": "Middle East",
+      "difficulty": 1,
+      "clues": [
+        "The oldest known examples date back roughly 5,500 years.",
+        "Potters in Mesopotamia used a spinning version to shape clay.",
+        "The oldest surviving wooden one, found in a marsh in Slovenia, is over 5,000 years old.",
+        "It turns on an axle and makes heavy loads much easier to move.",
+        "Often called humanity's greatest invention, it is round and found on every car and bicycle."
+      ],
+      "links": [
+        { "name": "Bicycle", "rel": "is a key part of every" },
+        { "name": "Automobile", "rel": "is a key part of every" }
+      ],
+      "fact": "The potter's version may be even older than the kind used on carts."
+    },
+    {
+      "id": "internet",
+      "name": "Internet",
+      "aliases": ["The Internet"],
+      "category": "tech",
+      "sub": "Invention",
+      "year": 1969,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Its ancestor, ARPANET, sent its first message in 1969 and crashed after just 'LO'.",
+        "Vint Cerf and Bob Kahn designed its TCP/IP rules in the 1970s.",
+        "It switched fully to TCP/IP on 1 January 1983, often called its birthday.",
+        "This global network of computers carries email, video calls and websites.",
+        "You connect to it through Wi-Fi or mobile data when you go online."
+      ],
+      "links": [
+        { "name": "World Wide Web", "rel": "carries the" },
+        { "name": "United States", "rel": "was developed in" }
+      ],
+      "fact": "The first ARPANET message was meant to be 'LOGIN'."
+    },
+    {
+      "id": "world-wide-web",
+      "name": "World Wide Web",
+      "aliases": ["WWW", "The Web"],
+      "category": "tech",
+      "sub": "Invention",
+      "year": 1989,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It was proposed in a March 1989 memo that the author's boss called 'vague but exciting'.",
+        "It was born at CERN, the physics laboratory on the French-Swiss border.",
+        "Its creator gave it away for free, with no patents or fees.",
+        "It joins pages together with hyperlinks that you open in a browser.",
+        "Invented by Tim Berners-Lee, it is the system of linked pages you browse online."
+      ],
+      "links": [
+        { "name": "Tim Berners-Lee", "rel": "was invented by" },
+        { "name": "Internet", "rel": "runs on the" },
+        { "name": "Switzerland", "rel": "was invented in" }
+      ],
+      "fact": "The first website went online in 1991 and explained what the project was."
+    },
+    {
+      "id": "microwave-oven",
+      "name": "Microwave Oven",
+      "aliases": ["Microwave"],
+      "category": "tech",
+      "sub": "Invention",
+      "year": 1945,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Its inventor, Percy Spencer, worked on radar equipment for the company Raytheon.",
+        "He noticed that a chocolate bar in his pocket had melted near a radar tube.",
+        "The first model, the Radarange, stood almost as tall as a person.",
+        "It heats food by making the water molecules inside it jiggle.",
+        "This kitchen box warms up leftovers in minutes and makes popcorn pop."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was invented in" }
+      ],
+      "fact": "Spencer's next test after the chocolate bar was popcorn."
+    },
+    {
+      "id": "iphone",
+      "name": "iPhone",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Gadget",
+      "year": 2007,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was unveiled in January 2007 at the Macworld show in San Francisco.",
+        "It was pitched as three devices in one: a music player, a phone and an internet communicator.",
+        "Its App Store opened in 2008, a year after the first model went on sale.",
+        "Steve Jobs revealed this touchscreen device on stage.",
+        "Apple's famous smartphone, released in new generations since 2007."
+      ],
+      "links": [
+        { "name": "Apple Inc.", "rel": "is made by" },
+        { "name": "Steve Jobs", "rel": "was unveiled by" },
+        { "name": "iPod", "rel": "combined the features of the" }
+      ],
+      "fact": "The first model went on sale on 29 June 2007."
+    },
+    {
+      "id": "ipod",
+      "name": "iPod",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Gadget",
+      "year": 2001,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was launched in October 2001 with a 5 GB hard drive.",
+        "Its first advertising promised '1,000 songs in your pocket'.",
+        "Its famous click wheel let users spin a thumb to scroll through songs.",
+        "It synced music using iTunes software, and its ads showed dancing silhouettes.",
+        "Apple's pocket music player, sold from 2001 until 2022."
+      ],
+      "links": [
+        { "name": "Apple Inc.", "rel": "was made by" },
+        { "name": "Steve Jobs", "rel": "was launched by" },
+        { "name": "Walkman", "rel": "followed in the footsteps of the" }
+      ],
+      "fact": "Its white earphones became a fashion symbol in the 2000s."
+    },
+    {
+      "id": "walkman",
+      "name": "Walkman",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Gadget",
+      "year": 1979,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "It was launched in Japan on 1 July 1979.",
+        "Early models had two headphone sockets so two friends could listen together.",
+        "Its first version played cassette tapes but could not record music.",
+        "It let people carry their music anywhere and listen through light headphones.",
+        "Sony's famous portable cassette player."
+      ],
+      "links": [
+        { "name": "Sony", "rel": "was made by" },
+        { "name": "Japan", "rel": "was launched in" }
+      ],
+      "fact": "Sony co-founder Masaru Ibuka wanted a way to enjoy music on long flights."
+    },
+    {
+      "id": "game-boy",
+      "name": "Game Boy",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Gadget",
+      "year": 1989,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "Its design team was led by the engineer Gunpei Yokoi.",
+        "Its small screen showed pictures only in shades of greenish grey.",
+        "It ran on four AA batteries and fitted in a coat pocket.",
+        "In many countries it came packed with the puzzle game Tetris.",
+        "Nintendo's famous handheld console from 1989."
+      ],
+      "links": [
+        { "name": "Nintendo", "rel": "was made by" },
+        { "name": "Tetris", "rel": "came bundled with" },
+        { "name": "Japan", "rel": "was launched in" }
+      ],
+      "fact": "One damaged in the Gulf War still worked and is shown in New York."
+    },
+    {
+      "id": "playstation",
+      "name": "PlayStation",
+      "aliases": ["PS1", "PSX"],
+      "category": "tech",
+      "sub": "Gadget",
+      "year": 1994,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "It began as a planned CD add-on for a rival company's console before that deal fell apart.",
+        "It was launched in Japan in December 1994.",
+        "It played games on CDs instead of cartridges.",
+        "It became the first home console to sell over 100 million units.",
+        "Sony's first home video game console, with circle, cross, square and triangle buttons."
+      ],
+      "links": [
+        { "name": "Sony", "rel": "was made by" },
+        { "name": "Nintendo", "rel": "began as a project with" },
+        { "name": "Japan", "rel": "was launched in" }
+      ],
+      "fact": "Its 'father', engineer Ken Kutaragi, had worked on sound chips for Nintendo."
+    },
+    {
+      "id": "macintosh",
+      "name": "Macintosh",
+      "aliases": ["Mac"],
+      "category": "tech",
+      "sub": "Gadget",
+      "year": 1984,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It was introduced in January 1984 with a famous Super Bowl advert.",
+        "It came with a mouse and a screen of windows and little picture icons.",
+        "Its first model had a built-in 9-inch black-and-white screen.",
+        "Its name comes from a variety of apple.",
+        "Apple's long-running line of personal computers, launched by Steve Jobs."
+      ],
+      "links": [
+        { "name": "Apple Inc.", "rel": "is made by" },
+        { "name": "Steve Jobs", "rel": "was launched by" }
+      ],
+      "fact": "The signatures of its design team were moulded inside the first model's case."
+    },
+    {
+      "id": "bicycle",
+      "name": "Bicycle",
+      "aliases": ["Bike"],
+      "category": "tech",
+      "sub": "Vehicle",
+      "year": 1817,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Its 1817 ancestor, built by Karl Drais in Germany, had no pedals at all.",
+        "One old version, the penny-farthing, had a giant front wheel.",
+        "Its chain-driven 'safety' design from the 1880s is still used today.",
+        "The Tour de France is the most famous race for riders of it.",
+        "This two-wheeled vehicle is powered by pedalling."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "was first developed in" },
+        { "name": "Wright Brothers", "rel": "was sold and repaired by the" }
+      ],
+      "fact": "There are thought to be more than a billion of them in the world."
+    },
+    {
+      "id": "airplane",
+      "name": "Airplane",
+      "aliases": ["Aeroplane", "Plane"],
+      "category": "tech",
+      "sub": "Vehicle",
+      "year": 1903,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Its first powered flight lasted only 12 seconds.",
+        "That historic flight took place near Kitty Hawk, North Carolina, in December 1903.",
+        "Its wings are shaped so that moving air pushes it upwards.",
+        "Big jumbo jets of this kind can carry hundreds of passengers.",
+        "Invented by the Wright Brothers, it flies people through the sky using wings and engines."
+      ],
+      "links": [
+        { "name": "Wright Brothers", "rel": "was invented by the" },
+        { "name": "United States", "rel": "was invented in" }
+      ],
+      "fact": "The 1903 Flyer is displayed at the Smithsonian in Washington, D.C."
+    },
+    {
+      "id": "automobile",
+      "name": "Automobile",
+      "aliases": ["Car", "Motor Car"],
+      "category": "tech",
+      "sub": "Vehicle",
+      "year": 1886,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Karl Benz patented his three-wheeled petrol-powered version in January 1886.",
+        "In 1888 Bertha Benz drove one on the first long-distance road trip.",
+        "Henry Ford's moving assembly line made it affordable for ordinary families.",
+        "Most run on petrol or diesel, but electric ones are now common.",
+        "This four-wheeled road vehicle has a steering wheel, seats and an engine."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "was invented in" },
+        { "name": "Ford Model T", "rel": "became popular thanks to the" }
+      ],
+      "fact": "Bertha Benz's trip in 1888 covered about 106 km."
+    },
+    {
+      "id": "ford-model-t",
+      "name": "Ford Model T",
+      "aliases": ["Model T"],
+      "category": "tech",
+      "sub": "Vehicle",
+      "year": 1908,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It was nicknamed the 'Tin Lizzie'.",
+        "Buyers could famously have it in 'any colour so long as it is black'.",
+        "From 1913 it was built on a moving assembly line.",
+        "More than 15 million were built between 1908 and 1927.",
+        "The first mass-produced car for ordinary families, made in Michigan by Henry's company."
+      ],
+      "links": [
+        { "name": "Henry Ford", "rel": "was built by" },
+        { "name": "United States", "rel": "was built in" }
+      ],
+      "fact": "Assembly-line production cut the time to build one from about 12 hours to about 90 minutes."
+    },
+    {
+      "id": "volkswagen-beetle",
+      "name": "Volkswagen Beetle",
+      "aliases": ["VW Beetle", "Beetle"],
+      "category": "tech",
+      "sub": "Vehicle",
+      "year": 1938,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Ferdinand Porsche designed it in the 1930s as a car for ordinary Germans.",
+        "Its air-cooled engine sat at the back instead of the front.",
+        "Production of the original model finally ended in Mexico in 2003.",
+        "Herbie, the film star car with the number 53, was one of these.",
+        "This round little car is nicknamed after an insect: the 'Bug'."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "was designed in" },
+        { "name": "Mexico", "rel": "was last built in" }
+      ],
+      "fact": "More than 21 million of the original model were built."
+    },
+    {
+      "id": "concorde",
+      "name": "Concorde",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Vehicle",
+      "year": 1969,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It first flew in 1969 and was built jointly by Britain and France.",
+        "It cruised at about twice the speed of sound.",
+        "It could fly from London to New York in about three and a half hours.",
+        "Its long nose tilted down to give pilots a better view when landing.",
+        "This supersonic passenger airliner was retired in 2003."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "was built by" },
+        { "name": "France", "rel": "was built by" }
+      ],
+      "fact": "Only 20 were ever built."
+    },
+    {
+      "id": "shinkansen",
+      "name": "Shinkansen",
+      "aliases": ["Bullet Train"],
+      "category": "tech",
+      "sub": "Vehicle",
+      "year": 1964,
+      "region": "East Asia",
+      "difficulty": 3,
+      "clues": [
+        "Its first line opened in October 1964, just before the Tokyo Olympics.",
+        "That first route linked Tokyo and Osaka.",
+        "Its long, pointed noses help cut the boom made when entering tunnels.",
+        "It is famous for running on time, usually to within seconds.",
+        "Japan's world-famous high-speed railway network."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "runs in" },
+        { "name": "Tokyo", "rel": "starts from" }
+      ],
+      "fact": "Its name means 'new trunk line' in Japanese."
+    },
+    {
+      "id": "hot-air-balloon",
+      "name": "Hot Air Balloon",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Vehicle",
+      "year": 1783,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Its first passengers, in 1783, were a sheep, a duck and a rooster.",
+        "Later in 1783 two men flew one over Paris for about 25 minutes.",
+        "The Montgolfier family of paper makers built the first ones.",
+        "A burner heats the gas inside its envelope so that it rises.",
+        "Passengers ride in a wicker basket beneath this big colourful floating bag."
+      ],
+      "links": [
+        { "name": "France", "rel": "was invented in" },
+        { "name": "Paris", "rel": "made its first crewed flight over" }
+      ],
+      "fact": "The 1783 animal flight was watched by King Louis XVI at Versailles."
+    },
+    {
+      "id": "apple-inc",
+      "name": "Apple Inc.",
+      "aliases": ["Apple", "Apple Computer"],
+      "category": "tech",
+      "sub": "Tech Company",
+      "year": 1976,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was founded on 1 April 1976 in California.",
+        "Its first product was a hand-built circuit board sold to a local shop.",
+        "In 2018 it became the first US company to be valued at one trillion dollars.",
+        "Steve Jobs and Steve Wozniak were among its founders.",
+        "This company with a bitten-fruit logo makes the iPhone and the Mac."
+      ],
+      "links": [
+        { "name": "Steve Jobs", "rel": "was co-founded by" },
+        { "name": "iPhone", "rel": "makes the" },
+        { "name": "United States", "rel": "was founded in" }
+      ],
+      "fact": "Its first logo showed Isaac Newton sitting under a tree."
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Tech Company",
+      "year": 1998,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It began as a Stanford University research project called BackRub.",
+        "Its name plays on a word for the number 1 followed by 100 zeros.",
+        "Larry Page and Sergey Brin set it up in a rented garage in 1998.",
+        "It bought YouTube in 2006 and makes the Chrome browser.",
+        "Its search engine is so famous that its name became a verb meaning 'search online'."
+      ],
+      "links": [
+        { "name": "YouTube", "rel": "owns" },
+        { "name": "United States", "rel": "was founded in" }
+      ],
+      "fact": "Its first ever 'Doodle', in 1998, was a Burning Man festival stick figure."
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Tech Company",
+      "year": 1975,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was founded in Albuquerque, New Mexico, in 1975.",
+        "Its name joins the words 'microcomputer' and 'software'.",
+        "It supplied the MS-DOS system for IBM's first personal computer in 1981.",
+        "It makes the Xbox games console and the Office programs.",
+        "Bill Gates and Paul Allen founded this maker of Windows."
+      ],
+      "links": [
+        { "name": "Bill Gates", "rel": "was co-founded by" },
+        { "name": "IBM", "rel": "supplied software to" },
+        { "name": "United States", "rel": "was founded in" }
+      ],
+      "fact": "It moved its headquarters to the Seattle area in 1979."
+    },
+    {
+      "id": "tesla-inc",
+      "name": "Tesla, Inc.",
+      "aliases": ["Tesla", "Tesla Motors"],
+      "category": "tech",
+      "sub": "Tech Company",
+      "year": 2003,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was founded in 2003 by engineers Martin Eberhard and Marc Tarpenning.",
+        "Its first vehicle, launched in 2008, was the Roadster sports car.",
+        "Elon Musk led its early funding and became its CEO in 2008.",
+        "It makes the Model S, Model 3 and Model Y electric cars.",
+        "This American electric car maker is named after a famous Serbian-American inventor."
+      ],
+      "links": [
+        { "name": "Nikola Tesla", "rel": "is named after" },
+        { "name": "Elon Musk", "rel": "was led by" },
+        { "name": "United States", "rel": "was founded in" }
+      ],
+      "fact": "In 2018 a red Roadster it built was launched into space on a rocket."
+    },
+    {
+      "id": "sony",
+      "name": "Sony",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Tech Company",
+      "year": 1946,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "It was founded in Tokyo in 1946 by Masaru Ibuka and Akio Morita.",
+        "One of its early hits was a pocket-sized transistor radio in the 1950s.",
+        "It co-developed the compact disc (CD) with Philips.",
+        "It created the Walkman portable music player in 1979.",
+        "The Japanese electronics giant behind the PlayStation."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "was founded in" },
+        { "name": "Walkman", "rel": "created the" },
+        { "name": "PlayStation", "rel": "makes the" }
+      ],
+      "fact": "Its name mixes the Latin 'sonus' (sound) with 'sonny', a word for a young boy."
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Tech Company",
+      "year": 1938,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "It began in 1938 as a small trading company selling dried fish and noodles.",
+        "Its name means 'three stars' in Korean.",
+        "Part of the group helped build Dubai's record-breaking Burj Khalifa tower.",
+        "It makes the Galaxy range of smartphones.",
+        "A giant South Korean electronics company."
+      ],
+      "links": [
+        { "name": "South Korea", "rel": "was founded in" },
+        { "name": "Burj Khalifa", "rel": "helped build the" }
+      ],
+      "fact": "It was founded in the city of Daegu."
+    },
+    {
+      "id": "nintendo",
+      "name": "Nintendo",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Tech Company",
+      "year": 1889,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "It began in 1889 in Kyoto, making hand-painted playing cards.",
+        "In the 1960s it tried other businesses, including a taxi company and instant rice.",
+        "Its 1985 home console, the NES, brought video games back to life in America.",
+        "Its Game Boy handheld appeared in 1989.",
+        "The Japanese video game company behind Mario and Zelda."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "was founded in" },
+        { "name": "Game Boy", "rel": "made the" },
+        { "name": "Super Mario Bros.", "rel": "created" }
+      ],
+      "fact": "It still makes traditional hanafuda playing cards."
+    },
+    {
+      "id": "ibm",
+      "name": "IBM",
+      "aliases": ["International Business Machines"],
+      "category": "tech",
+      "sub": "Tech Company",
+      "year": 1911,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It was formed in 1911 by joining companies that made scales, time clocks and punch-card tabulators.",
+        "Its nickname is 'Big Blue'.",
+        "Its Deep Blue computer beat world chess champion Garry Kasparov in 1997.",
+        "Its Personal Computer of 1981 set the standard for office PCs.",
+        "The American computer giant known by three letters, with a striped blue logo."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was founded in" },
+        { "name": "Microsoft", "rel": "bought software from" },
+        { "name": "Chess", "rel": "built a computer champion of" }
+      ],
+      "fact": "It took its current name in 1924."
+    },
+    {
+      "id": "lego",
+      "name": "Lego",
+      "aliases": ["LEGO"],
+      "category": "tech",
+      "sub": "Brand",
+      "year": 1932,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It was founded in 1932 by carpenter Ole Kirk Christiansen in Billund, Denmark.",
+        "Its name comes from Danish words meaning 'play well'.",
+        "It made wooden toys before switching to plastic.",
+        "Its stud-and-tube interlocking brick was patented in 1958.",
+        "This toy brand makes colourful plastic bricks that click together."
+      ],
+      "links": [
+        { "name": "Denmark", "rel": "was founded in" }
+      ],
+      "fact": "Bricks made in 1958 still fit together with bricks made today."
+    },
+    {
+      "id": "nike",
+      "name": "Nike",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Brand",
+      "year": 1964,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It started in 1964 as Blue Ribbon Sports, selling Japanese running shoes.",
+        "Co-founder Bill Bowerman made shoe soles using his family's waffle iron.",
+        "Its 'Swoosh' logo was designed by a student for just $35.",
+        "It is named after the Greek goddess of victory.",
+        "This sportswear brand's slogan is 'Just Do It'."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was founded in" },
+        { "name": "Michael Jordan", "rel": "makes shoes named after" }
+      ],
+      "fact": "It is based in Beaverton, Oregon."
+    },
+    {
+      "id": "adidas",
+      "name": "Adidas",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Brand",
+      "year": 1949,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It is based in Herzogenaurach, a small town in Bavaria.",
+        "Its founder's brother started the rival brand Puma in the same town.",
+        "Its name comes from its founder, Adolf 'Adi' Dassler.",
+        "Its logos feature three stripes.",
+        "This German sportswear brand has made the official World Cup football since 1970."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "was founded in" },
+        { "name": "FIFA World Cup", "rel": "makes the official ball for the" }
+      ],
+      "fact": "The rivalry between the two founding brothers split their home town in two."
+    },
+    {
+      "id": "ikea",
+      "name": "IKEA",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Brand",
+      "year": 1943,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It was founded in 1943 by a 17-year-old in the Swedish countryside.",
+        "Its name comes from the founder's initials plus his family farm and village.",
+        "It sells flat-pack furniture that customers build themselves.",
+        "Its stores famously serve meatballs in their restaurants.",
+        "This blue-and-yellow Swedish furniture store sells the Billy bookcase."
+      ],
+      "links": [
+        { "name": "Sweden", "rel": "was founded in" }
+      ],
+      "fact": "Its product names often come from Swedish places and words."
+    },
+    {
+      "id": "toyota",
+      "name": "Toyota",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Brand",
+      "year": 1937,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "It grew out of a company that made automatic weaving looms.",
+        "Its 'just-in-time' way of building things is copied by factories worldwide.",
+        "Its Corolla is one of the best-selling cars of all time.",
+        "Its Prius, launched in 1997, was the first mass-produced hybrid car.",
+        "A Japanese carmaker; its home city was renamed after the company in 1959."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "was founded in" }
+      ],
+      "fact": "Its luxury brand is Lexus."
+    },
+    {
+      "id": "rolex",
+      "name": "Rolex",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Brand",
+      "year": 1905,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It was founded in London in 1905 and later moved to Geneva.",
+        "Its Oyster case of 1926 was one of the first waterproof watch cases.",
+        "In 1927 swimmer Mercedes Gleitze wore one while swimming the English Channel.",
+        "Its logo is a five-pointed golden crown.",
+        "This Swiss luxury watch brand makes the Submariner."
+      ],
+      "links": [
+        { "name": "Switzerland", "rel": "is based in" },
+        { "name": "London", "rel": "was founded in" }
+      ],
+      "fact": "Its founder, Hans Wilsdorf, chose a name that was easy to say in any language."
+    },
+    {
+      "id": "levis",
+      "name": "Levi's",
+      "aliases": ["Levi Strauss & Co."],
+      "category": "tech",
+      "sub": "Brand",
+      "year": 1853,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Its founder, a German immigrant, opened a dry goods business in San Francisco in 1853.",
+        "In 1873 it patented work trousers strengthened with copper rivets.",
+        "Its 501 style is one of the most famous designs in fashion.",
+        "Gold miners and cowboys were among its first customers.",
+        "This brand is famous for its blue denim jeans."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was founded in" },
+        { "name": "San Francisco", "rel": "was founded in" }
+      ],
+      "fact": "The rivet patent was shared with tailor Jacob Davis."
+    },
+    {
+      "id": "harley-davidson",
+      "name": "Harley-Davidson",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Brand",
+      "year": 1903,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It was founded in 1903 in Milwaukee, Wisconsin.",
+        "Its first motorcycle was built in a small wooden shed.",
+        "It was one of only two big American motorcycle makers to survive the Great Depression.",
+        "Its machines are known for the deep rumbling sound of their V-twin engines.",
+        "This American motorcycle brand is famous for big cruiser bikes and its bar-and-shield logo."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was founded in" }
+      ],
+      "fact": "Its museum opened in Milwaukee in 2008."
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Website",
+      "year": 2005,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was founded in 2005 by three former PayPal employees.",
+        "Its first video, 'Me at the zoo', is just 19 seconds long.",
+        "Google bought it in 2006 for $1.65 billion.",
+        "Creators upload clips to it and can earn money from adverts.",
+        "The famous video-sharing website with a red play-button logo."
+      ],
+      "links": [
+        { "name": "Google", "rel": "is owned by" },
+        { "name": "United States", "rel": "was founded in" }
+      ],
+      "fact": "Its first video shows co-founder Jawed Karim at San Diego Zoo."
+    },
+    {
+      "id": "wikipedia",
+      "name": "Wikipedia",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Website",
+      "year": 2001,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was launched on 15 January 2001 by Jimmy Wales and Larry Sanger.",
+        "Its name joins a Hawaiian word meaning 'quick' with the end of 'encyclopedia'.",
+        "It is run by a non-profit foundation and paid for by donations.",
+        "Anyone can edit its articles, and volunteers check the changes.",
+        "The free online encyclopedia with a jigsaw-puzzle globe logo."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was founded in" }
+      ],
+      "fact": "It is written in more than 300 languages."
+    },
+    {
+      "id": "facebook",
+      "name": "Facebook",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Website",
+      "year": 2004,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It started in February 2004 in a Harvard University dorm room.",
+        "At first, only Harvard students could join.",
+        "It added its famous 'Like' button in 2009.",
+        "Its parent company renamed itself Meta in 2021.",
+        "Mark Zuckerberg's social network."
+      ],
+      "links": [
+        { "name": "Mark Zuckerberg", "rel": "was founded by" },
+        { "name": "Instagram", "rel": "bought" },
+        { "name": "United States", "rel": "was founded in" }
+      ],
+      "fact": "It was first called 'TheFacebook'."
+    },
+    {
+      "id": "ebay",
+      "name": "eBay",
+      "aliases": [],
+      "category": "tech",
+      "sub": "Website",
+      "year": 1995,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "It was started in 1995 by Pierre Omidyar under the name AuctionWeb.",
+        "One of the first items sold on it was a broken laser pointer.",
+        "It bought PayPal in 2002 and split from it again in 2015.",
+        "Buyers bid against each other until a countdown timer runs out.",
+        "The famous online auction website."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was founded in" }
+      ],
+      "fact": "The broken laser pointer sold for $14.83 to a collector of broken laser pointers."
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "aliases": [],
+      "category": "tech",
+      "sub": "App",
+      "year": 2010,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It launched in October 2010 and was at first only available on the iPhone.",
+        "Its early photos were all square, like old instant-camera snapshots.",
+        "Facebook bought it in 2012 for about $1 billion.",
+        "It is known for photo filters and 24-hour 'Stories'.",
+        "The photo- and video-sharing app with a colourful camera logo."
+      ],
+      "links": [
+        { "name": "Facebook", "rel": "was bought by" },
+        { "name": "iPhone", "rel": "launched first on the" }
+      ],
+      "fact": "Its name blends 'instant camera' and 'telegram'."
+    },
+    {
+      "id": "whatsapp",
+      "name": "WhatsApp",
+      "aliases": [],
+      "category": "tech",
+      "sub": "App",
+      "year": 2009,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "It was founded in 2009 by two former Yahoo employees.",
+        "Its name is a pun on the greeting 'What's up?'",
+        "Facebook bought it in 2014 for about $19 billion.",
+        "Two blue ticks show that your message has been read.",
+        "This green messaging app sends texts and voice notes over the internet."
+      ],
+      "links": [
+        { "name": "Facebook", "rel": "was bought by" },
+        { "name": "United States", "rel": "was founded in" }
+      ],
+      "fact": "Its founders were Jan Koum and Brian Acton."
+    },
+    {
+      "id": "tiktok",
+      "name": "TikTok",
+      "aliases": [],
+      "category": "tech",
+      "sub": "App",
+      "year": 2016,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "It is owned by ByteDance, a company based in Beijing.",
+        "Its Chinese sister app is called Douyin.",
+        "In 2018 it merged with the lip-syncing app Musical.ly.",
+        "Its 'For You' page serves up an endless stream of short vertical videos.",
+        "This short-video app is famous for dance challenges and viral trends."
+      ],
+      "links": [
+        { "name": "China", "rel": "was created in" }
+      ],
+      "fact": "Douyin launched in China in 2016, a year before the international version."
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "aliases": [],
+      "category": "tech",
+      "sub": "App",
+      "year": 2006,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "It was founded in Stockholm in 2006 by Daniel Ek and Martin Lorentzon.",
+        "It opened to the public in 2008.",
+        "Its yearly 'Wrapped' feature sums up each user's listening habits.",
+        "Its logo shows three curved lines on a green circle.",
+        "The Swedish music-streaming app."
+      ],
+      "links": [
+        { "name": "Sweden", "rel": "was founded in" }
+      ],
+      "fact": "It has a free version supported by adverts and a paid version without them."
+    }
+  ]
+}

@@ -1,0 +1,1157 @@
+{
+  "category": "screen",
+  "subjects": [
+    {
+      "id": "titanic",
+      "name": "Titanic",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1997,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Its director dived to a real shipwreck many times while researching this 1997 film.",
+        "A huge replica ship was built beside a giant water tank on the coast of Mexico.",
+        "It won 11 Oscars, tying the record set by Ben-Hur.",
+        "Celine Dion sang its theme song, 'My Heart Will Go On'.",
+        "Jack and Rose fall in love aboard a doomed ocean liner in 1912."
+      ],
+      "links": [
+        { "name": "Leonardo DiCaprio", "rel": "stars" },
+        { "name": "James Cameron", "rel": "was directed by" },
+        { "name": "RMS Titanic", "rel": "tells the story of" }
+      ],
+      "fact": "It was the first film to earn more than one billion dollars worldwide."
+    },
+    {
+      "id": "star-wars",
+      "name": "Star Wars",
+      "aliases": ["A New Hope"],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1977,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Much of this 1977 film's desert planet was filmed in Tunisia.",
+        "Studios doubted it, but it became the highest-grossing film of its time.",
+        "John Williams wrote its famous orchestral score, which won an Oscar.",
+        "A farm boy, a princess and a smuggler battle an evil Empire and its Death Star.",
+        "Luke Skywalker learns about the Force and faces Darth Vader."
+      ],
+      "links": [
+        { "name": "George Lucas", "rel": "was created by" },
+        { "name": "Harrison Ford", "rel": "stars" },
+        { "name": "Darth Vader", "rel": "introduced" }
+      ],
+      "fact": "Its toys sold so fast that some fans got only an IOU certificate for Christmas 1977."
+    },
+    {
+      "id": "the-godfather",
+      "name": "The Godfather",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1972,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This 1972 film was adapted from a bestselling novel by Mario Puzo.",
+        "Its music, including a haunting love theme, was composed by Nino Rota.",
+        "It won Best Picture, and so did its sequel two years later.",
+        "Al Pacino plays a war hero drawn into his family's business.",
+        "Marlon Brando plays Don Vito Corleone, head of a New York crime family."
+      ],
+      "links": [
+        { "name": "Marlon Brando", "rel": "stars" },
+        { "name": "Al Pacino", "rel": "stars" },
+        { "name": "New York City", "rel": "is set in" }
+      ],
+      "fact": "It was directed by Francis Ford Coppola, then only 32 years old."
+    },
+    {
+      "id": "citizen-kane",
+      "name": "Citizen Kane",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1941,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "This 1941 film was made by a first-time film director aged just 25 when filming began.",
+        "Its deep-focus camerawork, sharp from front to back, was groundbreaking.",
+        "A newspaper tycoon who resembled its main character tried to stop its release.",
+        "Sight and Sound critics' polls ranked it the greatest film ever from 1962 to 2002.",
+        "Orson Welles plays a newspaper owner whose dying word is 'Rosebud'."
+      ],
+      "links": [
+        { "name": "Orson Welles", "rel": "was directed by and stars" },
+        { "name": "United States", "rel": "was made in" }
+      ],
+      "fact": "Its only Oscar win was for Best Original Screenplay."
+    },
+    {
+      "id": "jurassic-park",
+      "name": "Jurassic Park",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1993,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This 1993 film was based on a novel by Michael Crichton.",
+        "It mixed groundbreaking computer-generated creatures with life-size animatronic models.",
+        "Scientists recreate extinct animals using DNA from mosquitoes trapped in amber.",
+        "A T. rex chases a jeep, and raptors stalk two children in a kitchen.",
+        "Steven Spielberg's dinosaur theme park adventure on an island near Costa Rica."
+      ],
+      "links": [
+        { "name": "Steven Spielberg", "rel": "was directed by" },
+        { "name": "Costa Rica", "rel": "is set near" }
+      ],
+      "fact": "It became the highest-grossing film of all time until Titanic overtook it."
+    },
+    {
+      "id": "forrest-gump",
+      "name": "Forrest Gump",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1994,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This 1994 film won six Oscars, including Best Picture.",
+        "Its hero meets several US presidents, cleverly inserted into real news footage.",
+        "He runs back and forth across America for over three years.",
+        "He becomes a shrimp boat captain and a ping-pong champion.",
+        "Tom Hanks plays a kind Alabama man who says life is like a box of chocolates."
+      ],
+      "links": [
+        { "name": "Tom Hanks", "rel": "stars" },
+        { "name": "United States", "rel": "is set in" }
+      ],
+      "fact": "A real seafood restaurant chain, Bubba Gump Shrimp Company, was named after it."
+    },
+    {
+      "id": "the-matrix",
+      "name": "The Matrix",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1999,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This 1999 science fiction film was written and directed by the Wachowskis.",
+        "It made 'bullet time' slow-motion camera effects famous.",
+        "Humans are unknowingly living in a computer simulation run by machines.",
+        "A hacker must choose between swallowing a red pill or a blue pill.",
+        "Keanu Reeves plays Neo, who learns kung fu in seconds and dodges bullets."
+      ],
+      "links": [
+        { "name": "Keanu Reeves", "rel": "stars" },
+        { "name": "Sydney", "rel": "was filmed in" }
+      ],
+      "fact": "It won all four Oscars it was nominated for, including Best Visual Effects."
+    },
+    {
+      "id": "inception",
+      "name": "Inception",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 2010,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "This 2010 film's hallway fight was filmed inside a giant rotating set.",
+        "Its score by Hans Zimmer is known for deep, booming horn blasts.",
+        "A team of thieves enters people's dreams to steal or plant ideas.",
+        "A small spinning top is used to check whether the hero is dreaming.",
+        "Christopher Nolan film in which Leonardo DiCaprio's dream city folds over itself."
+      ],
+      "links": [
+        { "name": "Christopher Nolan", "rel": "was directed by" },
+        { "name": "Leonardo DiCaprio", "rel": "stars" }
+      ],
+      "fact": "It won four Oscars, all for its technical work in sound, visual effects and cinematography."
+    },
+    {
+      "id": "avatar",
+      "name": "Avatar",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 2009,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This 2009 film was largely made with performance capture and shown in 3D.",
+        "It became the highest-grossing film of all time in early 2010.",
+        "Its story is set on Pandora, a lush moon of a giant planet.",
+        "A former marine who uses a wheelchair controls a tall alien body.",
+        "James Cameron's epic about the blue-skinned Na'vi people."
+      ],
+      "links": [
+        { "name": "James Cameron", "rel": "was directed by" },
+        { "name": "Titanic", "rel": "shares a director with" }
+      ],
+      "fact": "Its director first planned the story in the 1990s but waited for effects technology to catch up."
+    },
+    {
+      "id": "casablanca",
+      "name": "Casablanca",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1942,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "This 1942 film was released while World War II was raging and later won Best Picture.",
+        "It is set in a Moroccan city full of refugees trying to reach America.",
+        "Its song 'As Time Goes By' is played by the pianist Sam.",
+        "Humphrey Bogart plays Rick, a cafe owner who meets his old love Ilsa again.",
+        "It ends with a line about 'the beginning of a beautiful friendship'."
+      ],
+      "links": [
+        { "name": "Humphrey Bogart", "rel": "stars" },
+        { "name": "Morocco", "rel": "is set in" }
+      ],
+      "fact": "It was filmed almost entirely on Hollywood studio sets, not in Africa."
+    },
+    {
+      "id": "jaws",
+      "name": "Jaws",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1975,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This 1975 film was largely shot on the island of Martha's Vineyard.",
+        "Its mechanical star kept breaking down, so it is barely seen until late in the film.",
+        "Its simple two-note musical theme by John Williams signals danger.",
+        "A police chief, a scientist and a fisherman hunt a predator off a beach town.",
+        "Steven Spielberg's thriller about a giant great white shark."
+      ],
+      "links": [
+        { "name": "Steven Spielberg", "rel": "was directed by" },
+        { "name": "United States", "rel": "was made in" }
+      ],
+      "fact": "The film crew nicknamed the troublesome mechanical shark 'Bruce'."
+    },
+    {
+      "id": "e-t-the-extra-terrestrial",
+      "name": "E.T. the Extra-Terrestrial",
+      "aliases": ["E.T."],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1982,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This 1982 film became the highest-grossing film of its time.",
+        "A boy hides a stranded visitor in his house, disguising it among his stuffed toys.",
+        "The visitor is lured with a trail of candy pieces.",
+        "Bicycles fly across the face of the moon in its most famous scene.",
+        "Steven Spielberg's film about a little alien who wants to 'phone home'."
+      ],
+      "links": [
+        { "name": "Steven Spielberg", "rel": "was directed by" },
+        { "name": "United States", "rel": "was made in" }
+      ],
+      "fact": "A young Drew Barrymore played the little sister, Gertie."
+    },
+    {
+      "id": "seven-samurai",
+      "name": "Seven Samurai",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1954,
+      "region": "East Asia",
+      "difficulty": 3,
+      "clues": [
+        "This 1954 Japanese film runs for well over three hours.",
+        "Poor farmers hire wandering swordsmen to defend their village from bandits.",
+        "It was remade as a classic Hollywood western starring Yul Brynner in 1960.",
+        "Its final battle is fought in pouring rain and deep mud.",
+        "Akira Kurosawa's epic, starring Toshiro Mifune as a wild, would-be warrior."
+      ],
+      "links": [
+        { "name": "Akira Kurosawa", "rel": "was directed by" },
+        { "name": "Toshiro Mifune", "rel": "stars" },
+        { "name": "Japan", "rel": "was made in" }
+      ],
+      "fact": "It is often credited with popularising the story of assembling a team for a mission."
+    },
+    {
+      "id": "dilwale-dulhania-le-jayenge",
+      "name": "Dilwale Dulhania Le Jayenge",
+      "aliases": ["DDLJ"],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1995,
+      "region": "South Asia",
+      "difficulty": 3,
+      "clues": [
+        "This 1995 Hindi film was the directing debut of Aditya Chopra.",
+        "Much of its first half takes place on a holiday trip across Europe.",
+        "It played at Mumbai's Maratha Mandir cinema for over 1,000 weeks.",
+        "In its finale the heroine runs to catch a departing train and her lover's hand.",
+        "Shah Rukh Khan and Kajol play Raj and Simran in this Bollywood romance."
+      ],
+      "links": [
+        { "name": "Shah Rukh Khan", "rel": "stars" },
+        { "name": "Mumbai", "rel": "had a record run in" },
+        { "name": "Switzerland", "rel": "has scenes filmed in" }
+      ],
+      "fact": "Its title means roughly 'The Big-Hearted Will Take the Bride'."
+    },
+    {
+      "id": "sholay",
+      "name": "Sholay",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1975,
+      "region": "South Asia",
+      "difficulty": 3,
+      "clues": [
+        "This 1975 Hindi film was shot among rocky hills near Bangalore.",
+        "A retired police officer hires two small-time crooks to catch a bandit.",
+        "Its villain Gabbar Singh became one of Bollywood's most famous baddies.",
+        "Two pals sing the friendship song 'Yeh Dosti' while riding a motorcycle.",
+        "Amitabh Bachchan and Dharmendra play Jai and Veeru in this action classic."
+      ],
+      "links": [
+        { "name": "Amitabh Bachchan", "rel": "stars" },
+        { "name": "India", "rel": "was made in" }
+      ],
+      "fact": "Its title means 'Embers' in Hindi."
+    },
+    {
+      "id": "parasite",
+      "name": "Parasite",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 2019,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "This 2019 South Korean film won the Palme d'Or at Cannes.",
+        "A poor family living in a semi-basement flat finds work with a rich family.",
+        "Its big twist involves a secret bunker below a stylish modern house.",
+        "It won four Oscars, including Best Director and Best Picture.",
+        "Bong Joon-ho's film, the first non-English language Best Picture winner."
+      ],
+      "links": [
+        { "name": "Bong Joon-ho", "rel": "was directed by" },
+        { "name": "South Korea", "rel": "was made in" },
+        { "name": "Seoul", "rel": "is set in" }
+      ],
+      "fact": "Its rich family's house was a set built specially for the film."
+    },
+    {
+      "id": "back-to-the-future",
+      "name": "Back to the Future",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1985,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Steven Spielberg was an executive producer of this 1985 film.",
+        "Its teenage hero accidentally stops his own parents from meeting in 1955.",
+        "A lightning strike on a clock tower supplies the power he needs.",
+        "Its time machine must reach 88 miles per hour to work.",
+        "Michael J. Fox plays Marty McFly, who travels in time in a DeLorean car."
+      ],
+      "links": [
+        { "name": "Steven Spielberg", "rel": "was produced by" },
+        { "name": "United States", "rel": "is set in" }
+      ],
+      "fact": "It was the highest-grossing film of 1985 in the United States."
+    },
+    {
+      "id": "raiders-of-the-lost-ark",
+      "name": "Raiders of the Lost Ark",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Film",
+      "year": 1981,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "This 1981 adventure was a team-up between George Lucas and Steven Spielberg.",
+        "Its hero is a college professor of archaeology who hates snakes.",
+        "In the opening scene the hero outruns a giant rolling boulder.",
+        "Set in 1936, the hero races Nazi agents to find a sacred biblical chest.",
+        "Harrison Ford's first outing as Indiana Jones, with his whip and fedora."
+      ],
+      "links": [
+        { "name": "Harrison Ford", "rel": "stars" },
+        { "name": "Steven Spielberg", "rel": "was directed by" },
+        { "name": "George Lucas", "rel": "was co-created by" }
+      ],
+      "fact": "Tom Selleck was first choice for the hero but was tied up with the TV show Magnum, P.I."
+    },
+    {
+      "id": "snow-white-and-the-seven-dwarfs",
+      "name": "Snow White and the Seven Dwarfs",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Animated Film",
+      "year": 1937,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "This 1937 film was Walt Disney's first full-length animated feature.",
+        "Doubters in Hollywood called it 'Disney's Folly' before it became a huge hit.",
+        "Its songs include 'Heigh-Ho' and 'Someday My Prince Will Come'.",
+        "A wicked queen asks her magic mirror who is the fairest of them all.",
+        "A princess bites a poisoned apple after hiding with a band of little miners."
+      ],
+      "links": [
+        { "name": "Walt Disney", "rel": "was produced by" },
+        { "name": "Mickey Mouse", "rel": "came from the same studio as" }
+      ],
+      "fact": "Walt Disney received an honorary Oscar for it: one full-size statuette and seven small ones."
+    },
+    {
+      "id": "the-lion-king",
+      "name": "The Lion King",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Animated Film",
+      "year": 1994,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This 1994 Disney film's songs were written by Elton John and Tim Rice.",
+        "Its story borrows ideas from Shakespeare's Hamlet.",
+        "Its opening song, 'Circle of Life', presents a newborn prince on Pride Rock.",
+        "A meerkat and a warthog teach the young hero the motto 'Hakuna Matata'.",
+        "Young Simba must reclaim his place after his father Mufasa dies."
+      ],
+      "links": [
+        { "name": "Elton John", "rel": "has songs by" },
+        { "name": "Africa", "rel": "is set in" }
+      ],
+      "fact": "'Can You Feel the Love Tonight' from the film won the Oscar for Best Original Song."
+    },
+    {
+      "id": "toy-story",
+      "name": "Toy Story",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Animated Film",
+      "year": 1995,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This 1995 film was the first feature film made entirely with computer animation.",
+        "It was the first feature film from Pixar.",
+        "Its song 'You've Got a Friend in Me' was written by Randy Newman.",
+        "A spaceman action figure believes he is a real space ranger.",
+        "Woody the cowboy and Buzz Lightyear compete for Andy's affection."
+      ],
+      "links": [
+        { "name": "Tom Hanks", "rel": "stars the voice of" },
+        { "name": "Keanu Reeves", "rel": "had a sequel featuring" }
+      ],
+      "fact": "Its director John Lasseter received a special Oscar for leading the project."
+    },
+    {
+      "id": "spirited-away",
+      "name": "Spirited Away",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Animated Film",
+      "year": 2001,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "This 2001 film was Japan's highest-grossing film for almost two decades.",
+        "It shared the Golden Bear prize at the Berlin Film Festival.",
+        "A girl works in a bathhouse for gods after her parents are turned into pigs.",
+        "Its characters include the masked No-Face and the witch Yubaba.",
+        "Hayao Miyazaki's Oscar-winning tale of ten-year-old Chihiro."
+      ],
+      "links": [
+        { "name": "Hayao Miyazaki", "rel": "was directed by" },
+        { "name": "Japan", "rel": "was made in" }
+      ],
+      "fact": "It was the first anime film to win the Oscar for Best Animated Feature."
+    },
+    {
+      "id": "frozen",
+      "name": "Frozen",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Animated Film",
+      "year": 2013,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This 2013 film was loosely inspired by Hans Christian Andersen's The Snow Queen.",
+        "It won Oscars for Best Animated Feature and Best Original Song.",
+        "A cheerful snowman named Olaf dreams of summer.",
+        "Princess Anna sets out to find her sister, who has icy magic powers.",
+        "Queen Elsa sings 'Let It Go' while building an ice palace."
+      ],
+      "links": [
+        { "name": "Hans Christian Andersen", "rel": "is inspired by a tale by" },
+        { "name": "Norway", "rel": "has a kingdom inspired by" }
+      ],
+      "fact": "Its kingdom of Arendelle was inspired by the scenery and buildings of Norway."
+    },
+    {
+      "id": "shrek",
+      "name": "Shrek",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Animated Film",
+      "year": 2001,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This 2001 film won the first ever Oscar for Best Animated Feature.",
+        "It was made by DreamWorks and pokes fun at classic fairy tales.",
+        "A talking donkey tags along on a quest to rescue a princess.",
+        "Princess Fiona hides a secret that appears every night after sunset.",
+        "A grumpy green ogre who lives in a swamp, voiced by Mike Myers."
+      ],
+      "links": [
+        { "name": "Eddie Murphy", "rel": "features the voice of" },
+        { "name": "Cameron Diaz", "rel": "features the voice of" }
+      ],
+      "fact": "It was based on a 1990 picture book by William Steig."
+    },
+    {
+      "id": "finding-nemo",
+      "name": "Finding Nemo",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Animated Film",
+      "year": 2003,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This 2003 Pixar film won the Oscar for Best Animated Feature.",
+        "Much of it is set on the Great Barrier Reef and in Sydney Harbour.",
+        "A forgetful blue tang named Dory helps on a long journey.",
+        "Sea turtles ride the East Australian Current like a highway.",
+        "A worried clownfish father crosses the ocean to rescue his lost son."
+      ],
+      "links": [
+        { "name": "Ellen DeGeneres", "rel": "features the voice of" },
+        { "name": "Sydney", "rel": "is partly set in" },
+        { "name": "Great Barrier Reef", "rel": "is set on" }
+      ],
+      "fact": "A sequel, Finding Dory, followed in 2016."
+    },
+    {
+      "id": "my-neighbor-totoro",
+      "name": "My Neighbor Totoro",
+      "aliases": ["My Neighbour Totoro"],
+      "category": "screen",
+      "sub": "Animated Film",
+      "year": 1988,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "This 1988 film was first shown as a double bill with Grave of the Fireflies.",
+        "Two sisters move to the countryside while their mother is in hospital.",
+        "A giant grinning cat-shaped bus gives rides through the night.",
+        "Its big, furry main creature became the logo of Studio Ghibli.",
+        "Hayao Miyazaki's tale of a forest spirit who waits at a bus stop in the rain."
+      ],
+      "links": [
+        { "name": "Hayao Miyazaki", "rel": "was directed by" },
+        { "name": "Japan", "rel": "is set in" }
+      ],
+      "fact": "It is set in the Japanese countryside in the 1950s."
+    },
+    {
+      "id": "the-simpsons",
+      "name": "The Simpsons",
+      "aliases": [],
+      "category": "screen",
+      "sub": "TV Series",
+      "year": 1989,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This show began as short cartoons on The Tracey Ullman Show in 1987.",
+        "Its creator Matt Groening named most of the family after his own relatives.",
+        "In 2018 it passed Gunsmoke as America's longest-running scripted primetime series.",
+        "It is set in the town of Springfield, home to a nuclear power plant.",
+        "Homer, Marge, Bart, Lisa and Maggie are a yellow-skinned cartoon family."
+      ],
+      "links": [
+        { "name": "Homer Simpson", "rel": "stars" },
+        { "name": "United States", "rel": "was made in" }
+      ],
+      "fact": "A feature film based on the show was released in 2007."
+    },
+    {
+      "id": "friends",
+      "name": "Friends",
+      "aliases": [],
+      "category": "screen",
+      "sub": "TV Series",
+      "year": 1994,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This sitcom ran for ten seasons, from 1994 to 2004.",
+        "Its theme song 'I'll Be There for You' was performed by The Rembrandts.",
+        "Its six main stars each earned a million dollars per episode in its last seasons.",
+        "Most scenes take place in two apartments or the Central Perk coffee shop.",
+        "Six pals in New York: Rachel, Ross, Monica, Chandler, Joey and Phoebe."
+      ],
+      "links": [
+        { "name": "New York City", "rel": "is set in" },
+        { "name": "Jennifer Aniston", "rel": "stars" }
+      ],
+      "fact": "Rachel's layered haircut, nicknamed 'The Rachel', became a 1990s craze."
+    },
+    {
+      "id": "doctor-who",
+      "name": "Doctor Who",
+      "aliases": [],
+      "category": "screen",
+      "sub": "TV Series",
+      "year": 1963,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "This BBC science fiction series first aired on 23 November 1963.",
+        "When its first lead actor became ill, the hero was allowed to 'regenerate' into a new face.",
+        "Its villains include the robotic Daleks and the Cybermen.",
+        "Its time machine looks like a blue police box and is bigger on the inside.",
+        "A time-travelling alien from Gallifrey flies the TARDIS with human companions."
+      ],
+      "links": [
+        { "name": "London", "rel": "is often set in" },
+        { "name": "United Kingdom", "rel": "was made in" }
+      ],
+      "fact": "Its eerie electronic theme tune was realised by Delia Derbyshire in 1963."
+    },
+    {
+      "id": "sesame-street",
+      "name": "Sesame Street",
+      "aliases": [],
+      "category": "screen",
+      "sub": "TV Series",
+      "year": 1969,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "This children's TV show first aired in the United States in 1969.",
+        "It was designed with researchers to help young children learn letters and numbers.",
+        "Its characters include Big Bird, Elmo and Oscar the Grouch.",
+        "Each episode is 'brought to you' by a letter and a number of the day.",
+        "Jim Henson's Muppets Bert, Ernie and Cookie Monster live here."
+      ],
+      "links": [
+        { "name": "Jim Henson", "rel": "features Muppets by" },
+        { "name": "United States", "rel": "was made in" }
+      ],
+      "fact": "Versions of the show have been made for children in many countries around the world."
+    },
+    {
+      "id": "stranger-things",
+      "name": "Stranger Things",
+      "aliases": [],
+      "category": "screen",
+      "sub": "TV Series",
+      "year": 2016,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "This show's first season was released on Netflix in 2016.",
+        "Set in 1980s Indiana, it celebrates the films and music of that decade.",
+        "Kids on bikes play Dungeons & Dragons and name a monster after a creature from it.",
+        "A girl called Eleven, who has special powers, loves Eggo waffles.",
+        "A group of kids search the 'Upside Down' for their missing pal Will Byers."
+      ],
+      "links": [
+        { "name": "Netflix", "rel": "was made for" },
+        { "name": "United States", "rel": "is set in" }
+      ],
+      "fact": "It was created by twin brothers Matt and Ross Duffer."
+    },
+    {
+      "id": "star-trek",
+      "name": "Star Trek",
+      "aliases": [],
+      "category": "screen",
+      "sub": "TV Series",
+      "year": 1966,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "This science fiction show first aired in 1966 and lasted only three seasons at first.",
+        "Fan letter campaigns helped keep it alive, and it later grew into many films and series.",
+        "Its crew carries communicators and phasers and is 'beamed' by a transporter.",
+        "The logical, pointy-eared Mr. Spock serves as science officer.",
+        "Captain Kirk commands the starship Enterprise, boldly going where no one has gone before."
+      ],
+      "links": [
+        { "name": "Leonard Nimoy", "rel": "stars" },
+        { "name": "United States", "rel": "was made in" }
+      ],
+      "fact": "NASA named its first space shuttle test orbiter Enterprise after fans wrote in."
+    },
+    {
+      "id": "seinfeld",
+      "name": "Seinfeld",
+      "aliases": [],
+      "category": "screen",
+      "sub": "TV Series",
+      "year": 1989,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "This sitcom first aired in 1989 and ran for nine seasons.",
+        "It was co-created by comedian Larry David.",
+        "It has often been described as 'a show about nothing'.",
+        "Its characters include George, Elaine and the wacky neighbour Kramer.",
+        "A stand-up comedian named Jerry and his pals get into everyday scrapes in New York."
+      ],
+      "links": [
+        { "name": "New York City", "rel": "is set in" },
+        { "name": "United States", "rel": "was made in" }
+      ],
+      "fact": "Its final episode in 1998 was watched by about 76 million viewers in the United States."
+    },
+    {
+      "id": "mr-bean",
+      "name": "Mr. Bean",
+      "aliases": [],
+      "category": "screen",
+      "sub": "TV Series",
+      "year": 1990,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "This British comedy first aired on 1 January 1990.",
+        "Its hero hardly speaks, so it is enjoyed by viewers all over the world.",
+        "He drives a lime-green Mini and talks to his teddy bear.",
+        "It led to two feature films and an animated cartoon series.",
+        "Rowan Atkinson plays the bumbling, nearly silent title character."
+      ],
+      "links": [
+        { "name": "Rowan Atkinson", "rel": "stars" },
+        { "name": "United Kingdom", "rel": "was made in" }
+      ],
+      "fact": "Its title character often locks his car with a padlock and bolt."
+    },
+    {
+      "id": "planet-earth",
+      "name": "Planet Earth",
+      "aliases": [],
+      "category": "screen",
+      "sub": "TV Series",
+      "year": 2006,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "This 2006 BBC nature series was one of the first filmed in high definition.",
+        "Its crews used stabilised cameras on helicopters to film wolves hunting from far above.",
+        "Its episodes visited deserts, oceans, jungles, caves and polar ice.",
+        "A 2016 sequel became famous for a chase between baby iguanas and racer snakes.",
+        "David Attenborough narrated this sweeping tour of the world's habitats."
+      ],
+      "links": [
+        { "name": "David Attenborough", "rel": "is narrated by" },
+        { "name": "BBC", "rel": "was made by" }
+      ],
+      "fact": "It took about five years to make."
+    },
+    {
+      "id": "super-mario-bros",
+      "name": "Super Mario Bros.",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Video Game",
+      "year": 1985,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "This 1985 game was bundled with the Nintendo Entertainment System in North America.",
+        "It was designed by Shigeru Miyamoto and Takashi Tezuka.",
+        "Its hero grows bigger by eating mushrooms and travels through green pipes.",
+        "Its catchy theme music was composed by Koji Kondo.",
+        "A plumber stomps on Goombas on his way to rescue a princess from Bowser."
+      ],
+      "links": [
+        { "name": "Mario", "rel": "stars" },
+        { "name": "Nintendo", "rel": "was made by" },
+        { "name": "Japan", "rel": "was made in" }
+      ],
+      "fact": "For decades it was one of the best-selling video games ever made."
+    },
+    {
+      "id": "tetris",
+      "name": "Tetris",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Video Game",
+      "year": 1984,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "This puzzle game was created in Moscow in 1984.",
+        "Its creator, Alexey Pajitnov, worked at a Soviet computer research centre.",
+        "It became a huge hit when bundled with the Game Boy in 1989.",
+        "Each of its seven pieces is made of four squares.",
+        "Players rotate falling blocks to fill and clear horizontal lines."
+      ],
+      "links": [
+        { "name": "Moscow", "rel": "was created in" },
+        { "name": "Game Boy", "rel": "was bundled with" }
+      ],
+      "fact": "Its theme is based on the Russian folk song 'Korobeiniki'."
+    },
+    {
+      "id": "pac-man",
+      "name": "Pac-Man",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Video Game",
+      "year": 1980,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "This 1980 arcade game was designed by Toru Iwatani in Japan.",
+        "Its creator said the hero's shape was inspired by a pizza with a slice missing.",
+        "Four ghosts named Blinky, Pinky, Inky and Clyde chase the player.",
+        "Eating a power pellet lets the hero gobble up the ghosts for points.",
+        "A yellow circle with a big mouth munches dots through a maze."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "was made in" }
+      ],
+      "fact": "A perfect score of 3,333,360 points was first achieved in 1999."
+    },
+    {
+      "id": "minecraft",
+      "name": "Minecraft",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Video Game",
+      "year": 2011,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "This game was created by the Swedish programmer Markus Persson.",
+        "Microsoft bought its studio, Mojang, in 2014.",
+        "By 2023 it had sold over 300 million copies, more than any other video game.",
+        "Players fight off green Creepers that sneak up and explode.",
+        "A blocky world where players dig for resources and build anything they imagine."
+      ],
+      "links": [
+        { "name": "Sweden", "rel": "was created in" },
+        { "name": "Microsoft", "rel": "is owned by" }
+      ],
+      "fact": "Its full version was released in November 2011, after a popular early test version."
+    },
+    {
+      "id": "pong",
+      "name": "Pong",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Video Game",
+      "year": 1972,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "This 1972 arcade game was one of the first big video game hits.",
+        "It was released by Atari, the company founded by Nolan Bushnell.",
+        "Its designer Allan Alcorn made it as a training exercise.",
+        "Its first test machine stopped working because it was stuffed with coins.",
+        "Two paddles bounce a square ball back and forth in this simple table tennis game."
+      ],
+      "links": [
+        { "name": "Atari", "rel": "was made by" },
+        { "name": "United States", "rel": "was made in" }
+      ],
+      "fact": "Its test machine was placed in a California bar called Andy Capp's Tavern."
+    },
+    {
+      "id": "the-legend-of-zelda",
+      "name": "The Legend of Zelda",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Video Game",
+      "year": 1986,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "This 1986 Nintendo game came on a gold cartridge in North America that could save progress.",
+        "Its designer based it on his boyhood explorations of caves and forests.",
+        "An old man in a cave hands the hero a sword, saying 'It's dangerous to go alone!'",
+        "Players collect pieces of the Triforce in the land of Hyrule.",
+        "Link, a green-clad young hero, battles Ganon to save a princess."
+      ],
+      "links": [
+        { "name": "Nintendo", "rel": "was made by" },
+        { "name": "Japan", "rel": "was made in" }
+      ],
+      "fact": "Its hero is named Link, and the princess is the one in the title."
+    },
+    {
+      "id": "space-invaders",
+      "name": "Space Invaders",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Video Game",
+      "year": 1978,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "This 1978 arcade game was designed by Tomohiro Nishikado for Taito.",
+        "Its enemies speed up as their numbers shrink, partly because the hardware runs faster.",
+        "Players hide behind crumbling shields while dodging falling shots.",
+        "A mystery saucer flies across the top of the screen for bonus points.",
+        "Rows of pixel aliens march down toward a laser cannon at the bottom."
+      ],
+      "links": [
+        { "name": "Japan", "rel": "was made in" }
+      ],
+      "fact": "It helped start the golden age of arcade video games."
+    },
+    {
+      "id": "fortnite",
+      "name": "Fortnite",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Video Game",
+      "year": 2017,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "This game launched in 2017, made by Epic Games.",
+        "Its free Battle Royale mode drops 100 players onto an island.",
+        "Players build ramps and walls in seconds during battles.",
+        "It has hosted huge in-game concerts, including one by Marshmello in 2019.",
+        "A shrinking storm forces players together in this colourful last-player-standing game."
+      ],
+      "links": [
+        { "name": "Epic Games", "rel": "was made by" },
+        { "name": "United States", "rel": "was made in" }
+      ],
+      "fact": "Its victory dances, called emotes, spread into playgrounds around the world."
+    },
+    {
+      "id": "angry-birds",
+      "name": "Angry Birds",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Video Game",
+      "year": 2009,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "This 2009 mobile game was made by the company Rovio in Finland.",
+        "It became one of the most popular paid apps of the early smartphone era.",
+        "Players pull back a slingshot by dragging a finger on the screen.",
+        "Its heroes want revenge on green pigs that stole their eggs.",
+        "Players fling round, cross-looking feathered heroes at towers built by pigs."
+      ],
+      "links": [
+        { "name": "Finland", "rel": "was made in" }
+      ],
+      "fact": "It inspired an animated feature film in 2016."
+    },
+    {
+      "id": "mickey-mouse",
+      "name": "Mickey Mouse",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Screen Character",
+      "year": 1928,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "He became famous in the 1928 sound cartoon Steamboat Willie.",
+        "Walt Disney himself provided his voice for many years.",
+        "He wears red shorts, big yellow shoes and white gloves.",
+        "His girlfriend Minnie and his dog Pluto often appear alongside him.",
+        "This cheerful cartoon rodent with round black ears is Disney's mascot."
+      ],
+      "links": [
+        { "name": "Walt Disney", "rel": "was created by" },
+        { "name": "Bugs Bunny", "rel": "is a cartoon rival of" }
+      ],
+      "fact": "He received an honorary star on the Hollywood Walk of Fame in 1978, his 50th birthday."
+    },
+    {
+      "id": "darth-vader",
+      "name": "Darth Vader",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Screen Character",
+      "year": 1977,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "He first appeared in a 1977 film, wearing a black helmet and cape.",
+        "He was played in costume by the bodybuilder David Prowse.",
+        "James Earl Jones provided his deep voice.",
+        "His heavy mechanical breathing became one of film's most famous sounds.",
+        "A Sith Lord who reveals to Luke Skywalker, 'I am your father'."
+      ],
+      "links": [
+        { "name": "Star Wars", "rel": "is the villain of" },
+        { "name": "George Lucas", "rel": "was created by" }
+      ],
+      "fact": "His real name before he turned to the dark side was Anakin Skywalker."
+    },
+    {
+      "id": "mario",
+      "name": "Mario",
+      "aliases": ["Super Mario"],
+      "category": "screen",
+      "sub": "Screen Character",
+      "year": 1981,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "He first appeared in 1981 in Donkey Kong, where he was called Jumpman.",
+        "He was given a moustache because a mouth was hard to draw with so few pixels.",
+        "His taller brother Luigi dresses in green.",
+        "His enemy Bowser keeps kidnapping Princess Peach.",
+        "Nintendo's famous plumber wears a red cap with an 'M' on it."
+      ],
+      "links": [
+        { "name": "Super Mario Bros.", "rel": "stars in" },
+        { "name": "Nintendo", "rel": "is the mascot of" },
+        { "name": "Sonic the Hedgehog", "rel": "is a rival of" }
+      ],
+      "fact": "He was created by Shigeru Miyamoto."
+    },
+    {
+      "id": "pikachu",
+      "name": "Pikachu",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Screen Character",
+      "year": 1996,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "He first appeared in 1996 in Japanese video games for the Game Boy.",
+        "His name mixes Japanese sounds for a sparkle and a mouse's squeak.",
+        "In the cartoon he refuses to go in his ball and rides on Ash's shoulder.",
+        "His red cheeks store electricity, which he releases in Thunderbolt attacks.",
+        "This yellow electric mouse is the most famous Pokémon of all."
+      ],
+      "links": [
+        { "name": "Pokémon", "rel": "is the mascot of" },
+        { "name": "Japan", "rel": "was created in" },
+        { "name": "Nintendo", "rel": "appears in games by" }
+      ],
+      "fact": "A Japanese airline once painted Pikachu-themed jumbo jets."
+    },
+    {
+      "id": "homer-simpson",
+      "name": "Homer Simpson",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Screen Character",
+      "year": 1987,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "He first appeared in 1987 in short cartoons on a TV variety show.",
+        "He is voiced by Dan Castellaneta.",
+        "He works as a safety inspector at a nuclear power plant.",
+        "He loves doughnuts and lives at 742 Evergreen Terrace.",
+        "Bald, lazy and lovable, he shouts 'D'oh!' and is Bart's dad."
+      ],
+      "links": [
+        { "name": "The Simpsons", "rel": "stars in" },
+        { "name": "United States", "rel": "was created in" }
+      ],
+      "fact": "His catchphrase 'D'oh!' was added to the Oxford English Dictionary in 2001."
+    },
+    {
+      "id": "bugs-bunny",
+      "name": "Bugs Bunny",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Screen Character",
+      "year": 1940,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "He made his official debut in the 1940 cartoon A Wild Hare.",
+        "Mel Blanc gave him his famous Brooklyn-style voice.",
+        "He often outwits the hunter Elmer Fudd.",
+        "He received his own star on the Hollywood Walk of Fame in 1985.",
+        "This Looney Tunes rabbit munches a carrot and asks 'Eh, what's up, Doc?'"
+      ],
+      "links": [
+        { "name": "Warner Bros.", "rel": "was created by" },
+        { "name": "Mickey Mouse", "rel": "is a cartoon rival of" }
+      ],
+      "fact": "He shared a scene with Mickey Mouse in the 1988 film Who Framed Roger Rabbit."
+    },
+    {
+      "id": "spongebob-squarepants",
+      "name": "SpongeBob SquarePants",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Screen Character",
+      "year": 1999,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "His TV show first aired in 1999, created by a former marine biology teacher.",
+        "He works as a fry cook at the Krusty Krab.",
+        "His best buddy is a pink starfish named Patrick.",
+        "He lives in a pineapple under the sea in Bikini Bottom.",
+        "This cheerful yellow sea sponge wears square brown trousers."
+      ],
+      "links": [
+        { "name": "Nickelodeon", "rel": "stars on" },
+        { "name": "United States", "rel": "was created in" }
+      ],
+      "fact": "His creator was Stephen Hillenburg."
+    },
+    {
+      "id": "sonic-the-hedgehog",
+      "name": "Sonic the Hedgehog",
+      "aliases": [],
+      "category": "screen",
+      "sub": "Screen Character",
+      "year": 1991,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "He first appeared in a 1991 video game for the Sega Mega Drive.",
+        "He was created to give Sega a mascot to rival Nintendo's star plumber.",
+        "He collects golden rings and drops them when he gets hit.",
+        "His sidekick is a two-tailed fox named Tails.",
+        "Sega's super-fast blue hero curls into a spinning ball to attack."
+      ],
+      "links": [
+        { "name": "Mario", "rel": "is a rival of" },
+        { "name": "Japan", "rel": "was created in" }
+      ],
+      "fact": "His first live-action feature film was released in 2020."
+    }
+  ]
+}

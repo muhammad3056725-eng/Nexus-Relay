@@ -1,0 +1,1120 @@
+{
+  "category": "music",
+  "subjects": [
+    {
+      "id": "ludwig-van-beethoven",
+      "name": "Ludwig van Beethoven",
+      "aliases": ["Beethoven"],
+      "category": "music",
+      "sub": "Composer",
+      "year": 1770,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in Bonn in 1770, he moved to Vienna as a young man and stayed there for life.",
+        "One of his teachers in Vienna was the composer Joseph Haydn.",
+        "He kept composing great music after losing almost all of his hearing.",
+        "His Ninth Symphony ends with a choir singing the 'Ode to Joy'.",
+        "The deaf German composer of Fur Elise and the da-da-da-DUM Fifth Symphony."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "was born in" },
+        { "name": "Vienna", "rel": "lived and worked in" },
+        { "name": "Wolfgang Amadeus Mozart", "rel": "followed in the footsteps of" }
+      ],
+      "fact": "The 'Ode to Joy' melody from his Ninth Symphony is used as the anthem of the European Union."
+    },
+    {
+      "id": "wolfgang-amadeus-mozart",
+      "name": "Wolfgang Amadeus Mozart",
+      "aliases": ["Mozart"],
+      "category": "music",
+      "sub": "Composer",
+      "year": 1756,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "As a child prodigy he toured the royal courts of Europe with his father and sister.",
+        "He was writing his first little pieces of music at about the age of five.",
+        "His operas include The Magic Flute and The Marriage of Figaro.",
+        "He wrote more than 600 works before dying at just 35 in Vienna.",
+        "The Austrian composer from Salzburg who wrote Eine kleine Nachtmusik."
+      ],
+      "links": [
+        { "name": "Salzburg", "rel": "was born in" },
+        { "name": "Vienna", "rel": "died in" },
+        { "name": "Austria", "rel": "came from" }
+      ],
+      "fact": "The 1984 film Amadeus, about his life, won eight Oscars including Best Picture."
+    },
+    {
+      "id": "johann-sebastian-bach",
+      "name": "Johann Sebastian Bach",
+      "aliases": ["Bach", "J. S. Bach"],
+      "category": "music",
+      "sub": "Composer",
+      "year": 1685,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in 1685 into a large family of musicians in central Germany.",
+        "He spent his last 27 years as music director of a church school in Leipzig.",
+        "He had 20 children, and several of his sons became composers too.",
+        "He wrote more than 200 surviving church cantatas for Sunday services.",
+        "The great Baroque organist who wrote the Brandenburg Concertos and Goldberg Variations."
+      ],
+      "links": [
+        { "name": "Germany", "rel": "was born in" },
+        { "name": "Leipzig", "rel": "worked in" },
+        { "name": "George Frideric Handel", "rel": "was born the same year as" }
+      ],
+      "fact": "As a young man he walked about 400 km to Lubeck to hear the famous organist Buxtehude play."
+    },
+    {
+      "id": "pyotr-ilyich-tchaikovsky",
+      "name": "Pyotr Ilyich Tchaikovsky",
+      "aliases": ["Tchaikovsky", "Peter Tchaikovsky"],
+      "category": "music",
+      "sub": "Composer",
+      "year": 1840,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in 1840, he studied law and worked as a government clerk before turning to music.",
+        "He was among the very first students of his country's first music conservatory.",
+        "In 1891 he conducted at the opening festival of Carnegie Hall in New York.",
+        "His 1812 Overture is famous for its booming cannon fire.",
+        "The Russian composer of the ballets Swan Lake and The Nutcracker."
+      ],
+      "links": [
+        { "name": "Russia", "rel": "was born in" },
+        { "name": "Saint Petersburg", "rel": "studied in" },
+        { "name": "New York City", "rel": "conducted in" }
+      ],
+      "fact": "The Nutcracker features the celesta, a bell-like keyboard instrument he discovered in Paris."
+    },
+    {
+      "id": "frederic-chopin",
+      "name": "Frédéric Chopin",
+      "aliases": ["Chopin", "Fryderyk Chopin"],
+      "category": "music",
+      "sub": "Composer",
+      "year": 1810,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born near Warsaw in 1810, he was giving public concerts as a young boy.",
+        "He left his homeland at 20 and spent most of his short life in Paris.",
+        "Nearly every piece he wrote features the solo piano.",
+        "He wrote many mazurkas and polonaises, dances from his home country.",
+        "The Polish 'poet of the piano', famous for his nocturnes and etudes."
+      ],
+      "links": [
+        { "name": "Poland", "rel": "was born in" },
+        { "name": "Warsaw", "rel": "grew up in" },
+        { "name": "Paris", "rel": "lived in" }
+      ],
+      "fact": "At his request, his heart was taken back to Warsaw, where it rests in a pillar of the Holy Cross Church."
+    },
+    {
+      "id": "antonio-vivaldi",
+      "name": "Antonio Vivaldi",
+      "aliases": ["Vivaldi"],
+      "category": "music",
+      "sub": "Composer",
+      "year": 1678,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in 1678, he trained as a priest and was nicknamed for his red hair.",
+        "For decades he taught music at an orphanage whose all-girl orchestra was famous.",
+        "He wrote hundreds of concertos, many of them for the violin.",
+        "He died poor in Vienna in 1741, far from his home city of canals.",
+        "The Baroque composer from Venice who wrote The Four Seasons."
+      ],
+      "links": [
+        { "name": "Venice", "rel": "was born in" },
+        { "name": "Italy", "rel": "came from" },
+        { "name": "Vienna", "rel": "died in" }
+      ],
+      "fact": "Much of his music was forgotten for about 200 years and only rediscovered in the 20th century."
+    },
+    {
+      "id": "george-frideric-handel",
+      "name": "George Frideric Handel",
+      "aliases": ["Handel", "Georg Friedrich Händel"],
+      "category": "music",
+      "sub": "Composer",
+      "year": 1685,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "Born in 1685 in Halle, he shares his birth year with another Baroque giant.",
+        "He spent most of his career in London, writing operas for its theatres.",
+        "He wrote his Water Music for a royal boat party on the River Thames.",
+        "His anthem Zadok the Priest has been sung at every British coronation since 1727.",
+        "The composer of the oratorio Messiah, with its famous Hallelujah chorus."
+      ],
+      "links": [
+        { "name": "London", "rel": "worked in" },
+        { "name": "Germany", "rel": "was born in" },
+        { "name": "Johann Sebastian Bach", "rel": "was born the same year as" }
+      ],
+      "fact": "Audiences traditionally stand up during the Hallelujah chorus."
+    },
+    {
+      "id": "a-r-rahman",
+      "name": "A. R. Rahman",
+      "aliases": ["Allah Rakha Rahman"],
+      "category": "music",
+      "sub": "Composer",
+      "year": 1967,
+      "region": "South Asia",
+      "difficulty": 2,
+      "clues": [
+        "Born in Chennai in 1967, he played keyboards in bands as a teenager to help his family.",
+        "He composed music for advertising jingles before moving into films.",
+        "His first film score, for the 1992 Tamil movie Roja, made him a star.",
+        "He won two Oscars in 2009 for the music of Slumdog Millionaire.",
+        "The Indian composer behind the song Jai Ho, nicknamed the Mozart of Madras."
+      ],
+      "links": [
+        { "name": "India", "rel": "was born in" },
+        { "name": "Slumdog Millionaire", "rel": "wrote the music for" },
+        { "name": "Chennai", "rel": "was born in" }
+      ],
+      "fact": "He was born A. S. Dileep Kumar and changed his name in his early twenties."
+    },
+    {
+      "id": "the-beatles",
+      "name": "The Beatles",
+      "aliases": ["Beatles"],
+      "category": "music",
+      "sub": "Band",
+      "year": 1960,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Formed in 1960, they sharpened their act playing long nightclub sets in Hamburg.",
+        "Their drummer Pete Best was replaced by Ringo Starr in 1962.",
+        "Their 1964 arrival in the United States set off a wave of screaming fan hysteria.",
+        "Their albums include Abbey Road and Sgt. Pepper's Lonely Hearts Club Band.",
+        "The four lads from Liverpool: John, Paul, George and Ringo."
+      ],
+      "links": [
+        { "name": "Liverpool", "rel": "formed in" },
+        { "name": "United Kingdom", "rel": "came from" },
+        { "name": "Elvis Presley", "rel": "were inspired by" }
+      ],
+      "fact": "Their last public concert was an unannounced show on a London rooftop in January 1969."
+    },
+    {
+      "id": "queen",
+      "name": "Queen",
+      "aliases": [],
+      "category": "music",
+      "sub": "Band",
+      "year": 1970,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "This British rock band formed in London in 1970.",
+        "Their guitarist built his own electric guitar with his father, using wood from an old fireplace.",
+        "That same guitarist later earned a PhD in astrophysics.",
+        "Their 1985 Live Aid set at Wembley is often called one of the greatest live shows ever.",
+        "The band of Freddie Mercury, famous for Bohemian Rhapsody and We Will Rock You."
+      ],
+      "links": [
+        { "name": "Freddie Mercury", "rel": "was fronted by" },
+        { "name": "London", "rel": "formed in" }
+      ],
+      "fact": "Bohemian Rhapsody runs nearly six minutes and has no repeating chorus."
+    },
+    {
+      "id": "the-rolling-stones",
+      "name": "The Rolling Stones",
+      "aliases": ["Rolling Stones"],
+      "category": "music",
+      "sub": "Band",
+      "year": 1962,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Formed in London in 1962, they were sold as the rebellious rivals of a Liverpool band.",
+        "Their singer and guitarist first met as schoolboys in Dartford, Kent.",
+        "Their tongue-and-lips logo is one of the most famous in music.",
+        "Mick Jagger and Keith Richards wrote most of their songs.",
+        "The band behind (I Can't Get No) Satisfaction and Paint It Black."
+      ],
+      "links": [
+        { "name": "London", "rel": "formed in" },
+        { "name": "The Beatles", "rel": "were rivals of" }
+      ],
+      "fact": "In 2022 they celebrated 60 years as a band with a European tour."
+    },
+    {
+      "id": "led-zeppelin",
+      "name": "Led Zeppelin",
+      "aliases": [],
+      "category": "music",
+      "sub": "Band",
+      "year": 1968,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "This English hard-rock band formed in London in 1968.",
+        "Their guitarist Jimmy Page had earlier played in the Yardbirds.",
+        "Their name came from a joke that they would go down like a lead balloon.",
+        "They split up in 1980 after the death of their drummer, John Bonham.",
+        "The band of singer Robert Plant, behind Stairway to Heaven and Whole Lotta Love."
+      ],
+      "links": [
+        { "name": "London", "rel": "formed in" },
+        { "name": "United Kingdom", "rel": "came from" }
+      ]
+    },
+    {
+      "id": "nirvana",
+      "name": "Nirvana",
+      "aliases": [],
+      "category": "music",
+      "sub": "Band",
+      "year": 1987,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Formed in Aberdeen, Washington, in 1987, they became the face of grunge music.",
+        "Their drummer Dave Grohl later founded the Foo Fighters.",
+        "In 1992 their album Nevermind replaced Michael Jackson's Dangerous at number one in the US.",
+        "The cover of Nevermind shows a baby swimming towards a dollar bill on a fishhook.",
+        "The Seattle grunge band of Kurt Cobain and Smells Like Teen Spirit."
+      ],
+      "links": [
+        { "name": "Seattle", "rel": "rose to fame in" },
+        { "name": "United States", "rel": "came from" },
+        { "name": "Michael Jackson", "rel": "knocked off the top of the chart" }
+      ],
+      "fact": "The band's name refers to the Buddhist idea of perfect peace and freedom."
+    },
+    {
+      "id": "u2",
+      "name": "U2",
+      "aliases": [],
+      "category": "music",
+      "sub": "Band",
+      "year": 1976,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Formed in 1976 after a teenage drummer pinned a notice on his Dublin school board.",
+        "Their guitarist is known simply as The Edge.",
+        "Their 1987 album The Joshua Tree made them global superstars.",
+        "In 2014 their album appeared free in about 500 million iTunes accounts, surprising many users.",
+        "The Irish rock band fronted by Bono, singer of With or Without You."
+      ],
+      "links": [
+        { "name": "Dublin", "rel": "formed in" },
+        { "name": "Ireland", "rel": "came from" }
+      ]
+    },
+    {
+      "id": "coldplay",
+      "name": "Coldplay",
+      "aliases": [],
+      "category": "music",
+      "sub": "Band",
+      "year": 1997,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Formed in London in 1997 by four students at University College London.",
+        "Their breakthrough single in 2000 shared its name with a colour.",
+        "They headlined the Super Bowl 50 halftime show in 2016.",
+        "Their 2008 hit Viva la Vida took its title from a Frida Kahlo painting.",
+        "The British band of Chris Martin, behind Yellow, Clocks and Fix You."
+      ],
+      "links": [
+        { "name": "London", "rel": "formed in" },
+        { "name": "Frida Kahlo", "rel": "named a song after a painting by" }
+      ]
+    },
+    {
+      "id": "pink-floyd",
+      "name": "Pink Floyd",
+      "aliases": [],
+      "category": "music",
+      "sub": "Band",
+      "year": 1965,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Formed in London in 1965, they began in the psychedelic scene with Syd Barrett.",
+        "Their 1973 album spent more than 900 weeks on the US Billboard 200 chart.",
+        "Their concerts famously featured a giant inflatable flying pig.",
+        "Their rock opera The Wall tells of a rock star who shuts himself off from the world.",
+        "The band of The Dark Side of the Moon, with its prism-and-rainbow cover."
+      ],
+      "links": [
+        { "name": "London", "rel": "formed in" },
+        { "name": "United Kingdom", "rel": "came from" }
+      ]
+    },
+    {
+      "id": "ac-dc",
+      "name": "AC/DC",
+      "aliases": [],
+      "category": "music",
+      "sub": "Band",
+      "year": 1973,
+      "region": "Oceania",
+      "difficulty": 2,
+      "clues": [
+        "Formed in Sydney in 1973 by two Scottish-born brothers, Malcolm and Angus Young.",
+        "Their lead guitarist famously performs dressed in a school uniform.",
+        "Their singer Bon Scott died in 1980 and was replaced by Brian Johnson.",
+        "Their 1980 album Back in Black is one of the best-selling albums of all time.",
+        "The Australian hard-rock band of Highway to Hell and Thunderstruck."
+      ],
+      "links": [
+        { "name": "Sydney", "rel": "formed in" },
+        { "name": "Australia", "rel": "came from" }
+      ],
+      "fact": "The band's name came from a label on a sewing machine, meaning both kinds of electric current."
+    },
+    {
+      "id": "abba",
+      "name": "ABBA",
+      "aliases": [],
+      "category": "music",
+      "sub": "Pop Group",
+      "year": 1972,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "This pop group formed in Stockholm in 1972.",
+        "The group was made up of two married couples.",
+        "Its name is made from the first letters of its four members' first names.",
+        "They won the 1974 Eurovision Song Contest with Waterloo.",
+        "The Swedish quartet behind Dancing Queen and the songs of Mamma Mia!"
+      ],
+      "links": [
+        { "name": "Sweden", "rel": "came from" },
+        { "name": "Stockholm", "rel": "formed in" }
+      ],
+      "fact": "In 2022 digital avatars of the four members began performing in the London show ABBA Voyage."
+    },
+    {
+      "id": "spice-girls",
+      "name": "Spice Girls",
+      "aliases": [],
+      "category": "music",
+      "sub": "Pop Group",
+      "year": 1994,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "This British group was put together in 1994 after an advert in a showbiz newspaper.",
+        "A pop magazine gave each member a nickname, such as Baby, Sporty and Posh.",
+        "Their 1996 debut single topped the charts in dozens of countries.",
+        "Their slogan celebrated the strength and friendship of young women.",
+        "The five-member pop group behind Wannabe, including Victoria Beckham."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "came from" },
+        { "name": "London", "rel": "formed in" }
+      ]
+    },
+    {
+      "id": "bts",
+      "name": "BTS",
+      "aliases": ["Bangtan Boys"],
+      "category": "music",
+      "sub": "Pop Group",
+      "year": 2013,
+      "region": "East Asia",
+      "difficulty": 1,
+      "clues": [
+        "This seven-member group debuted in Seoul in 2013 on a small record label.",
+        "In 2018 their leader gave a speech at the United Nations about loving yourself.",
+        "Their devoted fans are known as the ARMY.",
+        "Their 2020 song Dynamite was their first all-English single and a US number one.",
+        "The K-pop band of RM, Jin, Suga, J-Hope, Jimin, V and Jungkook."
+      ],
+      "links": [
+        { "name": "South Korea", "rel": "came from" },
+        { "name": "Seoul", "rel": "formed in" }
+      ]
+    },
+    {
+      "id": "blackpink",
+      "name": "Blackpink",
+      "aliases": [],
+      "category": "music",
+      "sub": "Pop Group",
+      "year": 2016,
+      "region": "East Asia",
+      "difficulty": 2,
+      "clues": [
+        "This four-member group debuted in Seoul in 2016.",
+        "One of its members, Lisa, was born in Thailand.",
+        "Their 2018 hit Ddu-Du Ddu-Du became a huge YouTube success.",
+        "In 2019 they became the first K-pop girl group to play the Coachella festival.",
+        "The K-pop group of Jisoo, Jennie, Rose and Lisa."
+      ],
+      "links": [
+        { "name": "South Korea", "rel": "came from" },
+        { "name": "Seoul", "rel": "formed in" },
+        { "name": "BTS", "rel": "shares the K-pop spotlight with" }
+      ]
+    },
+    {
+      "id": "one-direction",
+      "name": "One Direction",
+      "aliases": [],
+      "category": "music",
+      "sub": "Pop Group",
+      "year": 2010,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "This group was formed in 2010 on a British TV talent show.",
+        "Its five members each auditioned as solo singers and were grouped by the judges.",
+        "They finished only third on The X Factor but became far bigger than the winner.",
+        "They began an extended break in 2016, and Harry Styles went on to solo stardom.",
+        "The boy band behind What Makes You Beautiful and Story of My Life."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "formed in" },
+        { "name": "Ireland", "rel": "had a member from" }
+      ]
+    },
+    {
+      "id": "eminem",
+      "name": "Eminem",
+      "aliases": ["Marshall Mathers"],
+      "category": "music",
+      "sub": "Rapper",
+      "year": 1972,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in 1972, he grew up mostly in and around Detroit, often moving home.",
+        "He was discovered by the producer Dr. Dre, who signed him in 1998.",
+        "He played a character based on himself in the 2002 film 8 Mile.",
+        "His Lose Yourself was the first rap song to win the Oscar for Best Original Song.",
+        "The Detroit rapper whose alter ego is called Slim Shady."
+      ],
+      "links": [
+        { "name": "Detroit", "rel": "grew up in" },
+        { "name": "United States", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "tupac-shakur",
+      "name": "Tupac Shakur",
+      "aliases": ["2Pac", "Tupac"],
+      "category": "music",
+      "sub": "Rapper",
+      "year": 1971,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in New York in 1971, he studied acting and poetry at a Baltimore arts school.",
+        "He moved to California as a teenager and found fame on the West Coast.",
+        "His 1995 single Dear Mama was a heartfelt tribute to his mother.",
+        "He also acted in films such as Juice and Poetic Justice.",
+        "The West Coast rapper of California Love and Changes, who died at 25 in 1996."
+      ],
+      "links": [
+        { "name": "New York City", "rel": "was born in" },
+        { "name": "United States", "rel": "came from" }
+      ],
+      "fact": "In 2010 Dear Mama was added to the US Library of Congress National Recording Registry."
+    },
+    {
+      "id": "jay-z",
+      "name": "Jay-Z",
+      "aliases": ["Shawn Carter"],
+      "category": "music",
+      "sub": "Rapper",
+      "year": 1969,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in 1969, he grew up in the Marcy Houses in Brooklyn.",
+        "He co-founded the record label Roc-A-Fella Records in 1995.",
+        "In 2017 he became the first rapper inducted into the Songwriters Hall of Fame.",
+        "He is married to Beyonce.",
+        "The Brooklyn rapper of Empire State of Mind and 99 Problems."
+      ],
+      "links": [
+        { "name": "Beyoncé", "rel": "is married to" },
+        { "name": "New York City", "rel": "grew up in" }
+      ]
+    },
+    {
+      "id": "snoop-dogg",
+      "name": "Snoop Dogg",
+      "aliases": ["Calvin Broadus"],
+      "category": "music",
+      "sub": "Rapper",
+      "year": 1971,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in Long Beach, California, in 1971.",
+        "He was introduced to the world on Dr. Dre's 1992 album The Chronic.",
+        "He co-hosted a TV cooking show with the homemaking star Martha Stewart.",
+        "He was a cheerful TV correspondent at the 2024 Olympic Games in Paris.",
+        "The laid-back West Coast rapper of Drop It Like It's Hot, known for his '-izzle' slang."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was born in" },
+        { "name": "Paris", "rel": "reported from the Olympics in" }
+      ]
+    },
+    {
+      "id": "drake",
+      "name": "Drake",
+      "aliases": ["Aubrey Graham"],
+      "category": "music",
+      "sub": "Rapper",
+      "year": 1986,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Toronto in 1986, he first became known as a teenage actor.",
+        "He played a basketball player in the Canadian TV drama Degrassi: The Next Generation.",
+        "He signed to Lil Wayne's label Young Money in 2009.",
+        "His 2016 hit One Dance topped the charts in many countries.",
+        "The Canadian rapper of Hotline Bling and God's Plan."
+      ],
+      "links": [
+        { "name": "Toronto", "rel": "was born in" },
+        { "name": "Canada", "rel": "came from" }
+      ]
+    },
+    {
+      "id": "kendrick-lamar",
+      "name": "Kendrick Lamar",
+      "aliases": [],
+      "category": "music",
+      "sub": "Rapper",
+      "year": 1987,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in 1987, he grew up in Compton, California.",
+        "His 2012 album good kid, m.A.A.d city told stories of growing up in his city.",
+        "In 2018 he became the first rapper to win the Pulitzer Prize for Music.",
+        "He headlined the Super Bowl halftime show in New Orleans in February 2025.",
+        "The Compton rapper of HUMBLE. and Alright."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was born in" },
+        { "name": "Los Angeles", "rel": "grew up near" }
+      ]
+    },
+    {
+      "id": "jimi-hendrix",
+      "name": "Jimi Hendrix",
+      "aliases": [],
+      "category": "music",
+      "sub": "Guitarist",
+      "year": 1942,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Seattle in 1942, he taught himself to play guitar as a teenager.",
+        "He was left-handed and often played a right-handed guitar flipped upside down.",
+        "He became a star in London in 1966 with his trio, the Experience.",
+        "His closing set at Woodstock in 1969 included a wild Star-Spangled Banner.",
+        "The guitar hero of Purple Haze who set his guitar on fire on stage."
+      ],
+      "links": [
+        { "name": "Seattle", "rel": "was born in" },
+        { "name": "London", "rel": "found fame in" }
+      ]
+    },
+    {
+      "id": "eric-clapton",
+      "name": "Eric Clapton",
+      "aliases": [],
+      "category": "music",
+      "sub": "Guitarist",
+      "year": 1945,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in Surrey, England, in 1945, he was raised by his grandparents.",
+        "He played in the Yardbirds and then in the power trio Cream.",
+        "Graffiti in 1960s London famously declared that he was 'God'.",
+        "He is the only person inducted into the Rock and Roll Hall of Fame three times.",
+        "The British guitarist nicknamed Slowhand, who wrote Layla."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "was born in" },
+        { "name": "B.B. King", "rel": "recorded an album with" }
+      ]
+    },
+    {
+      "id": "carlos-santana",
+      "name": "Carlos Santana",
+      "aliases": [],
+      "category": "music",
+      "sub": "Guitarist",
+      "year": 1947,
+      "region": "Latin America",
+      "difficulty": 2,
+      "clues": [
+        "Born in Jalisco in 1947, he learned violin from his father before switching to guitar.",
+        "As a teenager he played in clubs in Tijuana before moving to San Francisco.",
+        "His band's 1969 Woodstock set made them famous before their first album came out.",
+        "His 1999 album Supernatural earned him eight Grammy Awards in one night.",
+        "The Mexican-born guitarist of Smooth and Oye Como Va."
+      ],
+      "links": [
+        { "name": "Mexico", "rel": "was born in" },
+        { "name": "San Francisco", "rel": "found fame in" }
+      ]
+    },
+    {
+      "id": "b-b-king",
+      "name": "B.B. King",
+      "aliases": ["Riley B. King"],
+      "category": "music",
+      "sub": "Guitarist",
+      "year": 1925,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born on a Mississippi cotton plantation in 1925.",
+        "He started out as a radio DJ in Memphis, Tennessee.",
+        "He named every guitar Lucille, after a dance-hall fire he ran back into to save one.",
+        "He toured tirelessly, playing hundreds of concerts a year well into old age.",
+        "The blues guitar legend crowned the King of the Blues."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was born in" },
+        { "name": "Eric Clapton", "rel": "recorded an album with" }
+      ]
+    },
+    {
+      "id": "louis-armstrong",
+      "name": "Louis Armstrong",
+      "aliases": [],
+      "category": "music",
+      "sub": "Jazz Musician",
+      "year": 1901,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in New Orleans in 1901, he learned to play the cornet at a boys' home.",
+        "His nicknames included Satchmo and Pops.",
+        "His gravelly voice helped make scat singing popular.",
+        "In 1964 his Hello, Dolly! knocked the Beatles off the top of the US chart.",
+        "The jazz trumpeter who sang What a Wonderful World."
+      ],
+      "links": [
+        { "name": "New Orleans", "rel": "was born in" },
+        { "name": "The Beatles", "rel": "knocked off the top of the chart" },
+        { "name": "Ella Fitzgerald", "rel": "recorded duets with" }
+      ]
+    },
+    {
+      "id": "miles-davis",
+      "name": "Miles Davis",
+      "aliases": [],
+      "category": "music",
+      "sub": "Jazz Musician",
+      "year": 1926,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in Illinois in 1926, he moved to New York to study at the Juilliard School.",
+        "As a young man he played trumpet with the bebop pioneer Charlie Parker.",
+        "He reinvented his style many times, from cool jazz to jazz-rock fusion.",
+        "His 1959 album Kind of Blue is often called the best-selling jazz record ever.",
+        "The cool jazz trumpeter behind Kind of Blue and So What."
+      ],
+      "links": [
+        { "name": "New York City", "rel": "studied in" },
+        { "name": "United States", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "duke-ellington",
+      "name": "Duke Ellington",
+      "aliases": [],
+      "category": "music",
+      "sub": "Jazz Musician",
+      "year": 1899,
+      "region": "North America",
+      "difficulty": 3,
+      "clues": [
+        "Born in Washington, D.C., in 1899, he earned his noble-sounding nickname as a stylish boy.",
+        "His orchestra became famous playing at Harlem's Cotton Club from 1927.",
+        "He wrote well over a thousand compositions during his career.",
+        "Take the 'A' Train, written by his partner Billy Strayhorn, became his band's theme.",
+        "The jazz bandleader and pianist of Mood Indigo and It Don't Mean a Thing."
+      ],
+      "links": [
+        { "name": "Washington, D.C.", "rel": "was born in" },
+        { "name": "New York City", "rel": "found fame in" }
+      ]
+    },
+    {
+      "id": "ella-fitzgerald",
+      "name": "Ella Fitzgerald",
+      "aliases": [],
+      "category": "music",
+      "sub": "Jazz Musician",
+      "year": 1917,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in Virginia in 1917, she grew up in Yonkers, New York.",
+        "At 17 she won an amateur night contest at Harlem's Apollo Theater.",
+        "She recorded famous 'songbook' albums of great American songwriters.",
+        "She won more than a dozen Grammy Awards and was called the First Lady of Song.",
+        "The jazz singer celebrated for her scat, who sang A-Tisket, A-Tasket."
+      ],
+      "links": [
+        { "name": "New York City", "rel": "grew up near" },
+        { "name": "Louis Armstrong", "rel": "recorded duets with" }
+      ]
+    },
+    {
+      "id": "elvis-presley",
+      "name": "Elvis Presley",
+      "aliases": ["Elvis"],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1935,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Tupelo, Mississippi, in 1935; his twin brother died at birth.",
+        "He recorded his first songs at Sun Studio in Memphis.",
+        "He served in the US Army in Germany from 1958 to 1960.",
+        "His Memphis mansion, Graceland, is now a museum.",
+        "The King of Rock and Roll, who sang Hound Dog and Jailhouse Rock."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was born in" },
+        { "name": "Graceland", "rel": "lived at" },
+        { "name": "The Beatles", "rel": "inspired" }
+      ]
+    },
+    {
+      "id": "michael-jackson",
+      "name": "Michael Jackson",
+      "aliases": [],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1958,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Gary, Indiana, in 1958, the eighth of ten children.",
+        "He began singing as a small boy in a family group with four of his older brothers.",
+        "He first showed off the moonwalk dance on TV in 1983.",
+        "His 1982 album Thriller is the best-selling album of all time.",
+        "The King of Pop, who sang Billie Jean and Beat It."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "madonna",
+      "name": "Madonna",
+      "aliases": [],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1958,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Bay City, Michigan, in 1958, she moved to New York with little money to dance.",
+        "She starred as Eva Peron in the 1996 film musical Evita.",
+        "Her 1990 hit Vogue was inspired by a dance style from New York clubs.",
+        "In 2024 she played a free concert on Copacabana Beach in Rio to over a million people.",
+        "The Queen of Pop, who sang Like a Prayer and Material Girl."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was born in" },
+        { "name": "Rio de Janeiro", "rel": "gave a giant free concert in" }
+      ]
+    },
+    {
+      "id": "whitney-houston",
+      "name": "Whitney Houston",
+      "aliases": [],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1963,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Newark, New Jersey, in 1963, she sang in her church's gospel choir as a girl.",
+        "Her mother Cissy was a gospel singer and her cousin was Dionne Warwick.",
+        "She starred alongside Kevin Costner in the 1992 film The Bodyguard.",
+        "Her 1991 Super Bowl performance of the US national anthem became a hit single.",
+        "The singer of I Will Always Love You and I Wanna Dance with Somebody."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "freddie-mercury",
+      "name": "Freddie Mercury",
+      "aliases": ["Farrokh Bulsara"],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1946,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born on the island of Zanzibar in 1946, he went to boarding school in India.",
+        "He studied graphic art and design in London and designed his band's crest.",
+        "On stage he famously sang into a short, bottomless microphone stand.",
+        "At Live Aid in 1985 he led about 72,000 fans in call-and-response singing.",
+        "The flamboyant lead singer of Queen who wrote Bohemian Rhapsody."
+      ],
+      "links": [
+        { "name": "Queen", "rel": "was the lead singer of" },
+        { "name": "London", "rel": "found fame in" }
+      ]
+    },
+    {
+      "id": "bob-marley",
+      "name": "Bob Marley",
+      "aliases": [],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1945,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "Born in a Jamaican village in 1945, he moved to Kingston's Trenchtown as a boy.",
+        "He formed the Wailers with Peter Tosh and Bunny Wailer.",
+        "Time magazine named his 1977 album Exodus the album of the century.",
+        "He spread reggae music and the Rastafari faith around the world.",
+        "The reggae legend who sang One Love and No Woman, No Cry."
+      ],
+      "links": [
+        { "name": "Jamaica", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "shakira",
+      "name": "Shakira",
+      "aliases": [],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1977,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Barranquilla in 1977, she wrote her first song at the age of eight.",
+        "Her father has Lebanese roots, and she learned belly dancing as a child.",
+        "Her song Waka Waka was the official song of the 2010 World Cup in South Africa.",
+        "She co-headlined the 2020 Super Bowl halftime show with Jennifer Lopez.",
+        "The Colombian singer of Hips Don't Lie and Whenever, Wherever."
+      ],
+      "links": [
+        { "name": "Colombia", "rel": "was born in" },
+        { "name": "FIFA World Cup", "rel": "sang the official song of" }
+      ]
+    },
+    {
+      "id": "taylor-swift",
+      "name": "Taylor Swift",
+      "aliases": [],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1989,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Pennsylvania in 1989, she moved to the Nashville area at 14 to chase country music.",
+        "She started as a country singer before going fully pop with an album named after her birth year.",
+        "In 2021 she began re-recording her early albums to control her own music.",
+        "By its end in 2024, her Eras Tour was the highest-grossing concert tour ever.",
+        "The singer-songwriter of Love Story, Shake It Off and Anti-Hero."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "beyonce",
+      "name": "Beyoncé",
+      "aliases": ["Beyonce Knowles"],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1981,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Houston, Texas, in 1981, she entered talent shows as a young girl.",
+        "She first found fame as lead singer of the girl group Destiny's Child.",
+        "Her husband is the rapper Jay-Z.",
+        "By 2025 she had won more Grammy Awards than any other artist.",
+        "The singer of Crazy in Love and Single Ladies, known as Queen Bey."
+      ],
+      "links": [
+        { "name": "Jay-Z", "rel": "is married to" },
+        { "name": "Houston", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "adele",
+      "name": "Adele",
+      "aliases": ["Adele Adkins"],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1988,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in London in 1988, she studied at the BRIT School for performing arts.",
+        "Her albums are named after her age when she made them, such as 19, 21 and 25.",
+        "Her album 21 helped her win six Grammy Awards in a single night in 2012.",
+        "She won an Oscar for the theme song of the James Bond film Skyfall.",
+        "The London singer of Rolling in the Deep, Someone Like You and Hello."
+      ],
+      "links": [
+        { "name": "London", "rel": "was born in" },
+        { "name": "United Kingdom", "rel": "comes from" }
+      ]
+    },
+    {
+      "id": "frank-sinatra",
+      "name": "Frank Sinatra",
+      "aliases": [],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1915,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Hoboken, New Jersey, in 1915, the son of immigrants from Italy.",
+        "He sang with the big bands of Harry James and Tommy Dorsey before going solo.",
+        "He won an Oscar for his acting role in From Here to Eternity.",
+        "His nickname was Ol' Blue Eyes, and he led the famous 'Rat Pack' of entertainers.",
+        "The crooner who sang My Way and New York, New York."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was born in" },
+        { "name": "Italy", "rel": "had parents from" }
+      ]
+    },
+    {
+      "id": "edith-piaf",
+      "name": "Édith Piaf",
+      "aliases": [],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1915,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in Paris in 1915, she spent part of her childhood with her grandmother.",
+        "She began her career singing for coins on the streets of the French capital.",
+        "Her stage name was slang for 'sparrow', a nod to her tiny size.",
+        "She stood only about 1.42 metres tall but had a huge, powerful voice.",
+        "The French singer of La Vie en rose and Non, je ne regrette rien."
+      ],
+      "links": [
+        { "name": "Paris", "rel": "was born in" },
+        { "name": "France", "rel": "came from" }
+      ]
+    },
+    {
+      "id": "lata-mangeshkar",
+      "name": "Lata Mangeshkar",
+      "aliases": [],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1929,
+      "region": "South Asia",
+      "difficulty": 2,
+      "clues": [
+        "Born in Indore in 1929, she began singing professionally at 13 after her father died.",
+        "Her younger sister Asha Bhosle also became a famous singer.",
+        "She recorded thousands of songs in more than 30 languages over seven decades.",
+        "In 2001 she received the Bharat Ratna, India's highest civilian award.",
+        "Known as the Nightingale of India, she was Bollywood's most famous playback singer."
+      ],
+      "links": [
+        { "name": "India", "rel": "was born in" },
+        { "name": "Mumbai", "rel": "worked in" }
+      ]
+    },
+    {
+      "id": "fela-kuti",
+      "name": "Fela Kuti",
+      "aliases": ["Fela Anikulapo Kuti"],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1938,
+      "region": "Africa",
+      "difficulty": 3,
+      "clues": [
+        "Born in Abeokuta in 1938, he went to London to study music.",
+        "His mother was a pioneering campaigner for women's rights.",
+        "He blended West African highlife with jazz and funk.",
+        "His songs boldly criticised his country's military rulers.",
+        "The Nigerian bandleader and singer who pioneered Afrobeat in Lagos."
+      ],
+      "links": [
+        { "name": "Nigeria", "rel": "was born in" },
+        { "name": "Lagos", "rel": "performed in" }
+      ]
+    },
+    {
+      "id": "bob-dylan",
+      "name": "Bob Dylan",
+      "aliases": ["Robert Zimmerman"],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1941,
+      "region": "North America",
+      "difficulty": 1,
+      "clues": [
+        "Born in Duluth, Minnesota, in 1941, he moved to New York at 19 to play folk clubs.",
+        "He shocked folk fans by playing an electric guitar at the 1965 Newport Folk Festival.",
+        "His songs include Blowin' in the Wind and The Times They Are a-Changin'.",
+        "In 2016 he became the first songwriter to win the Nobel Prize in Literature.",
+        "The harmonica-playing singer-songwriter of Like a Rolling Stone."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was born in" },
+        { "name": "New York City", "rel": "began his career in" }
+      ]
+    },
+    {
+      "id": "bad-bunny",
+      "name": "Bad Bunny",
+      "aliases": ["Benito Antonio Martinez Ocasio"],
+      "category": "music",
+      "sub": "Singer",
+      "year": 1994,
+      "region": "Latin America",
+      "difficulty": 2,
+      "clues": [
+        "Born in 1994, he was bagging groceries at a supermarket when his music took off.",
+        "He first shared his songs by uploading them to SoundCloud.",
+        "His 2020 album El Ultimo Tour del Mundo was the first all-Spanish album to top the Billboard 200.",
+        "He was Spotify's most-streamed artist in the world from 2020 to 2022.",
+        "The Puerto Rican star of reggaeton and Latin trap, known for Dakiti."
+      ],
+      "links": [
+        { "name": "Puerto Rico", "rel": "was born in" }
+      ]
+    }
+  ]
+}

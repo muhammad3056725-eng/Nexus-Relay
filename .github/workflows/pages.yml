@@ -1,7 +1,6 @@
-# Deploys the built web app + static dataset to GitHub Pages.
-# (Blueprint §7 production target is Cloudflare Pages + R2; Pages is
-# the current zero-cost static host. Requires Settings -> Pages ->
-# Source: GitHub Actions.)
+# Builds, checks and deploys NEXUS RELAY to GitHub Pages
+# (https://muhammad3056725-eng.github.io/Nexus-Relay/).
+# Requires Settings -> Pages -> Source: GitHub Actions.
 name: Deploy to GitHub Pages
 on:
   push:
@@ -25,9 +24,21 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install
-      - run: npm run build
-      - name: Copy dataset beside the built app
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
+          pip install pytest
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Test (dataset gate + game tests + legacy pipeline tests)
+        run: npm test
+      - name: Build
+        run: npm run build
+      - name: Copy the dataset beside the built app
         run: cp -r public apps/web/dist/public
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -35,4 +46,3 @@ jobs:
           path: apps/web/dist
       - id: deployment
         uses: actions/deploy-pages@v4
-        

@@ -1,124 +1,122 @@
 /**
- * NEXUS RELAY — client dataset loader (Blueprint §4: zero-backend
- * static edge architecture). Loads the manifest, the packed 24-byte
- * telemetry store (telemetry.bin; telemetry.json mirror as fallback),
- * the clue/edge packs, and fetches 2-character trie shards on demand
- * for autocomplete.
+ * NEXUS RELAY — dataset v2 loader.
+ *
+ * First load is only index.json (~70 KB, ~15 KB gzipped): ids, names,
+ * categories, years. Clues live in one file per category under
+ * subjects/<category>.json and are fetched lazily, the first time a
+ * round needs a subject from that category.
+ *
+ * The data base is resolved against document.baseURI ("public/data/v2"
+ * beside the app — the GitHub Pages layout, and the Vite dev mount).
+ * A candidate is accepted only if it returns real JSON with the
+ * expected shape, so an HTML 200 page (SPA fallback, custom 404) can
+ * never be mistaken for the dataset.
  */
-import {
-  loadManifest,
-  resolveDataBase,
-  shardPrefix,
-  type CluePack,
-  type DatasetManifest,
-  type PackEntity,
-  type ShardEntity,
-  type TelemetryRecord,
-  type TrieShard,
-} from "@nexus-relay/shared-types";
-import { buildAdjacency, type Adjacency } from "@nexus-relay/telemetry-engine";
+import type { CategoryInfo, DataIndex, IndexRow, Subject } from "./game/types";
 
-export class Dataset {
+export const DATA_CANDIDATES = ["public/data/v2", "./public/data/v2", "../../public/data/v2"];
+
+async function fetchJson(url: string): Promise<unknown | null> {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) return null;
+    const type = res.headers?.get?.("content-type") ?? "application/json";
+    if (!/json|octet-stream|text\/plain/i.test(type)) return null;
+    return await res.json();
+  } catch {
+    return null;
+  }
+}
+
+function isIndex(x: unknown): x is DataIndex {
+  return (
+    !!x &&
+    typeof x === "object" &&
+    Array.isArray((x as DataIndex).subjects) &&
+    Array.isArray((x as DataIndex).categories)
+  );
+}
+
+export class DataStore {
   base = "";
-  manifest!: DatasetManifest;
-  readonly records = new Map<number, TelemetryRecord>();
-  readonly pack = new Map<number, PackEntity>();
-  adjacency!: Adjacency;
-  private shardCache = new Map<string, ShardEntity[]>();
+  index!: DataIndex;
+  private rowsById = new Map<string, IndexRow>();
+  private subjects = new Map<string, Subject>();
+  private loading = new Map<string, Promise<void>>();
 
-  static async load(): Promise<Dataset> {
-    const ds = new Dataset();
-    ds.base = await resolveDataBase();
-    ds.manifest = await loadManifest(ds.base);
-    await ds.loadTelemetry();
-    const merged: CluePack = { chunk_id: 0, entities: {} };
-    for (let i = 0; i < ds.manifest.packs_count; i++) {
-      const name = `pack_${String(i).padStart(3, "0")}.json`;
-      const res = await fetch(`${ds.base}/chunks/${name}`);
-      if (!res.ok) throw new Error(`pack fetch failed: ${name}`);
-      const packJson = (await res.json()) as CluePack;
-      Object.assign(merged.entities, packJson.entities);
-    }
-    for (const [id, ent] of Object.entries(merged.entities)) {
-      ds.pack.set(Number(id), ent);
-    }
-    ds.adjacency = buildAdjacency(merged);
-    return ds;
-  }
-
-  /** Parse the 24-byte binary telemetry store (Blueprint §4 schema). */
-  private async loadTelemetry(): Promise<void> {
-    try {
-      const res = await fetch(`${this.base}/telemetry.bin`);
-      if (!res.ok) throw new Error(`bin ${res.status}`);
-      const buf = await res.arrayBuffer();
-      const view = new DataView(buf);
-      const count = Math.floor(buf.byteLength / 24);
-      for (let i = 0; i < count; i++) {
-        const o = i * 24;
-        const lat = view.getFloat32(o + 8, true);
-        const lon = view.getFloat32(o + 12, true);
-        const rec: TelemetryRecord = {
-          id: view.getUint32(o, true),
-          year: view.getInt32(o + 4, true),
-          lat: Number.isNaN(lat) ? null : lat,
-          lon: Number.isNaN(lon) ? null : lon,
-          dom: view.getUint8(o + 16),
-          subdom: view.getUint8(o + 17),
-          notability: view.getUint16(o + 18, true),
-          cluster: view.getUint32(o + 20, true),
-        };
-        this.records.set(rec.id, rec);
-      }
-      if (this.records.size > 0) return;
-    } catch {
-      /* fall through to the JSON mirror */
-    }
-    const res = await fetch(`${this.base}/telemetry.json`);
-    if (!res.ok) throw new Error("telemetry load failed");
-    const json = (await res.json()) as { records: TelemetryRecord[] };
-    for (const rec of json.records) this.records.set(rec.id, rec);
-  }
-
-  nameOf(id: number): string {
-    return this.pack.get(id)?.name ?? `#${id}`;
-  }
-
-  /**
-   * Autocomplete search (Blueprint §4): shards are fetched on demand
-   * after the first two characters are typed and cached locally.
-   */
-  async search(query: string): Promise<ShardEntity[]> {
-    const q = query.trim().toLowerCase();
-    if (q.length < 2) return [];
-    const prefix = shardPrefix(q);
-    if (!prefix) return [];
-    let shard = this.shardCache.get(prefix);
-    if (!shard) {
+  static async load(candidates: readonly string[] = DATA_CANDIDATES): Promise<DataStore> {
+    const ds = new DataStore();
+    const tried = new Set<string>();
+    for (const c of candidates) {
+      let base: string;
       try {
-        const res = await fetch(`${this.base}/trie_shards/${prefix}.json`);
-        if (!res.ok) return [];
-        const json = (await res.json()) as TrieShard;
-        shard = json.entities;
-        this.shardCache.set(prefix, shard);
+        base = new URL(c, typeof document !== "undefined" ? document.baseURI : "http://localhost/").href.replace(/\/$/, "");
       } catch {
-        return [];
+        base = c;
+      }
+      if (tried.has(base)) continue;
+      tried.add(base);
+      const json = await fetchJson(`${base}/index.json`);
+      if (isIndex(json)) {
+        ds.base = base;
+        ds.index = json;
+        for (const r of json.subjects) ds.rowsById.set(r.id, r);
+        return ds;
       }
     }
-    const hits = shard.filter(
-      (e) =>
-        e.name.toLowerCase().includes(q) ||
-        e.alt.some((a) => a.toLowerCase().includes(q))
-    );
-    hits.sort((a, b) => {
-      const as = a.name.toLowerCase().startsWith(q) ? 0 : 1;
-      const bs = b.name.toLowerCase().startsWith(q) ? 0 : 1;
-      return as - bs || a.name.localeCompare(b.name);
-    });
-    // de-duplicate by id (an entity can appear under name + alias keys)
-    const seen = new Set<number>();
-    return hits
-      .filter((e) => (seen.has(e.id) ? false : (seen.add(e.id), true)))
-      .slice(0, 8);
+    throw new Error("Could not load the game data.");
+  }
+
+  get rows(): IndexRow[] {
+    return this.index.subjects;
+  }
+
+  get categories(): CategoryInfo[] {
+    return this.index.categories.filter((c) => c.count > 0);
+  }
+
+  category(id: string): CategoryInfo | undefined {
+    return this.index.categories.find((c) => c.id === id);
+  }
+
+  row(id: string): IndexRow | undefined {
+    return this.rowsById.get(id);
+  }
+
+  name(id: string): string {
+    return this.rowsById.get(id)?.n ?? id;
+  }
+
+  /** Fetch a category's clue file once (shared promise). */
+  ensureCategory(cat: string): Promise<void> {
+    let p = this.loading.get(cat);
+    if (!p) {
+      const info = this.category(cat);
+      p = (async () => {
+        const json = (await fetchJson(`${this.base}/${info?.file ?? `subjects/${cat}.json`}`)) as
+          | { subjects?: Subject[] }
+          | null;
+        if (!json || !Array.isArray(json.subjects)) throw new Error(`Could not load ${cat}`);
+        for (const s of json.subjects) this.subjects.set(s.id, s);
+      })();
+      this.loading.set(cat, p);
+      p.catch(() => this.loading.delete(cat));
+    }
+    return p;
+  }
+
+  async subject(id: string): Promise<Subject> {
+    const row = this.row(id);
+    if (!row) throw new Error(`Unknown subject ${id}`);
+    if (!this.subjects.has(id)) await this.ensureCategory(row.c);
+    const s = this.subjects.get(id);
+    if (!s) throw new Error(`Missing subject ${id}`);
+    return s;
+  }
+
+  /** Warm the clue files for a list of subjects (in parallel). */
+  async preload(ids: readonly string[]): Promise<void> {
+    const cats = new Set(ids.map((id) => this.row(id)?.c).filter(Boolean) as string[]);
+    await Promise.all([...cats].map((c) => this.ensureCategory(c)));
   }
 }

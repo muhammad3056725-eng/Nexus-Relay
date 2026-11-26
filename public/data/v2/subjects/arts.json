@@ -1,0 +1,1111 @@
+{
+  "category": "arts",
+  "subjects": [
+    {
+      "id": "leonardo-da-vinci",
+      "name": "Leonardo da Vinci",
+      "aliases": ["Leonardo"],
+      "category": "arts",
+      "sub": "Painter",
+      "year": 1452,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in 1452 near a small Tuscan town, he was the son of a local notary.",
+        "He trained in the Florence workshop of the artist Andrea del Verrocchio.",
+        "He filled notebooks with designs for flying machines, written in mirror script.",
+        "He painted a famous Last Supper on a monastery dining-hall wall in Milan.",
+        "The Renaissance genius who painted the Mona Lisa."
+      ],
+      "links": [
+        { "name": "Mona Lisa", "rel": "painted" },
+        { "name": "The Last Supper", "rel": "painted" },
+        { "name": "Italy", "rel": "was born in" }
+      ],
+      "fact": "He spent his final years in France as a guest of King Francis I."
+    },
+    {
+      "id": "michelangelo",
+      "name": "Michelangelo",
+      "aliases": ["Michelangelo Buonarroti"],
+      "category": "arts",
+      "sub": "Painter",
+      "year": 1475,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in 1475 in Caprese, he was nursed as a baby by a stonecutter's wife.",
+        "He saw himself as a sculptor first and took on big painting jobs unwillingly.",
+        "In his early twenties he carved the Pieta now in St. Peter's Basilica.",
+        "In old age he designed the great dome of St. Peter's Basilica in Rome.",
+        "The Renaissance master who carved David and painted the Sistine Chapel ceiling."
+      ],
+      "links": [
+        { "name": "David", "rel": "carved" },
+        { "name": "The Creation of Adam", "rel": "painted" },
+        { "name": "Pietà", "rel": "carved" }
+      ]
+    },
+    {
+      "id": "vincent-van-gogh",
+      "name": "Vincent van Gogh",
+      "aliases": ["Van Gogh"],
+      "category": "arts",
+      "sub": "Painter",
+      "year": 1853,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in 1853, he worked as an art dealer and a preacher before he took up painting.",
+        "He made about 2,000 artworks in little more than a decade.",
+        "He sold very few paintings in his lifetime and relied on his brother Theo.",
+        "In Arles, in southern France, he painted bright vases of sunflowers.",
+        "The Dutch post-impressionist who painted The Starry Night."
+      ],
+      "links": [
+        { "name": "The Starry Night", "rel": "painted" },
+        { "name": "Netherlands", "rel": "was born in" },
+        { "name": "France", "rel": "painted his last works in" }
+      ]
+    },
+    {
+      "id": "pablo-picasso",
+      "name": "Pablo Picasso",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Painter",
+      "year": 1881,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in Malaga in 1881, he could draw like a trained artist as a young boy.",
+        "His early 'Blue Period' paintings were made almost entirely in shades of blue.",
+        "He spent most of his adult life in France and made tens of thousands of artworks.",
+        "Together with Georges Braque, he invented the style called Cubism.",
+        "The Spanish artist who painted the anti-war masterpiece Guernica."
+      ],
+      "links": [
+        { "name": "Guernica", "rel": "painted" },
+        { "name": "Spain", "rel": "was born in" },
+        { "name": "Paris", "rel": "worked in" }
+      ]
+    },
+    {
+      "id": "claude-monet",
+      "name": "Claude Monet",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Painter",
+      "year": 1840,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in Paris in 1840, he grew up in the port of Le Havre on the Normandy coast.",
+        "His 1872 painting of a harbour at sunrise gave a whole art movement its name.",
+        "He painted the same haystacks and cathedral again and again in changing light.",
+        "He built a garden with a Japanese-style footbridge at his home in Giverny.",
+        "The Impressionist master famous for his paintings of water lilies."
+      ],
+      "links": [
+        { "name": "France", "rel": "was born in" },
+        { "name": "Paris", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "frida-kahlo",
+      "name": "Frida Kahlo",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Painter",
+      "year": 1907,
+      "region": "Latin America",
+      "difficulty": 1,
+      "clues": [
+        "Born in 1907 in Coyoacan, in a house now known as the Blue House.",
+        "After a terrible bus accident at 18, she began painting while recovering in bed.",
+        "About a third of all her paintings are self-portraits.",
+        "She was married to the famous muralist Diego Rivera.",
+        "The Mexican painter of bold self-portraits with flowers in her hair and a unibrow."
+      ],
+      "links": [
+        { "name": "Mexico", "rel": "was born in" },
+        { "name": "Mexico City", "rel": "lived in" },
+        { "name": "Coldplay", "rel": "inspired a song title by" }
+      ]
+    },
+    {
+      "id": "rembrandt",
+      "name": "Rembrandt",
+      "aliases": ["Rembrandt van Rijn"],
+      "category": "arts",
+      "sub": "Painter",
+      "year": 1606,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in Leiden in 1606, he moved to Amsterdam to work as a portrait painter.",
+        "He painted, drew and etched dozens of self-portraits across his life.",
+        "He was a master of light and shadow in the Dutch Golden Age.",
+        "His huge group portrait of a city militia company is known as The Night Watch.",
+        "The Dutch master whose Night Watch is the star of Amsterdam's Rijksmuseum."
+      ],
+      "links": [
+        { "name": "Amsterdam", "rel": "worked in" },
+        { "name": "Netherlands", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "salvador-dali",
+      "name": "Salvador Dalí",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Painter",
+      "year": 1904,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in 1904 in Figueres, a town in Catalonia.",
+        "He designed the daisy-shaped logo of the Chupa Chups lollipop brand.",
+        "He worked with Walt Disney on a short film, Destino, finished decades later.",
+        "He was famous for his long, waxed, upturned moustache.",
+        "The Spanish Surrealist who painted melting clocks in The Persistence of Memory."
+      ],
+      "links": [
+        { "name": "The Persistence of Memory", "rel": "painted" },
+        { "name": "Spain", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "mona-lisa",
+      "name": "Mona Lisa",
+      "aliases": ["La Gioconda", "La Joconde"],
+      "category": "arts",
+      "sub": "Painting",
+      "year": 1503,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "This small portrait was begun in Florence around 1503 and worked on for years.",
+        "Its sitter is thought to be the wife of a Florentine silk merchant.",
+        "It was stolen in 1911 by a handyman and recovered two years later.",
+        "It hangs behind bulletproof glass in the Louvre in Paris.",
+        "Leonardo da Vinci's portrait of a woman with a famously mysterious smile."
+      ],
+      "links": [
+        { "name": "Leonardo da Vinci", "rel": "was painted by" },
+        { "name": "Louvre", "rel": "hangs in" },
+        { "name": "Paris", "rel": "is displayed in" }
+      ],
+      "fact": "It is painted on a wooden poplar panel, not on canvas."
+    },
+    {
+      "id": "the-starry-night",
+      "name": "The Starry Night",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Painting",
+      "year": 1889,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Painted in June 1889, it shows the view from an asylum window in southern France.",
+        "A tall, dark, flame-like cypress tree rises in its foreground.",
+        "It has hung in the Museum of Modern Art in New York since 1941.",
+        "Its sky is full of swirling blue and yellow whirls above a sleeping village.",
+        "Vincent van Gogh's most famous view of a swirling night sky."
+      ],
+      "links": [
+        { "name": "Vincent van Gogh", "rel": "was painted by" },
+        { "name": "New York City", "rel": "hangs in" }
+      ]
+    },
+    {
+      "id": "the-last-supper",
+      "name": "The Last Supper",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Painting",
+      "year": 1498,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "This mural was painted in the 1490s on a monastery dining-hall wall in Milan.",
+        "Its painter tried an experimental method on dry plaster, so it soon began to flake.",
+        "A doorway was later cut through the bottom of the scene.",
+        "It shows the moment Jesus says one of his twelve disciples will betray him.",
+        "Leonardo da Vinci's famous painting of Jesus's final meal with his apostles."
+      ],
+      "links": [
+        { "name": "Leonardo da Vinci", "rel": "was painted by" },
+        { "name": "Milan", "rel": "is in" }
+      ]
+    },
+    {
+      "id": "the-scream",
+      "name": "The Scream",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Painting",
+      "year": 1893,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "First made in 1893, it exists in several versions in paint, pastel and print.",
+        "Its artist said it came from a walk when the sunset turned the sky blood red.",
+        "Versions of it were stolen from museums in Oslo in 1994 and 2004, then recovered.",
+        "Its wavy orange sky hangs over a fjord, seen from a bridge.",
+        "Edvard Munch's picture of a figure clutching its face in horror."
+      ],
+      "links": [
+        { "name": "Norway", "rel": "was painted in" },
+        { "name": "Oslo", "rel": "is displayed in" }
+      ]
+    },
+    {
+      "id": "girl-with-a-pearl-earring",
+      "name": "Girl with a Pearl Earring",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Painting",
+      "year": 1665,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Painted around 1665, it is a study of a face rather than a portrait of a known person.",
+        "Its young subject wears a blue and yellow turban.",
+        "It hangs in the Mauritshuis museum in The Hague.",
+        "A 1999 novel and a 2003 film with Scarlett Johansson imagined the story behind it.",
+        "Johannes Vermeer's painting of a young woman with a large shining jewel at her ear."
+      ],
+      "links": [
+        { "name": "Netherlands", "rel": "was painted in" },
+        { "name": "The Hague", "rel": "is displayed in" }
+      ],
+      "fact": "It is sometimes called the 'Mona Lisa of the North'."
+    },
+    {
+      "id": "the-persistence-of-memory",
+      "name": "The Persistence of Memory",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Painting",
+      "year": 1931,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "Painted in 1931, this small canvas measures only about 24 by 33 centimetres.",
+        "Its background shows the rocky coast of Catalonia.",
+        "It has belonged to New York's Museum of Modern Art since 1934.",
+        "A strange pale creature lies asleep on the ground in its middle.",
+        "Salvador Dali's Surrealist painting of soft, melting pocket watches."
+      ],
+      "links": [
+        { "name": "Salvador Dalí", "rel": "was painted by" },
+        { "name": "New York City", "rel": "hangs in" }
+      ]
+    },
+    {
+      "id": "guernica",
+      "name": "Guernica",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Painting",
+      "year": 1937,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Painted in 1937 for the Spanish pavilion at the Paris World's Fair.",
+        "It is painted only in black, white and shades of grey.",
+        "It shows the bombing of a Basque town during the Spanish Civil War.",
+        "It was kept in New York until Spain became a democracy, returning in 1981.",
+        "Pablo Picasso's huge anti-war painting, now in Madrid."
+      ],
+      "links": [
+        { "name": "Pablo Picasso", "rel": "was painted by" },
+        { "name": "Madrid", "rel": "is displayed in" },
+        { "name": "Spain", "rel": "depicts a town in" }
+      ]
+    },
+    {
+      "id": "the-creation-of-adam",
+      "name": "The Creation of Adam",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Painting",
+      "year": 1512,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Painted around 1511, it is one of nine scenes from the Book of Genesis on a famous ceiling.",
+        "Its artist painted it in fresco while standing on tall scaffolding.",
+        "Some doctors have argued that the shape around God looks like a human brain.",
+        "God reaches out to give life to the very first man.",
+        "Michelangelo's Sistine Chapel scene of two nearly touching fingers."
+      ],
+      "links": [
+        { "name": "Michelangelo", "rel": "was painted by" },
+        { "name": "Sistine Chapel", "rel": "is on the ceiling of" },
+        { "name": "Vatican City", "rel": "is in" }
+      ]
+    },
+    {
+      "id": "david",
+      "name": "David",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Sculpture",
+      "year": 1504,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Finished in 1504, it was carved from a block of marble other sculptors had given up on.",
+        "This marble figure stands about 5.17 metres tall.",
+        "It first stood outside the town hall of Florence, where a copy stands today.",
+        "It shows a young biblical hero before his fight with Goliath.",
+        "Michelangelo's famous marble statue of the giant-slaying shepherd boy."
+      ],
+      "links": [
+        { "name": "Michelangelo", "rel": "was carved by" },
+        { "name": "Florence", "rel": "stands in" }
+      ]
+    },
+    {
+      "id": "the-thinker",
+      "name": "The Thinker",
+      "aliases": ["Le Penseur"],
+      "category": "arts",
+      "sub": "Sculpture",
+      "year": 1904,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "It was first made as part of a huge bronze doorway called The Gates of Hell.",
+        "It was first meant to show the poet Dante, gazing down at his Inferno.",
+        "Many full-size bronze casts of it stand in cities around the world.",
+        "A famous cast sits in the garden of the Rodin Museum in Paris.",
+        "Auguste Rodin's bronze of a seated man resting his chin on his hand."
+      ],
+      "links": [
+        { "name": "Paris", "rel": "stands in" },
+        { "name": "France", "rel": "was made in" }
+      ]
+    },
+    {
+      "id": "venus-de-milo",
+      "name": "Venus de Milo",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Sculpture",
+      "year": -150,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Carved around 150 to 125 BCE, it was dug up by a farmer on a Greek island in 1820.",
+        "It is made of marble and stands just over two metres tall.",
+        "It is thought to show Aphrodite, the Greek goddess of love and beauty.",
+        "Its arms were lost long ago and have never been found.",
+        "The famous armless marble goddess displayed at the Louvre in Paris."
+      ],
+      "links": [
+        { "name": "Louvre", "rel": "is displayed in" },
+        { "name": "Paris", "rel": "is displayed in" },
+        { "name": "Greece", "rel": "was found in" }
+      ]
+    },
+    {
+      "id": "pieta",
+      "name": "Pietà",
+      "aliases": ["Pieta"],
+      "category": "arts",
+      "sub": "Sculpture",
+      "year": 1499,
+      "region": "Europe",
+      "difficulty": 3,
+      "clues": [
+        "Carved in 1498 and 1499, when its sculptor was only in his early twenties.",
+        "It is the only work its sculptor ever signed, on a sash across Mary's chest.",
+        "It was damaged by a man with a hammer in 1972 and carefully restored.",
+        "It shows the Virgin Mary holding the body of Jesus across her lap.",
+        "Michelangelo's marble masterpiece, behind glass in St. Peter's Basilica."
+      ],
+      "links": [
+        { "name": "Michelangelo", "rel": "was carved by" },
+        { "name": "St. Peter's Basilica", "rel": "is displayed in" },
+        { "name": "Vatican City", "rel": "is in" }
+      ]
+    },
+    {
+      "id": "william-shakespeare",
+      "name": "William Shakespeare",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Writer",
+      "year": 1564,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Baptised in 1564, he grew up in a market town on the River Avon.",
+        "He was an actor and part-owner of a successful London theatre company.",
+        "His company performed at the round Globe Theatre beside the Thames.",
+        "He is credited with inventing or popularising hundreds of English words.",
+        "The playwright of Romeo and Juliet, Hamlet and Macbeth."
+      ],
+      "links": [
+        { "name": "London", "rel": "worked in" },
+        { "name": "Stratford-upon-Avon", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "jane-austen",
+      "name": "Jane Austen",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Writer",
+      "year": 1775,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in 1775 in a Hampshire village, the daughter of a clergyman.",
+        "Her novels were published without her name; one was signed simply 'By a Lady'.",
+        "She spent her final years in the village of Chawton and died in Winchester.",
+        "Her portrait appears on the Bank of England 10-pound note first issued in 2017.",
+        "The English novelist of Pride and Prejudice and Emma."
+      ],
+      "links": [
+        { "name": "Pride and Prejudice", "rel": "wrote" },
+        { "name": "United Kingdom", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "charles-dickens",
+      "name": "Charles Dickens",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Writer",
+      "year": 1812,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in Portsmouth in 1812, he was sent to work in a shoe-polish factory at 12.",
+        "Most of his novels first came out in monthly or weekly instalments.",
+        "His books exposed the poverty and child labour of Victorian England.",
+        "He gave hugely popular public readings of his work in Britain and America.",
+        "The author who created Ebenezer Scrooge, Oliver Twist and David Copperfield."
+      ],
+      "links": [
+        { "name": "London", "rel": "lived in" },
+        { "name": "United Kingdom", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "mark-twain",
+      "name": "Mark Twain",
+      "aliases": ["Samuel Clemens", "Samuel Langhorne Clemens"],
+      "category": "arts",
+      "sub": "Writer",
+      "year": 1835,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Born in Missouri in 1835 when Halley's Comet was visible, he died at its return in 1910.",
+        "Before he became a writer he worked as a riverboat pilot on the Mississippi.",
+        "His pen name was a riverboat call meaning the water was two fathoms deep.",
+        "His boyhood home of Hannibal inspired the setting of his most famous novels.",
+        "The American author of The Adventures of Tom Sawyer and Huckleberry Finn."
+      ],
+      "links": [
+        { "name": "Tom Sawyer", "rel": "created" },
+        { "name": "United States", "rel": "was born in" },
+        { "name": "Halley's Comet", "rel": "was born and died in years of" }
+      ]
+    },
+    {
+      "id": "j-k-rowling",
+      "name": "J. K. Rowling",
+      "aliases": ["Joanne Rowling"],
+      "category": "arts",
+      "sub": "Writer",
+      "year": 1965,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in 1965 near Bristol, she later taught English as a foreign language in Portugal.",
+        "She wrote much of her first novel in cafes in Edinburgh.",
+        "Her first book was turned down by many publishers before one said yes.",
+        "Her publisher asked for initials, fearing boys might not read a book by a woman.",
+        "The author of the Harry Potter books."
+      ],
+      "links": [
+        { "name": "Harry Potter", "rel": "created" },
+        { "name": "Edinburgh", "rel": "wrote in" }
+      ]
+    },
+    {
+      "id": "agatha-christie",
+      "name": "Agatha Christie",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Writer",
+      "year": 1890,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in Torquay, Devon, in 1890, she worked in a hospital pharmacy during the First World War.",
+        "Her knowledge of poisons from that job appears in many of her mysteries.",
+        "In 1926 she vanished for eleven days, sparking a huge national search.",
+        "Her play The Mousetrap opened in London in 1952 and was still running 70 years later.",
+        "The 'Queen of Crime' who created Hercule Poirot and Miss Marple."
+      ],
+      "links": [
+        { "name": "Hercule Poirot", "rel": "created" },
+        { "name": "United Kingdom", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "leo-tolstoy",
+      "name": "Leo Tolstoy",
+      "aliases": ["Lev Tolstoy"],
+      "category": "arts",
+      "sub": "Writer",
+      "year": 1828,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Born in 1828 into a noble family on a country estate south of Moscow.",
+        "As a young army officer he wrote about the siege of Sevastopol in the Crimean War.",
+        "In later life he embraced simple living and non-violence, inspiring Gandhi.",
+        "His novel Anna Karenina opens with a famous line about happy families.",
+        "The Russian author of the giant novel War and Peace."
+      ],
+      "links": [
+        { "name": "Russia", "rel": "was born in" },
+        { "name": "Mahatma Gandhi", "rel": "inspired" }
+      ]
+    },
+    {
+      "id": "homer",
+      "name": "Homer",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Writer",
+      "year": -800,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "This ancient poet is traditionally said to have been blind.",
+        "Several ancient Greek cities claimed to be his birthplace.",
+        "Some scholars doubt that he was a single real person at all.",
+        "The epics credited to him were sung aloud long before they were written down.",
+        "The Greek poet credited with the Iliad and the Odyssey."
+      ],
+      "links": [
+        { "name": "Greece", "rel": "came from" },
+        { "name": "Achilles", "rel": "told the story of" }
+      ]
+    },
+    {
+      "id": "gabriel-garcia-marquez",
+      "name": "Gabriel García Márquez",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Writer",
+      "year": 1927,
+      "region": "Latin America",
+      "difficulty": 3,
+      "clues": [
+        "Born in Aracataca, Colombia, in 1927, he was largely raised by his grandparents.",
+        "He began his working life as a newspaper journalist.",
+        "He won the Nobel Prize in Literature in 1982.",
+        "He is the best-known writer of the style called magical realism.",
+        "The Colombian author of One Hundred Years of Solitude."
+      ],
+      "links": [
+        { "name": "One Hundred Years of Solitude", "rel": "wrote" },
+        { "name": "Colombia", "rel": "was born in" }
+      ]
+    },
+    {
+      "id": "j-r-r-tolkien",
+      "name": "J. R. R. Tolkien",
+      "aliases": ["John Ronald Reuel Tolkien"],
+      "category": "arts",
+      "sub": "Writer",
+      "year": 1892,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Born in 1892 in Bloemfontein, South Africa, he moved to England as a small child.",
+        "He fought in the Battle of the Somme during the First World War.",
+        "He was a professor of Old English at the University of Oxford.",
+        "He invented whole languages, including the Elvish tongues of Middle-earth.",
+        "The author of The Hobbit and The Lord of the Rings."
+      ],
+      "links": [
+        { "name": "The Hobbit", "rel": "wrote" },
+        { "name": "Frodo Baggins", "rel": "created" },
+        { "name": "Oxford", "rel": "taught in" }
+      ]
+    },
+    {
+      "id": "don-quixote",
+      "name": "Don Quixote",
+      "aliases": ["Don Quijote"],
+      "category": "arts",
+      "sub": "Novel",
+      "year": 1605,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "Published in two parts, in 1605 and 1615, it is often called the first modern novel.",
+        "Its author, Miguel de Cervantes, lost the use of his left hand in a sea battle.",
+        "Its hero is a country gentleman who reads so many romances he sets out as a knight.",
+        "He rides a bony old horse, Rocinante, with his loyal squire Sancho Panza.",
+        "The Spanish novel whose hero charges at windmills, believing they are giants."
+      ],
+      "links": [
+        { "name": "Spain", "rel": "was written in" },
+        { "name": "Madrid", "rel": "was first published in" }
+      ]
+    },
+    {
+      "id": "pride-and-prejudice",
+      "name": "Pride and Prejudice",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Novel",
+      "year": 1813,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Published in 1813, it was first drafted under the title First Impressions.",
+        "It follows the five Bennet sisters and their mother's hunt for good marriages.",
+        "Its witty heroine Elizabeth at first dislikes the proud, wealthy Mr Darcy.",
+        "Its first line says a rich single man must be in want of a wife.",
+        "Jane Austen's most famous novel, the love story of Elizabeth Bennet and Mr Darcy."
+      ],
+      "links": [
+        { "name": "Jane Austen", "rel": "was written by" },
+        { "name": "United Kingdom", "rel": "is set in" }
+      ]
+    },
+    {
+      "id": "frankenstein",
+      "name": "Frankenstein",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Novel",
+      "year": 1818,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "First published without its author's name in 1818, when she was just 20.",
+        "It began as an entry in a ghost-story contest at a villa near Lake Geneva.",
+        "Its subtitle compares its hero to the Titan who stole fire: The Modern Prometheus.",
+        "In it, a young scientist builds a living creature and then abandons it.",
+        "Mary Shelley's gothic novel about a scientist and the monster he makes."
+      ],
+      "links": [
+        { "name": "Geneva", "rel": "was conceived near" },
+        { "name": "Switzerland", "rel": "is partly set in" }
+      ],
+      "fact": "In the novel the creature is never given a name."
+    },
+    {
+      "id": "moby-dick",
+      "name": "Moby-Dick",
+      "aliases": ["Moby Dick"],
+      "category": "arts",
+      "sub": "Novel",
+      "year": 1851,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "Published in 1851, it sold poorly and was largely forgotten until the 1920s.",
+        "Its author had sailed on a whaling ship himself as a young man.",
+        "Its narrator begins by asking readers to call him Ishmael.",
+        "Captain Ahab hunts the great white whale that took his leg.",
+        "Herman Melville's novel about the hunt for a white whale."
+      ],
+      "links": [
+        { "name": "United States", "rel": "was written in" }
+      ]
+    },
+    {
+      "id": "nineteen-eighty-four",
+      "name": "Nineteen Eighty-Four",
+      "aliases": ["1984"],
+      "category": "arts",
+      "sub": "Novel",
+      "year": 1949,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Published in 1949, it imagines a future Britain ruled by an all-seeing Party.",
+        "Its hero, Winston Smith, secretly keeps a forbidden diary.",
+        "Its rulers invent Newspeak, a language designed to limit what people can think.",
+        "Its dreaded Room 101 holds each prisoner's worst fear.",
+        "George Orwell's novel whose posters warn 'Big Brother is watching you'."
+      ],
+      "links": [
+        { "name": "London", "rel": "is set in" },
+        { "name": "United Kingdom", "rel": "was written in" }
+      ]
+    },
+    {
+      "id": "one-hundred-years-of-solitude",
+      "name": "One Hundred Years of Solitude",
+      "aliases": ["Cien años de soledad"],
+      "category": "arts",
+      "sub": "Novel",
+      "year": 1967,
+      "region": "Latin America",
+      "difficulty": 3,
+      "clues": [
+        "First published in Buenos Aires in 1967, it became a worldwide bestseller.",
+        "Its story follows seven generations of the Buendia family.",
+        "It is set in Macondo, a made-up town in Colombia.",
+        "It is the most famous example of the style called magical realism.",
+        "Gabriel Garcia Marquez's masterpiece, which opens with a colonel facing a firing squad."
+      ],
+      "links": [
+        { "name": "Gabriel García Márquez", "rel": "was written by" },
+        { "name": "Colombia", "rel": "is set in" }
+      ]
+    },
+    {
+      "id": "the-hobbit",
+      "name": "The Hobbit",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Novel",
+      "year": 1937,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "First published in 1937, it grew out of stories its author told his children.",
+        "Its author drew its maps and illustrations himself.",
+        "Its hero joins thirteen dwarves on a quest to win back treasure from a dragon.",
+        "On the journey its hero finds a magic ring in a dark mountain cave.",
+        "J. R. R. Tolkien's tale of Bilbo Baggins and the dragon Smaug."
+      ],
+      "links": [
+        { "name": "J. R. R. Tolkien", "rel": "was written by" },
+        { "name": "Frodo Baggins", "rel": "sets the scene for the quest of" }
+      ]
+    },
+    {
+      "id": "sherlock-holmes",
+      "name": "Sherlock Holmes",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Book Character",
+      "year": 1887,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He first appeared in 1887 in the story A Study in Scarlet.",
+        "He plays the violin and solves cases through brilliant deduction.",
+        "His loyal friend and storyteller is Dr John Watson.",
+        "He lives at 221B Baker Street in London.",
+        "Arthur Conan Doyle's great detective in a deerstalker hat."
+      ],
+      "links": [
+        { "name": "London", "rel": "lives in" },
+        { "name": "Hercule Poirot", "rel": "is a fellow fictional detective of" }
+      ]
+    },
+    {
+      "id": "harry-potter",
+      "name": "Harry Potter",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Book Character",
+      "year": 1997,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He first appeared in a children's novel published in 1997.",
+        "He grew up in a cupboard under the stairs at his aunt and uncle's house.",
+        "He has a lightning-bolt scar on his forehead.",
+        "His best friends are Ron Weasley and Hermione Granger.",
+        "The boy wizard of Hogwarts created by J. K. Rowling."
+      ],
+      "links": [
+        { "name": "J. K. Rowling", "rel": "was created by" },
+        { "name": "United Kingdom", "rel": "lives in" }
+      ]
+    },
+    {
+      "id": "hercule-poirot",
+      "name": "Hercule Poirot",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Book Character",
+      "year": 1920,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He first appeared in 1920 in The Mysterious Affair at Styles.",
+        "He is a retired police officer from Belgium who settles in England.",
+        "He is proud of his neat moustache and his 'little grey cells'.",
+        "He solved the Murder on the Orient Express and Death on the Nile.",
+        "Agatha Christie's famous Belgian detective."
+      ],
+      "links": [
+        { "name": "Agatha Christie", "rel": "was created by" },
+        { "name": "Belgium", "rel": "comes from" }
+      ]
+    },
+    {
+      "id": "count-dracula",
+      "name": "Count Dracula",
+      "aliases": ["Dracula"],
+      "category": "arts",
+      "sub": "Book Character",
+      "year": 1897,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He first appeared in an 1897 novel told through letters and diary entries.",
+        "He was created by the Irish writer Bram Stoker.",
+        "He sleeps in a coffin and can turn into a bat.",
+        "He lives in a castle in the Carpathian Mountains of Transylvania.",
+        "The most famous vampire in all of literature."
+      ],
+      "links": [
+        { "name": "Romania", "rel": "lives in" },
+        { "name": "Ireland", "rel": "was created by a writer from" }
+      ]
+    },
+    {
+      "id": "robinson-crusoe",
+      "name": "Robinson Crusoe",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Book Character",
+      "year": 1719,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He first appeared in a 1719 novel presented as a real-life memoir.",
+        "His tale is often linked to a real Scottish sailor marooned on a Pacific island.",
+        "He spends 28 years on a remote island after a shipwreck.",
+        "He names his companion Friday after the day they first meet.",
+        "Daniel Defoe's famous shipwrecked castaway."
+      ],
+      "links": [
+        { "name": "Daniel Defoe", "rel": "was created by" },
+        { "name": "United Kingdom", "rel": "comes from" }
+      ]
+    },
+    {
+      "id": "tom-sawyer",
+      "name": "Tom Sawyer",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Book Character",
+      "year": 1876,
+      "region": "North America",
+      "difficulty": 2,
+      "clues": [
+        "He first appeared in an 1876 novel set in a town on the Mississippi River.",
+        "He lives with his Aunt Polly and his half-brother Sid.",
+        "He tricks other boys into paying him for the chance to whitewash a fence.",
+        "His best friend is Huckleberry Finn.",
+        "Mark Twain's mischievous boy hero from St. Petersburg, Missouri."
+      ],
+      "links": [
+        { "name": "Mark Twain", "rel": "was created by" },
+        { "name": "United States", "rel": "lives in" }
+      ]
+    },
+    {
+      "id": "frodo-baggins",
+      "name": "Frodo Baggins",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Book Character",
+      "year": 1954,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "He first appeared in 1954 in the opening volume of a famous fantasy story.",
+        "He lives at Bag End in the Shire.",
+        "He inherits a dangerous ring from his elderly relative Bilbo.",
+        "His loyal gardener and friend is Samwise Gamgee.",
+        "The hobbit who carries the One Ring to Mount Doom."
+      ],
+      "links": [
+        { "name": "J. R. R. Tolkien", "rel": "was created by" },
+        { "name": "The Hobbit", "rel": "follows the story of" }
+      ]
+    },
+    {
+      "id": "peter-pan",
+      "name": "Peter Pan",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Book Character",
+      "year": 1902,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "He first appeared in a 1902 novel for adults, then in a 1904 stage play.",
+        "He lives in Neverland with the Lost Boys.",
+        "His enemy is Captain Hook, who lost a hand to a crocodile.",
+        "His fairy companion is Tinker Bell.",
+        "The flying boy who never grows up, created by J. M. Barrie."
+      ],
+      "links": [
+        { "name": "London", "rel": "flies to" },
+        { "name": "United Kingdom", "rel": "was created in" }
+      ]
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Myth Figure",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "His sacred symbols include the eagle, the oak tree and the thunderbolt.",
+        "As a baby he was hidden on Crete so his father could not swallow him.",
+        "He overthrew his father Cronus and the Titans.",
+        "The Romans knew him as Jupiter.",
+        "The king of the Greek gods, who rules from Mount Olympus."
+      ],
+      "links": [
+        { "name": "Greece", "rel": "was worshipped in" },
+        { "name": "Hercules", "rel": "is the father of" },
+        { "name": "Thor", "rel": "shares thunder powers with" }
+      ]
+    },
+    {
+      "id": "thor",
+      "name": "Thor",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Myth Figure",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "His chariot is pulled across the sky by two goats.",
+        "A day of the English week is named after him.",
+        "His father is Odin, the chief of the gods.",
+        "His hammer, Mjolnir, always returns to his hand.",
+        "The red-bearded Norse god of thunder."
+      ],
+      "links": [
+        { "name": "Zeus", "rel": "shares thunder powers with" },
+        { "name": "Norway", "rel": "was worshipped in" }
+      ]
+    },
+    {
+      "id": "king-arthur",
+      "name": "King Arthur",
+      "aliases": ["Arthur Pendragon"],
+      "category": "arts",
+      "sub": "Myth Figure",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "Early Welsh poems and a 12th-century history of British kings tell his story.",
+        "His wise wizard adviser is Merlin.",
+        "His queen is Guinevere and his greatest knight is Lancelot.",
+        "He gathers his knights around a Round Table at Camelot.",
+        "The legendary British ruler who pulled the sword from the stone."
+      ],
+      "links": [
+        { "name": "United Kingdom", "rel": "is a legend of" }
+      ]
+    },
+    {
+      "id": "hercules",
+      "name": "Hercules",
+      "aliases": ["Heracles"],
+      "category": "arts",
+      "sub": "Myth Figure",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "As a baby he strangled two snakes that were sent to his cradle to kill him.",
+        "He was the son of Zeus and a mortal woman, Alcmene.",
+        "He had to complete twelve famous labours as a punishment.",
+        "One of his tasks was to kill the Nemean lion and wear its skin.",
+        "The Greek hero of legendary strength, best known today by his Roman name."
+      ],
+      "links": [
+        { "name": "Zeus", "rel": "is the son of" },
+        { "name": "Greece", "rel": "is a hero of" }
+      ]
+    },
+    {
+      "id": "medusa",
+      "name": "Medusa",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Myth Figure",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 1,
+      "clues": [
+        "She was one of three sisters known as the Gorgons.",
+        "The winged horse Pegasus sprang from her blood.",
+        "The hero Perseus used a polished shield so he never looked at her directly.",
+        "Anyone who looked straight at her face was turned to stone.",
+        "The Greek monster with living snakes instead of hair."
+      ],
+      "links": [
+        { "name": "Greece", "rel": "is a monster of" }
+      ]
+    },
+    {
+      "id": "anubis",
+      "name": "Anubis",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Myth Figure",
+      "year": null,
+      "region": "Africa",
+      "difficulty": 2,
+      "clues": [
+        "He was usually shown as a man with the head of a black wild dog.",
+        "He watched over embalming and the making of mummies.",
+        "At the weighing of the heart, a dead person's heart was balanced against a feather.",
+        "He guided the souls of the dead through the underworld.",
+        "The jackal-headed Egyptian god of the dead."
+      ],
+      "links": [
+        { "name": "Egypt", "rel": "was worshipped in" }
+      ]
+    },
+    {
+      "id": "achilles",
+      "name": "Achilles",
+      "aliases": [],
+      "category": "arts",
+      "sub": "Myth Figure",
+      "year": null,
+      "region": "Europe",
+      "difficulty": 2,
+      "clues": [
+        "His mother, the sea nymph Thetis, dipped him in a magical river as a baby.",
+        "He was the greatest Greek warrior at the siege of Troy.",
+        "He killed the Trojan prince Hector to avenge his friend Patroclus.",
+        "He was finally killed by an arrow shot by the Trojan prince Paris.",
+        "The hero whose only weak spot was his heel."
+      ],
+      "links": [
+        { "name": "Homer", "rel": "appears in the poems of" },
+        { "name": "Greece", "rel": "is a hero of" },
+        { "name": "Troy", "rel": "fought at" }
+      ]
+    }
+  ]
+}
