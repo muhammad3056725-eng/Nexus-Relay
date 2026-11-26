@@ -28,6 +28,7 @@ import { Dataset } from "./data";
 import { Renderer, drawScope, type CrtIntensity } from "./graphics/Renderer";
 import { sectorForDomain } from "./graphics/PaletteManager";
 import { ConsoleDeck } from "./components/ConsoleDeck";
+import { Tutorial, TUTORIAL_SEEN_KEY } from "./components/Tutorial";
 import { TelemetryPanel, escapeHtml, proximityClass } from "./components/TelemetryPanel";
 import { RelicCard } from "./components/RelicCard";
 import { RelicVaultDB } from "./storage/RelicVaultDB";
@@ -53,6 +54,8 @@ class Game {
   private round: Round | null = null;
   private mode: Mode = "daily";
   private hardcore = false;
+  private tutorial: Tutorial | null = null;
+  private practice = false;
   private started = false;
   private finished = false;
   private tunedClues = new Map<ChannelKey, string>();
@@ -94,6 +97,16 @@ class Game {
     window.addEventListener("resize", () => this.fitRenderer());
     this.newRound();
     await this.updateVaultLine();
+    // First-run FIELD TRAINING: auto-show once per Archivist (the seen
+    // flag lives in localStorage beside the vault keys). Re-openable
+    // anytime via the FIELD TRAINING header button.
+    let tutorialSeen = true;
+    try {
+      tutorialSeen = localStorage.getItem(TUTORIAL_SEEN_KEY) === "1";
+    } catch {
+      tutorialSeen = true; // storage blocked — never trap the player
+    }
+    if (!tutorialSeen) this.startTutorial();
     requestAnimationFrame((now) => this.loop(now));
   }
 
@@ -105,6 +118,10 @@ class Game {
     });
     $("mode-daily").addEventListener("click", () => this.setMode("daily"));
     $("mode-endless").addEventListener("click", () => this.setMode("endless"));
+    $("tutorial-btn").addEventListener("click", () => {
+      this.audio.click();
+      this.startTutorial();
+    });
     $<HTMLInputElement>("hardcore").addEventListener("change", (ev) => {
       this.hardcore = (ev.target as HTMLInputElement).checked;
       this.newRound();
@@ -276,12 +293,15 @@ class Game {
     return { targetId: rec.id, roundNumber: this.stage };
   }
 
-  private newRound(): void {
+  private newRound(forcedTargetId?: number): void {
     this.stopOverclock();
+    this.practice = forcedTargetId != null;
     const pick =
-      this.mode === "daily"
-        ? this.pickDailyTarget()
-        : this.pickExpeditionTarget();
+      forcedTargetId != null
+        ? { targetId: forcedTargetId, roundNumber: 0 }
+        : this.mode === "daily"
+          ? this.pickDailyTarget()
+          : this.pickExpeditionTarget();
     this.round = new Round({
       targetId: pick.targetId,
       records: this.ds.records,
@@ -318,8 +338,9 @@ class Game {
       $("mascot-line").textContent =
         "Carrier locked. Five relays cold. Six capacitor charges on the rail, Archivist.";
     }
-    $("round-label").textContent =
-      this.mode === "daily"
+    $("round-label").textContent = this.practice
+      ? "PRACTICE ROUND · FIELD TRAINING SIGNAL"
+      : this.mode === "daily"
         ? `DAILY #${String(pick.roundNumber).padStart(3, "0")} · ${new Date().toISOString().slice(0, 10)} UTC`
         : `STAGE ${this.stage} · STRIKES ${this.strikes}/3 · RUN ${this.runTotal.toLocaleString()} SIG`;
     this.audio.stopMusic();
@@ -520,6 +541,73 @@ class Game {
     }
   }
 
+  // ------------------------------------------------------------ tutorial
+  /** Live engine state the tutorial polls to advance its action steps. */
+  tutorialState() {
+    return {
+      started: this.started,
+      finished: this.finished,
+      solved: this.round?.solved ?? false,
+      probes: this.round?.probes ?? 0,
+      pings: this.round?.pings.length ?? 0,
+      tuned: this.tunedClues.size,
+      bridges: this.round?.bridges.length ?? 0,
+      phase: this.round?.phase ?? 1,
+    };
+  }
+
+  /**
+   * Deterministic practice target: the lowest-id entity that can teach
+   * every system — all five clue channels present, spatial coordinates
+   * (so the SPACE axis is live) and at least 3 outgoing beams for the
+   * Overclock. The suggested first ping is its first graph neighbour
+   * (adjacency is bidirectional, so it always reads exactly 1 hop).
+   */
+  private pickPracticeTarget(): { targetId: number; neighbourName: string } {
+    const ids = [...this.ds.records.keys()].sort((a, b) => a - b);
+    for (const id of ids) {
+      const rec = this.ds.records.get(id)!;
+      const packEnt = this.ds.pack.get(id);
+      if (!packEnt) continue;
+      const edges = packEnt.edges ?? [];
+      if (rec.lat == null || rec.lon == null) continue;
+      if (edges.length < 3) continue;
+      if (CHANNELS.some((c) => !packEnt.clues?.[c.key])) continue;
+      return { targetId: id, neighbourName: this.ds.nameOf(edges[0].target_id) };
+    }
+    const fallback = ids[0];
+    return { targetId: fallback, neighbourName: this.ds.nameOf(ids[1] ?? fallback) };
+  }
+
+  /** Open FIELD TRAINING: a scripted practice round on the real console. */
+  startTutorial(): void {
+    if (this.tutorial?.active || !this.ds) return;
+    const pick = this.pickPracticeTarget();
+    this.newRound(pick.targetId);
+    this.begin();
+    this.tutorial = new Tutorial(
+      {
+        state: () => this.tutorialState(),
+        onExit: () => this.exitTutorial(),
+      },
+      {
+        targetName: this.ds.nameOf(pick.targetId),
+        neighbourName: pick.neighbourName,
+      }
+    );
+    this.tutorial.start();
+    $("mascot-line").textContent =
+      "Training signal sealed. Follow the field-training card, Archivist.";
+  }
+
+  private exitTutorial(): void {
+    this.tutorial = null;
+    // Hand the Archivist a fresh live round, unstarted, on the real mode.
+    this.newRound();
+    $("mascot-line").textContent =
+      "Training closed. A live signal is on the rail — begin when ready.";
+  }
+
   // ------------------------------------------------------------ finish
   private finish(): void {
     if (!this.round || this.finished) return;
@@ -550,18 +638,21 @@ class Game {
     if (solved) {
       this.relic.draw(targetRec.dom, score.rank.title);
       this.relicVisible = true;
-      void this.vault
-        .saveRelic({
-          targetId: round.targetId,
-          targetName: target.name,
-          domain: targetRec.dom,
-          score: score.total,
-          rankTitle: score.rank.title,
-          frameName: this.relic.frameName,
-          mode: this.mode,
-          dateISO: new Date().toISOString(),
-        })
-        .then(() => this.updateVaultLine());
+      // Practice rounds are training only — they never mint vault relics.
+      if (!this.practice) {
+        void this.vault
+          .saveRelic({
+            targetId: round.targetId,
+            targetName: target.name,
+            domain: targetRec.dom,
+            score: score.total,
+            rankTitle: score.rank.title,
+            frameName: this.relic.frameName,
+            mode: this.mode,
+            dateISO: new Date().toISOString(),
+          })
+          .then(() => this.updateVaultLine());
+      }
     } else {
       this.relicVisible = false;
       $<HTMLCanvasElement>("relic-canvas").style.display = "none";
@@ -573,10 +664,14 @@ class Game {
     );
     $("results-box").hidden = false;
     $("mascot-line").textContent = solved
-      ? `Signal integrity ${score.total.toLocaleString()}. Relic minted in a ${this.relic.frameName} frame. Trace is ready to share.`
+      ? this.practice
+        ? `Practice lock at ${score.total.toLocaleString()} SIG. In a live round, this is where the relic mints.`
+        : `Signal integrity ${score.total.toLocaleString()}. Relic minted in a ${this.relic.frameName} frame. Trace is ready to share.`
       : `The capacitor is spent. It was ${target.name}. Study the trace and re-tune your instincts.`;
 
-    if (this.mode === "endless") {
+    if (this.practice) {
+      $<HTMLButtonElement>("again-btn").textContent = "▶ FINISH TRAINING";
+    } else if (this.mode === "endless") {
       if (solved) {
         this.runTotal += score.total;
         this.stage += 1;
@@ -598,6 +693,11 @@ class Game {
   }
 
   private onAgain(): void {
+    if (this.practice) {
+      // Leaving the practice round via the report returns to a live round.
+      this.tutorial?.close();
+      return;
+    }
     if (this.mode === "daily") {
       this.setMode("endless");
       this.begin();
