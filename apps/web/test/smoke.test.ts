@@ -75,7 +75,7 @@ describe("NEXUS RELAY web app (jsdom, real starter dataset)", () => {
   test("boots and loads the dataset", () => {
     expect(
       document.getElementById("dataset-line")!.textContent
-    ).toContain("110 ENTITIES");
+    ).toContain("1021 ENTITIES");
     expect(game.round).not.toBeNull();
   });
 

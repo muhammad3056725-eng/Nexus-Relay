@@ -1,0 +1,104 @@
+# NEXUS RELAY — dataset expansion workflow (STAGED COPY)
+# =====================================================================
+# This file is the staged copy of the GitHub Actions workflow that
+# grows the dataset. The Muse GitHub App cannot push files under
+# .github/workflows/ (missing Workflows permission), so the repo owner
+# pastes this file's contents into:
+#
+#     .github/workflows/dataset-expansion.yml
+#
+# exactly as he did for pages.yml. The canonical copy lives in the
+# repo here (pipeline/dataset-expansion.workflow.yml) so it is version
+# controlled; keep the two in sync.
+#
+# What it does:
+#   * Runs the Stage 1-6 expansion pipeline for the chosen stage
+#     (workflow_dispatch input; the monthly schedule runs stage A —
+#     raise the cron default by editing DEFAULT_STAGE below).
+#   * Restores/saves the pipeline/corpus fetch cache via actions/cache
+#     so runs are resumable across invocations (WDQS rate-limits
+#     SPARQL to ~1 heavy query/min; big stages may need several runs —
+#     each run fetches only the shortfall and commits what validates).
+#   * Validates the regenerated dataset (pipeline tests + the Stage 6
+#     validator) and commits public/data back to main.
+#   * Dispatches pages.yml afterwards (workflow_dispatch is exempt
+#     from the GITHUB_TOKEN no-retrigger rule) so the enlarged dataset
+#     is published to GitHub Pages.
+#
+# Repository settings it needs (one line each):
+#   * Settings -> Actions -> General -> Workflow permissions:
+#     "Read and write permissions" (the job also declares them below).
+#   * No secrets are required: Wikidata is public, pushes use the
+#     built-in GITHUB_TOKEN, and the Pages dispatch uses it too.
+# =====================================================================
+name: Dataset expansion
+
+on:
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: "Expansion stage (cumulative corpus target)"
+        type: choice
+        options: [A, B, C, D]
+        default: A
+  schedule:
+    # Monthly, 03:17 UTC on the 1st. Scheduled runs use the default
+    # stage (A) — edit DEFAULT_STAGE in the run step to grow further.
+    - cron: "17 3 1 * *"
+
+permissions:
+  contents: write # commit the regenerated dataset
+  actions: write # dispatch the Pages deploy workflow
+
+concurrency:
+  group: dataset-expansion
+  cancel-in-progress: false
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install test runner
+        run: pip install pytest
+
+      - name: Restore pipeline fetch cache (resumability)
+        uses: actions/cache@v4
+        with:
+          path: pipeline/corpus
+          key: dataset-corpus-${{ inputs.stage || 'A' }}-${{ github.run_id }}
+          restore-keys: |
+            dataset-corpus-${{ inputs.stage || 'A' }}-
+
+      - name: Run expansion pipeline (Stages 1-6)
+        env:
+          DEFAULT_STAGE: A
+        run: python3 pipeline/src/build_dataset.py --stage "${{ inputs.stage || env.DEFAULT_STAGE }}"
+
+      - name: Validate dataset + run pipeline tests
+        run: |
+          python3 pipeline/src/validate_dataset.py
+          python3 -m pytest pipeline/tests -q
+
+      - name: Commit regenerated dataset
+        run: |
+          git config user.name "nexus-relay-dataset-bot"
+          git config user.email "actions@github.com"
+          git add public/data
+          if git diff --cached --quiet; then
+            echo "Dataset unchanged; nothing to commit."
+          else
+            git commit -m "Dataset expansion: stage ${{ inputs.stage || 'A' }} (pipeline run ${{ github.run_id }})"
+            git push
+          fi
+
+      - name: Trigger Pages deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml

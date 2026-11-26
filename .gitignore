@@ -5,4 +5,5 @@ dist/
 .DS_Store
 __pycache__/
 .pytest_cache/
+pipeline/corpus/
 *.muse-github-snapshot-sync.json

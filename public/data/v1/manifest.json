@@ -1,13 +1,13 @@
 {
-  "version": "0.1.0-phase1",
-  "generated_at": "2026-11-26T00:00:00Z",
-  "entity_count": 110,
-  "edge_count": 441,
+  "version": "0.2.0-stagea",
+  "generated_at": "2026-11-26T09:04:18Z",
+  "entity_count": 1021,
+  "edge_count": 5056,
   "min_outgoing_edges": 4,
-  "telemetry_sha256": "8f7b8f4ba8d4f326a2f84af55ead31f18d7cb406f558570ae126c7ae751451af",
+  "telemetry_sha256": "a191f60ed55d935a5ce71f213aa039e36224bf268069ec51bd13d7924202d867",
   "telemetry_record_bytes": 24,
-  "shards_count": 117,
-  "packs_count": 1,
-  "corpus": "starter",
-  "note": "Phase 1 starter corpus (110 hand-authored entities). Production target per blueprint: 250,000 entities / 1.5M edges via the Stage 1-6 Wikidata pipeline."
+  "shards_count": 203,
+  "packs_count": 2,
+  "corpus": "starter+wikidata-stage-a",
+  "note": "Starter corpus (110 hand-authored) + Wikidata expansion stage A (911 entities) via the Stage 1-6 pipeline. Blueprint target: 250,000 entities / 1.5M edges."
 }
