@@ -21,15 +21,38 @@
     <h1>NEXUS&nbsp;RELAY</h1>
     <p class="tagline">SIGNAL ARCHIVIST CONSOLE · EST. 1994 · DEEP-BAND DIVISION</p>
   </div>
-  <div class="mode-controls" role="group" aria-label="Game mode">
-    <button id="mode-daily" class="px-btn mode-btn active" type="button">DAILY BROADCAST</button>
-    <button id="mode-endless" class="px-btn mode-btn" type="button">ENDLESS EXPEDITION</button>
-    <button id="tutorial-btn" class="px-btn mode-btn" type="button">? FIELD TRAINING</button>
-    <label class="hardcore-toggle"><input type="checkbox" id="hardcore"> ZERO-CLUE HARDCORE</label>
+  <div class="top-actions">
+    <button id="pause-btn" class="px-btn" type="button" hidden>⏸ PAUSE</button>
+    <button id="settings-btn" class="px-btn" type="button" hidden>⚙ SETTINGS</button>
+    <button id="menu-btn" class="px-btn" type="button" hidden>☰ MENU</button>
   </div>
 </header>
 
-<main class="console-grid">
+<!-- ================= MAIN MENU ================= -->
+<section id="screen-menu" class="screen">
+  <div class="panel menu-panel">
+    <div class="panel-head">MAIN MENU · SIGNAL ARCHIVIST CONSOLE</div>
+    <div class="mascot-row menu-mascot">
+      <img class="mascot-art" src="assets/vex09-keyart.png" alt="VEX-09, your relay operator" onerror="this.style.display='none'">
+      <div class="mascot-speech">
+        <div class="panel-head small">VEX-09 · OPERATOR</div>
+        <p id="menu-line">Console warm, Archivist. One sealed entity per signal, six probes on the rail. Pick your band.</p>
+      </div>
+    </div>
+    <nav class="menu-list" aria-label="Main menu">
+      <button id="menu-start" class="px-btn menu-item" type="button">▶ START <span class="menu-sub">free signal · friendly band</span></button>
+      <button id="mode-daily" class="px-btn menu-item" type="button">📡 DAILY BROADCAST <span class="menu-sub">today's shared signal</span></button>
+      <button id="mode-endless" class="px-btn menu-item" type="button">🌀 ENDLESS EXPEDITION <span class="menu-sub">staged bands · 3 strikes</span></button>
+      <button id="tutorial-btn" class="px-btn menu-item" type="button">? FIELD TRAINING <span class="menu-sub">guided practice round</span></button>
+      <button id="menu-settings" class="px-btn menu-item" type="button">⚙ SETTINGS <span class="menu-sub">sound · CRT · accessibility</span></button>
+    </nav>
+    <label class="hardcore-toggle menu-hardcore"><input type="checkbox" id="hardcore"> ZERO-CLUE HARDCORE — relays sealed (Daily / Endless)</label>
+    <div id="menu-vault-line" class="hint menu-vault">Best score: — · Relics stored: 0</div>
+  </div>
+</section>
+
+<!-- ================= GAME CONSOLE ================= -->
+<main id="screen-game" class="console-grid" hidden>
   <!-- LEFT: CRT CORE + MASCOT + OSCILLOSCOPE -->
   <section class="panel core-panel">
     <div class="panel-head">CRT CONTAINMENT CORE</div>
@@ -98,18 +121,36 @@
     </div>
   </section>
 
-  <!-- RIGHT: TELEMETRY LOG -->
+  <!-- RIGHT: TABBED DRAWERS — TELEMETRY / VAULT / MANUAL -->
   <section class="panel telemetry-panel">
-    <div class="panel-head">TELEMETRY LOG</div>
-    <div id="telemetry-log" class="telemetry-log">
-      <p class="hint">No pings yet. Tune a relay to decrypt a clue, or ping a hypothesis to read its vector against the sealed target.</p>
+    <div class="tab-row" role="tablist" aria-label="Console drawers">
+      <button id="tab-telemetry" class="px-btn tab-btn active" type="button" role="tab">TELEMETRY</button>
+      <button id="tab-vault" class="px-btn tab-btn" type="button" role="tab">RELIC VAULT</button>
+      <button id="tab-manual" class="px-btn tab-btn" type="button" role="tab">FIELD MANUAL</button>
     </div>
-    <div class="vault-box">
+    <div id="tabpage-telemetry">
+      <div id="telemetry-log" class="telemetry-log">
+        <p class="hint">No pings yet. Tune a relay to decrypt a clue, or ping a hypothesis to read its vector against the sealed target.</p>
+      </div>
+    </div>
+    <div id="tabpage-vault" hidden>
       <div class="panel-head small">RELIC VAULT</div>
       <div id="vault-line" class="hint">Best score: — · Relics stored: 0</div>
+      <p class="hint">Every locked target mints a holographic relic card in the vault, framed by the rank you earned. Practice rounds never mint.</p>
     </div>
-    <div class="a11y-box">
-      <div class="panel-head small">CONSOLE SETTINGS</div>
+    <div id="tabpage-manual" hidden>
+      <div class="panel-head small">FIELD MANUAL</div>
+      <p class="hint">You have <b>6 probes</b>. <b>Tune a relay</b> to decrypt one clue (score multiplier −9% each). <b>Ping a hypothesis</b> to compare any entity against the target on five axes. Lock the target to trigger the <b>15-second Overclock</b>: name its graph neighbours to multiply your score up to ×2.5.</p>
+      <p class="hint">Reading a ping: <b>((O))</b> exact · <b>▲</b> warm — the trail is closing · <b>■</b> cold — pivot on your strongest axis. The SIGNAL HEAT meter is your best axis talking: follow whichever of ERA, SPACE or GRAPH burns hottest.</p>
+    </div>
+  </section>
+</main>
+
+<!-- ================= SETTINGS ================= -->
+<section id="screen-settings" class="screen" hidden>
+  <div class="panel settings-panel">
+    <div class="panel-head">CONSOLE SETTINGS</div>
+    <div class="a11y-box settings-list">
       <label>CRT intensity
         <select id="crt-select">
           <option value="off">OFF — clean pixels</option>
@@ -122,12 +163,22 @@
       <label><input type="checkbox" id="font-toggle"> Hi-legibility font (Silkscreen / Inter)</label>
       <label><input type="checkbox" id="sound-toggle" checked> Sound (Web Audio synth)</label>
     </div>
-    <div class="howto">
-      <div class="panel-head small">FIELD MANUAL</div>
-      <p class="hint">You have <b>6 probes</b>. <b>Tune a relay</b> to decrypt one clue (score multiplier −9% each). <b>Ping a hypothesis</b> to compare any entity against the target on five axes. Lock the target to trigger the <b>15-second Overclock</b>: name its graph neighbours to multiply your score up to ×2.5.</p>
+    <button id="settings-back" class="px-btn big" type="button">◀ BACK</button>
+  </div>
+</section>
+
+<!-- ================= PAUSE OVERLAY ================= -->
+<div id="pause-overlay" class="pause-overlay" hidden>
+  <div class="panel pause-panel" role="dialog" aria-label="Paused">
+    <div class="panel-head">⏸ PAUSED</div>
+    <div class="menu-list">
+      <button id="resume-btn" class="px-btn menu-item" type="button">▶ RESUME</button>
+      <button id="pause-settings-btn" class="px-btn menu-item" type="button">⚙ SETTINGS</button>
+      <button id="quit-btn" class="px-btn menu-item" type="button">☰ QUIT TO MENU</button>
     </div>
-  </section>
-</main>
+    <p class="hint">Quitting abandons the current signal. The Overclock surge runs in real time and cannot be paused.</p>
+  </div>
+</div>
 
 <footer class="footer">
   <span id="dataset-line">Loading dataset…</span>

@@ -65,6 +65,10 @@ describe("FIELD TRAINING tutorial (first visit)", () => {
     expect(document.getElementById("round-label")!.textContent).toContain(
       "PRACTICE ROUND"
     );
+    // the tutorial plays on the game screen, in front of the menu
+    expect(
+      (document.getElementById("screen-game") as HTMLElement).hidden
+    ).toBe(false);
     expect(localStorage.getItem(SEEN_KEY)).toBeNull();
   });
 
@@ -104,6 +108,10 @@ describe("FIELD TRAINING tutorial (first visit)", () => {
     expect(document.getElementById("round-label")!.textContent).not.toContain(
       "PRACTICE ROUND"
     );
+    // exiting training lands back home on the main menu
+    expect(
+      (document.getElementById("screen-menu") as HTMLElement).hidden
+    ).toBe(false);
   });
 
   test("FIELD TRAINING button re-opens the tutorial anytime", () => {

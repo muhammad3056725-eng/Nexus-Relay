@@ -136,4 +136,37 @@ describe("NEXUS RELAY web app (jsdom, real starter dataset)", () => {
       "TOTAL SIGNAL INTEGRITY"
     );
   });
+
+  test("a lost round teaches: debrief shows the closest pass and the trail", async () => {
+    // Fresh free-signal round from the menu, then burn all 6 probes on
+    // wrong entities — the failure report must coach, not just punish.
+    (document.getElementById("menu-start") as HTMLButtonElement).click();
+    game.begin();
+    const round = game.round!;
+    const internals = game as unknown as {
+      ds: { records: Map<number, unknown>; nameOf(id: number): string };
+    };
+    const wrongIds = [...internals.ds.records.keys()]
+      .filter((id) => id !== round.targetId)
+      .slice(0, 6);
+    const input = document.getElementById(
+      "hypothesis-input"
+    ) as HTMLInputElement;
+    for (const id of wrongIds) {
+      input.value = internals.ds.nameOf(id);
+      await game.onPing();
+    }
+    expect(round.solved).toBe(false);
+    expect(
+      (document.getElementById("results-box") as HTMLElement).hidden
+    ).toBe(false);
+    const body = document.getElementById("results-body")!.textContent!;
+    expect(body).toContain("WHAT THE TELEMETRY POINTED TO");
+    expect(body).toContain("Closest pass");
+    // every ping row carries the generous heat read-out
+    expect(document.querySelectorAll(".ping-row").length).toBe(6);
+    expect(document.querySelector(".ping-verdict")!.textContent).toContain(
+      "SIGNAL HEAT"
+    );
+  });
 });

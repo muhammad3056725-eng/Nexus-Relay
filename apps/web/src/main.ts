@@ -12,7 +12,9 @@
 import {
   CHANNELS,
   DOMAINS,
+  NOTABILITY_TIERS,
   decodeClue,
+  notabilityTierIndex,
   type ChannelKey,
   type ShardEntity,
 } from "@nexus-relay/shared-types";
@@ -40,7 +42,8 @@ const $ = <T extends HTMLElement>(id: string): T =>
 
 const LAUNCH_EPOCH_DAYS = Math.floor(Date.UTC(2026, 0, 1) / 86400000);
 
-type Mode = "daily" | "endless";
+type Mode = "daily" | "endless" | "free";
+type Screen = "menu" | "game" | "settings";
 
 class Game {
   private ds!: Dataset;
@@ -54,6 +57,10 @@ class Game {
   private round: Round | null = null;
   private mode: Mode = "daily";
   private hardcore = false;
+  private screen: Screen = "menu";
+  private settingsReturn: Screen = "menu";
+  private paused = false;
+  private friendlyCache: number[] | null = null;
   private tutorial: Tutorial | null = null;
   private practice = false;
   private started = false;
@@ -97,6 +104,8 @@ class Game {
     window.addEventListener("resize", () => this.fitRenderer());
     this.newRound();
     await this.updateVaultLine();
+    // The console boots INTO the main menu; the game lives behind it.
+    this.showScreen("menu");
     // First-run FIELD TRAINING: auto-show once per Archivist (the seen
     // flag lives in localStorage beside the vault keys). Re-openable
     // anytime via the FIELD TRAINING header button.
@@ -110,18 +119,120 @@ class Game {
     requestAnimationFrame((now) => this.loop(now));
   }
 
+  // ------------------------------------------------------------ screens
+  /**
+   * Screen manager: exactly one surface is visible at a time — the
+   * MAIN MENU is home, the console lives behind it, SETTINGS is a
+   * separate screen reachable from both (and returns to its opener).
+   */
+  private showScreen(screen: Screen): void {
+    this.screen = screen;
+    $("screen-menu").hidden = screen !== "menu";
+    $("screen-game").hidden = screen !== "game";
+    $("screen-settings").hidden = screen !== "settings";
+    const inGame = screen === "game";
+    $("pause-btn").hidden = !inGame;
+    $("settings-btn").hidden = !inGame;
+    $("menu-btn").hidden = !inGame;
+    if (inGame) {
+      this.fitRenderer();
+      this.renderPauseOverlay();
+    }
+  }
+
+  private renderPauseOverlay(): void {
+    $("pause-overlay").hidden = !this.paused;
+  }
+
+  private openSettings(from: Screen): void {
+    this.audio.click();
+    this.settingsReturn = from;
+    this.showScreen("settings");
+  }
+
+  private pauseGame(): void {
+    if (this.screen !== "game" || this.paused) return;
+    // The Overclock surge is 15 real seconds (Blueprint §2) — it
+    // cannot be paused; the pause button is disabled while it runs.
+    if (this.round?.phase === 3 && !this.finished) return;
+    this.paused = true;
+    this.audio.click();
+    this.audio.stopMusic();
+    this.renderPauseOverlay();
+  }
+
+  private resumeGame(): void {
+    this.paused = false;
+    this.audio.click();
+    this.renderPauseOverlay();
+    if (this.started && !this.finished) this.audio.startMusic();
+  }
+
+  private quitToMenu(): void {
+    this.audio.click();
+    this.paused = false;
+    this.renderPauseOverlay();
+    if (this.tutorial?.active) {
+      // Closing the tutorial hands back a fresh round + the menu.
+      this.tutorial.close();
+      return;
+    }
+    this.stopOverclock();
+    this.audio.stopMusic();
+    this.showScreen("menu");
+  }
+
+  private switchTab(name: "telemetry" | "vault" | "manual"): void {
+    for (const t of ["telemetry", "vault", "manual"] as const) {
+      $(`tab-${t}`).classList.toggle("active", t === name);
+      $(`tabpage-${t}`).hidden = t !== name;
+    }
+  }
+
+  private startFreePlay(): void {
+    this.audio.click();
+    this.mode = "free";
+    $("mode-daily").classList.remove("active");
+    $("mode-endless").classList.remove("active");
+    this.newRound();
+    this.showScreen("game");
+  }
+
   // ------------------------------------------------------------ wiring
   private wireControls(): void {
     $("begin-btn").addEventListener("click", () => {
       this.audio.click();
       this.begin();
     });
+    $("menu-start").addEventListener("click", () => this.startFreePlay());
     $("mode-daily").addEventListener("click", () => this.setMode("daily"));
     $("mode-endless").addEventListener("click", () => this.setMode("endless"));
     $("tutorial-btn").addEventListener("click", () => {
       this.audio.click();
       this.startTutorial();
     });
+    $("menu-settings").addEventListener("click", () =>
+      this.openSettings("menu")
+    );
+    $("settings-btn").addEventListener("click", () =>
+      this.openSettings("game")
+    );
+    $("pause-settings-btn").addEventListener("click", () =>
+      this.openSettings("game")
+    );
+    $("settings-back").addEventListener("click", () => {
+      this.audio.click();
+      this.showScreen(this.settingsReturn);
+    });
+    $("pause-btn").addEventListener("click", () => this.pauseGame());
+    $("resume-btn").addEventListener("click", () => this.resumeGame());
+    $("menu-btn").addEventListener("click", () => this.quitToMenu());
+    $("quit-btn").addEventListener("click", () => this.quitToMenu());
+    $("tab-telemetry").addEventListener("click", () =>
+      this.switchTab("telemetry")
+    );
+    $("tab-vault").addEventListener("click", () => this.switchTab("vault"));
+    $("tab-manual").addEventListener("click", () => this.switchTab("manual"));
     $<HTMLInputElement>("hardcore").addEventListener("change", (ev) => {
       this.hardcore = (ev.target as HTMLInputElement).checked;
       this.newRound();
@@ -258,7 +369,7 @@ class Game {
   private bridgeSelect!: { getSelected: () => number | null };
 
   // ------------------------------------------------------------ rounds
-  private setMode(mode: Mode): void {
+  private setMode(mode: "daily" | "endless"): void {
     this.mode = mode;
     $("mode-daily").classList.toggle("active", mode === "daily");
     $("mode-endless").classList.toggle("active", mode === "endless");
@@ -266,17 +377,59 @@ class Game {
     this.strikes = 0;
     this.runTotal = 0;
     this.newRound();
+    this.showScreen("game");
+  }
+
+  /**
+   * Friendly-band targets (feel tuning INSIDE the blueprint's target
+   * selection, which the doc leaves open — it fixes the telemetry and
+   * scoring, never which entity a round seals): entities a new player
+   * can actually triangulate — full 5-clue pack coverage, live SPACE
+   * axis (coordinates present), at least 3 outgoing beams for the
+   * Overclock, and a Household Icon / Famous / Notable notability tier
+   * (tier index 0–2 of the blueprint's Stage-2 calibration).
+   */
+  private isFriendly(id: number): boolean {
+    const rec = this.ds.records.get(id);
+    const packEnt = this.ds.pack.get(id);
+    if (!rec || !packEnt) return false;
+    if (rec.lat == null || rec.lon == null) return false;
+    if (CHANNELS.some((c) => !packEnt.clues?.[c.key])) return false;
+    if ((packEnt.edges ?? []).length < 3) return false;
+    return notabilityTierIndex(rec.notability) <= 2;
+  }
+
+  private friendlyPool(): number[] {
+    if (!this.friendlyCache) {
+      this.friendlyCache = [...this.ds.records.keys()]
+        .filter((id) => this.isFriendly(id))
+        .sort((a, b) => a - b);
+    }
+    return this.friendlyCache;
   }
 
   private pickDailyTarget(): { targetId: number; roundNumber: number } {
     const now = new Date();
     const dateStr = now.toISOString().slice(0, 10);
     const seed = dailySeed(dateStr);
-    const ids = [...this.ds.records.keys()];
+    // Same seed, friendlier pool: the daily stays identical for every
+    // player worldwide (Blueprint §2), drawn from the friendly band so
+    // the shared first experience of the day is winnable.
+    const pool = this.friendlyPool();
+    const ids = pool.length ? pool : [...this.ds.records.keys()];
     const days = Math.floor(now.getTime() / 86400000);
     return {
       targetId: ids[seed % ids.length],
       roundNumber: days - LAUNCH_EPOCH_DAYS + 1,
+    };
+  }
+
+  private pickFreeTarget(): { targetId: number; roundNumber: number } {
+    const pool = this.friendlyPool();
+    const ids = pool.length ? pool : [...this.ds.records.keys()];
+    return {
+      targetId: ids[Math.floor(Math.random() * ids.length)],
+      roundNumber: 0,
     };
   }
 
@@ -286,9 +439,16 @@ class Game {
       [3, 11], [1, 10], [2, 5], [4, 6, 7], [8, 12], [9],
     ];
     const band = sectors[(this.stage - 1) % sectors.length];
-    const pool = [...this.ds.records.values()].filter((r) =>
+    let pool = [...this.ds.records.values()].filter((r) =>
       band.includes(r.dom)
     );
+    // Early stages lean friendly (same open target-selection knob);
+    // from stage 3 the full band — and hardcore at any stage — plays
+    // exactly as before.
+    if (this.stage <= 2 && !this.hardcore) {
+      const friendly = pool.filter((r) => this.isFriendly(r.id));
+      if (friendly.length) pool = friendly;
+    }
     const rec = pool[Math.floor(Math.random() * pool.length)];
     return { targetId: rec.id, roundNumber: this.stage };
   }
@@ -301,7 +461,9 @@ class Game {
         ? { targetId: forcedTargetId, roundNumber: 0 }
         : this.mode === "daily"
           ? this.pickDailyTarget()
-          : this.pickExpeditionTarget();
+          : this.mode === "free"
+            ? this.pickFreeTarget()
+            : this.pickExpeditionTarget();
     this.round = new Round({
       targetId: pick.targetId,
       records: this.ds.records,
@@ -342,7 +504,9 @@ class Game {
       ? "PRACTICE ROUND · FIELD TRAINING SIGNAL"
       : this.mode === "daily"
         ? `DAILY #${String(pick.roundNumber).padStart(3, "0")} · ${new Date().toISOString().slice(0, 10)} UTC`
-        : `STAGE ${this.stage} · STRIKES ${this.strikes}/3 · RUN ${this.runTotal.toLocaleString()} SIG`;
+        : this.mode === "free"
+          ? "FREE SIGNAL · FRIENDLY BAND"
+          : `STAGE ${this.stage} · STRIKES ${this.strikes}/3 · RUN ${this.runTotal.toLocaleString()} SIG`;
     this.audio.stopMusic();
     this.renderDeck();
   }
@@ -370,6 +534,10 @@ class Game {
       probes: this.round.probes,
       tunedClues: this.tunedClues,
     });
+    // The 15-second surge runs in real time — pause locks out while
+    // it is live (it unlocks again the moment the round resolves).
+    $<HTMLButtonElement>("pause-btn").disabled =
+      this.round.phase === 3 && !this.finished;
   }
 
   private setMascot(state: VexState, revertAfterMs?: number): void {
@@ -451,12 +619,20 @@ class Game {
   private pingCommentary(p: PingResult): string {
     if (p.hops === 1) return "Direct neighbour! You are one hop from the core.";
     if (p.hops != null && p.hops <= 2)
-      return `Two hops out${p.via ? ` via ${p.via}` : ""}. The trail is warm.`;
+      return `Two hops out${p.via ? ` via ${p.via}` : ""}. The trail is warm — follow the link.`;
+    if (p.hops != null && p.hops <= 3)
+      return "Three hops out. The graph trail is still warm — keep walking the links.";
     if (p.resonance === "EXACT MATCH")
       return "Same sub-domain. You are circling the right sector.";
+    if (p.resonance === "SAME SECTOR")
+      return "Same sector as the target — right room, different shelf. Keep sweeping it.";
+    if (Math.abs(p.deltaYear) <= 10)
+      return "Era nearly exact — within a breath of its time. Hold this decade and sweep sideways.";
+    if (p.spatial && p.spatial.km <= 800)
+      return "Spatially you are practically standing on it. Same corner of the world.";
     if (p.spatial && p.spatial.km > 8000)
       return "Cold static. That vector points across the planet — pivot.";
-    return "Telemetry logged. Compare the axes and triangulate.";
+    return "Telemetry logged. Follow whichever axis burned hottest and triangulate.";
   }
 
   private async resolveEntity(
@@ -489,7 +665,15 @@ class Game {
     box.hidden = false;
     const beams = $("beam-list");
     beams.innerHTML = "";
-    for (const beam of this.round.overclockBeams()) {
+    // Display order only: the most recognizable beam reads first, so a
+    // new Archivist spots a nameable link faster inside the same 15 s.
+    // Which nodes are VALID bridges is the engine's call, unchanged.
+    const displayBeams = this.round.overclockBeams().slice().sort(
+      (a, b) =>
+        (this.ds.records.get(b.targetId)?.notability ?? 0) -
+        (this.ds.records.get(a.targetId)?.notability ?? 0)
+    );
+    for (const beam of displayBeams) {
       const chip = document.createElement("span");
       chip.className = "beam";
       chip.dataset.target = String(beam.targetId);
@@ -538,6 +722,8 @@ class Game {
       input.classList.add("shake");
       window.setTimeout(() => input.classList.remove("shake"), 350);
       this.setMascot("ERROR_GLITCH", 700);
+      $("mascot-line").textContent =
+        "No link there. Name a beam's far end — or anything touching a node you already linked.";
     }
   }
 
@@ -585,6 +771,7 @@ class Game {
     const pick = this.pickPracticeTarget();
     this.newRound(pick.targetId);
     this.begin();
+    this.showScreen("game");
     this.tutorial = new Tutorial(
       {
         state: () => this.tutorialState(),
@@ -602,10 +789,11 @@ class Game {
 
   private exitTutorial(): void {
     this.tutorial = null;
-    // Hand the Archivist a fresh live round, unstarted, on the real mode.
+    // Hand the Archivist a fresh live round and the menu — home base.
     this.newRound();
-    $("mascot-line").textContent =
-      "Training closed. A live signal is on the rail — begin when ready.";
+    this.showScreen("menu");
+    $("menu-line").textContent =
+      "Training closed. A live signal is on the rail — pick a band when ready.";
   }
 
   // ------------------------------------------------------------ finish
@@ -635,6 +823,12 @@ class Game {
       <div class="score-line"><span>Overclock multiplier</span><b>×${score.multiplier.toFixed(1)}</b></div>
       <div class="score-line"><span>TOTAL SIGNAL INTEGRITY</span><b>${score.total.toLocaleString()} SIG</b></div>
       <div class="rank-line">RANK: ${score.rank.title.toUpperCase()} — ${score.rank.frame} casing</div>`;
+    if (!solved && !this.practice) {
+      // A lost round teaches: show how close the closest pass came and
+      // what the telemetry was pointing at all along (presentation of
+      // the round's own data — scoring is untouched).
+      results.innerHTML += this.lossDebrief(round);
+    }
     if (solved) {
       this.relic.draw(targetRec.dom, score.rank.title);
       this.relicVisible = true;
@@ -667,10 +861,12 @@ class Game {
       ? this.practice
         ? `Practice lock at ${score.total.toLocaleString()} SIG. In a live round, this is where the relic mints.`
         : `Signal integrity ${score.total.toLocaleString()}. Relic minted in a ${this.relic.frameName} frame. Trace is ready to share.`
-      : `The capacitor is spent. It was ${target.name}. Study the trace and re-tune your instincts.`;
+      : this.lossLine(round, target.name);
 
     if (this.practice) {
       $<HTMLButtonElement>("again-btn").textContent = "▶ FINISH TRAINING";
+    } else if (this.mode === "free") {
+      $<HTMLButtonElement>("again-btn").textContent = "▶ NEW SIGNAL";
     } else if (this.mode === "endless") {
       if (solved) {
         this.runTotal += score.total;
@@ -692,10 +888,77 @@ class Game {
     this.renderDeck();
   }
 
+  /** The missed ping that came closest, by graph → resonance → era. */
+  private closestPass(round: Round): PingResult | null {
+    const missed = round.pings.filter((p) => !p.exact);
+    if (!missed.length) return null;
+    const resRank = (r: string) =>
+      r === "EXACT MATCH" ? 0 : r === "SAME SECTOR" ? 1 : r === "ADJACENT DISCIPLINE" ? 2 : 3;
+    return [...missed].sort(
+      (a, b) =>
+        (a.hops ?? 99) - (b.hops ?? 99) ||
+        resRank(a.resonance) - resRank(b.resonance) ||
+        Math.abs(a.deltaYear) - Math.abs(b.deltaYear)
+    )[0];
+  }
+
+  private lossLine(round: Round, targetName: string): string {
+    const best = this.closestPass(round);
+    if (best && best.hops != null && best.hops <= 2) {
+      return `So close — ${best.name} was ${best.hops === 1 ? "one hop" : "two hops"} from the core. It was ${targetName}. Read the debrief and run it back.`;
+    }
+    if (best && best.resonance !== "ORTHOGONAL FIELD") {
+      return `The trail was warmer than it felt — ${best.name} shared its sector. It was ${targetName}. The debrief shows what the telemetry pointed to.`;
+    }
+    return `The capacitor is spent. It was ${targetName}. The debrief below shows what the telemetry was pointing at — every lost signal teaches the next one.`;
+  }
+
+  private centuryLabel(year: number): string {
+    const ord = (n: number) => {
+      const s = ["th", "st", "nd", "rd"];
+      const v = n % 100;
+      return n + (s[(v - 20) % 10] || s[v] || s[0]);
+    };
+    if (year < 0) return `${ord(Math.ceil(-year / 100))} century BCE`;
+    if (year === 0) return "year zero";
+    return `${ord(Math.ceil(year / 100))} century`;
+  }
+
+  /** End-of-round debrief for a lost signal: closeness + the trail. */
+  private lossDebrief(round: Round): string {
+    const target = round.target;
+    const tierName =
+      NOTABILITY_TIERS[notabilityTierIndex(target.notability)].name;
+    const best = this.closestPass(round);
+    let closest = "";
+    if (best) {
+      const bits: string[] = [];
+      if (best.hops != null)
+        bits.push(best.hops === 1 ? "1 hop away" : `${best.hops} hops away`);
+      bits.push(best.resonance.toLowerCase());
+      bits.push(`${Math.abs(best.deltaYear)} yrs off`);
+      if (best.spatial)
+        bits.push(`${Math.round(best.spatial.km).toLocaleString()} km out`);
+      closest = `<div class="score-line"><span>Closest pass</span><b>${escapeHtml(best.name)} — ${bits.join(" · ")}</b></div>`;
+    }
+    return `<div class="debrief">
+      <div class="panel-head small">WHAT THE TELEMETRY POINTED TO</div>
+      ${closest}
+      <div class="score-line"><span>The sealed signal lived in</span><b>${escapeHtml(DOMAINS[target.dom].name)}</b></div>
+      <div class="score-line"><span>Era · fame</span><b>${this.centuryLabel(target.year)} · ${tierName} tier</b></div>
+      <div class="score-line"><span>SPACE axis</span><b>${target.lat != null ? "live — it sits in the physical world" : "silent — a conceptual entity"}</b></div>
+    </div>`;
+  }
+
   private onAgain(): void {
     if (this.practice) {
       // Leaving the practice round via the report returns to a live round.
       this.tutorial?.close();
+      return;
+    }
+    if (this.mode === "free") {
+      this.newRound();
+      this.begin();
       return;
     }
     if (this.mode === "daily") {
@@ -724,9 +987,12 @@ class Game {
         0
       );
       if (computedBest > best) await this.vault.setBest(computedBest);
-      $("vault-line").textContent = `Best score: ${computedBest.toLocaleString()} SIG · Relics stored: ${relics.length}`;
+      const line = `Best score: ${computedBest.toLocaleString()} SIG · Relics stored: ${relics.length}`;
+      $("vault-line").textContent = line;
+      $("menu-vault-line").textContent = line;
     } catch {
       $("vault-line").textContent = "Vault unavailable in this browser.";
+      $("menu-vault-line").textContent = "Vault unavailable in this browser.";
     }
   }
 
