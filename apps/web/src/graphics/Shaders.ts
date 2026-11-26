@@ -1,9 +1,10 @@
 /**
- * NEXUS RELAY — GLSL shaders (Blueprint §3).
- * The CRT fragment shader below is the blueprint's own implementation,
- * verbatim. The holographic foil shader implements the blueprint's
- * Relic Card spec: a diagonal specular foil shimmer whose angle
- * theta = atan2(y, x) responds to the pointer position.
+ * NEXUS RELAY — GLSL shaders.
+ * Clean modern post pass: a soft signal-glow / bloom composite with
+ * no distortion effects — the scene is rendered
+ * crisply and only its brightest signal accents bloom. The holographic
+ * foil shader implements the Relic Card spec: a diagonal specular
+ * shimmer whose angle theta = atan2(y, x) responds to the pointer.
  */
 
 export const FULLSCREEN_VERTEX = `#version 300 es
@@ -16,43 +17,45 @@ void main() {
 }
 `;
 
-/** Blueprint §3 — CRT Fragment Shader Implementation (verbatim). */
-export const CRT_FRAGMENT = `#version 300 es
+/**
+ * Clean display pass with a subtle modern glow.
+ * Uniforms: u_glow (0 = clean passthrough, higher = stronger bloom
+ * lift on bright signal accents), fed by the display-glow setting
+ * (off / subtle / full).
+ */
+export const GLOW_FRAGMENT = `#version 300 es
 precision mediump float;
 in vec2 v_uv;
 out vec4 fragColor;
 uniform sampler2D u_sceneBuffer;
 uniform float u_time;
 uniform vec2 u_resolution;
-uniform float u_crtCurvature;   // Default: 0.08
-uniform float u_scanlineIntensity; // Default: 0.15
-uniform float u_chromaticAberration; // Default: 0.002
-vec2 curveUV(vec2 uv) {
-    uv = uv * 2.0 - 1.0;
-    vec2 offset = abs(uv.yx) * u_crtCurvature;
-    uv = uv + uv * offset * offset;
-    uv = uv * 0.5 + 0.5;
-    return uv;
-}
+uniform float u_glow;
 void main() {
-    vec2 uv = curveUV(v_uv);
-    if (uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0) {
-        fragColor = vec4(0.0, 0.0, 0.0, 1.0);
+    vec3 base = texture(u_sceneBuffer, v_uv).rgb;
+    if (u_glow <= 0.001) {
+        fragColor = vec4(base, 1.0);
         return;
     }
-    // Chromatic Aberration
-    float r = texture(u_sceneBuffer, uv + vec2(u_chromaticAberration, 0.0)).r;
-    float g = texture(u_sceneBuffer, uv).g;
-    float b = texture(u_sceneBuffer, uv - vec2(u_chromaticAberration, 0.0)).b;
-    // Scanlines & Phosphor Grid
-    float scanline = sin(uv.y * u_resolution.y * 3.14159) * u_scanlineIntensity;
-    vec3 color = vec3(r, g, b) - scanline;
+    vec2 px = 1.0 / u_resolution;
+    vec3 blur = vec3(0.0);
+    blur += texture(u_sceneBuffer, v_uv + px * vec2( 2.0,  0.0)).rgb;
+    blur += texture(u_sceneBuffer, v_uv + px * vec2(-2.0,  0.0)).rgb;
+    blur += texture(u_sceneBuffer, v_uv + px * vec2( 0.0,  2.0)).rgb;
+    blur += texture(u_sceneBuffer, v_uv + px * vec2( 0.0, -2.0)).rgb;
+    blur += texture(u_sceneBuffer, v_uv + px * vec2( 3.0,  3.0)).rgb;
+    blur += texture(u_sceneBuffer, v_uv + px * vec2(-3.0,  3.0)).rgb;
+    blur += texture(u_sceneBuffer, v_uv + px * vec2( 3.0, -3.0)).rgb;
+    blur += texture(u_sceneBuffer, v_uv + px * vec2(-3.0, -3.0)).rgb;
+    blur /= 8.0;
+    float bright = smoothstep(0.45, 1.0, max(blur.r, max(blur.g, blur.b)));
+    vec3 color = base + blur * bright * u_glow;
     fragColor = vec4(color, 1.0);
 }
 `;
 
 /**
- * Holographic Fragment Shader for 64x64 Relic Cards (Blueprint §3):
+ * Holographic Fragment Shader for Relic Cards:
  * diagonal specular foil shimmer across the card face; the shimmer
  * angle follows theta = atan2(y, x) of the pointer relative to the
  * card centre (or device gyroscope, fed through the same uniform).

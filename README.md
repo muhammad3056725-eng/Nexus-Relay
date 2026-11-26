@@ -1,10 +1,9 @@
 # NEXUS RELAY
 
-**A retro-futuristic 16-bit / 32-bit Hi-Bit pixel-art trivia deduction game.**
+**A sleek, modern signal-triangulation trivia deduction game with a deep-space glass presentation.**
 
-You are a **Signal Archivist** in a 1994 subterranean & deep-space analog
-telemetry switchboard. A mystery entity is sealed inside the CRT
-Containment Core. You never answer a quiz question — you **triangulate**:
+You are a **Signal Archivist** aboard a deep-space telemetry relay. A
+mystery entity is sealed inside the Signal Containment Core. You never answer a quiz question — you **triangulate**:
 every hypothesis you ping returns real multi-axis vector telemetry
 (era, space, domain, graph distance, notability) against the hidden
 target, until the signal locks. Then the **Overclock Surge** gives you
@@ -12,7 +11,8 @@ target, until the signal locks. Then the **Overclock Surge** gives you
 multiply your score.
 
 > Full design authority: `NEXUS_RELAY___Complete_Game_Design__Pixel_Art__Big_Dataset___GitHub_Architecture_Blueprint.docx`
-> (game design, pixel-art spec, dataset architecture, repo architecture).
+> (game design, dataset architecture, repo architecture). Presentation was
+> fully modernised on Nov 26, 2026 — gameplay, scoring and datasets unchanged.
 > This repository implements that blueprint; section references below
 > (§1–§8) point at it.
 
@@ -20,7 +20,7 @@ multiply your score.
 
 | Phase | What happens |
 |---|---|
-| **1 · Signal Interception** | Target entity sealed in the CRT Core. Five orthogonal Frequency Relays locked: **ALPHA** Era · **BETA** Space · **GAMMA** Domain · **DELTA** Relational · **EPSILON** Trait. |
+| **1 · Signal Interception** | Target entity sealed in the Signal Core. Five orthogonal Frequency Relays locked: **ALPHA** Era · **BETA** Space · **GAMMA** Domain · **DELTA** Relational · **EPSILON** Trait. |
 | **2 · Triangulation** | **6 Signal Probes.** Each turn: **Tune a Relay** (spend 1 probe, decrypt one clue, score multiplier −9%) *or* **Ping a Hypothesis** (spend 1 probe, get 5-axis telemetry: Era Delta, Haversine Spatial Vector + 8-wind bearing, Domain Resonance, Graph Hop Distance, Notability Match). |
 | **3 · Overclock Surge** | On lock, the solved node ignites 3 outgoing relationship beams. Name valid connected entities within **15 seconds** to multiply the final score (×1.0 – ×2.5). |
 
@@ -54,7 +54,7 @@ web end-to-end smoke test + Python pipeline tests).
 ```
 nexus-relay/
 ├── .github/workflows/     ci · daily-seed-publisher · dataset-release · pages
-├── apps/web/              Vite + WebGL2 frontend (480×270 logical, CRT shader)
+├── apps/web/              Vite + WebGL2 frontend (480×270 logical, clean glow post pass)
 │   └── src/               graphics/ (Renderer, Shaders, PaletteManager, MascotVex09)
 │                          audio/ (Web Audio chiptune synth) · components/ · storage/
 ├── packages/
@@ -86,19 +86,26 @@ production ones — only the corpus size is at starter scale.
 
 ## Graphics & Audio (§3)
 
-- Native **480×270** logical resolution, integer upscaling, WebGL2
-  post-processing with the blueprint's CRT fragment shader (curvature
-  0.08, scanlines 0.15, chromatic aberration 0.002).
-- Base **32-color hardware palette**; six sector LUTs with 4×4 Bayer
-  ordered-dither cross-fades; 4-layer parallax diorama (starfield
-  0.05 px/frame, architecture 0.15 px/frame).
-- **VEX-09**, a 48×48 CRT-headed mascot with all 14 reactive states.
-- Collectible **64×64 holographic Relic Cards** (domain silhouette +
+- Native **480×270** logical resolution, fluid smooth upscaling, WebGL2
+  post-processing with a clean glow/bloom pass (no distortion) driven
+  by the display-glow setting (off/subtle/full).
+- Modern vector art direction (Nov 26, 2026): deep-space navy/indigo,
+  cyan/teal signal glow, glass panels, Space Grotesk + Inter type, and
+  hand-built SVG assets (emblem, VEX-09 key art, signal-field hero).
+- Six sector LUTs with smooth alpha cross-fades; 4-layer parallax
+  diorama (starfield 0.05 px/frame, architecture 0.15 px/frame) plus a
+  pointer-parallax hero background.
+- **VEX-09**, a smooth vector robot operator with all 14 reactive states.
+- Collectible **64×64 holographic Relic Cards** (domain glyph +
   rarity frame + WebGL foil shader, θ = atan2(y, x) pointer response).
+- Animation layer: staggered menu entrances, pulsing mystery banner,
+  animated warmer/colder chips, score count-up with a light-burst
+  celebration on solve, and an energised Overclock surge glow — all
+  transform/opacity, all honouring reduced motion.
 - Zero-file procedural audio: 12 ms switch clicks (HP 3.5 kHz), tape
   whirs, proximity sonar pings (`f = 220 + 880·(1 − min(1, d/10000))`),
-  and dynamic synthwave stems that layer up as you close in.
-- Accessibility suite: CRT intensity (off/subtle/full), reduced
+  and dynamic synth stems that layer up as you close in.
+- Accessibility suite: display glow (off/subtle/full), reduced
   motion, high-contrast palette, colorblind symbolic telemetry
   (((O)) / ▲ / ■), hi-legibility font toggle.
 

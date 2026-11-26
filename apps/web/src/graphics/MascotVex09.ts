@@ -1,8 +1,8 @@
 /**
- * NEXUS RELAY — VEX-09 reactive pixel mascot (Blueprint §3).
- * A 48x48 pixel CRT-headed operator sprite with 14 distinct states.
- * Drawn procedurally on the logical pixel grid so every frame is
- * crisp at integer upscales.
+ * NEXUS RELAY — VEX-09 reactive operator mascot.
+ * A smooth vector robot with a glass visor face and 14 distinct
+ * reactive states. Drawn procedurally with rounded shapes, arcs and
+ * gradients in a 48-unit design space, scaled by the caller.
  */
 
 export const VEX_STATES = [
@@ -25,31 +25,21 @@ export const VEX_STATES = [
 export type VexState = (typeof VEX_STATES)[number];
 
 const C = {
-  ink: "#0B0E14",
-  casing: "#24324D",
-  casingHi: "#4F678F",
-  screen: "#05070C",
-  mint: "#2CF6B3",
+  ink: "#0B1226",
+  casing: "#2B4A73",
+  casingHi: "#7DD3FC",
+  screen: "#082F49",
+  mint: "#2DD4BF",
+  cyan: "#22D3EE",
   amber: "#FFB627",
-  magenta: "#FF2A85",
-  orange: "#FF6B35",
+  magenta: "#F472B6",
+  orange: "#FB923C",
   mist: "#A0B5D0",
   gray: "#9CA3AF",
-  darkGray: "#4B5563",
-  jacket: "#36496B",
-  violet: "#8B5CF6",
+  darkGray: "#64748B",
+  jacket: "#1E3A5F",
+  violet: "#A78BFA",
 };
-
-function mulberry(seed: number): () => number {
-  let a = seed >>> 0;
-  return () => {
-    a |= 0;
-    a = (a + 0x6d2b79f5) | 0;
-    let t = Math.imul(a ^ (a >>> 15), 1 | a);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
 
 type Ctx = CanvasRenderingContext2D;
 
@@ -64,7 +54,7 @@ export class MascotVex09 {
     }
   }
 
-  /** Draw the 48x48 sprite at logical position (x, y) with pixel scale s. */
+  /** Draw the mascot at logical position (x, y) with unit scale s. */
   draw(ctx: Ctx, x: number, y: number, s: number, now: number): void {
     const t = (now - this.stateSince) / 1000;
     const frame = Math.floor(now / 125);
@@ -75,166 +65,190 @@ export class MascotVex09 {
       ctx.translate(0, bounce * s);
     }
     if (this.state === "ERROR_GLITCH") {
-      ctx.translate((frame % 2 === 0 ? 1 : -1) * s, 0);
+      ctx.translate((frame % 2 === 0 ? 0.7 : -0.7) * s, 0);
     }
     ctx.scale(s, s);
-    const px = (rx: number, ry: number, w: number, h: number, color: string) => {
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    const rr = (rx: number, ry: number, w: number, h: number, r: number, color: string) => {
+      ctx.beginPath();
+      ctx.roundRect(rx, ry, w, h, r);
       ctx.fillStyle = color;
-      ctx.fillRect(rx, ry, w, h);
+      ctx.fill();
+    };
+    const dot = (dx: number, dy: number, r: number, color: string) => {
+      ctx.beginPath();
+      ctx.arc(dx, dy, r, 0, Math.PI * 2);
+      ctx.fillStyle = color;
+      ctx.fill();
     };
 
     // ---- antenna ------------------------------------------------------
-    const tipBase = { x: 23.5, y: 2.5 };
+    let tipX = 24;
+    let tipY = 3.4;
     if (this.state === "SEARCHING") {
-      tipBase.x += Math.cos(now / 300) * 3;
-      tipBase.y += Math.sin(now / 300) * 1.2;
+      tipX += Math.cos(now / 300) * 3;
+      tipY += Math.sin(now / 300) * 1.2;
     }
-    px(23, 4, 2, 6, C.casingHi);
-    px(tipBase.x - 1.5, tipBase.y - 1.5, 3, 3, this.state === "SLEEP_MODE" ? C.darkGray : C.amber);
+    ctx.strokeStyle = C.casingHi;
+    ctx.lineWidth = 1.6;
+    ctx.beginPath();
+    ctx.moveTo(24, 10);
+    ctx.lineTo(tipX, tipY + 1.5);
+    ctx.stroke();
+    dot(tipX, tipY, 2.1, this.state === "SLEEP_MODE" ? C.darkGray : C.amber);
+    dot(tipX, tipY, 3.6, "rgba(255,182,39,0.25)");
 
-    // ---- smoke (CAPACITOR_OVERLOAD) -----------------------------------
-    if (this.state === "CAPACITOR_OVERLOAD") {
-      const rnd = mulberry(7);
-      for (let i = 0; i < 5; i++) {
-        const rise = ((now / 700 + rnd()) % 1) * 8;
-        ctx.globalAlpha = 0.55 - rise / 16;
-        px(14 + rnd() * 18, 4 - rise, 4, 3, C.darkGray);
-      }
-      ctx.globalAlpha = 1;
-    }
     // ---- sleep Zzz ------------------------------------------------------
     if (this.state === "SLEEP_MODE") {
       const off = (now / 900) % 1;
-      ctx.globalAlpha = 0.8 - off * 0.5;
-      const zx = 36 + off * 4;
-      const zy = 8 - off * 6;
-      px(zx, zy, 4, 1, C.mist);
-      px(zx + 2, zy + 1, 1, 1, C.mist);
-      px(zx + 1, zy + 2, 1, 1, C.mist);
-      px(zx, zy + 3, 4, 1, C.mist);
+      ctx.globalAlpha = 0.85 - off * 0.5;
+      ctx.fillStyle = C.mist;
+      ctx.font = "bold 6px 'Space Grotesk', Inter, sans-serif";
+      ctx.fillText("z", 35 + off * 4, 10 - off * 5);
+      ctx.font = "bold 4.5px 'Space Grotesk', Inter, sans-serif";
+      ctx.fillText("z", 39 + off * 4, 13 - off * 5);
+      ctx.globalAlpha = 1;
+    }
+    if (this.state === "CAPACITOR_OVERLOAD") {
+      ctx.globalAlpha = 0.5;
+      dot(17, 4 - ((now / 700) % 1) * 3, 2.4, C.darkGray);
+      dot(29, 3 - ((now / 900) % 1) * 3, 1.8, C.darkGray);
       ctx.globalAlpha = 1;
     }
 
-    // ---- head casing ----------------------------------------------------
-    px(9, 9, 30, 22, C.ink);
-    px(10, 8, 28, 22, C.casing);
-    px(10, 8, 28, 2, C.casingHi);
-    px(6, 16, 3, 9, C.casing);
-    px(39, 16, 3, 9, C.casing);
-    px(6, 19, 3, 2, C.darkGray);
-    px(39, 19, 3, 2, C.darkGray);
+    // ---- ears -----------------------------------------------------------
+    rr(5.4, 16, 3.6, 10, 1.8, C.casing);
+    rr(39, 16, 3.6, 10, 1.8, C.casing);
+    dot(7.2, 21, 1.1, C.cyan);
+    dot(40.8, 21, 1.1, C.cyan);
 
-    // ---- screen ---------------------------------------------------------
-    const flash =
-      this.state === "SIGNAL_SPIKE" && frame % 2 === 0
-        ? "#3A2A05"
-        : C.screen;
-    px(12, 11, 24, 17, flash);
+    // ---- head: smooth glass shell --------------------------------------
+    const shell = ctx.createLinearGradient(9, 8, 39, 31);
+    shell.addColorStop(0, "#7DD3FC");
+    shell.addColorStop(0.55, C.casing);
+    shell.addColorStop(1, "#1E3A5F");
+    ctx.beginPath();
+    ctx.roundRect(9, 8.5, 30, 23, 7);
+    ctx.fillStyle = shell;
+    ctx.fill();
+    // visor
+    const visor = ctx.createLinearGradient(0, 11, 0, 29);
+    visor.addColorStop(0, "#164E63");
+    visor.addColorStop(1, C.screen);
+    ctx.beginPath();
+    ctx.roundRect(12, 11, 24, 17.5, 5.5);
+    ctx.fillStyle = this.state === "SIGNAL_SPIKE" && frame % 2 === 0 ? "#3A2A05" : visor;
+    ctx.fill();
     ctx.save();
     ctx.beginPath();
-    ctx.rect(12, 11, 24, 17);
+    ctx.roundRect(12, 11, 24, 17.5, 5.5);
     ctx.clip();
-    this.drawFace(ctx, px, t, frame, now);
+    this.drawFace(ctx, dot, t, frame, now);
     ctx.restore();
+    // visor sheen
+    ctx.globalAlpha = 0.35;
+    ctx.strokeStyle = "#E0F2FE";
+    ctx.lineWidth = 1.1;
+    ctx.beginPath();
+    ctx.moveTo(15, 14.5);
+    ctx.quadraticCurveTo(24, 12, 33, 14.5);
+    ctx.stroke();
+    ctx.globalAlpha = 1;
 
     // ---- neck & body ----------------------------------------------------
-    px(21, 30, 6, 3, C.darkGray);
+    rr(21, 31, 6, 3, 1, C.darkGray);
     const armsRaised =
       this.state === "VICTORY_SALUTE" || this.state === "OVERCLOCK_SURGE";
+    ctx.strokeStyle = C.jacket;
+    ctx.lineWidth = 4.4;
     if (armsRaised) {
-      px(5, 22, 4, 12, C.jacket);
-      px(39, 22, 4, 12, C.jacket);
-      px(5, 20, 4, 3, C.gray);
-      px(39, 20, 4, 3, C.gray);
-    } else if (this.state === "DECRYPTION_FOCUS") {
-      const a = frame % 2 === 0 ? 0 : 1;
-      px(7, 38 + a, 5, 7, C.jacket);
-      px(36, 38 + (1 - a), 5, 7, C.jacket);
-    } else if (this.state === "CHANNEL_SWITCH") {
-      px(7, 38, 5, 7, C.jacket);
-      px(38, 30, 4, 10, C.jacket);
-      // diegetic toggle switch
-      px(43, 30, 3, 10, C.casing);
-      const leverUp = Math.floor(now / 500) % 2 === 0;
-      px(44, leverUp ? 31 : 36, 1.6, 5, C.amber);
-    } else if (this.state === "TAPE_REWIND") {
-      px(6, 36, 6, 6, C.jacket);
-      px(36, 36, 6, 6, C.jacket);
-      for (const cx of [9, 39]) {
-        ctx.strokeStyle = C.mist;
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.arc(cx, 39, 3.4, 0, Math.PI * 2);
-        ctx.stroke();
-        const ang = now / 60;
-        for (let k = 0; k < 3; k++) {
-          const a2 = ang + (k * Math.PI * 2) / 3;
-          px(cx + Math.cos(a2) * 2.4 - 0.5, 39 + Math.sin(a2) * 2.4 - 0.5, 1.4, 1.4, C.mist);
-        }
+      for (const side of [7.5, 40.5]) {
+        ctx.beginPath(); ctx.moveTo(side, 38); ctx.lineTo(side, 25); ctx.stroke();
+        dot(side, 23.4, 2, C.gray);
+      }
+    } else if (this.state === "CELEBRATION_DANCE") {
+      for (const side of [7.5, 40.5]) {
+        ctx.beginPath(); ctx.moveTo(side, 38); ctx.lineTo(side + (side < 24 ? -1.5 : 1.5), 31); ctx.stroke();
       }
     } else {
-      px(7, 38, 5, 7, C.jacket);
-      px(36, 38, 5, 7, C.jacket);
+      for (const side of [7.5, 40.5]) {
+        ctx.beginPath(); ctx.moveTo(side, 36); ctx.lineTo(side, 43.5); ctx.stroke();
+        dot(side, 44.6, 1.9, C.gray);
+      }
     }
-    px(13, 33, 22, 14, C.jacket);
-    px(13, 33, 22, 2, C.casingHi);
-    px(22, 36, 4, 4, C.ink);
-    px(23, 37, 2, 2, this.state === "SLEEP_MODE" ? C.darkGray : C.mint);
-    px(16, 42, 3, 2, C.amber);
-    px(29, 42, 3, 2, C.darkGray);
+    const bodyGrad = ctx.createLinearGradient(0, 33, 0, 48);
+    bodyGrad.addColorStop(0, "#2B4A73");
+    bodyGrad.addColorStop(1, C.jacket);
+    ctx.beginPath();
+    ctx.roundRect(13, 33.5, 22, 14, 4.5);
+    ctx.fillStyle = bodyGrad;
+    ctx.fill();
+    dot(24, 40, 3.1, C.ink);
+    dot(24, 40, 1.7, this.state === "SLEEP_MODE" ? C.darkGray : C.cyan);
+    dot(17.5, 44.6, 1.15, C.amber);
+    dot(30.5, 44.6, 1.15, C.darkGray);
 
-    // overclock levers
     if (this.state === "OVERCLOCK_SURGE") {
-      px(4, 40, 2, 7, C.casing);
-      px(42, 40, 2, 7, C.casing);
-      px(3.4, 38, 3, 3, C.magenta);
-      px(41.4, 38, 3, 3, C.magenta);
+      dot(3.6, 39.5, 1.9, C.magenta);
+      dot(44.4, 39.5, 1.9, C.magenta);
     }
     ctx.restore();
   }
 
   private drawFace(
     ctx: Ctx,
-    px: (x: number, y: number, w: number, h: number, c: string) => void,
+    dot: (x: number, y: number, r: number, c: string) => void,
     t: number,
     frame: number,
     now: number
   ): void {
     const wave = (amp: number, color: string, freq = 0.55) => {
       ctx.strokeStyle = color;
-      ctx.lineWidth = 1;
+      ctx.lineWidth = 1.15;
       ctx.beginPath();
       for (let i = 0; i <= 22; i++) {
         const wx = 13 + i;
-        const wy = 19.5 + Math.sin(i * freq + now / 240) * amp;
+        const wy = 19.8 + Math.sin(i * freq + now / 240) * amp;
         if (i === 0) ctx.moveTo(wx, wy);
         else ctx.lineTo(wx, wy);
       }
       ctx.stroke();
     };
+    const eyes = (color: string) => {
+      dot(18.6, 19.2, 1.9, color);
+      dot(29.4, 19.2, 1.9, color);
+    };
+    const smile = (color: string) => {
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 1.3;
+      ctx.beginPath();
+      ctx.arc(24, 21.4, 4.4, Math.PI * 0.25, Math.PI * 0.75);
+      ctx.stroke();
+    };
 
     switch (this.state) {
       case "IDLE_BLINK": {
-        const blink = now % 3700 < 130;
-        if (blink) {
-          px(16, 19, 5, 1.4, C.mint);
-          px(27, 19, 5, 1.4, C.mint);
-        } else wave(1.6, C.mint);
+        if (now % 3700 < 130) {
+          ctx.strokeStyle = C.mint; ctx.lineWidth = 1.3;
+          for (const ex of [18.6, 29.4]) { ctx.beginPath(); ctx.moveTo(ex - 2, 19.2); ctx.lineTo(ex + 2, 19.2); ctx.stroke(); }
+        } else { eyes(C.mint); smile(C.mint); }
         break;
       }
       case "LISTENING": {
-        wave(2.4, C.mint);
+        wave(2.2, C.mint);
         for (let i = 0; i < 3; i++) {
-          const hgt = 3 + ((frame + i) % 3) * 2;
-          px(13.4 + i * 1.6, 19.5 - hgt / 2, 1, hgt, C.amber);
+          const hgt = 2.6 + ((frame + i) % 3) * 1.7;
+          ctx.fillStyle = C.amber;
+          ctx.beginPath(); ctx.roundRect(13.6 + i * 1.7, 19.8 - hgt / 2, 1, hgt, 0.5); ctx.fill();
         }
         break;
       }
       case "SIGNAL_SPIKE": {
         ctx.strokeStyle = C.amber;
-        ctx.lineWidth = 1.2;
+        ctx.lineWidth = 1.3;
         ctx.beginPath();
-        const pts = [19.5, 19.5, 12, 26, 14, 24, 19.5, 19.5, 13, 25, 19.5];
+        const pts = [19.8, 19.8, 12.5, 26, 14.5, 24, 19.8, 19.8, 13.5, 25, 19.8];
         pts.forEach((py, i) => {
           const wx = 13 + i * 2.2;
           if (i === 0) ctx.moveTo(wx, py);
@@ -244,30 +258,26 @@ export class MascotVex09 {
         break;
       }
       case "COLD_STATIC": {
-        const rnd = mulberry(frame * 131 + 7);
-        for (let i = 0; i < 110; i++) {
-          const gx = 12 + rnd() * 24;
-          const gy = 11 + rnd() * 17;
-          px(gx, gy, 1.2, 1.2, rnd() > 0.5 ? C.gray : C.darkGray);
-        }
+        ctx.globalAlpha = 0.75;
+        wave(0.5, C.gray, 1.7);
+        wave(0.4, C.darkGray, 2.3);
+        ctx.globalAlpha = 1;
         break;
       }
       case "DECRYPTION_FOCUS": {
-        wave(1.1, C.mint);
+        wave(1, C.mint);
         ctx.strokeStyle = C.mist;
         ctx.lineWidth = 1.2;
-        ctx.beginPath();
-        ctx.arc(29, 18, 4.6, 0, Math.PI * 2);
-        ctx.stroke();
-        px(32.4, 21.4, 3.4, 1.4, C.mist);
+        ctx.beginPath(); ctx.arc(29.5, 17.8, 4.4, 0, Math.PI * 2); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(32.6, 21); ctx.lineTo(35.4, 23.8); ctx.stroke();
         break;
       }
       case "OVERCLOCK_SURGE": {
         ctx.fillStyle = C.magenta;
         ctx.beginPath();
         const bolt: Array<[number, number]> = [
-          [25.5, 11.5], [20.5, 20], [23.4, 20], [21.8, 27.5],
-          [28.6, 18.6], [25.4, 18.6], [28.2, 11.5],
+          [25.5, 11.8], [20.5, 20], [23.4, 20], [21.8, 27.2],
+          [28.6, 18.6], [25.4, 18.6], [28.2, 11.8],
         ];
         bolt.forEach(([bx, by], i) => {
           if (i === 0) ctx.moveTo(bx, by);
@@ -278,69 +288,62 @@ export class MascotVex09 {
         break;
       }
       case "VICTORY_SALUTE": {
-        ctx.fillStyle = C.amber;
-        const cx = 24;
-        const cy = 19.5;
-        px(cx - 0.7, cy - 6, 1.4, 12, C.amber);
-        px(cx - 5.4, cy - 1.9, 10.8, 1.4, C.amber);
-        px(cx - 3.8, cy - 4.6, 1.4, 9.2, C.amber);
-        px(cx + 2.4, cy - 4.6, 1.4, 9.2, C.amber);
-        px(cx - 4.6, cy + 3.4, 9.2, 1.4, C.amber);
+        eyes(C.amber); smile(C.amber);
+        dot(24, 13.8, 1.4, C.amber);
         break;
       }
       case "CAPACITOR_OVERLOAD": {
-        for (const ex of [18, 28]) {
-          px(ex - 2, 16, 5, 1.3, C.orange);
-          px(ex - 2, 20, 5, 1.3, C.orange);
-          px(ex - 0.6, 14.6, 1.3, 6.6, C.orange);
+        ctx.strokeStyle = C.orange; ctx.lineWidth = 1.4;
+        for (const ex of [18.6, 29.4]) {
+          ctx.beginPath();
+          ctx.moveTo(ex - 2, 16.8); ctx.lineTo(ex + 2, 21.6);
+          ctx.moveTo(ex + 2, 16.8); ctx.lineTo(ex - 2, 21.6);
+          ctx.stroke();
         }
         break;
       }
       case "SEARCHING": {
-        const sx = 12 + ((now / 90) % 24);
-        px(sx, 11, 1.2, 17, C.mint);
-        wave(1.2, C.darkGray);
+        const sx = 13 + ((now / 90) % 22);
+        ctx.strokeStyle = C.mint; ctx.lineWidth = 1.1;
+        ctx.beginPath(); ctx.moveTo(sx, 12); ctx.lineTo(sx, 27.5); ctx.stroke();
+        wave(1.1, C.darkGray);
         break;
       }
       case "TAPE_REWIND": {
-        for (const tx of [17, 25]) {
-          ctx.fillStyle = C.mist;
+        ctx.fillStyle = C.mist;
+        for (const tx of [16.5, 24.5]) {
           ctx.beginPath();
-          ctx.moveTo(tx + 3.4, 19.5);
-          ctx.lineTo(tx, 16.4);
-          ctx.lineTo(tx, 22.6);
-          ctx.closePath();
-          ctx.fill();
+          ctx.moveTo(tx + 3.6, 19.8); ctx.lineTo(tx, 16.6); ctx.lineTo(tx, 23);
+          ctx.closePath(); ctx.fill();
         }
         break;
       }
       case "CHANNEL_SWITCH": {
-        for (let i = 0; i < 5; i++) {
-          px(14.6 + i * 4.4, 17.6, 3, 3, i === frame % 5 ? C.amber : C.darkGray);
-        }
+        for (let i = 0; i < 5; i++) dot(15.4 + i * 4.3, 19.8, 1.45, i === frame % 5 ? C.amber : C.darkGray);
         break;
       }
       case "CELEBRATION_DANCE": {
-        wave(2.2, C.mint);
-        const side = frame % 4 < 2 ? 15 : 31;
-        px(side, 14, 1.2, 5, C.violet);
-        px(side - 1, 18.4, 3, 2.4, C.violet);
+        eyes(C.mint); smile(C.violet);
+        dot(frame % 4 < 2 ? 15 : 33, 14.5, 1.5, C.violet);
         break;
       }
       case "SLEEP_MODE": {
-        ctx.globalAlpha = 0.5 + 0.2 * Math.sin(now / 800);
-        wave(0.8, C.darkGray);
+        ctx.globalAlpha = 0.55 + 0.2 * Math.sin(now / 800);
+        wave(0.7, C.darkGray);
         ctx.globalAlpha = 1;
         break;
       }
       case "ERROR_GLITCH": {
-        px(14, 14.6, 20, 2, C.magenta);
-        px(14 + (frame % 2) * 2, 18.4, 16, 2, C.magenta);
-        px(14, 22.2, 19, 2, C.magenta);
+        ctx.fillStyle = C.magenta;
+        ctx.globalAlpha = 0.85;
+        ctx.fillRect(14.5, 14.8, 19, 1.7);
+        ctx.fillRect(14.5 + (frame % 2) * 1.6, 18.9, 15, 1.7);
+        ctx.fillRect(14.5, 23, 18, 1.7);
+        ctx.globalAlpha = 1;
         break;
       }
       default: {
-        wave(1.6, C.mint);
+        eyes(C.mint); smile(C.mint);
       }
     }
     void t;

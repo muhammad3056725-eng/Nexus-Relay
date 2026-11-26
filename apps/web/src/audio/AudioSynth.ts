@@ -1,5 +1,5 @@
 /**
- * NEXUS RELAY — procedural Web Audio chiptune & hardware foley
+ * NEXUS RELAY — procedural Web Audio synth & foley
  * (Blueprint §3). Zero external audio files; everything is
  * synthesized in real time:
  *
@@ -133,7 +133,7 @@ export class AudioSynth {
     osc.stop(at + dur);
   }
 
-  /** Target lock fanfare — rising chiptune arpeggio. */
+  /** Target lock fanfare — rising synth arpeggio. */
   victory(): void {
     const ctx = this.ensure();
     if (!ctx) return;

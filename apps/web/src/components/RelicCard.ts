@@ -1,5 +1,5 @@
 /**
- * NEXUS RELAY — collectible holographic Pixel Relic Cards (Blueprint §3).
+ * NEXUS RELAY — collectible holographic Relic Cards.
  * 64x64 cards composited from three layers:
  *   1. Domain Base Silhouette (12 thematic glyphs)
  *   2. Metallic Rarity Frame (Bronze, Cobalt, Emerald, Amethyst,
@@ -51,8 +51,8 @@ export class RelicCard {
         this.vao = fullscreenQuad(gl);
         this.texture = gl.createTexture();
         gl.bindTexture(gl.TEXTURE_2D, this.texture);
-        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
-        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
       }
@@ -108,7 +108,7 @@ export class RelicCard {
     if (!this.gl) {
       const c2d = this.canvas.getContext("2d");
       if (c2d) {
-        c2d.imageSmoothingEnabled = false;
+        c2d.imageSmoothingEnabled = true;
         c2d.clearRect(0, 0, 64, 64);
         c2d.drawImage(this.base, 0, 0);
       }

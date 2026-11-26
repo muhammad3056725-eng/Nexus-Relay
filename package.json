@@ -1,5 +1,5 @@
 {
-  "description": "NEXUS RELAY — retro Hi-Bit pixel-art trivia deduction. Monorepo root (Blueprint §6).",
+  "description": "NEXUS RELAY \u2014 sleek signal-triangulation trivia deduction with a modern glass presentation. Monorepo root.",
   "devDependencies": {
     "@types/node": "^22.0.0",
     "jsdom": "^31.0.1",

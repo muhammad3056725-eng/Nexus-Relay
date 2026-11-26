@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Deep-space signal field">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#050816"/><stop offset=".48" stop-color="#0b1030"/><stop offset=".78" stop-color="#122046"/><stop offset="1" stop-color="#071022"/>
+    </linearGradient>
+    <radialGradient id="neb1" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#155e75" stop-opacity=".85"/><stop offset=".6" stop-color="#0e7490" stop-opacity=".28"/><stop offset="1" stop-color="#0e7490" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="neb2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#6d28d9" stop-opacity=".65"/><stop offset=".65" stop-color="#4c1d95" stop-opacity=".22"/><stop offset="1" stop-color="#4c1d95" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coreGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ecfeff"/><stop offset=".25" stop-color="#22d3ee" stop-opacity=".8"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="arc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="b24" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="24"/></filter>
+    <filter id="b10" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <g class="layer-nebula">
+    <ellipse cx="380" cy="260" rx="430" ry="230" fill="url(#neb1)" filter="url(#b24)"/>
+    <ellipse cx="1260" cy="360" rx="470" ry="260" fill="url(#neb2)" filter="url(#b24)"/>
+    <ellipse cx="820" cy="700" rx="560" ry="200" fill="url(#neb1)" opacity=".55" filter="url(#b24)"/>
+  </g>
+  <g class="layer-stars" fill="#e0f2fe">
+    <circle cx="90" cy="80" r="2.2"/><circle cx="240" cy="180" r="1.4" opacity=".7"/><circle cx="410" cy="70" r="1.8"/>
+    <circle cx="560" cy="210" r="1.3" opacity=".6"/><circle cx="700" cy="90" r="2.4"/><circle cx="880" cy="160" r="1.5" opacity=".75"/>
+    <circle cx="1030" cy="60" r="1.9"/><circle cx="1190" cy="190" r="1.3" opacity=".6"/><circle cx="1360" cy="90" r="2.3"/>
+    <circle cx="1500" cy="230" r="1.6" opacity=".8"/><circle cx="150" cy="420" r="1.5" opacity=".65"/><circle cx="330" cy="560" r="2" opacity=".8"/>
+    <circle cx="620" cy="430" r="1.3" opacity=".55"/><circle cx="980" cy="480" r="1.7" opacity=".7"/><circle cx="1240" cy="600" r="1.4" opacity=".6"/>
+    <circle cx="1450" cy="520" r="2.1" opacity=".85"/><circle cx="60" cy="700" r="1.6" opacity=".6"/><circle cx="520" cy="760" r="1.4" opacity=".55"/>
+    <circle cx="1080" cy="790" r="1.8" opacity=".7"/><circle cx="1540" cy="760" r="1.3" opacity=".6"/><circle cx="760" cy="330" r="1.2" opacity=".5"/>
+    <circle cx="210" cy="300" r="1.1" opacity=".5"/><circle cx="1390" cy="330" r="1.2" opacity=".5"/><circle cx="450" cy="660" r="1.2" opacity=".5"/>
+  </g>
+  <g class="layer-orbits" fill="none" stroke="#38bdf8">
+    <ellipse cx="800" cy="450" rx="560" ry="190" stroke-width="2" opacity=".35" transform="rotate(-14 800 450)"/>
+    <ellipse cx="800" cy="450" rx="700" ry="260" stroke-width="1.5" opacity=".2" transform="rotate(9 800 450)"/>
+    <ellipse cx="800" cy="450" rx="330" ry="330" stroke-width="1.5" opacity=".28"/>
+    <ellipse cx="800" cy="450" rx="215" ry="215" stroke-width="2" opacity=".45"/>
+    <path d="M120 640 Q800 470 1480 620" stroke="url(#arc)" stroke-width="3" opacity=".7"/>
+    <path d="M60 300 Q800 430 1540 280" stroke="url(#arc)" stroke-width="2" opacity=".45"/>
+  </g>
+  <g class="layer-nodes">
+    <circle cx="800" cy="450" r="150" fill="url(#coreGlow)" filter="url(#b10)"/>
+    <circle cx="800" cy="450" r="34" fill="#ecfeff"/>
+    <circle cx="800" cy="450" r="21" fill="#06b6d4"/>
+    <g fill="#a5f3fc">
+      <circle cx="465" cy="330" r="7"/><circle cx="1135" cy="330" r="6"/><circle cx="985" cy="640" r="7.5"/>
+      <circle cx="590" cy="625" r="5.5"/><circle cx="800" cy="235" r="6"/>
+    </g>
+    <g stroke="#67e8f9" stroke-width="2" opacity=".55">
+      <path d="M800 450 L465 330"/><path d="M800 450 L1135 330"/><path d="M800 450 L985 640"/><path d="M800 450 L590 625"/><path d="M800 450 L800 235"/>
+    </g>
+  </g>
+  <rect y="760" width="1600" height="140" fill="#030712" opacity=".45"/>
+</svg>

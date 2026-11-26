@@ -1,8 +1,8 @@
 /**
  * NEXUS RELAY — web application lifecycle (Blueprint §6: main.ts).
  * Wires the telemetry engine to the diegetic console: ConsoleDeck
- * (relays), TelemetryPanel (ping readouts), Renderer (WebGL2 CRT
- * scene), MascotVex09 (operator), AudioSynth (chiptune stems),
+ * (relays), TelemetryPanel (ping readouts), Renderer (WebGL2 glow
+ * scene), MascotVex09 (operator), AudioSynth (synth stems),
  * RelicCard + RelicVaultDB (collectibles).
  *
  * Modes (Blueprint §2): Daily Global Broadcast (seeded 00:00 UTC),
@@ -125,6 +125,20 @@ class Game {
     }
     this.fitRenderer();
     window.addEventListener("resize", () => this.fitRenderer());
+    // Hero parallax: two background layers drift in opposite
+    // directions with the pointer (transform/opacity only, disabled
+    // under reduced motion).
+    window.addEventListener("pointermove", (ev) => {
+      if (document.body.classList.contains("reduced-motion")) return;
+      if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
+      const nx = ev.clientX / Math.max(1, window.innerWidth) - 0.5;
+      const ny = ev.clientY / Math.max(1, window.innerHeight) - 0.5;
+      const root = document.documentElement.style;
+      root.setProperty("--px", `${(-nx * 10).toFixed(1)}px`);
+      root.setProperty("--py", `${(-ny * 7).toFixed(1)}px`);
+      root.setProperty("--px2", `${(nx * 16).toFixed(1)}px`);
+      root.setProperty("--py2", `${(ny * 11).toFixed(1)}px`);
+    });
     this.newRound();
     await this.updateVaultLine();
     // The console boots INTO the main menu; the game lives behind it.
@@ -150,6 +164,15 @@ class Game {
    */
   private showScreen(screen: Screen): void {
     this.screen = screen;
+    for (const id of ["screen-menu", "screen-game", "screen-settings"]) {
+      const el = $(id);
+      el.classList.remove("screen-enter");
+      if (id === `screen-${screen}`) {
+        // Restart the entrance animation on the incoming screen.
+        void el.offsetWidth;
+        el.classList.add("screen-enter");
+      }
+    }
     $("screen-menu").hidden = screen !== "menu";
     $("screen-game").hidden = screen !== "game";
     $("screen-settings").hidden = screen !== "settings";
@@ -341,12 +364,12 @@ class Game {
     });
   }
 
+  /** Display-glow setting: the select keeps its legacy id/values
+   *  (off/subtle/full); they now drive the clean glow post pass. */
   private applyCrtSetting(): void {
     const level = $<HTMLSelectElement>("crt-select").value as CrtIntensity;
-    this.renderer.setCrtIntensity(level);
-    const overlay = $("crt-overlay");
-    // WebGL2 path: the shader performs the CRT pass. Fallback: CSS.
-    overlay.className = this.renderer.webglActive ? "crt-off" : `crt-${level}`;
+    this.renderer.setGlowIntensity(level);
+    document.body.dataset.glow = level;
   }
 
   private fitRenderer(): void {
@@ -955,6 +978,7 @@ class Game {
       (id) => this.ds.nameOf(id)
     );
     $("results-box").hidden = false;
+    if (solved) this.celebrateScore(score.total);
     $("mascot-line").textContent = solved
       ? this.practice
         ? `Practice lock at ${score.total.toLocaleString()} SIG. In a live round, this is where the relic mints.`
@@ -984,6 +1008,44 @@ class Game {
         "▶ NEW SIGNAL (EXPEDITION)";
     }
     this.renderDeck();
+  }
+
+  /**
+   * Solve celebration (presentation only): count the total up with a
+   * springy ease and fire a light-burst of glow dots over the results
+   * box. Skipped entirely under reduced motion.
+   */
+  private celebrateScore(total: number): void {
+    const box = $("results-box");
+    box.classList.remove("celebrate");
+    void box.offsetWidth;
+    box.classList.add("celebrate");
+    const reduced =
+      document.body.classList.contains("reduced-motion") ||
+      window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    const totalEl = [...box.querySelectorAll<HTMLElement>(".score-line b")].pop();
+    if (!totalEl || reduced || total <= 0) return;
+    const startedAt = performance.now();
+    const duration = 900;
+    const tick = (now: number): void => {
+      const k = Math.min(1, (now - startedAt) / duration);
+      const eased = 1 - Math.pow(1 - k, 4);
+      totalEl.textContent = `${Math.round(total * eased).toLocaleString()} SIG`;
+      if (k < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+    // Light-burst: a handful of glow dots radiating from the report.
+    for (let i = 0; i < 14; i++) {
+      const dot = document.createElement("span");
+      dot.className = "burst-dot";
+      const angle = (i / 14) * Math.PI * 2;
+      const dist = 70 + (i % 4) * 26;
+      dot.style.setProperty("--bx", `${Math.cos(angle) * dist}px`);
+      dot.style.setProperty("--by", `${Math.sin(angle) * dist}px`);
+      dot.style.animationDelay = `${(i % 5) * 40}ms`;
+      box.append(dot);
+      window.setTimeout(() => dot.remove(), 1400);
+    }
   }
 
   /** The missed ping that came closest, by graph → resonance → era. */

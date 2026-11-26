@@ -4,22 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NEXUS RELAY — Signal Triangulation</title>
-<meta name="description" content="A retro 16-bit pixel-art guessing game. You always know WHAT the mystery guest is — a footballer, a city, a film. You get 10 guesses, free clues and warmer/colder feedback to work out WHO.">
+<meta name="description" content="A sleek mystery-deduction guessing game. You always know WHAT the mystery guest is — a footballer, a city, a film. You get 10 guesses, free clues and warmer/colder feedback to work out WHO.">
 <meta property="og:title" content="NEXUS RELAY">
 <meta property="og:description" content="You know what it is. Can you guess who it is? Ten guesses. Free hints. One mystery guest.">
-<meta property="og:image" content="assets/switchboard-diorama.jpg">
-<link rel="icon" type="image/png" href="assets/nexus-emblem.png">
+<meta property="og:image" content="assets/switchboard-diorama.svg">
+<link rel="icon" type="image/svg+xml" href="assets/nexus-emblem.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
 <div class="bg-diorama" aria-hidden="true"></div>
-<div id="crt-overlay" class="crt-subtle" aria-hidden="true"></div>
 
 <header class="topbar">
-  <img class="emblem" src="assets/nexus-emblem.png" alt="Nexus Relay emblem" onerror="this.style.display='none'">
+  <img class="emblem" src="assets/nexus-emblem.svg" alt="Nexus Relay emblem" onerror="this.style.display='none'">
   <div class="title-block">
     <h1>NEXUS&nbsp;RELAY</h1>
-    <p class="tagline">SIGNAL ARCHIVIST CONSOLE · EST. 1994 · DEEP-BAND DIVISION</p>
+    <p class="tagline">SIGNAL ARCHIVIST CONSOLE · DEEP-BAND DIVISION</p>
   </div>
   <div class="top-actions">
     <button id="pause-btn" class="px-btn" type="button" hidden>⏸ PAUSE</button>
@@ -33,7 +35,7 @@
   <div class="panel menu-panel">
     <div class="panel-head">MAIN MENU · SIGNAL ARCHIVIST CONSOLE</div>
     <div class="mascot-row menu-mascot">
-      <img class="mascot-art" src="assets/vex09-keyart.png" alt="VEX-09, your relay operator" onerror="this.style.display='none'">
+      <img class="mascot-art" src="assets/vex09-keyart.svg" alt="VEX-09, your relay operator" onerror="this.style.display='none'">
       <div class="mascot-speech">
         <div class="panel-head small">VEX-09 · OPERATOR</div>
         <p id="menu-line">Console warm, Archivist. One mystery guest per round — you always know what KIND of guest, never who. Ten guesses, free clues. Pick your band.</p>
@@ -44,7 +46,7 @@
       <button id="mode-daily" class="px-btn menu-item" type="button">📡 DAILY BROADCAST <span class="menu-sub">today's shared signal</span></button>
       <button id="mode-endless" class="px-btn menu-item" type="button">🌀 ENDLESS EXPEDITION <span class="menu-sub">staged bands · 3 strikes</span></button>
       <button id="tutorial-btn" class="px-btn menu-item" type="button">? FIELD TRAINING <span class="menu-sub">guided practice round</span></button>
-      <button id="menu-settings" class="px-btn menu-item" type="button">⚙ SETTINGS <span class="menu-sub">sound · CRT · accessibility</span></button>
+      <button id="menu-settings" class="px-btn menu-item" type="button">⚙ SETTINGS <span class="menu-sub">sound · display glow · accessibility</span></button>
     </nav>
     <label class="hardcore-toggle menu-hardcore"><input type="checkbox" id="hardcore"> ZERO-CLUE HARDCORE — relays sealed (Daily / Endless)</label>
     <div id="menu-vault-line" class="hint menu-vault">Best score: — · Relics stored: 0</div>
@@ -53,9 +55,9 @@
 
 <!-- ================= GAME CONSOLE ================= -->
 <main id="screen-game" class="console-grid" hidden>
-  <!-- LEFT: CRT CORE + MASCOT + OSCILLOSCOPE -->
+  <!-- LEFT: SIGNAL CORE + MASCOT + OSCILLOSCOPE -->
   <section class="panel core-panel">
-    <div class="panel-head">CRT CONTAINMENT CORE</div>
+    <div class="panel-head">SIGNAL CONTAINMENT CORE</div>
     <canvas id="scene" width="480" height="270"></canvas>
     <div class="core-status">
       <span id="core-label">SIGNAL INTERCEPTED — ENTITY SEALED</span>
@@ -66,7 +68,7 @@
       <canvas id="scope" width="456" height="64"></canvas>
     </div>
     <div class="mascot-row">
-      <img class="mascot-art" src="assets/vex09-keyart.png" alt="VEX-09, your relay operator" onerror="this.style.display='none'">
+      <img class="mascot-art" src="assets/vex09-keyart.svg" alt="VEX-09, your relay operator" onerror="this.style.display='none'">
       <div class="mascot-speech">
         <div class="panel-head small">VEX-09 · OPERATOR</div>
         <p id="mascot-line">A mystery guest is hiding in the core, Archivist. You know what KIND of guest — now guess WHO. Ten guesses, free clues.</p>
@@ -184,16 +186,16 @@
   <div class="panel settings-panel">
     <div class="panel-head">CONSOLE SETTINGS</div>
     <div class="a11y-box settings-list">
-      <label>CRT intensity
+      <label>Display glow
         <select id="crt-select">
-          <option value="off">OFF — clean pixels</option>
-          <option value="subtle" selected>SUBTLE</option>
-          <option value="full">FULL vintage</option>
+          <option value="off">OFF — clean render</option>
+          <option value="subtle" selected>SUBTLE — soft signal glow</option>
+          <option value="full">FULL — radiant bloom</option>
         </select>
       </label>
       <label><input type="checkbox" id="reduced-motion"> Reduced motion</label>
       <label><input type="checkbox" id="high-contrast"> High contrast</label>
-      <label><input type="checkbox" id="font-toggle"> Hi-legibility font (Silkscreen / Inter)</label>
+      <label><input type="checkbox" id="font-toggle"> Hi-legibility font (Inter, larger spacing)</label>
       <label><input type="checkbox" id="sound-toggle" checked> Sound (Web Audio synth)</label>
     </div>
     <button id="settings-back" class="px-btn big" type="button">◀ BACK</button>

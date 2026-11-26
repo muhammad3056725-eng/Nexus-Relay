@@ -1,39 +1,40 @@
 /**
- * NEXUS RELAY — Renderer (Blueprint §3).
+ * NEXUS RELAY — Renderer.
  *
  * Native logical resolution 480x270. The scene is drawn on an offscreen
- * 2D canvas in four layers, then uploaded as a WebGL2 texture and
- * integer-upscaled through the blueprint's CRT fragment shader
- * (curvature / scanlines / chromatic aberration). If WebGL2 is not
- * available the scene canvas is presented directly and the caller
- * enables the CSS CRT overlay instead.
+ * 2D canvas in four smooth layers, then uploaded as a WebGL2 texture
+ * and presented through a clean glow/bloom post pass (no distortion,
+ * crisp). If WebGL2 is not available the scene canvas is
+ * presented directly with smooth scaling.
  *
  * Layer 0: parallax starfield            (vx = 0.05 px/frame)
  * Layer 1: racks, tape reels, radar dish (vx = 0.15 px/frame),
- *          volumetric dithered light shafts
+ *          soft volumetric light shafts
  * Layer 2: the diegetic console deck is the DOM deck beside this
- *          canvas; here the CRT Containment Core + VEX-09 render
- * Layer 3: targeting reticle + spark/static particle overlay
+ *          canvas; here the Signal Containment Core + VEX-09 render
+ * Layer 3: targeting reticle + spark particle overlay
  */
 import {
   PaletteManager,
   sectorForDomain,
-  BAYER4,
   type Sector,
 } from "./PaletteManager";
 import { MascotVex09 } from "./MascotVex09";
 import { drawGlyph } from "./Glyphs";
-import { compileProgram, fullscreenQuad, FULLSCREEN_VERTEX, CRT_FRAGMENT } from "./Shaders";
+import { compileProgram, fullscreenQuad, FULLSCREEN_VERTEX, GLOW_FRAGMENT } from "./Shaders";
 
 export const LOGICAL_W = 480;
 export const LOGICAL_H = 270;
 
-export type CrtIntensity = "off" | "subtle" | "full";
+export type GlowIntensity = "off" | "subtle" | "full";
+/** Backwards-compatible alias for the display-glow setting values. */
+export type CrtIntensity = GlowIntensity;
 
-const CRT_PRESETS: Record<CrtIntensity, { curve: number; scan: number; aberr: number }> = {
-  off: { curve: 0, scan: 0, aberr: 0 },
-  subtle: { curve: 0.08, scan: 0.15, aberr: 0.002 },
-  full: { curve: 0.14, scan: 0.3, aberr: 0.004 },
+/** Display-glow presets: bloom lift applied to bright signal accents. */
+const GLOW_PRESETS: Record<GlowIntensity, number> = {
+  off: 0,
+  subtle: 0.35,
+  full: 0.7,
 };
 
 interface Star { x: number; y: number; s: number; tw: number }
@@ -62,7 +63,7 @@ export class Renderer {
   private program: WebGLProgram | null = null;
   private texture: WebGLTexture | null = null;
   private vao: WebGLVertexArrayObject | null = null;
-  private crt: CrtIntensity = "subtle";
+  private glow: GlowIntensity = "subtle";
   private stars: Star[] = [];
   private particles: Particle[] = [];
   private lastNow = 0;
@@ -92,27 +93,26 @@ export class Renderer {
   }
 
   private initGL(): void {
-    const gl = this.display.getContext("webgl2", { antialias: false });
+    const gl = this.display.getContext("webgl2", { antialias: true });
     if (!gl) return;
-    const prog = compileProgram(gl, FULLSCREEN_VERTEX, CRT_FRAGMENT);
+    const prog = compileProgram(gl, FULLSCREEN_VERTEX, GLOW_FRAGMENT);
     if (!prog) return;
     this.gl = gl;
     this.program = prog;
     this.vao = fullscreenQuad(gl);
     this.texture = gl.createTexture();
     gl.bindTexture(gl.TEXTURE_2D, this.texture);
-    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
-    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
     this.webglActive = true;
   }
 
-  /** Integer-upscale the display canvas to fit the container (Blueprint §3). */
+  /** Fluid-scale the display canvas to fit the container width. */
   fit(containerWidth: number): void {
-    const k = Math.max(1, Math.floor(containerWidth / LOGICAL_W));
-    const w = `${LOGICAL_W * k}px`;
-    const h = `${LOGICAL_H * k}px`;
+    const w = `${Math.max(280, Math.floor(containerWidth))}px`;
+    const h = `${Math.round((Math.max(280, Math.floor(containerWidth)) * LOGICAL_H) / LOGICAL_W)}px`;
     this.display.style.width = w;
     this.display.style.height = h;
     if (this.fallbackCanvas) {
@@ -121,8 +121,14 @@ export class Renderer {
     }
   }
 
+  /** Display-glow setting (off / subtle / full) from the settings UI. */
+  setGlowIntensity(level: GlowIntensity): void {
+    this.glow = level;
+  }
+
+  /** Backwards-compatible alias kept for existing callers. */
   setCrtIntensity(level: CrtIntensity): void {
-    this.crt = level;
+    this.setGlowIntensity(level);
   }
 
   setSector(dom: number, now: number): void {
@@ -184,10 +190,14 @@ export class Renderer {
     this.lastNow = now;
     const drift = this.reducedMotion ? 0 : dtFrames;
 
-    // ---- background with optional Bayer LUT cross-fade ----------------
+    // ---- background with a smooth alpha cross-fade between LUTs ------
     const fade = this.palette.fadeProgress(now);
     if (fade < 1 && this.palette.fadingFrom) {
-      PaletteManager.ditherComposite(ctx, this.bgPrevious, this.bgCurrent, fade, LOGICAL_W, LOGICAL_H);
+      ctx.drawImage(this.bgPrevious, 0, 0);
+      ctx.save();
+      ctx.globalAlpha = fade;
+      ctx.drawImage(this.bgCurrent, 0, 0);
+      ctx.restore();
     } else {
       ctx.drawImage(this.bgCurrent, 0, 0);
     }
@@ -202,7 +212,9 @@ export class Renderer {
       ctx.globalAlpha = inPorthole
         ? 0.55 + 0.45 * Math.sin(now / 400 + star.tw)
         : 0.16;
-      ctx.fillRect(star.x, star.y, star.s, star.s);
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.s * 0.7, 0, Math.PI * 2);
+      ctx.fill();
     }
     ctx.globalAlpha = 1;
 
@@ -242,10 +254,7 @@ export class Renderer {
         LOGICAL_W,
         LOGICAL_H
       );
-      const preset = CRT_PRESETS[this.crt];
-      gl.uniform1f(gl.getUniformLocation(this.program, "u_crtCurvature"), preset.curve);
-      gl.uniform1f(gl.getUniformLocation(this.program, "u_scanlineIntensity"), preset.scan);
-      gl.uniform1f(gl.getUniformLocation(this.program, "u_chromaticAberration"), preset.aberr);
+      gl.uniform1f(gl.getUniformLocation(this.program, "u_glow"), GLOW_PRESETS[this.glow]);
       gl.bindVertexArray(this.vao);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
       gl.bindVertexArray(null);
@@ -259,7 +268,8 @@ export class Renderer {
       }
       const fctx = this.fallbackCanvas.getContext("2d");
       if (fctx) {
-        fctx.imageSmoothingEnabled = false;
+        fctx.imageSmoothingEnabled = true;
+        fctx.imageSmoothingQuality = "high";
         fctx.drawImage(this.scene, 0, 0);
       }
     }
@@ -336,28 +346,12 @@ export class Renderer {
   }
 
   private drawLightShafts(ctx: CanvasRenderingContext2D): void {
-    // volumetric shafts through a 4x4 Bayer dither pattern (Blueprint §3)
-    const pattern = document.createElement("canvas");
-    pattern.width = 4;
-    pattern.height = 4;
-    const pctx = pattern.getContext("2d");
-    if (!pctx) return;
-    const img = pctx.createImageData(4, 4);
-    for (let y = 0; y < 4; y++) {
-      for (let x = 0; x < 4; x++) {
-        const i = (y * 4 + x) * 4;
-        const on = BAYER4[y][x] < 6;
-        img.data[i] = 255;
-        img.data[i + 1] = 255;
-        img.data[i + 2] = 255;
-        img.data[i + 3] = on ? 26 : 0;
-      }
-    }
-    pctx.putImageData(img, 0, 0);
-    const pat = ctx.createPattern(pattern, "repeat");
-    if (!pat) return;
+    // Soft volumetric shaft: a translucent linear gradient wash.
+    const grad = ctx.createLinearGradient(196, 30, 220, 210);
+    grad.addColorStop(0, "rgba(255,255,255,0.20)");
+    grad.addColorStop(1, "rgba(255,255,255,0.02)");
     ctx.save();
-    ctx.fillStyle = pat;
+    ctx.fillStyle = grad;
     ctx.globalCompositeOperation = "lighter";
     ctx.beginPath();
     ctx.moveTo(196, 30);
@@ -416,7 +410,7 @@ export class Renderer {
       ctx.globalAlpha = 1;
       // question mark
       ctx.fillStyle = this.sector.accent;
-      ctx.font = "bold 26px monospace";
+      ctx.font = "600 26px 'Space Grotesk', Inter, sans-serif";
       ctx.textAlign = "center";
       ctx.globalAlpha = 0.5 + 0.4 * Math.sin(now / 450);
       ctx.fillText("?", 240, 152);
@@ -426,7 +420,7 @@ export class Renderer {
     ctx.fillStyle = "#0B0E14";
     ctx.fillRect(x + 22, y + h - 18, w - 44, 12);
     ctx.fillStyle = this.sector.accent;
-    ctx.font = "7px monospace";
+    ctx.font = "600 7px 'Space Grotesk', Inter, sans-serif";
     ctx.textAlign = "center";
     ctx.fillText(
       this.revealedDom != null ? "ENTITY LOCKED" : "ENTITY SEALED",
@@ -469,7 +463,9 @@ export class Renderer {
       p.life -= 1;
       ctx.globalAlpha = Math.min(1, p.life / 30);
       ctx.fillStyle = p.color;
-      ctx.fillRect(p.x, p.y, 2, 2);
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 1.6, 0, Math.PI * 2);
+      ctx.fill();
     }
     ctx.globalAlpha = 1;
   }

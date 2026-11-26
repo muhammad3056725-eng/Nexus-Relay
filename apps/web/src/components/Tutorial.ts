@@ -1,7 +1,7 @@
 /**
  * NEXUS RELAY — first-run FIELD TRAINING (guided practice round).
  *
- * A coach card in the console's own CRT/pixel style walks a new
+ * A coach card in the console's own glass style walks a new
  * player through one scripted practice round played on the REAL
  * controls and the REAL engine (no mock state), teaching the CASUAL
  * loop (owner rebuild, Nov 26, 2026): the guest's TYPE is always
