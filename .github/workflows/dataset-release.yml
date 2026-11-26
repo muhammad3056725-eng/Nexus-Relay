@@ -1,0 +1,26 @@
+# Blueprint §6: monthly pipeline triggering full dataset upload.
+# Phase 1: re-packs the starter corpus with the Stage 6 packer and
+# verifies the binary layout + clue leakage audits. The production
+# run (Stage 1 Wikidata ingestion -> R2 upload) activates at the
+# Week 2 roadmap milestone.
+name: Dataset Release
+on:
+  schedule:
+    - cron: "0 4 1 * *"
+  workflow_dispatch:
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Re-pack dataset (Stage 6)
+        working-directory: pipeline
+        run: python src/stage6_pack_binary.py
+      - name: Verify audits
+        run: |
+          pip install pytest
+          python -m pytest pipeline/tests -q
+          
