@@ -1,0 +1,204 @@
+/* deepwell.games — game-selection hub.
+   Clean UI only (owner directive, Nov 26, 2026): two selectable game
+   cards, zero images — no advertising poster, no graphic hero. Each
+   game's identity is carried by colour and typography alone:
+   Deepwell's deep-sea descent on the left, Nexus Relay's Hi-Bit CRT
+   console on the right. No build step, no external assets. */
+
+:root {
+  --abyss: #02070d;
+  --deep-teal: #06303e;
+  --glow-teal: #35e0c8;
+  --foam: #d9f6ff;
+  --nexus-navy: #0b132b;
+  --nexus-cyan: #00d4ff;
+  --nexus-amber: #ff9f1c;
+  --ink: #e8f1f5;
+  --muted: #8fa8b5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 500px at 50% -10%, #0a2e3f 0%, transparent 60%),
+    linear-gradient(180deg, #04121f 0%, var(--abyss) 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.25rem 2rem;
+}
+
+/* ---------- header ---------- */
+
+.site-head { text-align: center; max-width: 44rem; }
+
+.domain {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--glow-teal);
+}
+.domain-tld { color: var(--muted); }
+
+.site-head h1 {
+  margin: 0.6rem 0 0.4rem;
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  letter-spacing: 0.12em;
+  font-weight: 800;
+}
+
+.tagline { margin: 0; color: var(--muted); font-size: 1.05rem; }
+
+/* ---------- picker grid ---------- */
+
+.picker {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 62rem;
+  margin-top: 2.5rem;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 2rem 1.75rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.card-kicker {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+}
+
+.card-title { margin: 0; line-height: 1.05; }
+.card-blurb { margin: 0; line-height: 1.55; flex-grow: 1; }
+
+.card-facts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.cta {
+  align-self: flex-start;
+  margin-top: 0.6rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+.cta:hover, .cta:focus-visible { transform: translateY(-2px); }
+.cta:focus-visible { outline: 3px solid var(--foam); outline-offset: 3px; }
+
+/* ---------- Deepwell card: deep sea ---------- */
+
+.card-deepwell {
+  background: linear-gradient(165deg, #0a4356 0%, var(--deep-teal) 45%, #02141f 100%);
+  box-shadow: 0 18px 50px rgba(0, 20, 30, 0.55);
+}
+.card-deepwell .card-kicker { color: var(--glow-teal); }
+
+.deepwell-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  letter-spacing: 0.06em;
+  color: var(--foam);
+  text-shadow: 0 4px 24px rgba(53, 224, 200, 0.35);
+}
+.card-deepwell .card-blurb { color: #c4e6ef; }
+.card-deepwell .card-facts { color: #9fd3de; }
+
+.cta-deepwell {
+  background: var(--glow-teal);
+  color: #02303a;
+  box-shadow: 0 8px 24px rgba(53, 224, 200, 0.35);
+}
+
+/* CSS bubbles rising through the Deepwell card */
+.bubbles { position: absolute; inset: 0; pointer-events: none; }
+.bubble {
+  position: absolute;
+  bottom: -24px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(217, 246, 255, 0.5);
+  background: radial-gradient(circle at 32% 30%, rgba(255,255,255,0.5), rgba(255,255,255,0.05) 60%);
+  animation: rise linear infinite;
+}
+.b1 { left: 12%; width: 14px; height: 14px; animation-duration: 9s; }
+.b2 { left: 30%; width: 8px;  height: 8px;  animation-duration: 7s; animation-delay: 1.4s; }
+.b3 { left: 55%; width: 18px; height: 18px; animation-duration: 11s; animation-delay: 0.6s; }
+.b4 { left: 72%; width: 9px;  height: 9px;  animation-duration: 8s; animation-delay: 2.2s; }
+.b5 { left: 86%; width: 13px; height: 13px; animation-duration: 10s; animation-delay: 3s; }
+.b6 { left: 44%; width: 6px;  height: 6px;  animation-duration: 6.5s; animation-delay: 4s; }
+
+@keyframes rise {
+  from { transform: translateY(0); opacity: 0; }
+  12%  { opacity: 1; }
+  to   { transform: translateY(-430px); opacity: 0; }
+}
+
+/* ---------- Nexus Relay card: CRT console ---------- */
+
+.card-nexus {
+  background: linear-gradient(170deg, #101c3f 0%, var(--nexus-navy) 55%, #05080f 100%);
+  box-shadow: 0 18px 50px rgba(0, 5, 15, 0.6);
+  font-family: "Courier New", ui-monospace, monospace;
+}
+.card-nexus .card-kicker { color: var(--nexus-amber); }
+
+.scanlines {
+  position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg, rgba(255,255,255,0.045) 0 1px, transparent 1px 3px);
+  mix-blend-mode: overlay;
+}
+
+.nexus-title {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  letter-spacing: 0.1em;
+  color: var(--nexus-cyan);
+  text-shadow: 0 0 18px rgba(0, 212, 255, 0.55), 3px 3px 0 rgba(255, 159, 28, 0.35);
+}
+.card-nexus .card-blurb { color: #c9d8f2; }
+.card-nexus .card-facts { color: #8fb8d8; }
+
+.cta-nexus {
+  background: var(--nexus-amber);
+  color: #231300;
+  border-radius: 6px;
+  box-shadow: 0 0 0 2px #05080f, 0 0 0 4px var(--nexus-amber), 0 10px 22px rgba(255, 159, 28, 0.3);
+}
+
+/* ---------- footer ---------- */
+
+.site-foot {
+  margin-top: 2.5rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bubble { animation: none; opacity: 0.5; }
+  .cta { transition: none; }
+}

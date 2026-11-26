@@ -1,0 +1,1 @@
+{"description":"Shared constants: 24-byte telemetry schema, 12 domains, adjacency, notability tiers, channels, ranks.","exports":{".":"./src/index.ts"},"main":"src/index.ts","name":"@nexus-relay/shared-types","private":true,"type":"module","version":"0.1.0"}

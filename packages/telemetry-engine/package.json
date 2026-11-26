@@ -1,0 +1,1 @@
+{"dependencies":{"@nexus-relay/shared-types":"*"},"description":"Core game logic: 5-axis telemetry, graph BFS, deterministic scoring, round state machine, share encoder. Zero UI dependencies.","exports":{".":"./src/index.ts"},"main":"src/index.ts","name":"@nexus-relay/telemetry-engine","private":true,"scripts":{"test":"vitest run"},"type":"module","version":"0.1.0"}

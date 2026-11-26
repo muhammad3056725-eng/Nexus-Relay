@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>deepwell.games — Choose Your Game</title>
+<meta name="description" content="Two free browser games on one domain: DEEPWELL, the rare-answer trivia descent, and NEXUS RELAY, the retro signal-triangulation deduction game. Pick one and play — no downloads, no sign-up.">
+<meta property="og:title" content="deepwell.games — Choose Your Game">
+<meta property="og:description" content="DEEPWELL: the rarer your answer, the deeper you dive. NEXUS RELAY: six probes, five-axis telemetry, one sealed entity. Both free, both in your browser.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <p class="domain">deepwell<span class="domain-tld">.games</span></p>
+  <h1>CHOOSE YOUR GAME</h1>
+  <p class="tagline">Two games live on this domain. One takes you down. One takes you deep into the signal.</p>
+</header>
+
+<main class="picker">
+
+  <!-- DEEPWELL — the trivia descent. Lives in its OWN repository and
+       is served from its own URL; this hub only links to it. The link
+       target is configured in the GAME_URLS script at the bottom. -->
+  <article class="card card-deepwell">
+    <div class="bubbles" aria-hidden="true">
+      <span class="bubble b1"></span><span class="bubble b2"></span>
+      <span class="bubble b3"></span><span class="bubble b4"></span>
+      <span class="bubble b5"></span><span class="bubble b6"></span>
+    </div>
+    <p class="card-kicker">🌊 THE RARE-ANSWER TRIVIA DESCENT</p>
+    <h2 class="card-title deepwell-title">DEEPWELL</h2>
+    <p class="card-blurb">
+      A trivia game where the obvious answer is the shallow one. Name what
+      everyone else would miss — the rarer your answer, the deeper you dive.
+    </p>
+    <ul class="card-facts">
+      <li>Trivia · rare answers score deeper</li>
+      <li>100% free · no downloads</li>
+    </ul>
+    <a class="cta cta-deepwell" id="link-deepwell" href="https://deepwell.games/">DIVE IN ▾</a>
+  </article>
+
+  <!-- NEXUS RELAY — signal triangulation. Lives in its OWN repository
+       (this one) and is served from its own GitHub Pages URL; this hub
+       only links to it. Target configured in GAME_URLS below. -->
+  <article class="card card-nexus">
+    <div class="scanlines" aria-hidden="true"></div>
+    <p class="card-kicker">📡 SIGNAL TRIANGULATION · EST. 1994</p>
+    <h2 class="card-title nexus-title">NEXUS&nbsp;RELAY</h2>
+    <p class="card-blurb">
+      You are the Signal Archivist. A mystery entity is sealed inside the
+      graph: six probes, five-axis telemetry — era, distance, domain, hops,
+      notability — and one Overclock surge to chain the proof.
+    </p>
+    <ul class="card-facts">
+      <li>Deduction · retro Hi-Bit pixel console</li>
+      <li>Daily broadcast · endless · hardcore</li>
+    </ul>
+    <a class="cta cta-nexus" id="link-nexus" href="https://muhammad3056725-eng.github.io/Nexus-Relay/">OPEN CONSOLE ▶</a>
+  </article>
+
+</main>
+
+<script>
+  /* ================================================================
+     GAME LINK CONFIG — the only lines that ever need editing here.
+     Each game stays in its OWN repository and is served from its own
+     URL; this hub links to those served URLs and loads nothing local.
+       Deepwell   — its repo's custom domain (live now).
+       Nexus Relay — this repo's GitHub Pages URL. If the subdomain is
+                     set up instead, change the value to
+                     "https://nexus.deepwell.games/".
+     The anchors above carry the same URLs as static fallbacks, so the
+     page works even with JavaScript disabled.
+     ================================================================ */
+  const GAME_URLS = {
+    deepwell: "https://deepwell.games/",
+    nexusRelay: "https://muhammad3056725-eng.github.io/Nexus-Relay/"
+  };
+  document.getElementById("link-deepwell").href = GAME_URLS.deepwell;
+  document.getElementById("link-nexus").href = GAME_URLS.nexusRelay;
+</script>
+
+<footer class="site-foot">
+  <p>Both games are free, run entirely in your browser, and need no downloads or sign-up.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+# Phase 1 pipeline uses only the Python standard library.
+# Production ingestion (Stage 1) will add: requests, bz2 streaming readers.
+pytest>=8 ; extra == "dev"

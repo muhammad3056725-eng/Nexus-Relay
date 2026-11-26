@@ -1,0 +1,37 @@
+GIMP Palette
+Name: NEXUS RELAY Base 32 Hardware Palette
+Columns: 8
+# Blueprint Section 3: strict 32-color hardware palette.
+# Mirrors apps/web/src/graphics/PaletteManager.ts (BASE_PALETTE_32).
+ 11  14  20 True Void
+ 18  23  34 Deep Void
+ 24  35  56 Indigo Well
+ 36  50  77 Switchboard Navy
+ 54  73 107 Panel Navy
+ 79 103 143 CRT Blue
+112 138 168 Steel Blue
+160 181 208 Slate Telemetry
+ 44 246 179 Slate Grey
+ 29 224 157 Silver Mist
+ 18 184 127 Cold Paper
+ 11 142  96 Phosphor White
+  6 100  67 CRT Cyan
+255 182  39 Signal Cyan
+224 152  25 Relay Teal
+184 118  11 Ion Mint
+255  42 133 Phosphor Green
+214  27 107 Toxic Lime
+168  13  80 Amber Nixie
+122   5  55 Brass Dial
+255 107  53 Orange Alarm
+224  78  27 Valve Red
+184  53  11 Deep Maroon
+142  32   4 Magenta Pulse
+139  92 246 Ultraviolet
+124  58 237 Plasma Violet
+109  40 217 Iron Brown
+ 76  29 149 Copper
+243 244 246 CRT Skin
+209 213 219 Relay Skin
+156 163 175 Warm Grey
+ 75  85  99 Cool Grey
