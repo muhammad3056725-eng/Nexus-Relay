@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@nexus-relay/shared-types": "*",
+    "@nexus-relay/telemetry-engine": "*"
+  },
+  "name": "@nexus-relay/web",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}

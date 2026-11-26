@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS RELAY — Signal Triangulation</title>
+<meta name="description" content="A retro 16-bit pixel-art trivia deduction game. Triangulate a mystery entity inside a knowledge graph with 5-axis telemetry, 6 probes, and the Overclock surge.">
+<meta property="og:title" content="NEXUS RELAY">
+<meta property="og:description" content="You are the Signal Archivist. Six probes. Five relays. One sealed entity. Triangulate it.">
+<meta property="og:image" content="assets/switchboard-diorama.jpg">
+<link rel="icon" type="image/png" href="assets/nexus-emblem.png">
+<link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+<div class="bg-diorama" aria-hidden="true"></div>
+<div id="crt-overlay" class="crt-subtle" aria-hidden="true"></div>
+
+<header class="topbar">
+  <img class="emblem" src="assets/nexus-emblem.png" alt="Nexus Relay emblem" onerror="this.style.display='none'">
+  <div class="title-block">
+    <h1>NEXUS&nbsp;RELAY</h1>
+    <p class="tagline">SIGNAL ARCHIVIST CONSOLE · EST. 1994 · DEEP-BAND DIVISION</p>
+  </div>
+  <div class="mode-controls" role="group" aria-label="Game mode">
+    <button id="mode-daily" class="px-btn mode-btn active" type="button">DAILY BROADCAST</button>
+    <button id="mode-endless" class="px-btn mode-btn" type="button">ENDLESS EXPEDITION</button>
+    <label class="hardcore-toggle"><input type="checkbox" id="hardcore"> ZERO-CLUE HARDCORE</label>
+  </div>
+</header>
+
+<main class="console-grid">
+  <!-- LEFT: CRT CORE + MASCOT + OSCILLOSCOPE -->
+  <section class="panel core-panel">
+    <div class="panel-head">CRT CONTAINMENT CORE</div>
+    <canvas id="scene" width="480" height="270"></canvas>
+    <div class="core-status">
+      <span id="core-label">SIGNAL INTERCEPTED — ENTITY SEALED</span>
+      <span id="round-label"></span>
+    </div>
+    <div class="scope-wrap">
+      <div class="panel-head small">OSCILLOSCOPE · CARRIER WAVE</div>
+      <canvas id="scope" width="456" height="64"></canvas>
+    </div>
+    <div class="mascot-row">
+      <img class="mascot-art" src="assets/vex09-keyart.png" alt="VEX-09, your relay operator" onerror="this.style.display='none'">
+      <div class="mascot-speech">
+        <div class="panel-head small">VEX-09 · OPERATOR</div>
+        <p id="mascot-line">Carrier locked. Five relays cold. Six capacitor charges on the rail, Archivist.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CENTER: RELAYS + ACTIONS -->
+  <section class="panel deck-panel">
+    <div class="panel-head">FREQUENCY RELAYS · <span id="multiplier-readout">MULTIPLIER ×1.00</span></div>
+    <div id="relay-deck"></div>
+
+    <div class="probes-row">
+      <span class="probes-label">SIGNAL PROBES</span>
+      <span id="probe-pips" class="probe-pips"></span>
+      <button id="begin-btn" class="px-btn big" type="button">▶ BEGIN TRIANGULATION</button>
+    </div>
+
+    <div class="hypothesis-box">
+      <div class="panel-head small">PING A HYPOTHESIS · SPENDS 1 PROBE</div>
+      <div class="input-row">
+        <input id="hypothesis-input" type="text" autocomplete="off" spellcheck="false"
+               placeholder="Type any real-world entity…" aria-label="Hypothesis entity name">
+        <button id="ping-btn" class="px-btn" type="button">PING 🗲</button>
+      </div>
+      <div id="autocomplete" class="autocomplete" hidden></div>
+      <p class="hint">Telemetry returns on all five axes: ERA · SPACE · DOMAIN · GRAPH HOPS · NOTABILITY.</p>
+    </div>
+
+    <div id="overclock-box" class="overclock-box" hidden>
+      <div class="panel-head small overclock-head">⚡ OVERCLOCK SURGE · <span id="overclock-timer">15.0</span>s ⚡</div>
+      <p class="hint">The solved node ignites outgoing beams. Name connected entities before the capacitor drains — each valid link adds ×0.5.</p>
+      <div id="beam-list" class="beam-list"></div>
+      <div class="input-row">
+        <input id="bridge-input" type="text" autocomplete="off" spellcheck="false"
+               placeholder="Name a connected entity…" aria-label="Connected entity name">
+        <button id="bridge-btn" class="px-btn" type="button">LINK ⚡</button>
+      </div>
+      <div id="bridge-autocomplete" class="autocomplete" hidden></div>
+      <div id="bridge-log" class="bridge-log"></div>
+    </div>
+
+    <div id="results-box" class="results-box" hidden>
+      <div class="panel-head small">SIGNAL INTEGRITY REPORT</div>
+      <div id="results-body"></div>
+      <canvas id="relic-canvas" width="64" height="64"></canvas>
+      <pre id="share-card" class="share-card"></pre>
+      <div class="input-row">
+        <button id="copy-share" class="px-btn" type="button">COPY SIGNAL TRACE</button>
+        <button id="again-btn" class="px-btn" type="button">NEW SIGNAL</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIGHT: TELEMETRY LOG -->
+  <section class="panel telemetry-panel">
+    <div class="panel-head">TELEMETRY LOG</div>
+    <div id="telemetry-log" class="telemetry-log">
+      <p class="hint">No pings yet. Tune a relay to decrypt a clue, or ping a hypothesis to read its vector against the sealed target.</p>
+    </div>
+    <div class="vault-box">
+      <div class="panel-head small">RELIC VAULT</div>
+      <div id="vault-line" class="hint">Best score: — · Relics stored: 0</div>
+    </div>
+    <div class="a11y-box">
+      <div class="panel-head small">CONSOLE SETTINGS</div>
+      <label>CRT intensity
+        <select id="crt-select">
+          <option value="off">OFF — clean pixels</option>
+          <option value="subtle" selected>SUBTLE</option>
+          <option value="full">FULL vintage</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="reduced-motion"> Reduced motion</label>
+      <label><input type="checkbox" id="high-contrast"> High contrast</label>
+      <label><input type="checkbox" id="font-toggle"> Hi-legibility font (Silkscreen / Inter)</label>
+      <label><input type="checkbox" id="sound-toggle" checked> Sound (Web Audio synth)</label>
+    </div>
+    <div class="howto">
+      <div class="panel-head small">FIELD MANUAL</div>
+      <p class="hint">You have <b>6 probes</b>. <b>Tune a relay</b> to decrypt one clue (score multiplier −9% each). <b>Ping a hypothesis</b> to compare any entity against the target on five axes. Lock the target to trigger the <b>15-second Overclock</b>: name its graph neighbours to multiply your score up to ×2.5.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span id="dataset-line">Loading dataset…</span>
+  <span class="footer-note">NEXUS RELAY · Phase 1 starter corpus · Full 250k-node corpus ships with the data pipeline (see README)</span>
+</footer>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
