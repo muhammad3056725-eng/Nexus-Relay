@@ -78,7 +78,7 @@ export class TelemetryPanel {
 
   clear(): void {
     this.root.innerHTML =
-      '<p class="hint">No pings yet. Tune a relay to decrypt a clue, or ping a hypothesis to read its vector against the sealed target.</p>';
+      '<p class="hint">No guesses yet. Every guess also lands here as a full five-axis readout: ERA · SPACE · DOMAIN · GRAPH HOPS · NOTABILITY.</p>';
   }
 
   addPing(p: PingResult): void {

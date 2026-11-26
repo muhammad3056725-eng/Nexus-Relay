@@ -6,6 +6,7 @@
  */
 import { CHANNELS, DOMAINS } from "@nexus-relay/shared-types";
 import { formatYear } from "./MathVector";
+import { MAX_PROBES } from "./ScoringSystem";
 import type { Round, PingResult } from "./StateMachine";
 
 function proximitySymbol(p: PingResult): string {
@@ -45,7 +46,7 @@ export function buildShareCard(
     lines.push("Target: [ NOT LOCKED ] — the signal escaped");
   }
   const left = round.probes;
-  lines.push(`Probes: ${"🗲".repeat(6 - left)}${"⬚".repeat(left)} (${left} Left)`);
+  lines.push(`Guesses: ${"🗲".repeat(MAX_PROBES - left)}${"⬚".repeat(left)} (${left} Left)`);
   lines.push(
     "Clues:  " +
       CHANNELS.map(

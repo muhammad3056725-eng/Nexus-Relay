@@ -2,7 +2,9 @@
  * NEXUS RELAY — 3-phase round controller (Blueprint §2).
  *
  * Phase 1 SIGNAL INTERCEPTION: target sealed, 5 relays locked.
- * Phase 2 TRIANGULATION: 6 probes; Tune a Relay OR Ping a Hypothesis.
+ * Phase 2 TRIANGULATION: 10 guesses (owner-directed casual economy,
+ *   Nov 26 — the blueprint's 6 probes, re-based; see ScoringSystem);
+ *   Tune a Relay OR Ping a Hypothesis.
  * Phase 3 OVERCLOCK SURGE: 15 s to name connected nodes (chain-bridging).
  *
  * Pure logic, zero UI dependencies. Records come from telemetry data;

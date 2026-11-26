@@ -74,8 +74,10 @@ describe("ScoringSystem (Blueprint §2 formulas)", () => {
   test("clue multiplier runs 1.00 down to 0.55", () => {
     expect(clueMultiplier(0)).toBe(1.0);
     expect(clueMultiplier(5)).toBeCloseTo(0.55, 9);
-    expect(baseSolveScore(6, 0)).toBe(1000);
-    expect(baseSolveScore(3, 0)).toBe(500);
+    // 10-guess economy (owner-directed casual re-base, Nov 26):
+    // a full rail is worth 1000, half a rail 500.
+    expect(baseSolveScore(10, 0)).toBe(1000);
+    expect(baseSolveScore(5, 0)).toBe(500);
   });
 
   test("overclock multiplier runs 1.0x to 2.5x", () => {
@@ -127,7 +129,7 @@ describe("Round (full game loop)", () => {
     const round = new Round({ targetId, records, pack, adjacency, roundNumber: 42 });
     const clue = round.tune("alpha", decodeClue);
     expect(clue.length).toBeGreaterThan(10);
-    expect(round.probes).toBe(5);
+    expect(round.probes).toBe(9);
 
     const miss = round.ping(idByName("ENIAC"));
     expect(miss.exact).toBe(false);
@@ -151,7 +153,7 @@ describe("Round (full game loop)", () => {
     expect(card).toContain("🔗 Neil Armstrong");
   });
 
-  test("probe exhaustion without a solve fails the round", () => {
+  test("guess exhaustion without a solve fails the round", () => {
     const round = new Round({
       targetId: idByName("Zeus"),
       records,
@@ -159,7 +161,11 @@ describe("Round (full game loop)", () => {
       adjacency,
       roundNumber: 1,
     });
-    for (const n of ["Chess", "Pizza", "Pong", "Jazz", "Sahara", "Thor"]) {
+    // 10 guesses in the casual economy (owner-directed, Nov 26).
+    for (const n of [
+      "Chess", "Pizza", "Pong", "Jazz", "Sahara",
+      "Thor", "NASA", "Elvis Presley", "Mona Lisa", "Coffee",
+    ]) {
       round.ping(idByName(n));
     }
     expect(round.probes).toBe(0);

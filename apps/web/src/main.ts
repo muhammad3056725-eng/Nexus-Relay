@@ -19,6 +19,7 @@ import {
   type ShardEntity,
 } from "@nexus-relay/shared-types";
 import {
+  MAX_PROBES,
   Round,
   buildShareCard,
   dailySeed,
@@ -32,6 +33,11 @@ import { sectorForDomain } from "./graphics/PaletteManager";
 import { ConsoleDeck } from "./components/ConsoleDeck";
 import { Tutorial, TUTORIAL_SEEN_KEY } from "./components/Tutorial";
 import { TelemetryPanel, escapeHtml, proximityClass } from "./components/TelemetryPanel";
+import {
+  GuessFeed,
+  casualFeedback,
+  typeLabel,
+} from "./components/CasualFeedback";
 import { RelicCard } from "./components/RelicCard";
 import { RelicVaultDB } from "./storage/RelicVaultDB";
 import { AudioSynth } from "./audio/AudioSynth";
@@ -45,11 +51,23 @@ const LAUNCH_EPOCH_DAYS = Math.floor(Date.UTC(2026, 0, 1) / 86400000);
 type Mode = "daily" | "endless" | "free";
 type Screen = "menu" | "game" | "settings";
 
+/**
+ * Clue reveal order on the casual surface (owner rebuild, Nov 26):
+ * the round OPENS with the Era clue for free; each 💡 HINT tap
+ * reveals the next — Trait, Relational, Space, Domain. Hints are
+ * read straight from the target's clue pack in the web layer: they
+ * never call Round.tune, so they spend no guess and never touch the
+ * score multiplier. (The relay deck in DETAILS still offers the
+ * original tune ritual, at the original price.)
+ */
+const CLUE_ORDER: ChannelKey[] = ["alpha", "epsilon", "delta", "beta", "gamma"];
+
 class Game {
   private ds!: Dataset;
   private renderer!: Renderer;
   private deck!: ConsoleDeck;
   private panel!: TelemetryPanel;
+  private feed!: GuessFeed;
   private relic!: RelicCard;
   private vault = new RelicVaultDB();
   private audio = new AudioSynth();
@@ -66,6 +84,10 @@ class Game {
   private started = false;
   private finished = false;
   private tunedClues = new Map<ChannelKey, string>();
+  /** Casual clue state: channels revealed free (start clue + hints). */
+  private revealedClues: ChannelKey[] = [];
+  private hintsUsed = 0;
+  private detailsOpen = false;
   private stage = 1;
   private strikes = 0;
   private runTotal = 0;
@@ -85,6 +107,7 @@ class Game {
       (key) => this.onTune(key)
     );
     this.panel = new TelemetryPanel($("telemetry-log"));
+    this.feed = new GuessFeed($("guess-feed"));
     this.relic = new RelicCard($<HTMLCanvasElement>("relic-canvas"));
     this.wireControls();
 
@@ -182,11 +205,25 @@ class Game {
     this.showScreen("menu");
   }
 
-  private switchTab(name: "telemetry" | "vault" | "manual"): void {
-    for (const t of ["telemetry", "vault", "manual"] as const) {
+  private switchTab(name: "telemetry" | "relays" | "vault" | "manual"): void {
+    for (const t of ["telemetry", "relays", "vault", "manual"] as const) {
       $(`tab-${t}`).classList.toggle("active", t === name);
       $(`tabpage-${t}`).hidden = t !== name;
     }
+  }
+
+  /** DETAILS drawer: the deep telemetry lives behind this tap. */
+  private toggleDetails(): void {
+    const body = $("details-body");
+    const open = body.hidden;
+    body.hidden = !open;
+    this.detailsOpen = open;
+    const btn = $<HTMLButtonElement>("details-btn");
+    btn.setAttribute("aria-expanded", String(open));
+    btn.textContent = open
+      ? "🔍 DETAILS — DEEP TELEMETRY ▾"
+      : "🔍 DETAILS — DEEP TELEMETRY ▸";
+    this.audio.click();
   }
 
   private startFreePlay(): void {
@@ -231,8 +268,14 @@ class Game {
     $("tab-telemetry").addEventListener("click", () =>
       this.switchTab("telemetry")
     );
+    $("tab-relays").addEventListener("click", () => this.switchTab("relays"));
     $("tab-vault").addEventListener("click", () => this.switchTab("vault"));
     $("tab-manual").addEventListener("click", () => this.switchTab("manual"));
+    $("details-btn").addEventListener("click", () => this.toggleDetails());
+    $("hint-btn").addEventListener("click", () => {
+      this.audio.click();
+      this.onHint();
+    });
     $<HTMLInputElement>("hardcore").addEventListener("change", (ev) => {
       this.hardcore = (ev.target as HTMLInputElement).checked;
       this.newRound();
@@ -476,6 +519,8 @@ class Game {
     this.finished = false;
     this.tunedClues.clear();
     this.panel.clear();
+    this.feed.clear();
+    this.setupClues();
     $("results-box").hidden = true;
     $("overclock-box").hidden = true;
     this.relicVisible = false;
@@ -484,21 +529,24 @@ class Game {
     $("bridge-log").innerHTML = "";
     const beginBtn = $<HTMLButtonElement>("begin-btn");
     beginBtn.disabled = false;
-    beginBtn.textContent = "▶ BEGIN TRIANGULATION";
+    beginBtn.textContent = "▶ START GUESSING";
 
     const target = this.round.target;
     const now = performance.now();
     this.renderer.setSector(target.dom, now);
     this.renderer.setRevealed(null);
     this.setMascot("IDLE_BLINK");
+    // The guest's TYPE is always on show (casual surface rule).
+    const type = typeLabel(this.round.targetPack.sub);
+    $("type-label").textContent = type;
     if (this.hardcore) {
       $("core-label").textContent = `DOMAIN STATIC: ${DOMAINS[target.dom].name.toUpperCase()} — RELAYS SEALED`;
       $("mascot-line").textContent =
-        "Zero-clue run, Archivist. No relay will open. Your pings are all you have.";
+        "Zero-clue run, Archivist. No starting clue, no hints — your guesses and the DETAILS readouts are all you have.";
     } else {
-      $("core-label").textContent = "SIGNAL INTERCEPTED — ENTITY SEALED";
+      $("core-label").textContent = "SIGNAL INTERCEPTED — MYSTERY GUEST SEALED";
       $("mascot-line").textContent =
-        "Carrier locked. Five relays cold. Six capacitor charges on the rail, Archivist.";
+        `A mystery guest is hiding in the core — ${type}, by the look of the manifest. Ten guesses, free clues. So… who is it?`;
     }
     $("round-label").textContent = this.practice
       ? "PRACTICE ROUND · FIELD TRAINING SIGNAL"
@@ -516,13 +564,57 @@ class Game {
     this.started = true;
     const beginBtn = $<HTMLButtonElement>("begin-btn");
     beginBtn.disabled = true;
-    beginBtn.textContent = "TRIANGULATION ACTIVE";
-    $("core-label").textContent = "TRIANGULATION IN PROGRESS";
+    beginBtn.textContent = "● GUESSING ACTIVE";
+    $("core-label").textContent = "GUESSING IN PROGRESS";
     this.setMascot("LISTENING");
     $("mascot-line").textContent =
-      "Scope is live. Tune a relay to decrypt — or trust your instincts and ping.";
+      "Go on — type a name and hit GUESS. Warmer, colder, newer, older… I'll tell you everything.";
     this.audio.startMusic();
     this.audio.setMusicLevel(0);
+    this.renderDeck();
+  }
+
+  // ------------------------------------------------------------ clues & hints
+  /**
+   * Casual clue setup for a fresh round: the first clue of CLUE_ORDER
+   * is revealed FREE at round start (hardcore seals the clue box, as
+   * it always sealed the relays).
+   */
+  private setupClues(): void {
+    this.revealedClues = [];
+    this.hintsUsed = 0;
+    $("hint-list").innerHTML = "";
+    if (this.hardcore) {
+      $("start-clue").textContent =
+        "🔒 ZERO-CLUE HARDCORE — no starting clue, no hints. Just you and your guesses.";
+      return;
+    }
+    const first = CLUE_ORDER[0];
+    this.revealedClues.push(first);
+    $("start-clue").textContent =
+      `🎁 STARTING CLUE (free): ${decodeClue(this.round!.targetPack.clues[first])}`;
+  }
+
+  /** 💡 HINT — reveals the next pack clue. Never spends a guess,
+   *  never touches the tuned set, so the score multiplier is safe. */
+  private onHint(): void {
+    if (!this.round || this.finished || this.hardcore) return;
+    const next = CLUE_ORDER.find((k) => !this.revealedClues.includes(k));
+    if (!next) {
+      $("mascot-line").textContent =
+        "That's every clue I have, Archivist — and they were all free. Trust your guesses now.";
+      return;
+    }
+    this.revealedClues.push(next);
+    this.hintsUsed += 1;
+    const line = document.createElement("p");
+    line.className = "clue-line";
+    line.textContent = `💡 HINT (free): ${decodeClue(this.round.targetPack.clues[next])}`;
+    $("hint-list").append(line);
+    this.audio.whir();
+    this.setMascot("DECRYPTION_FOCUS", 1200);
+    $("mascot-line").textContent =
+      "One more clue, on the house. Hints never cost you a thing here.";
     this.renderDeck();
   }
 
@@ -534,6 +626,20 @@ class Game {
       probes: this.round.probes,
       tunedClues: this.tunedClues,
     });
+    // Casual guesses-left pips mirror the same engine counter.
+    const left = this.round.probes;
+    $("guess-pips").innerHTML =
+      `<span>${"🗲".repeat(left)}</span>` +
+      `<span class="spent">${"⬚".repeat(Math.max(0, MAX_PROBES - left))}</span>`;
+    // Hint button state: free until the pack runs dry (or hardcore).
+    const hintBtn = $<HTMLButtonElement>("hint-btn");
+    const remaining = CLUE_ORDER.length - this.revealedClues.length;
+    hintBtn.disabled = this.hardcore || this.finished || remaining <= 0;
+    hintBtn.textContent = this.hardcore
+      ? "💡 HINTS SEALED — HARDCORE"
+      : remaining > 0
+        ? `💡 HINT — FREE (${remaining} LEFT)`
+        : "💡 ALL CLUES SHOWN";
     // The 15-second surge runs in real time — pause locks out while
     // it is live (it unlocks again the moment the round resolves).
     $<HTMLButtonElement>("pause-btn").disabled =
@@ -582,17 +688,24 @@ class Game {
       window.setTimeout(() => input.classList.remove("shake"), 350);
       this.setMascot("ERROR_GLITCH", 900);
       $("mascot-line").textContent =
-        "No such entity in the archive index. Check the name and ping again.";
+        "Never heard of that one — check the spelling and guess again. No guess spent.";
       return;
     }
     if (this.round.pings.some((p) => p.guessId === id)) {
       $("mascot-line").textContent =
-        "You already pinged that node. The vector would not change.";
+        "You already guessed that one — the answer would be the same. Try a fresh name.";
       return;
     }
+    const prev =
+      this.round.pings.length > 0
+        ? this.round.pings[this.round.pings.length - 1]
+        : null;
     const result = this.round.ping(id);
     input.value = "";
     this.panel.addPing(result);
+    // The casual surface answers in plain language (the deep readout
+    // above still lands in DETAILS for anyone who wants it).
+    this.feed.addGuess(result, prev);
     this.audio.ping(result.spatial ? result.spatial.km : null);
     this.scopeLevel = result.exact
       ? 1
@@ -610,29 +723,10 @@ class Game {
         proximityClass(result) === "cold" ? "COLD_STATIC" : "SIGNAL_SPIKE",
         1500
       );
-      $("mascot-line").textContent = this.pingCommentary(result);
+      $("mascot-line").textContent = casualFeedback(result, prev).sentence;
       if (this.round.failed) this.finish();
     }
     this.renderDeck();
-  }
-
-  private pingCommentary(p: PingResult): string {
-    if (p.hops === 1) return "Direct neighbour! You are one hop from the core.";
-    if (p.hops != null && p.hops <= 2)
-      return `Two hops out${p.via ? ` via ${p.via}` : ""}. The trail is warm — follow the link.`;
-    if (p.hops != null && p.hops <= 3)
-      return "Three hops out. The graph trail is still warm — keep walking the links.";
-    if (p.resonance === "EXACT MATCH")
-      return "Same sub-domain. You are circling the right sector.";
-    if (p.resonance === "SAME SECTOR")
-      return "Same sector as the target — right room, different shelf. Keep sweeping it.";
-    if (Math.abs(p.deltaYear) <= 10)
-      return "Era nearly exact — within a breath of its time. Hold this decade and sweep sideways.";
-    if (p.spatial && p.spatial.km <= 800)
-      return "Spatially you are practically standing on it. Same corner of the world.";
-    if (p.spatial && p.spatial.km > 8000)
-      return "Cold static. That vector points across the planet — pivot.";
-    return "Telemetry logged. Follow whichever axis burned hottest and triangulate.";
   }
 
   private async resolveEntity(
@@ -737,6 +831,8 @@ class Game {
       probes: this.round?.probes ?? 0,
       pings: this.round?.pings.length ?? 0,
       tuned: this.tunedClues.size,
+      hintsUsed: this.hintsUsed,
+      detailsOpen: this.detailsOpen,
       bridges: this.round?.bridges.length ?? 0,
       phase: this.round?.phase ?? 1,
     };
@@ -815,7 +911,9 @@ class Game {
     const target = round.targetPack;
     const targetRec = round.target;
     const results = $("results-body");
+    const guessesUsed = round.pings.length;
     results.innerHTML = `
+      <div class="rank-line">${solved ? `🎉 You got it in ${guessesUsed} ${guessesUsed === 1 ? "guess" : "guesses"}!` : "😢 Out of guesses this time — here's how close you came."}</div>
       <div class="score-line"><span>${solved ? "TARGET LOCKED" : "SIGNAL LOST — TARGET WAS"}</span><b>${escapeHtml(target.name)}</b></div>
       <div class="score-line"><span>Designation</span><b>${escapeHtml(target.sub)} · ${formatYear(targetRec.year)}</b></div>
       <div class="score-line"><span>Base solve score</span><b>${score.base.toLocaleString()}</b></div>

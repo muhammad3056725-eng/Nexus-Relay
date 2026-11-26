@@ -2,17 +2,21 @@
  * NEXUS RELAY — first-run FIELD TRAINING (guided practice round).
  *
  * A coach card in the console's own CRT/pixel style walks a new
- * Archivist through one scripted practice round played on the REAL
- * controls and the REAL engine (no mock state): tune a relay, ping a
- * hypothesis, read all five telemetry axes, lock the target, ride the
- * Overclock. Every number quoted in the coach copy is the implemented
- * formula (ScoringSystem.ts / StateMachine.ts), not a paraphrase:
- *   - 6 probes; Tune and Ping each spend exactly 1 probe.
- *   - Clue multiplier = 1.00 - 0.09 per tuned relay (floor x0.55).
- *   - Base = 1000 x (probes left / 6) x clue multiplier.
- *   - Proximity bonus = max(0, 250 - sum over missed pings of
- *     (km/1000 + |era delta|/10)).
- *   - Overclock = 15 s; each valid chain-bridge adds x0.5, max x2.5.
+ * player through one scripted practice round played on the REAL
+ * controls and the REAL engine (no mock state), teaching the CASUAL
+ * loop (owner rebuild, Nov 26, 2026): the guest's TYPE is always
+ * shown, you guess by name, and every guess answers in plain
+ * language — 🔥 warmer / ❄️ colder, ⬆️ newer / ⬇️ older,
+ * ✅ same field / ❌ different field. Every number quoted in the
+ * coach copy is the implemented formula (ScoringSystem.ts):
+ *   - 10 guesses per round (owner-directed casual economy).
+ *   - The starting clue and every 💡 HINT are FREE — they spend no
+ *     guess and never touch the score multiplier.
+ *   - Base = 1000 x (guesses left / 10). Closeness bonus up to 250
+ *     for warm misses. Overclock = 15 s; each valid chain-bridge
+ *     adds x0.5, max x2.5. (The deep relay deck in DETAILS can still
+ *     tune clues the old way — 1 guess and -9% multiplier each —
+ *     which is why the multiplier exists at all.)
  *
  * Shows automatically on first visit only; the seen flag persists in
  * localStorage under the same key pattern as the Relic Vault
@@ -29,6 +33,8 @@ export interface TutorialState {
   probes: number;
   pings: number;
   tuned: number;
+  hintsUsed: number;
+  detailsOpen: boolean;
   bridges: number;
   phase: number;
 }
@@ -56,101 +62,101 @@ interface Step {
 
 const STEPS: Step[] = [
   {
-    id: "sealed",
-    title: "THE SEALED ENTITY",
-    highlight: ".core-panel",
+    id: "guest",
+    title: "MEET THE MYSTERY GUEST",
+    highlight: "#mystery-banner",
     advance: "next",
     body: () =>
-      "A real-world entity — a person, place, event, invention, creature — is sealed inside the Containment Core. You know nothing about it except that it sits somewhere in the knowledge graph. Your job: name it exactly. This is a practice round on a training signal, played with the real console. Nothing here touches your vault.",
+      "Someone — or something — real is hiding in the core: a person, a place, a film, a creature. Here's the friendly part: you ALWAYS know what KIND of guest it is. The big banner tells you the type — a boxer, a city, a video game. Your only job is to guess the NAME. This is a practice round on a training signal, played with the real game. Nothing here touches your vault.",
   },
   {
-    id: "probes",
-    title: "SIX PROBES — NO MORE",
+    id: "guesses",
+    title: "TEN GUESSES — PLENTY",
     highlight: ".probes-row",
     advance: "next",
     body: () =>
-      "The Nixie rail holds exactly 6 probes. Every action you take — tuning a relay or pinging a hypothesis — spends 1 probe. Spend all 6 without locking the target and the signal is lost. Probes left over are worth score, so deduction beats guessing.",
+      "You get 10 guesses, and every single one teaches you something — there are no wasted guesses here. Run out without naming the guest and the round ends (gently — I'll show you how close you came). Guesses left over are worth score, so the warmer you play, the better you do.",
   },
   {
-    id: "tune",
-    title: "ACTION 1 · TUNE-A-RELAY",
-    highlight: "#relay-deck",
-    advance: (s) => s.tuned >= 1,
+    id: "clue",
+    title: "A FREE CLUE TO START",
+    highlight: "#clue-box",
+    advance: "next",
     body: () =>
-      "Five relays guard five clue channels: ALPHA (Era), BETA (Space), GAMMA (Domain), DELTA (Relational), EPSILON (Trait). Tuning one spends 1 probe and decrypts its clue — but each tuned clue cuts your score multiplier by 9% (x1.00 down to x0.55 if you tune all five). ▸ Press any TUNE button now.",
+      "Every round opens with a free starting clue, already waiting in the clue box. Free means free: it costs no guesses and no score — now or ever. Read it before your first guess; it's the era clue, and it quietly cuts the haystack down to a decade or two.",
   },
   {
-    id: "ping",
-    title: "ACTION 2 · PING-A-HYPOTHESIS",
+    id: "guess",
+    title: "MAKE A GUESS",
     highlight: ".hypothesis-box",
     advance: (s) => s.pings >= 1,
     body: (info) =>
-      `Or skip clues and test a name directly. Pinging spends 1 probe and fires your guess at the target: the Telemetry Log answers with a five-axis comparison of YOUR entity against the sealed one. ▸ For practice, ping "${info.neighbourName}" — a node wired straight to the target — and watch the log.`,
+      `Guessing is just typing a name. Anything real counts — people, places, events, inventions. ▸ For practice, guess "${info.neighbourName}" — a close friend of the guest — and watch how the game answers you.`,
   },
   {
-    id: "axis-era",
-    title: "READING THE AXES · 1/5 ERA",
-    highlight: ".telemetry-panel",
+    id: "warmer",
+    title: "FEEDBACK 1 · WARMER OR COLDER",
+    highlight: "#guess-feed",
     advance: "next",
     body: () =>
-      "ERA is the signed gap between your guess's year and the target's year. +42 yrs means your guess is 42 years NEWER than the target — step back in time. -118 yrs means your guess is older — move forward. EXACT YEAR LOCK means the years match. The bar drains as the gap grows.",
+      "Every guess gets a report card. First line: 🔥 WARMER or ❄️ COLDER — is this guess closer to the guest than your last one? (Your first guess gets a starting read instead: hot, warm or cold.) Follow the heat and you will walk straight to the answer.",
   },
   {
-    id: "axis-space",
-    title: "READING THE AXES · 2/5 SPACE",
-    highlight: ".telemetry-panel",
+    id: "newer",
+    title: "FEEDBACK 2 · NEWER OR OLDER",
+    highlight: "#guess-feed",
     advance: "next",
     body: () =>
-      "SPACE is the great-circle distance between the two entities' coordinates, in kilometres, with an 8-wind compass bearing pointing from your guess toward the target. Some entities have no coordinates at all — the axis then reads CONCEPTUAL / NON-SPATIAL and simply gives you nothing.",
+      "Second line: ⬆️ NEWER or ⬇️ OLDER — where the GUEST sits in time compared with your guess. Guessed something from 1970 and it says ⬇️ OLDER? The guest is older than that — step back in time. 📅 SAME ERA means you've landed on exactly the right year.",
   },
   {
-    id: "axis-domain",
-    title: "READING THE AXES · 3/5 DOMAIN",
-    highlight: ".telemetry-panel",
+    id: "field",
+    title: "FEEDBACK 3 · SAME FIELD?",
+    highlight: "#guess-feed",
     advance: "next",
     body: () =>
-      "DOMAIN resonance compares fields of knowledge. EXACT MATCH: same domain AND sub-domain — you are on the node’s home turf. SAME SECTOR: same domain, different sub-domain. ADJACENT DISCIPLINE: a neighbouring field. ORTHOGONAL FIELD: unrelated — pivot.",
+      "Third line: ✅ SAME FIELD means your guess lives in the guest's corner of knowledge — a boxer for a boxer, a river for a river. 🧭 NEIGHBOURING FIELD is a close cousin. ❌ DIFFERENT FIELD means pivot — try a whole other corner of the world. Three little lines, and the guest has nowhere to hide.",
   },
   {
-    id: "axis-graph",
-    title: "READING THE AXES · 4/5 GRAPH HOPS",
-    highlight: ".telemetry-panel",
-    advance: "next",
+    id: "hint",
+    title: "STUCK? FREE HINTS 💡",
+    highlight: "#clue-box",
+    advance: (s) => s.hintsUsed >= 1,
     body: () =>
-      "GRAPH counts the shortest path between your guess and the target along the knowledge graph's links. 1 hop = a direct neighbour. On a 2-hop path the log names the bridge node (\"2 Hops via […]\") — pinging that bridge is often the fastest way in. NO PATH means the two nodes are disconnected.",
+      "The 💡 HINT button reveals another clue about the guest — and it NEVER punishes you. No guess spent, no score lost, no catch. There are four hints after your free starting clue, and using all five is a perfectly good way to play. ▸ Tap 💡 HINT now and see.",
   },
   {
-    id: "axis-notability",
-    title: "READING THE AXES · 5/5 NOTABILITY",
-    highlight: ".telemetry-panel",
-    advance: "next",
+    id: "details",
+    title: "FOR THE CURIOUS · DETAILS 🔍",
+    highlight: "#details-panel",
+    advance: (s) => s.detailsOpen,
     body: () =>
-      "NOTABILITY compares fame tiers. SAME TIER: your guess is exactly as famous as the target. NEAR TIER: one tier apart — the log tells you whether the TARGET is more famous or more obscure. FAR TIER: two or more apart — pivot toward fame, or away from it, as directed.",
+      "Under the friendly surface there's a full instrument panel: five-axis telemetry for every guess (era, distance, graph hops, fame) and the original relay deck. It's all behind the 🔍 DETAILS tap — interesting, never required. ▸ Open DETAILS once to see it, then close it whenever you like.",
   },
   {
     id: "lock",
-    title: "TRIANGULATE · LOCK THE TARGET",
+    title: "NOW NAME THE GUEST",
     highlight: ".hypothesis-box",
     advance: (s) => s.solved || s.finished,
     body: (info) =>
-      `In a live round you would now cross-read the axes, narrow the field, and ping the entity itself. A ping that names the target exactly is a TARGET LOCK. ▸ For practice, the sealed entity is "${info.targetName}" — ping it now and watch what a lock triggers.`,
+      `In a real round you'd now follow the heat — warmer, older, same field — until one name fits everything. ▸ For practice, today's guest is "${info.targetName}". Guess it exactly and watch what a win triggers.`,
   },
   {
     id: "overclock",
-    title: "OVERCLOCK · CHAIN-BRIDGING",
+    title: "BONUS ROUND · OVERCLOCK ⚡",
     highlight: "#overclock-box",
     advance: (s) => s.bridges >= 1 || s.finished,
     body: () =>
-      "A lock ignites the 15-second Overclock Surge. The three beams are the target's outgoing links, labelled by relationship. Type any entity connected to the target — or connected to a node you have already linked (that is chain-bridging) — before the capacitor drains. Each valid link adds x0.5 to your score, up to x2.5 for 3 links. ▸ Link one now, if the surge is still live.",
+      "A win ignites the 15-second Overclock bonus round. The lit-up beams are the guest's connections, labelled by relationship. Type anything connected to the guest — or connected to something you've already linked — before the timer drains. Each valid link adds ×0.5 to your score, up to ×2.5. ▸ Link one now, if the surge is still live.",
   },
   {
     id: "score",
-    title: "SIGNAL INTEGRITY · THE MATH",
+    title: "HOW SCORING WORKS",
     highlight: null,
     advance: "next",
-    nextLabel: "ENTER THE CONSOLE ▸",
+    nextLabel: "START PLAYING ▸",
     body: () =>
-      "Your score, exactly as computed: BASE = 1,000 x (probes left / 6) x clue multiplier. PROXIMITY BONUS = up to 250, shrinking by (km/1,000 + |era gap|/10) for every missed ping. TOTAL = (BASE + PROXIMITY) x OVERCLOCK multiplier, rounded. Solve fast, tune sparingly, chain hard. Training complete, Archivist — a live signal is waiting.",
+      "Your score, in plain words: BASE = 1,000 × (guesses left ÷ 10) — solve fast, score big. Warm misses earn a CLOSENESS BONUS of up to 250. The Overclock multiplier (up to ×2.5) multiplies the lot. And hints never, ever reduce your score. That's the whole game, Archivist — a live guest is waiting.",
   },
 ];
 

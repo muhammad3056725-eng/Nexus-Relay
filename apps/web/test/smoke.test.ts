@@ -138,8 +138,8 @@ describe("NEXUS RELAY web app (jsdom, real starter dataset)", () => {
   });
 
   test("a lost round teaches: debrief shows the closest pass and the trail", async () => {
-    // Fresh free-signal round from the menu, then burn all 6 probes on
-    // wrong entities — the failure report must coach, not just punish.
+    // Fresh free-signal round from the menu, then burn all 10 guesses
+    // on wrong entities — the failure report must coach, not punish.
     (document.getElementById("menu-start") as HTMLButtonElement).click();
     game.begin();
     const round = game.round!;
@@ -148,7 +148,7 @@ describe("NEXUS RELAY web app (jsdom, real starter dataset)", () => {
     };
     const wrongIds = [...internals.ds.records.keys()]
       .filter((id) => id !== round.targetId)
-      .slice(0, 6);
+      .slice(0, 10);
     const input = document.getElementById(
       "hypothesis-input"
     ) as HTMLInputElement;
@@ -164,7 +164,7 @@ describe("NEXUS RELAY web app (jsdom, real starter dataset)", () => {
     expect(body).toContain("WHAT THE TELEMETRY POINTED TO");
     expect(body).toContain("Closest pass");
     // every ping row carries the generous heat read-out
-    expect(document.querySelectorAll(".ping-row").length).toBe(6);
+    expect(document.querySelectorAll(".ping-row").length).toBe(10);
     expect(document.querySelector(".ping-verdict")!.textContent).toContain(
       "SIGNAL HEAT"
     );

@@ -277,3 +277,43 @@ body::after {
   50% { outline-color: var(--amber-dim); }
 }
 body.reduced-motion * { animation: none !important; transition: none !important; }
+
+/* CASUAL SURFACE (owner rebuild, Nov 26) — mystery banner, free clue
+   box, friendly guess feed, and the DETAILS drawer toggle. */
+.mystery-banner {
+  border: 3px solid var(--amber); background: rgba(255, 182, 39, .08);
+  box-shadow: inset 0 0 24px rgba(0,0,0,.5), 0 0 16px rgba(255, 182, 39, .18);
+  padding: 12px; margin-bottom: 12px; text-align: center;
+}
+.mystery-lead { display: block; font-size: 11px; letter-spacing: 3px; color: var(--mist); }
+.type-label {
+  display: block; font-size: 26px; font-weight: bold; letter-spacing: 2px;
+  color: var(--amber); text-transform: uppercase; margin: 4px 0;
+  text-shadow: 0 0 10px rgba(255, 182, 39, .35);
+}
+.mystery-sub { display: block; font-size: 11.5px; color: var(--mist); }
+
+.clue-box {
+  border: 2px solid var(--mint-dim); background: rgba(44, 246, 179, .05);
+  padding: 10px; margin-bottom: 4px;
+}
+.clue-line { font-size: 13.5px; line-height: 1.55; color: var(--paper); margin: 4px 0 8px; }
+#hint-list .clue-line { border-top: 1px dashed var(--steel2); padding-top: 8px; }
+#hint-btn { margin: 2px 0 6px; }
+
+.guess-feed { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.guess-card {
+  border: 2px solid var(--steel); background: rgba(0,0,0,.28); padding: 9px 11px;
+}
+.guess-card.exact { border-color: var(--mint); box-shadow: 0 0 14px var(--glow); }
+.guess-name { font-weight: bold; font-size: 15px; color: var(--paper); letter-spacing: .5px; }
+.chip-row { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0 2px; }
+.chip {
+  font-size: 11.5px; letter-spacing: .5px; color: var(--paper);
+  border: 2px solid var(--steel2); background: var(--panel2);
+  padding: 3px 8px; border-radius: 999px;
+}
+.guess-sentence { margin: 4px 0 0; font-size: 12.5px; line-height: 1.55; color: var(--mist); }
+
+.details-toggle { width: 100%; font-size: 13px; padding: 10px 12px; }
+#details-body { margin-top: 12px; }
